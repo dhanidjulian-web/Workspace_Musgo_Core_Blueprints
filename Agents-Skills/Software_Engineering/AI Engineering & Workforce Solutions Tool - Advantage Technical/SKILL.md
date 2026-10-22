@@ -1,5 +1,5 @@
 ---
-name: AI Engineering & Workforce Solutions Tool - Advantage Technical
+name: ai engineering & workforce solutions tool - Advantage Technical
 description: AI-powered engineering, staffing, and technical workforce solutions for businesses and industries
 version: 1.0.0
 author: Advantage Technical
