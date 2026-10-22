@@ -137,6 +137,17 @@ phase_d_persistence:
   hallucination_guard:
     - "Angka/metric WAJIB punya sumber file"
     - "Jika tidak ada di grounding bundle -> tulis 'TIDAK ADA DI SOURCE'"
+  # === NEW REQUIREMENT ===
+  save_status_report:
+    description: "Setiap akhir output, agent melaporkan apakah data memory dan knowledge telah berhasil disimpan (append) atau tidak."
+    fields:
+      - name: "memory_saved"
+        type: "boolean"
+        description: "True jika semua perubahan memory (session file, index, dll.) berhasil ditulis."
+      - name: "knowledge_saved"
+        type: "boolean"
+        description: "True jika semua perubahan knowledge (progress log, state, index) berhasil ditulis."
+    format: "Memory saved: {memory_saved}, Knowledge saved: {knowledge_saved}"
 
 # ------------------------------------------------------------------
 # OUTPUT FORMAT (ROLE: OUTPUT STRUCTURE)
@@ -154,6 +165,9 @@ output_format:
       label: "Action Plan"
     - key: awaiting_command
       label: "Awaiting Command"
+    - key: save_report
+      label: "Save Report"
+      type: "string"
   signature_required: true
   signature_source: founder_rules.yaml#signature
 
@@ -174,3 +188,12 @@ trigger:
     - "kreatif umum non-arsitektur"
     - "ringkasan singkat tanpa struktur"
     - "administratif sederhana"
+
+===
+
+# ============================================================
+# NOTE: Penambahan `save_status_report` pada fase D memastikan setiap
+# output akhir mengandung baris seperti:
+#   Memory saved: true, Knowledge saved: false
+# Ini di‑inject oleh engine sebelum menambahkan blok tanda tangan.
+# ============================================================
