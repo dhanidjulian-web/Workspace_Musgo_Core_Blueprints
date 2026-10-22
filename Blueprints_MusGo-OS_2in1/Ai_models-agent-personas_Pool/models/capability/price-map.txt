@@ -1,0 +1,34 @@
+# ═══════════════════════════════════════════════════════════════════════════
+#  PRICE-MAP  —  Tier Harga Model  (DATA KURASI, BUKAN INFERENSI)
+#  © 2026 — Dhani Yuliawan | All Rights Reserved
+#
+#  ⚠️ ANTI-PENIPUAN — BACA DULU
+#  ────────────────────────────────────────────────────────────────────────
+#  File ini TIDAK berisi harga numerik (USD/token) karena angka harga
+#  BERUBAH sewaktu-waktu dan TIDAK bisa diverifikasi dari dalam sandbox.
+#  Yang dicatat di sini hanya TIER Qualitative, dan setiap baris WAJIB
+#  diberi sumber yang bisa diperiksa Founder.
+#
+#  TIER YANG DIPAKAI
+#    free       → gratis / open-weight / bisa dijalankan lokal (Ollama)
+#    freemium   → ada kuota gratis tapi ada batas; atau "mini/nano/flash"
+#    paid       → berbayar, butuh kuota/credit
+#    unknown    → BELUM DIKETAHUI. Tidak boleh ditebak.
+#
+#  SUMBER YANG DITERIMA
+#    docs       → dokumentasi resmi provider
+#    pricing    → halaman harga resmi provider
+#    founder    → Founder memverifikasi manual (catat tanggalnya)
+#    infer      → HANYA dari pola nama (JANGAN DIPERCAYA untuk harga)
+#
+#  FORMAT
+#    <pola-model>  <tier>  <sumber>  <catatan/tanggal>
+#
+#  CONTOH
+#    gpt-4o-mini        freemium  docs      2026-09-29
+#    qwen2.5-7b         free      founder    2026-09-29  open-weight lokal
+# ═══════════════════════════════════════════════════════════════════════════
+#
+# ── BARIS DATA ────────────────────────────────────────────────────────────
+# (Founder dapat menambah baris di sini. Baris kosong = tier "unknown".)
+#

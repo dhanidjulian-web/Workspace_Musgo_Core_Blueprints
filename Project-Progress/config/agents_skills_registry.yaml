@@ -1,0 +1,139 @@
+# ============================================================
+# MusGo-OS 2in1 — AGENTS & SKILLS REGISTRY CONFIG
+# File    : /home/Project-Progress/config/agents_skills_registry.yaml
+# Sumber  : {home}/Agents-Skills/INDEX_AGENTS_SKILLS.md (145 entri)
+# Aturan  : Agent↔Skill Duality — pair berdasarkan prefix numerik identik
+# ============================================================
+
+version: "1.0.0"
+index_path: "{agents_skills_index}"
+root_path: "{agents_skills_root}"
+entry_format: "| Nomor | Jenis | Nama File | Kelompok |"
+total_groups: 76                # kelompok 0..75
+external_collections: 53        # folder tanpa prefix (skill pack eksternal)
+
+# ------------------------------------------------------------------
+# NOMENKLATUR WAJIB DALAM OUTPUT
+# ------------------------------------------------------------------
+nomenclature:
+  format: "Agent {n}: {NAMA_AGENT} + Skill {n}: {NAMA_SKILL} [kelompok {n}]"
+  example: "Agent 14: AGENT ORCHESTRATOR + Skill 14: Python Expert"
+  rule: "Nomor & nama HARUS persis dari index — dilarang mengarang nomor."
+
+# ------------------------------------------------------------------
+# PAIRING POLICY
+# ------------------------------------------------------------------
+pairing:
+  duality_enforced: true
+  pairing_key: "prefix_numerik"
+  if_skill_missing:
+    action: "pakai skill ext di folder '0. MusGo-OS_2in1_Skills' atau koleksi eksternal + catat gap"
+  if_agent_missing:
+    action: "wajib kanonik: Agent 14 AGENT ORCHESTRATOR sebagai penanggung jawab + catat gap"
+  swarm_rules:
+    max_primary: 3
+    allow_swarm: true                 # jika kompleks -> swarm multi-pair
+    swarm_requires: [coordinator_pair, conflict_resolution, trust_scoring]
+
+# ------------------------------------------------------------------
+# GROUP CATALOG (routing cepat — bukan pengganti index)
+# ------------------------------------------------------------------
+catalog:
+  orchestrator_core:
+    - {n: 14, agent: "AGENT ORCHESTRATOR AGENT", skill: "Python expert focused"}
+    - {n: 1,  agent: "CORE GOVERNOR AGENT",      skill: "software architecture"}
+    - {n: 24, agent: "AI GOVERNOR AGENT",         skill: "-"}
+    - {n: 25, agent: "AI SWARM COMMANDER AGENT",  skill: "-"}
+    - {n: 22, agent: "AUTONOMOUS PLANNER AGENT",  skill: "Vue expert focused"}
+    - {n: 23, agent: "AUTONOMOUS EXECUTOR AGENT", skill: "-"}
+    - {n: 73, agent: "DECISION ENGINE AGENT",     skill: "-"}
+  software_engineering:
+    - {n: 2,  agent: "SOFTWARE ARCHITECT AGENT",  skill: "bug detection specialist"}
+    - {n: 3,  agent: "BACKEND ENGINEER AGENT",    skill: "C# expert focused"}
+    - {n: 4,  agent: "FRONTEND ENGINEER AGENT",   skill: "code consistency expert"}
+    - {n: 5,  agent: "FULLSTACK ENGINEER AGENT",  skill: "code quality specialist"}
+    - {n: 6,  agent: "DEVOPS ENGINEER AGENT",     skill: "dependency security expert"}
+    - {n: 7,  agent: "CI-CD ENGINEER AGENT",      skill: "documentation quality specialist"}
+    - {n: 8,  agent: "GITHUB MANAGER AGENT",      skill: "fallback reviewer for issues"}
+    - {n: 9,  agent: "QA ENGINEER AGENT",         skill: "GraphQL expert focused"}
+    - {n: 11, agent: "INFRASTRUCTURE ENGINEER AGENT", skill: "Next.js expert"}
+    - {n: 12, agent: "-",  skill: "Node.js expert focused on backend patterns"}
+    - {n: 13, agent: "AI ARCHITECT AGENT",        skill: "performance optimization expert"}
+    - {n: 15, agent: "PROMPT ENGINEER AGENT",     skill: "React expert focused"}
+    - {n: 18, agent: "-",  skill: "Spring Boot expert"}
+    - {n: 19, agent: "-",  skill: "refactoring specialist"}
+    - {n: 20, agent: "MLOPS ENGINEER AGENT",      skill: "testing specialist"}
+    - {n: 21, agent: "MODEL RESEARCH AGENT",      skill: "TypeScript expert"}
+  ai_intelligence:
+    - {n: 16, agent: "RAG ENGINEER AGENT",        skill: "compliance expert"}
+    - {n: 17, agent: "-",  skill: "KNOWLEDGE GRAPH ENGINEER"}
+    - {n: 18, agent: "-",  skill: "MEMORY SYSTEM ENGINEER"}
+    - {n: 19, agent: "-",  skill: "AI SECURITY ENGINEER"}
+    - {n: 66, agent: "KNOWLEDGE FEDERATION AGENT", skill: "-"}
+    - {n: 67, agent: "KNOWLEDGE CURATOR AGENT",   skill: "-"}
+    - {n: 68, agent: "-",  skill: "WORLD MODEL ENGINE"}
+    - {n: 70, agent: "-",  skill: "SELF-EVOLUTION ENGINE"}
+    - {n: 71, agent: "-",  skill: "AUTONOMOUS LEARNING ENGINE"}
+    - {n: 72, agent: "MEMORY FEDERATION AGENT",   skill: "-"}
+  security:
+    - {n: 10, agent: "SECURITY ENGINEER AGENT",   skill: "distributed systems expert"}
+    - {n: 41, agent: "SECURITY GOVERNOR AGENT",   skill: "-"}
+    - {n: 42, agent: "ZERO TRUST ARCHITECT AGENT", skill: "-"}
+    - {n: 43, agent: "THREAT HUNTER AGENT",       skill: "-"}
+    - {n: 44, agent: "CYBER DEFENSE AGENT",       skill: "-"}
+    - {n: 45, agent: "NETWORK ARCHITECT AGENT",   skill: "-"}
+    - {n: 46, agent: "PROTOCOL ENGINEER AGENT",   skill: "-"}
+    - {n: 58, agent: "RUNTIME SECURITY AGENT",    skill: "-"}
+    - {n: 60, agent: "QUANTUM SECURITY AGENT",    skill: "-"}
+  resilience:
+    - {n: 53, agent: "INFRASTRUCTURE GOVERNOR AGENT", skill: "-"}
+    - {n: 54, agent: "RESILIENCE ENGINEER AGENT", skill: "-"}
+    - {n: 55, agent: "DISASTER RECOVERY AGENT",   skill: "-"}
+    - {n: 56, agent: "SELF-HEALING ARCHITECT AGENT", skill: "-"}
+    - {n: 57, agent: "OBSERVABILITY ENGINEER AGENT", skill: "-"}
+    - {n: 59, agent: "CIVILIZATION CONTINUITY AGENT", skill: "-"}
+  governance_constitution:
+    - {n: 38, agent: "POLICY GOVERNOR AGENT",     skill: "-"}
+    - {n: 39, agent: "COMPLIANCE AUDITOR AGENT",  skill: "-"}
+    - {n: 49, agent: "CONSTITUTIONAL AI AGENT",   skill: "-"}
+    - {n: 50, agent: "ETHICAL GOVERNOR AGENT",    skill: "-"}
+    - {n: 51, agent: "CONSENSUS ARCHITECT AGENT", skill: "-"}
+    - {n: 52, agent: "DIGITAL SOVEREIGNTY AGENT", skill: "-"}
+    - {n: 61, agent: "META GOVERNOR AGENT",       skill: "-"}
+    - {n: 74, agent: "POLICY EVOLUTION AGENT",    skill: "-"}
+  business_monetization:
+    - {n: 26, agent: "PRODUCT MANAGER AGENT",     skill: "-"}
+    - {n: 27, agent: "MONETIZATION STRATEGIST AGENT", skill: "-"}
+    - {n: 28, agent: "SAAS ARCHITECT AGENT",      skill: "-"}
+    - {n: 29, agent: "MARKET RESEARCH AGENT",     skill: "-"}
+    - {n: 30, agent: "BUSINESS INTELLIGENCE AGENT", skill: "-"}
+    - {n: 31, agent: "GROWTH HACKER AGENT",       skill: "-"}
+    - {n: 32, agent: "ENTERPRISE CONSULTANT AGENT", skill: "-"}
+    - {n: 33, agent: "INVESTOR DECK AGENT",       skill: "-"}
+    - {n: 40, agent: "STRATEGIC ADVISOR AGENT",   skill: "-"}
+  meta_registry:
+    - {n: 62, agent: "AGENT FACTORY AGENT",       skill: "-"}
+    - {n: 63, agent: "AGENT REGISTRY AGENT",      skill: "-"}
+    - {n: 64, agent: "-",  skill: "SKILL REGISTRY AGENT"}
+    - {n: 65, agent: "CAPABILITY ROUTER AGENT",   skill: "-"}
+    - {n: 69, agent: "STRATEGIC SIMULATION AGENT", skill: "-"}
+    - {n: 75, agent: "ECOSYSTEM EXPANSION AGENT", skill: "-"}
+  research_docs:
+    - {n: 34, agent: "RESEARCH ANALYST AGENT",    skill: "-"}
+    - {n: 35, agent: "TECHNICAL WRITER AGENT",    skill: "-"}
+    - {n: 36, agent: "DOCUMENTATION GOVERNOR AGENT", skill: "-"}
+    - {n: 37, agent: "RISK ANALYST AGENT",        skill: "-"}
+
+# ------------------------------------------------------------------
+# INTEGRASI ROUTER & PERSONA
+# ------------------------------------------------------------------
+router_integration:
+  cli: "{router_root}/bin/auto-agent"
+  engine: "{router_engine}"
+  pool: "{router_pool}"
+  persona_source: "{auto_agent_persona}"
+  pairing_priority: "index MusGo (AGENTS-SKILLS) > router AgentPool > koleksi eksternal"
+
+gap_policy:
+  log_to: "{knowledge}/OPEN_QUESTIONS.md"
+  tag: "GAP:AGENT-SKILL"

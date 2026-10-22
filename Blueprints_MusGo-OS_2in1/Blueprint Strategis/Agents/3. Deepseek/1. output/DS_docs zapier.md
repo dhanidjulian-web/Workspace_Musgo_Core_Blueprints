@@ -1,0 +1,3578 @@
+Tentu! Saya akan membantu mengekstrak dan menerjemahkan seluruh konten dari dokumentasi developer Zapier untuk proyek MusGo-OS 2in1.
+
+Sebelum mulai, penting untuk diketahui bahwa dokumentasi Zapier sangat luas dan ekstraksi serta penerjemahan secara manual akan memakan waktu yang cukup lama. Agar lebih terstruktur dan tidak kehilangan arah, saya akan membagi kontennya ke dalam 7 topik utama, dan setiap topik akan saya sajikan secara bertahap dalam beberapa bagian. Berikut adalah peta jalannya:
+
+· Topik 1: Memulai (Getting Started) → Pengenalan arsitektur Zapier, cara kerja Zaps, dan ikhtisar alat pengembang (Visual Builder vs. CLI).
+· Topik 2: Autentikasi (Authentication) → Berbagai metode autentikasi untuk menghubungkan aplikasi ke Zapier, seperti OAuth v2, API Key, dan Session Authentication.
+· Topik 3: Trigger & Action → Cara membuat pemicu (trigger) untuk memulai workflow dan aksi (action) yang akan dieksekusi.
+· Topik 4: Fitur Lanjutan (Advanced Features) → Eksplorasi fitur-fitur canggih seperti REST Hooks, Pencarian (Search), Custom Action, dan API Request.
+· Topik 5: CLI & SDK (Platform CLI) → Panduan mendalam untuk developer yang ingin membangun integrasi dengan kode menggunakan Zapier Platform CLI.
+· Topik 6: Deployment & Testing → Proses deployment, manajemen versi, pengujian, dan debugging integrasi agar siap dirilis.
+· Topik 7: Embedding & MCP → Cara menanamkan (embed) Zapier ke produk Anda sendiri serta menghubungkan agen AI ke Zapier menggunakan MCP.
+
+---
+
+Topik 1: Memulai (Getting Started) - Bagian 1
+
+Apa itu Zapier?
+
+Zapier adalah platform integrasi yang menghubungkan lebih dari 8.000 aplikasi web dan API untuk mengotomatiskan tugas-tugas yang berulang. Platform ini memungkinkan pengguna untuk membuat alur kerja otomatis yang disebut "Zaps" tanpa perlu menulis kode.
+
+Apa itu Zap?
+
+Sebuah Zap adalah alur kerja otomatis yang terdiri dari satu pemicu (trigger) dan satu atau lebih aksi (actions). Ketika Zap dinyalakan, setiap kali event pemicu terjadi, Zapier akan secara otomatis menjalankan aksi-aksi yang telah ditentukan.
+
+· Trigger (Pemicu): Sebuah event yang memulai sebuah Zap. Trigger bisa bersifat instant (langsung) atau polling (memeriksa data baru secara berkala).
+· Action (Aksi): Sebuah event yang dilakukan oleh Zap setelah dipicu. Action dapat berupa membuat, mencari, atau memperbarui data di aplikasi lain.
+
+Alat Pengembang Zapier (Integration Builder)
+
+Zapier menyediakan dua alat utama untuk membangun integrasi:
+
+1. Platform UI (Visual Builder): Alat berbasis web tanpa kode yang ideal untuk integrasi cepat dan kolaborasi tim, bahkan tanpa keahlian teknis yang mendalam.
+2. Platform CLI: Alat baris perintah untuk developer yang membutuhkan kontrol penuh atas proses integrasi, memungkinkan penggunaan kode khusus untuk menangani autentikasi, pemicu, aksi, dan pencarian.
+
+---
+
+Topik 1 bersambung ke Bagian 2. Pada bagian berikutnya, kita akan membahas lebih dalam tentang cara kerja Zaps (seperti Trigger, Action, Task, dan Step), arsitektur integrasi, serta langkah-langkah memilih antara Platform UI dan Platform CLI.
+
+Apakah Anda siap untuk melanjutkan ke Bagian 2 dari Topik 1 (Memulai)?
+
+---
+===========🔐™️®️©️🔐===========
+
+---
+
+Baik, dengan konfirmasi Anda, saya akan melanjutkan ke Topik 1, Bagian 2 — dan kali ini, setiap konsep akan langsung saya hubungkan dengan implementasi ke dalam web OS MusGo-OS 2in1.
+
+---
+
+Topik 1: Memulai (Getting Started) - Bagian 2
+
+(Dengan sudut pandang implementasi ke MusGo-OS 2in1)
+
+1. Cara Kerja Zaps → Sebagai “Task Flow” di MusGo-OS
+
+Dalam Zapier, sebuah Zap dijalankan setiap kali trigger terpicu.
+Di MusGo-OS 2in1, konsep ini bisa diimplementasikan sebagai Task Flow yang menghubungkan modul-modul dalam OS Anda.
+
+Contoh implementasi:
+
+· Trigger: User menambahkan lagu baru ke playlist di modul Musik.
+· Action: Secara otomatis, modul OS (Sistem) mencatat log aktivitas, dan modul Gudang Skil menambahkan tugas "Analisis lirik lagu".
+
+💡 Rancangan teknis:
+Di dalam MusGo-OS, buatlah tabel task_flows di database internal yang menyimpan:
+
+· trigger_module (misal: music)
+· trigger_event (misal: song_added)
+· action_module (misal: skill_hub)
+· action_type (misal: create_task)
+
+2. Instant Trigger vs Polling Trigger
+
+Zapier mengenal dua tipe trigger:
+
+· Instant (Webhook): Data dikirim langsung saat event terjadi.
+· Polling: Sistem mengecek endpoint API secara berkala.
+
+Implementasi di MusGo-OS 2in1:
+
+· Instant trigger → Gunakan event bus internal OS (misal: EventEmitter atau WebSocket antar modul).
+    Contoh: User selesai mengetik di Daily Jurnal → langsung picu analyze_mood di modul Kecerdasan.
+· Polling trigger → Untuk koneksi ke API eksternal (seperti Spotify atau Google Calendar).
+    Contoh: Setiap 15 menit, MusGo-OS mengecek playlist eksternal, lalu menyinkronkan ke modul Musik.
+
+3. Action: Membuat, Mencari, Memperbarui
+
+Di Zapier, action bisa membuat data baru, mencari data yang sudah ada, atau memperbarui.
+
+Di MusGo-OS 2in1, action bisa diarahkan ke modul internal:
+
+· Create Action: Modul Gudang Skil membuat task baru.
+· Search Action: Modul Kerja mencari file berdasarkan tag dari modul Gudang Bahan.
+· Update Action: Modul OS memperbarui status koneksi ke API eksternal.
+
+4. Platform UI vs CLI → Pilihan untuk Developer MusGo-OS
+
+Karena MusGo-OS 2in1 adalah sebuah web OS yang mungkin akan diintegrasikan dengan banyak layanan eksternal, berikut rekomendasi implementasi:
+
+Kebutuhan Gunakan Platform UI (Visual) Gunakan CLI (Kode)
+Integrasi cepat dengan API populer (Spotify, Google, Notion) ✅ ❌
+Autentikasi kompleks (OAuth dengan refresh token) ❌ ✅
+Custom logic sebelum/sesudah action ❌ ✅
+Membuat integrasi untuk pengguna non-teknis MusGo-OS ✅ ❌
+
+🛠️ Rencana teknis:
+Di dalam kode MusGo-OS, siapkan dua jalur:
+
+1. Visual Integration Manager → UI drag-and-drop untuk pengguna akhir.
+2. CLI Backend → Untuk developer yang ingin menulis kustomisasi di folder /integrations/custom.
+
+---
+
+Ringkasan Bagian 2 untuk MusGo-OS 2in1
+
+· Zap → Task Flow internal.
+· Trigger instant → Event bus OS.
+· Trigger polling → Cron + API eksternal.
+· Action → Modifikasi data di modul mana pun.
+· Pilih UI/CLI berdasarkan kompleksitas.
+
+---
+
+Apakah Anda ingin saya lanjut ke Bagian 3 dari Topik 1 (pembahasan arsitektur integrasi dan contoh kode minimal untuk MusGo-OS)?
+Atau langsung masuk ke Topik 2 (Autentikasi) dengan tetap dikaitkan ke implementasi OS Anda?
+
+---
+===========🔐™️®️©️🔐===========
+
+---
+
+Topik 2: Autentikasi (Authentication) - Bagian 1
+
+(Dengan implementasi ke MusGo-OS 2in1)
+
+---
+
+1. Mengapa Autentikasi Penting dalam Integrasi Zapier?
+
+Di Zapier, setiap integrasi yang menghubungkan ke akun pengguna di aplikasi eksternal (seperti Spotify, Google Drive, atau Notion) memerlukan autentikasi agar Zapier dapat bertindak atas nama pengguna dengan aman.
+
+Zapier mendukung beberapa metode autentikasi:
+
+· OAuth v2 (paling umum)
+· API Key
+· Session Authentication (cookies + session ID)
+· Basic Auth (username/password) — sudah jarang, tidak direkomendasikan
+
+🔐 Untuk MusGo-OS 2in1, kita perlu mengimplementasikan dua sisi autentikasi:
+
+1. Autentikasi pengguna ke MusGo-OS itu sendiri (login biasa, session/JWT).
+2. Autentikasi ke integrasi eksternal (misal: user MusGo-OS menghubungkan akun Spotify-nya ke dalam OS).
+
+---
+
+2. OAuth v2 → Metode Paling Standar dan Aman
+
+OAuth v2 memungkinkan pengguna memberikan akses terbatas ke data mereka tanpa harus memberikan password.
+
+Alur OAuth v2 di Zapier:
+
+1. Pengguna memilih integrasi (misal: Spotify).
+2. Zapier membuka halaman login Spotify.
+3. Pengguna login dan menyetujui izin.
+4. Spotify mengembalikan authorization code ke Zapier.
+5. Zapier menukar code dengan access token (dan refresh token).
+6. Access token disimpan dan digunakan untuk setiap request API.
+
+Implementasi di MusGo-OS 2in1:
+
+Mari kita buat modul oauth-manager yang dapat menangani beberapa penyedia (Spotify, Google, Notion, dll).
+
+A. Struktur Data Akun Terhubung di Database
+Buat tabel connected_accounts:
+
+Field Tipe Contoh
+id UUID acct_123
+user_id UUID user_456
+provider string spotify
+access_token string (encrypted) BQDK...
+refresh_token string (encrypted) AQDk...
+expires_at timestamp 2025-06-01 12:00:00
+scope string playlist-read,user-read-email
+
+B. Alur Kode OAuth di MusGo-OS
+
+```javascript
+// modules/oauth-manager/oauth-flow.js
+const crypto = require('crypto');
+
+class OAuthManager {
+  constructor(providerConfig) {
+    this.clientId = providerConfig.clientId;
+    this.clientSecret = providerConfig.clientSecret;
+    this.authUrl = providerConfig.authUrl;
+    this.tokenUrl = providerConfig.tokenUrl;
+    this.redirectUri = providerConfig.redirectUri;
+  }
+
+  // Langkah 1: Generate URL login
+  getAuthUrl(state, scope) {
+    const params = new URLSearchParams({
+      client_id: this.clientId,
+      redirect_uri: this.redirectUri,
+      response_type: 'code',
+      state: state,
+      scope: scope
+    });
+    return `${this.authUrl}?${params.toString()}`;
+  }
+
+  // Langkah 2: Tukar code dengan token
+  async exchangeCode(code) {
+    const response = await fetch(this.tokenUrl, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams({
+        client_id: this.clientId,
+        client_secret: this.clientSecret,
+        grant_type: 'authorization_code',
+        code: code,
+        redirect_uri: this.redirectUri
+      })
+    });
+    const data = await response.json();
+    return {
+      accessToken: data.access_token,
+      refreshToken: data.refresh_token,
+      expiresIn: data.expires_in
+    };
+  }
+
+  // Langkah 3: Refresh token saat expired
+  async refreshAccessToken(refreshToken) {
+    const response = await fetch(this.tokenUrl, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams({
+        client_id: this.clientId,
+        client_secret: this.clientSecret,
+        grant_type: 'refresh_token',
+        refresh_token: refreshToken
+      })
+    });
+    const data = await response.json();
+    return data.access_token;
+  }
+}
+```
+
+C. Menyimpan Token dengan Aman di MusGo-OS
+
+· Jangan pernah simpan token dalam teks biasa. Gunakan enkripsi dengan kunci yang disimpan di environment variable.
+· Contoh menggunakan crypto Node.js (AES-256-GCM):
+
+```javascript
+const algorithm = 'aes-256-gcm';
+const secretKey = process.env.ENCRYPTION_KEY; // 32 byte
+
+function encrypt(text) {
+  const iv = crypto.randomBytes(16);
+  const cipher = crypto.createCipheriv(algorithm, secretKey, iv);
+  let encrypted = cipher.update(text, 'utf8', 'hex');
+  encrypted += cipher.final('hex');
+  const authTag = cipher.getAuthTag();
+  return { encrypted, iv: iv.toString('hex'), authTag: authTag.toString('hex') };
+}
+```
+
+D. UI untuk Menghubungkan Akun di MusGo-OS
+
+Buat halaman sederhana di frontend MusGo-OS:
+
+· Tombol "Hubungkan Spotify"
+· Saat diklik, buka popup OAuth
+· Setelah sukses, token tersimpan dan muncul status "Terhubung"
+
+---
+
+3. API Key → Metode Sederhana untuk API Internal atau Sederhana
+
+Beberapa API (seperti OpenAI, beberapa layanan B2B) menggunakan API Key statis.
+
+Di Zapier: User cukup menyalin API Key dari penyedia dan memasukkannya ke form integrasi.
+
+Implementasi di MusGo-OS:
+
+Untuk modul internal atau integrasi dengan layanan yang hanya butuh API Key:
+
+· Simpan API Key di connected_accounts dengan provider = 'apikey'
+· Kolom access_token diisi dengan API Key (tetap dienkripsi)
+· Tidak perlu refresh token.
+
+Contoh penggunaan di action:
+
+```javascript
+async function callExternalApi(apiKey, endpoint) {
+  const response = await fetch(endpoint, {
+    headers: { 'Authorization': `Bearer ${apiKey}` }
+  });
+  return response.json();
+}
+```
+
+---
+
+4. Session Authentication → Untuk Legacy System
+
+Jarang digunakan, tapi ada di Zapier untuk aplikasi lawas yang tidak mendukung OAuth.
+Tidak direkomendasikan untuk implementasi baru di MusGo-OS, kecuali Anda terpaksa menghubungkan ke sistem internal lama yang berbasis cookie session.
+
+---
+
+Ringkasan Bagian 1 - Topik 2 (Autentikasi)
+
+Metode Kapan Pakai di MusGo-OS Tingkat Kesulitan
+OAuth v2 Integrasi dengan Spotify, Google, Notion, dll. Sedang
+API Key Layanan internal MusGo-OS sendiri atau API sederhana Rendah
+Session Auth Hanya untuk kompatibilitas dengan legacy system Tinggi
+
+🎯 Rekomendasi untuk MusGo-OS 2in1:
+
+· Untuk autentikasi pengguna ke OS → Gunakan JWT (sesi stateless).
+· Untuk integrasi OS ke layanan eksternal → Gunakan OAuth v2 (wajib untuk keamanan).
+· Untuk modul internal antar bagian OS → Gunakan API Key internal yang digenerate otomatis.
+
+---
+
+Apakah Anda ingin melanjutkan ke Bagian 2 dari Topik 2 (Implementasi lengkap OAuth multi-provider + studi kasus menghubungkan Spotify ke MusGo-OS)?
+
+---
+===========🔐™️®️©️🔐===========
+
+---
+
+Topik 2: Autentikasi (Authentication) - Bagian 2
+
+(Implementasi Lengkap OAuth Multi-Provider + Studi Kasus Spotify)
+
+---
+
+1. Desain Arsitektur OAuth untuk MusGo-OS 2in1
+
+Kita akan membangun sistem yang dapat menangani banyak penyedia (Spotify, Google, Notion, Slack, dll.) dengan konfigurasi terpusat.
+
+Struktur Folder:
+
+```
+/musgo-os
+  /modules
+    /oauth
+      /providers
+        spotify.js
+        google.js
+        notion.js
+      oauth-manager.js
+      oauth-router.js
+      token-storage.js
+  /database
+    migrations/
+      003_create_connected_accounts.sql
+```
+
+Database Schema (Lengkap):
+
+```sql
+CREATE TABLE connected_accounts (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    user_id UUID NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+    provider VARCHAR(50) NOT NULL, -- 'spotify', 'google', 'notion'
+    provider_account_id VARCHAR(255), -- ID unik dari penyedia (misal: spotify user id)
+    access_token TEXT NOT NULL, -- terenkripsi
+    refresh_token TEXT, -- terenkripsi
+    expires_at TIMESTAMP,
+    scope TEXT, -- izin yang diberikan
+    metadata JSONB, -- data tambahan (misal: nama akun, email)
+    created_at TIMESTAMP DEFAULT NOW(),
+    updated_at TIMESTAMP DEFAULT NOW(),
+    UNIQUE(user_id, provider)
+);
+
+-- Index untuk performa
+CREATE INDEX idx_connected_accounts_user_provider ON connected_accounts(user_id, provider);
+CREATE INDEX idx_connected_accounts_expires ON connected_accounts(expires_at);
+```
+
+---
+
+2. Konfigurasi Provider (Contoh: Spotify, Google)
+
+Buat file konfigurasi di providers/spotify.js:
+
+```javascript
+// modules/oauth/providers/spotify.js
+module.exports = {
+  name: 'spotify',
+  authUrl: 'https://accounts.spotify.com/authorize',
+  tokenUrl: 'https://accounts.spotify.com/api/token',
+  scope: 'playlist-read-private user-read-email',
+  redirectUri: process.env.SPOTIFY_REDIRECT_URI,
+  clientId: process.env.SPOTIFY_CLIENT_ID,
+  clientSecret: process.env.SPOTIFY_CLIENT_SECRET,
+  
+  // Fungsi untuk mendapatkan profil pengguna dari access token
+  async getUserProfile(accessToken) {
+    const res = await fetch('https://api.spotify.com/v1/me', {
+      headers: { 'Authorization': `Bearer ${accessToken}` }
+    });
+    const data = await res.json();
+    return {
+      providerAccountId: data.id,
+      email: data.email,
+      name: data.display_name
+    };
+  }
+};
+```
+
+Contoh Google Drive:
+
+```javascript
+// modules/oauth/providers/google.js
+module.exports = {
+  name: 'google',
+  authUrl: 'https://accounts.google.com/o/oauth2/v2/auth',
+  tokenUrl: 'https://oauth2.googleapis.com/token',
+  scope: 'https://www.googleapis.com/auth/drive.file https://www.googleapis.com/auth/userinfo.email',
+  redirectUri: process.env.GOOGLE_REDIRECT_URI,
+  clientId: process.env.GOOGLE_CLIENT_ID,
+  clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+  
+  async getUserProfile(accessToken) {
+    const res = await fetch('https://www.googleapis.com/oauth2/v2/userinfo', {
+      headers: { 'Authorization': `Bearer ${accessToken}` }
+    });
+    const data = await res.json();
+    return {
+      providerAccountId: data.id,
+      email: data.email,
+      name: data.name
+    };
+  }
+};
+```
+
+---
+
+3. OAuth Manager (Central)
+
+```javascript
+// modules/oauth/oauth-manager.js
+const crypto = require('crypto');
+const db = require('../../core/database');
+const { encrypt, decrypt } = require('../../core/encryption');
+
+class OAuthManager {
+  constructor(providerName) {
+    this.provider = require(`./providers/${providerName}`);
+    this.providerName = providerName;
+  }
+
+  // Langkah 1: Generate state random untuk CSRF protection
+  generateState() {
+    return crypto.randomBytes(32).toString('hex');
+  }
+
+  // Langkah 2: Dapatkan URL login
+  getAuthUrl(userId, state) {
+    const params = new URLSearchParams({
+      client_id: this.provider.clientId,
+      redirect_uri: this.provider.redirectUri,
+      response_type: 'code',
+      state: state,
+      scope: this.provider.scope
+    });
+    // Simpan state sementara di cache/redis dengan expiry 5 menit
+    this.storeState(state, userId);
+    return `${this.provider.authUrl}?${params.toString()}`;
+  }
+
+  // Langkah 3: Proses callback setelah user approve
+  async handleCallback(code, state, receivedState) {
+    // Validasi state
+    const userId = this.verifyState(state, receivedState);
+    if (!userId) throw new Error('State tidak valid');
+
+    // Tukar code dengan token
+    const tokenData = await this.exchangeCode(code);
+    
+    // Dapatkan profil user dari provider
+    const profile = await this.provider.getUserProfile(tokenData.accessToken);
+    
+    // Simpan ke database (enkripsi token)
+    await this.saveTokens(userId, {
+      ...tokenData,
+      providerAccountId: profile.providerAccountId,
+      email: profile.email,
+      name: profile.name
+    });
+    
+    return { success: true, account: profile };
+  }
+
+  async exchangeCode(code) {
+    const response = await fetch(this.provider.tokenUrl, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams({
+        client_id: this.provider.clientId,
+        client_secret: this.provider.clientSecret,
+        grant_type: 'authorization_code',
+        code: code,
+        redirect_uri: this.provider.redirectUri
+      })
+    });
+    if (!response.ok) throw new Error('Gagal menukar code');
+    return await response.json();
+  }
+
+  async saveTokens(userId, { access_token, refresh_token, expires_in, providerAccountId, email, name }) {
+    const expiresAt = new Date(Date.now() + expires_in * 1000);
+    const encryptedAccess = encrypt(access_token);
+    const encryptedRefresh = refresh_token ? encrypt(refresh_token) : null;
+    
+    await db.query(`
+      INSERT INTO connected_accounts 
+        (user_id, provider, provider_account_id, access_token, refresh_token, expires_at, scope, metadata)
+      VALUES ($1, $2, $3, $4, $5, $6, $7, $8)
+      ON CONFLICT (user_id, provider) DO UPDATE SET
+        access_token = EXCLUDED.access_token,
+        refresh_token = EXCLUDED.refresh_token,
+        expires_at = EXCLUDED.expires_at,
+        metadata = EXCLUDED.metadata,
+        updated_at = NOW()
+    `, [
+      userId, this.providerName, providerAccountId, 
+      JSON.stringify(encryptedAccess), encryptedRefresh ? JSON.stringify(encryptedRefresh) : null,
+      expiresAt, this.provider.scope,
+      JSON.stringify({ email, name })
+    ]);
+  }
+
+  // Mendapatkan access token yang valid (otomatis refresh jika expired)
+  async getValidAccessToken(userId) {
+    const row = await db.query(
+      'SELECT access_token, refresh_token, expires_at FROM connected_accounts WHERE user_id = $1 AND provider = $2',
+      [userId, this.providerName]
+    );
+    if (!row.rows[0]) return null;
+    
+    const { access_token, refresh_token, expires_at } = row.rows[0];
+    const decryptedAccess = decrypt(JSON.parse(access_token));
+    
+    // Jika masih berlaku
+    if (new Date(expires_at) > new Date()) {
+      return decryptedAccess;
+    }
+    
+    // Refresh token
+    if (!refresh_token) throw new Error('Token expired dan tidak ada refresh token');
+    const newAccessToken = await this.refreshAccessToken(decrypt(JSON.parse(refresh_token)));
+    
+    // Update database
+    const newExpiresAt = new Date(Date.now() + 3600 * 1000); // asumsi 1 jam
+    const encryptedNew = encrypt(newAccessToken);
+    await db.query(
+      'UPDATE connected_accounts SET access_token = $1, expires_at = $2 WHERE user_id = $3 AND provider = $4',
+      [JSON.stringify(encryptedNew), newExpiresAt, userId, this.providerName]
+    );
+    return newAccessToken;
+  }
+
+  async refreshAccessToken(refreshToken) {
+    const response = await fetch(this.provider.tokenUrl, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams({
+        client_id: this.provider.clientId,
+        client_secret: this.provider.clientSecret,
+        grant_type: 'refresh_token',
+        refresh_token: refreshToken
+      })
+    });
+    const data = await response.json();
+    return data.access_token;
+  }
+
+  // State management (gunakan Redis atau memory cache sederhana)
+  storeState(state, userId) {
+    // Implementasi sederhana: simpan di Map global (untuk production gunakan Redis)
+    if (!global.oauthStates) global.oauthStates = new Map();
+    global.oauthStates.set(state, { userId, expires: Date.now() + 5 * 60 * 1000 });
+  }
+
+  verifyState(state, receivedState) {
+    if (state !== receivedState) return null;
+    const entry = global.oauthStates?.get(state);
+    if (!entry || entry.expires < Date.now()) return null;
+    global.oauthStates.delete(state);
+    return entry.userId;
+  }
+}
+
+module.exports = OAuthManager;
+```
+
+---
+
+4. Route Handler untuk OAuth di MusGo-OS
+
+```javascript
+// routes/oauth.js
+const express = require('express');
+const router = express.Router();
+const OAuthManager = require('../modules/oauth/oauth-manager');
+const { requireAuth } = require('../middleware/auth');
+
+// Inisiasi OAuth (klik tombol "Hubungkan Spotify")
+router.get('/connect/:provider', requireAuth, (req, res) => {
+  const { provider } = req.params;
+  const userId = req.user.id;
+  const oauth = new OAuthManager(provider);
+  const state = oauth.generateState();
+  const authUrl = oauth.getAuthUrl(userId, state);
+  // Redirect user ke halaman login provider
+  res.redirect(authUrl);
+});
+
+// Callback setelah user approve
+router.get('/callback/:provider', async (req, res) => {
+  const { provider } = req.params;
+  const { code, state } = req.query;
+  const oauth = new OAuthManager(provider);
+  
+  try {
+    // 'receivedState' adalah state dari query, bandingkan dengan state yang disimpan
+    const result = await oauth.handleCallback(code, state, state);
+    res.json({ message: 'Akun berhasil dihubungkan', account: result.account });
+  } catch (error) {
+    res.status(400).json({ error: error.message });
+  }
+});
+
+// Daftar akun yang terhubung untuk user tertentu
+router.get('/accounts', requireAuth, async (req, res) => {
+  const userId = req.user.id;
+  const db = require('../core/database');
+  const rows = await db.query(
+    'SELECT provider, provider_account_id, metadata, expires_at FROM connected_accounts WHERE user_id = $1',
+    [userId]
+  );
+  res.json(rows.rows);
+});
+```
+
+---
+
+5. Studi Kasus: Menggunakan Token Spotify di Modul Musik
+
+Setelah user menghubungkan Spotify, modul music dapat menggunakan token tersebut untuk mengambil playlist:
+
+```javascript
+// modules/music/spotify-service.js
+const OAuthManager = require('../oauth/oauth-manager');
+
+async function getUserPlaylists(userId) {
+  const oauth = new OAuthManager('spotify');
+  const accessToken = await oauth.getValidAccessToken(userId);
+  if (!accessToken) throw new Error('Spotify tidak terhubung');
+  
+  const response = await fetch('https://api.spotify.com/v1/me/playlists', {
+    headers: { 'Authorization': `Bearer ${accessToken}` }
+  });
+  return response.json();
+}
+
+// Dipanggil dari API endpoint /api/music/playlists
+module.exports = { getUserPlaylists };
+```
+
+---
+
+6. Keamanan Tambahan untuk MusGo-OS
+
+· Enkripsi token menggunakan AES-256-GCM dengan kunci dari environment variable.
+· State parameter mencegah CSRF.
+· Redirect URI harus terdaftar di dashboard developer masing-masing provider.
+· Scope minimum — hanya minta izin yang benar-benar diperlukan.
+· Revoke token — beri pengguna opsi untuk memutuskan koneksi (hapus dari database dan panggil endpoint revoke provider).
+
+---
+
+Ringkasan Topik 2 (2 Bagian)
+
+Bagian Fokus Output untuk MusGo-OS
+1 Pengantar metode autentikasi (OAuth, API Key, Session) Tabel connected_accounts, konsep
+2 Implementasi OAuth multi-provider + studi kasus Spotify OAuthManager siap pakai, route handler, integrasi modul musik
+
+---
+
+Topik 2 selesai.
+Apakah Anda ingin melanjutkan ke Topik 3: Trigger & Action (pembuatan pemicu dan aksi internal, termasuk polling trigger dan webhook)?
+
+---
+===========🔐™️®️©️🔐===========
+
+---
+
+Topik 3: Trigger & Action - Bagian 1
+
+(Konsep Dasar Trigger & Action untuk MusGo-OS 2in1)
+
+---
+
+1. Apa itu Trigger dan Action dalam Konteks MusGo-OS?
+
+Di Zapier, Trigger adalah event yang memulai alur kerja, sedangkan Action adalah langkah yang dieksekusi setelah trigger terjadi.
+
+Di MusGo-OS 2in1, trigger dan action akan menghubungkan modul internal dan integrasi eksternal dengan cara yang mirip, namun semua berjalan di dalam OS Anda sendiri.
+
+Konsep Zapier Padanan di MusGo-OS 2in1
+Trigger Event yang terjadi di suatu modul (misal: lagu ditambahkan, file diunggah, jadwal selesai)
+Action Task yang dijalankan modul lain (misal: buat catatan, kirim notifikasi, sinkronisasi data)
+Zap Task Flow (rangkaian trigger + satu atau lebih action)
+Task History Log eksekusi yang bisa dilihat pengguna
+
+---
+
+2. Jenis Trigger yang Perlu Didukung
+
+Zapier memiliki dua jenis trigger utama. Kita akan implementasikan keduanya:
+
+A. Polling Trigger (Pull)
+
+Sistem secara berkala memeriksa endpoint API untuk data baru.
+
+Contoh penggunaan di MusGo-OS:
+
+· Cek email baru dari IMAP setiap 5 menit → lalu buat task di Gudang Skil.
+· Pantau folder Google Drive setiap jam → sinkronkan file ke Gudang Bahan.
+
+B. Instant Trigger (Push / Webhook)
+
+Event dikirim langsung saat terjadi (real-time).
+
+Contoh penggunaan di MusGo-OS:
+
+· User menekan tombol "Selesai" di Daily Jurnal → langsung panggil action analyze_mood di modul Kecerdasan.
+· Ada notifikasi dari webhook eksternal (misal: Stripe payment success) → update status pesanan.
+
+🎯 Untuk MusGo-OS yang memiliki modul real-time (chat, musik, jurnal), instant trigger akan lebih dominan, tapi polling trigger diperlukan untuk integrasi dengan API eksternal yang tidak menyediakan webhook.
+
+---
+
+3. Jenis Action yang Perlu Didukung
+
+Di Zapier, action bisa berupa:
+
+· Create: Membuat record baru di aplikasi.
+· Update: Memperbarui record yang sudah ada.
+· Search: Mencari data (bisa digunakan sebelum create untuk menghindari duplikasi).
+
+Implementasi di MusGo-OS:
+
+Tipe Action Fungsi dalam Modul Contoh
+Create Menambah data baru Modul Gudang Skil membuat task baru
+Update Mengubah data yang ada Modul Kerja menandai proyek sebagai selesai
+Search (Find) Mencari data berdasarkan kriteria Modul Gudang Bahan mencari file dengan tag tertentu
+
+---
+
+4. Arsitektur Trigger di MusGo-OS
+
+Kita akan membangun dua sistem trigger yang bekerja bersama:
+
+```
+┌─────────────────────────────────────────────────────┐
+│                   MusGo-OS Core                      │
+│  ┌─────────────────┐      ┌──────────────────────┐  │
+│  │  Event Bus      │      │  Polling Scheduler    │  │
+│  │  (untuk instant │      │  (Cron-based jobs)    │  │
+│  │   trigger)      │      │                       │  │
+│  └────────┬────────┘      └───────────┬──────────┘  │
+│           │                           │              │
+│           └──────────┬────────────────┘              │
+│                      ▼                               │
+│           ┌─────────────────────┐                    │
+│           │   Rule Engine       │                    │
+│           │ (mencocokkan event  │                    │
+│           │  ke action)         │                    │
+│           └──────────┬──────────┘                    │
+│                      ▼                               │
+│           ┌─────────────────────┐                    │
+│           │   Action Executor   │                    │
+│           └─────────────────────┘                    │
+└─────────────────────────────────────────────────────┘
+```
+
+Komponen yang Sudah Kita Buat (Topik 1 Bagian 3):
+
+· event-bus.js → untuk instant trigger internal.
+· rule-engine.js → mencocokkan event ke action.
+· executor.js → menjalankan action di modul.
+
+Sekarang kita akan menambahkan polling trigger dan menstandarkan format trigger/action agar bisa digunakan oleh pengguna non-teknis melalui UI.
+
+---
+
+5. Standarisasi Data untuk Trigger dan Action
+
+Agar rule engine bisa bekerja secara generik, setiap trigger dan action harus memiliki format JSON yang terdefinisi.
+
+Format Trigger (dari modul atau polling):
+
+```json
+{
+  "trigger_id": "music.song_added",
+  "module": "music",
+  "event": "song_added",
+  "timestamp": "2025-06-01T12:00:00Z",
+  "payload": {
+    "songId": "123",
+    "title": "Bohemian Rhapsody",
+    "artist": "Queen",
+    "duration": 355
+  },
+  "user_id": "user_456"
+}
+```
+
+Format Action (yang akan dieksekusi):
+
+```json
+{
+  "action_id": "gudang-skil.create_task",
+  "module": "gudang-skil",
+  "method": "create_task",
+  "parameters": {
+    "title": "Analisis lagu: Bohemian Rhapsody",
+    "priority": "high",
+    "tags": ["musik", "otomatis"]
+  },
+  "user_id": "user_456"
+}
+```
+
+---
+
+6. Membuat Polling Trigger (Contoh: Cek Email Baru)
+
+Misalkan kita ingin membuat polling trigger untuk modul email yang memeriksa pesan baru setiap 10 menit.
+
+Langkah 1: Buat service polling di modul email
+
+```javascript
+// modules/email/polling-trigger.js
+const { eventBus } = require('../../core/event-bus');
+
+class EmailPoller {
+  constructor() {
+    this.lastChecked = null;
+    this.intervalMinutes = 10;
+  }
+
+  async checkNewEmails(userId, connectionConfig) {
+    // Panggil API IMAP atau Gmail API
+    const emails = await this.fetchEmailsSince(this.lastChecked, connectionConfig);
+    
+    for (const email of emails) {
+      eventBus.emitEvent('email', 'new_email', {
+        userId: userId,
+        from: email.from,
+        subject: email.subject,
+        body: email.body,
+        receivedAt: email.date
+      });
+    }
+    
+    this.lastChecked = new Date();
+  }
+
+  startPolling(userId, connectionConfig) {
+    // Jalankan pertama kali
+    this.checkNewEmails(userId, connectionConfig);
+    // Jadwalkan ulang setiap interval
+    setInterval(() => {
+      this.checkNewEmails(userId, connectionConfig);
+    }, this.intervalMinutes * 60 * 1000);
+  }
+}
+```
+
+Langkah 2: Daftarkan polling trigger ke Rule Engine
+
+```javascript
+// core/rule-engine.js (tambahan)
+const pollingTriggers = new Map(); // simpan instance poller per user
+
+function registerPollingTrigger(triggerConfig) {
+  // triggerConfig = { module, event, interval, setupFunction }
+  const { userId, module, event, interval, setupFunction } = triggerConfig;
+  if (!pollingTriggers.has(`${userId}-${module}-${event}`)) {
+    const poller = setupFunction(userId);
+    pollingTriggers.set(`${userId}-${module}-${event}`, poller);
+  }
+}
+```
+
+---
+
+7. Contoh Task Flow Lengkap di MusGo-OS
+
+Skenario: Setiap kali user menambahkan lagu baru di modul music, buat task di gudang-skil untuk menganalisis lirik.
+
+Data aturan (disimpan di database):
+
+```json
+{
+  "rule_id": "rule_001",
+  "trigger_type": "instant",
+  "trigger_module": "music",
+  "trigger_event": "song_added",
+  "condition": "payload.duration > 180",
+  "actions": [
+    {
+      "module": "gudang-skil",
+      "action": "create_task",
+      "params_template": {
+        "title": "Analisis lirik: {{payload.title}}",
+        "priority": "medium"
+      }
+    },
+    {
+      "module": "notifikasi",
+      "action": "send_push",
+      "params_template": {
+        "message": "Lagu baru ditambahkan!"
+      }
+    }
+  ]
+}
+```
+
+Ketika lagu ditambahkan, rule engine akan:
+
+1. Menerima event music.song_added dengan payload.
+2. Mengecek apakah duration > 180.
+3. Jika ya, jalankan kedua action secara berurutan.
+
+---
+
+8. Action dengan Pencarian (Search) Sebelum Create
+
+Seringkali kita ingin mencari data terlebih dahulu untuk menghindari duplikasi.
+
+Contoh: Sebelum membuat task baru, cari dulu apakah sudah ada task dengan judul serupa.
+
+Format action dengan search:
+
+```json
+{
+  "actions": [
+    {
+      "type": "search",
+      "module": "gudang-skil",
+      "search_params": {
+        "title_contains": "{{payload.title}}"
+      },
+      "save_as": "existing_task"
+    },
+    {
+      "type": "create",
+      "module": "gudang-skil",
+      "condition": "{{not existing_task}}",
+      "params_template": {
+        "title": "Analisis lirik: {{payload.title}}"
+      }
+    }
+  ]
+}
+```
+
+Implementasi di executor:
+
+```javascript
+// core/executor.js
+async function executeAction(action, context) {
+  if (action.type === 'search') {
+    const result = await modules[action.module].search(action.search_params, context);
+    context[action.save_as] = result;
+    return result;
+  } else if (action.type === 'create') {
+    if (action.condition && !evaluateCondition(action.condition, context)) {
+      return { skipped: true };
+    }
+    return await modules[action.module][action.method](action.params_template, context);
+  }
+}
+```
+
+---
+
+Ringkasan Bagian 1 - Topik 3 (Trigger & Action)
+
+Konsep Implementasi di MusGo-OS
+Instant Trigger Event Bus + emitEvent dari modul mana pun
+Polling Trigger Cron/setInterval yang memanggil API dan emit event
+Create Action Panggil method create_xxx di modul target
+Search Action Panggil method find_xxx sebelum create
+Task Flow Aturan di database yang berisi trigger + satu/lebih action
+
+---
+
+Topik 3, Bagian 1 selesai.
+Apakah Anda ingin melanjutkan ke Bagian 2 dari Topik 3 yang akan membahas:
+
+· Membuat Trigger dari Webhook Eksternal (menerima data dari luar MusGo-OS)
+· Studi Kasus: Integrasi dengan API Spotify (trigger polling playlist baru)
+· UI Sederhana untuk Pengguna Membuat Task Flow
+
+---
+===========🔐™️®️©️🔐===========
+
+---
+
+Begin of part (4)
+(Lanjutan dari Topik 2, Bagian 2 — sudah selesai. Sekarang masuk ke Topik 3, Bagian 2)
+
+Topik 3: Trigger & Action - Bagian 2
+
+(Membuat Trigger dari Webhook Eksternal + Studi Kasus: Polling Trigger Spotify + UI Sederhana untuk Task Flow)
+
+---
+
+1. Membuat Trigger dari Webhook Eksternal (Instant Trigger via HTTP Callback)
+
+Di Zapier, Webhook Trigger memungkinkan sistem menerima data dari aplikasi eksternal secara real-time.
+Di MusGo-OS 2in1, kita dapat mengimplementasikan fitur serupa melalui HTTP endpoint publik yang terintegrasi dengan Event Bus.
+
+Arsitektur Webhook Trigger di MusGo-OS 2in1
+
+```
+Aplikasi Eksternal (Stripe, GitHub, dll.) 
+  → POST ke /api/webhooks/{webhook_id}
+  → Validasi Signature (HMAC/Timestamp)
+  → Emit event ke Event Bus (Layer 07)
+  → Rule Engine mencocokkan ke Action
+```
+
+Implementasi Endpoint Webhook (Node.js/Express)
+
+```javascript
+// routes/webhook.js
+const crypto = require('crypto');
+const eventBus = require('../core/event-bus');
+
+router.post('/webhooks/:webhookId', async (req, res) => {
+  const { webhookId } = req.params;
+  const signature = req.headers['x-webhook-signature'];
+  const timestamp = req.headers['x-webhook-timestamp'];
+  const rawBody = JSON.stringify(req.body);
+  
+  // Validasi HMAC-SHA256
+  const secret = await getWebhookSecret(webhookId);
+  const computed = crypto.createHmac('sha256', secret)
+    .update(timestamp + rawBody).digest('hex');
+  if (computed !== signature) return res.status(401).send('Invalid signature');
+  
+  // Emit ke Event Bus
+  eventBus.emitEvent('webhook', webhookId, {
+    payload: req.body,
+    receivedAt: new Date()
+  });
+  
+  res.json({ status: 'accepted' });
+});
+```
+
+Mendaftarkan Webhook sebagai Trigger di UI Task Flow
+
+Pengguna dapat membuat task flow dengan trigger tipe Webhook. Sistem akan:
+
+1. Menggenerate URL unik: https://musgo.app/api/webhooks/w_abc123
+2. Menyediakan secret key untuk signing.
+3. Setiap payload masuk → trigger action yang sudah ditentukan.
+
+🔐 Keamanan: Wajib verifikasi signature + timestamp (±30 detik) untuk mencegah replay attack.
+
+---
+
+2. Studi Kasus: Polling Trigger untuk Spotify (Playlist Baru)
+
+Banyak API eksternal tidak menyediakan webhook. Maka kita gunakan polling trigger dengan cron job.
+
+Langkah Implementasi di MusGo-OS 2in1
+
+A. Buat service polling di modul integrasi Spotify
+
+```javascript
+// integrations/spotify/polling-trigger.js
+const OAuthManager = require('../../modules/oauth/oauth-manager');
+const eventBus = require('../../core/event-bus');
+
+class SpotifyPlaylistPoller {
+  constructor(userId, intervalMinutes = 15) {
+    this.userId = userId;
+    this.intervalMinutes = intervalMinutes;
+    this.lastChecked = null;
+    this.oauth = new OAuthManager('spotify');
+  }
+  
+  async checkNewPlaylists() {
+    const token = await this.oauth.getValidAccessToken(this.userId);
+    const response = await fetch('https://api.spotify.com/v1/me/playlists', {
+      headers: { 'Authorization': `Bearer ${token}` }
+    });
+    const data = await response.json();
+    
+    const newPlaylists = data.items.filter(playlist => {
+      const createdAt = new Date(playlist.created_at);
+      return !this.lastChecked || createdAt > this.lastChecked;
+    });
+    
+    for (const playlist of newPlaylists) {
+      eventBus.emitEvent('spotify', 'new_playlist', {
+        userId: this.userId,
+        playlistId: playlist.id,
+        name: playlist.name,
+        tracksUrl: playlist.tracks.href
+      });
+    }
+    
+    this.lastChecked = new Date();
+  }
+  
+  start() {
+    this.checkNewPlaylists();
+    setInterval(() => this.checkNewPlaylists(), this.intervalMinutes * 60 * 1000);
+  }
+}
+```
+
+B. Daftarkan polling trigger ke sistem (saat user menghubungkan akun Spotify)
+
+```javascript
+// modules/oauth/oauth-manager.js (tambahan setelah saveTokens)
+async saveTokens(userId, tokenData) {
+  // ... simpan token ...
+  
+  // Jika provider adalah 'spotify', mulai polling trigger
+  if (this.providerName === 'spotify') {
+    const poller = new SpotifyPlaylistPoller(userId, 15);
+    poller.start();
+    // Simpan instance poller di registry global
+    activePollers.set(`${userId}-spotify-playlist`, poller);
+  }
+}
+```
+
+C. User membuat Task Flow dengan trigger "Spotify Playlist Baru"
+
+Di UI Task Flow Builder, pengguna memilih:
+
+· Trigger: Spotify → New Playlist
+· Action: Gudang Skil → Create Task (judul: "Analisis playlist: {{name}}")
+
+---
+
+3. UI Sederhana untuk Pengguna Membuat Task Flow (Low-Code)
+
+MusGo-OS 2in1 menyediakan Visual Task Flow Builder (mirip Zapier Editor) di Layer 12.
+
+Komponen UI
+
+· Panel Kiri: Daftar semua trigger yang tersedia (per modul).
+· Panel Tengah: Kanvas drag-and-drop untuk menyusun langkah (trigger → action → action...).
+· Panel Kanan: Form konfigurasi untuk setiap langkah (parameter, kondisi).
+
+Contoh JSON Task Flow yang dihasilkan UI
+
+```json
+{
+  "flow_id": "flow_001",
+  "name": "Analisis playlist baru",
+  "trigger": {
+    "type": "polling",
+    "module": "spotify",
+    "event": "new_playlist",
+    "interval": 15
+  },
+  "actions": [
+    {
+      "module": "gudang-skil",
+      "action": "create_task",
+      "params": {
+        "title": "Analisis playlist: {{trigger.payload.name}}",
+        "priority": "medium"
+      }
+    }
+  ],
+  "is_active": true,
+  "created_by": "user_456"
+}
+```
+
+Backend: Rule Engine membaca task flow dari database
+
+```javascript
+// core/rule-engine.js (perubahan)
+async function loadActiveFlows() {
+  const flows = await db.query('SELECT * FROM task_flows WHERE is_active = true');
+  for (const flow of flows) {
+    if (flow.trigger.type === 'polling') {
+      registerPollingTrigger(flow);
+    } else if (flow.trigger.type === 'instant') {
+      eventBus.on(`${flow.trigger.module}.${flow.trigger.event}`, (payload) => {
+        executeActions(flow.actions, payload);
+      });
+    }
+  }
+}
+```
+
+---
+
+4. Ringkasan Topik 3, Bagian 2
+
+Fitur Cara Kerja di MusGo-OS 2in1
+Webhook Trigger Endpoint HTTP + validasi signature → emit event
+Polling Trigger (Spotify) Cron job → cek API → emit event jika ada data baru
+UI Task Flow Builder Drag-and-drop, simpan ke database sebagai JSON
+Rule Engine Integration Load aktif flow saat boot, daftarkan ke event bus atau scheduler
+
+---
+
+Topik 3, Bagian 2 selesai.
+Apakah Anda ingin melanjutkan ke Topik 4: Fitur Lanjutan (Advanced Features) yang mencakup REST Hooks, Custom Action, dan API Request?
+
+End of part (4)
+
+---
+===========🔐™️®️©️🔐===========
+
+---
+
+Begin of part (5)
+
+Topik 4: Fitur Lanjutan (Advanced Features) - Bagian 1
+
+(REST Hooks, Pencarian (Search), Custom Action, dan API Request untuk MusGo-OS 2in1)
+
+---
+
+1. REST Hooks → Alternatif Webhook untuk Trigger Real-Time
+
+Di Zapier, REST Hooks adalah mekanisme di mana aplikasi Anda memberi tahu Zapier bahwa data baru tersedia, tanpa perlu polling. Ini lebih efisien daripada webhook biasa karena Zapier mendaftarkan endpoint ke aplikasi.
+
+Di MusGo-OS 2in1, kita bisa mengimplementasikan Hook Subscriber yang memungkinkan sistem berlangganan ke event eksternal (misalnya dari API yang mendukung webhook seperti Stripe, GitHub, atau Discord).
+
+Arsitektur Hook Subscriber di MusGo-OS
+
+```
+MusGo-OS → POST ke endpoint eksternal (subscribe)  
+API Eksternal → callback ke /api/hooks/{hook_id}  
+MusGo-OS → trigger event di Event Bus
+```
+
+Implementasi Hook Manager
+
+```javascript
+// modules/hooks/hook-manager.js
+class HookManager {
+  async subscribe(hookConfig) {
+    const { targetUrl, eventType, callbackUrl, secret } = hookConfig;
+    // Kirim permintaan subscribe ke API eksternal
+    const response = await fetch(targetUrl, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        event: eventType,
+        callback: callbackUrl,
+        secret: secret
+      })
+    });
+    const subscription = await response.json();
+    // Simpan subscription_id di database
+    await db.query('INSERT INTO hook_subscriptions ...', [subscription.id]);
+    return subscription;
+  }
+  
+  async unsubscribe(subscriptionId) {
+    // Hapus langganan
+    await fetch(`${targetUrl}/unsubscribe/${subscriptionId}`, { method: 'DELETE' });
+  }
+}
+```
+
+Studi Kasus: Langganan ke Stripe Webhook
+
+· Pengguna menghubungkan akun Stripe.
+· MusGo-OS mendaftarkan endpoint https://musgo.app/api/hooks/stripe/{user_id} ke Stripe.
+· Setiap ada event payment_intent.succeeded, Stripe mengirim callback.
+· MusGo-OS memvalidasi signature, lalu emit event stripe.payment_success.
+· Action yang terdaftar (misal: kirim notifikasi, update status pesanan) dijalankan.
+
+🔐 Keamanan: Validasi signature menggunakan secret key yang disimpan di Vault.
+
+---
+
+2. Pencarian (Search) → Mencari Data Sebelum Aksi
+
+Di Zapier, Search Action digunakan untuk mencari data yang sudah ada di aplikasi target sebelum melakukan create atau update, untuk menghindari duplikasi.
+
+Di MusGo-OS 2in1, kita sudah mulai membahas di Topik 3 Bagian 1. Sekarang kita akan perdalam dengan implementasi lengkap.
+
+Jenis Search yang Didukung
+
+Tipe Search Kapan Digunakan
+Find Mencari satu record (pertama yang cocok)
+Find or Create Jika tidak ditemukan, buat baru
+Find Many Mengembalikan semua record yang cocok
+
+Contoh: Sebelum membuat task di Gudang Skil, cek apakah sudah ada task dengan judul serupa
+
+JSON Task Flow dengan Search:
+
+```json
+{
+  "actions": [
+    {
+      "type": "search",
+      "module": "gudang-skil",
+      "method": "find_task",
+      "params": {
+        "title_contains": "{{trigger.payload.title}}"
+      },
+      "save_as": "existing_task"
+    },
+    {
+      "type": "create",
+      "module": "gudang-skil",
+      "condition": "{{existing_task == null}}",
+      "params": {
+        "title": "Analisis playlist: {{trigger.payload.title}}"
+      }
+    }
+  ]
+}
+```
+
+Implementasi Search di Modul Gudang Skil
+
+```javascript
+// modules/gudang-skil/task-service.js
+async function find_task(criteria) {
+  const { title_contains, status, priority } = criteria;
+  let query = 'SELECT * FROM tasks WHERE user_id = $1';
+  const params = [currentUserId];
+  if (title_contains) {
+    query += ' AND title ILIKE $' + (params.length + 1);
+    params.push(`%${title_contains}%`);
+  }
+  if (status) {
+    query += ' AND status = $' + (params.length + 1);
+    params.push(status);
+  }
+  const result = await db.query(query + ' LIMIT 1', params);
+  return result.rows[0] || null;
+}
+
+async function create_task(taskData) {
+  // ... implementasi create
+}
+```
+
+Executor yang Mendukung Search + Conditional
+
+```javascript
+// core/executor.js (perluasan)
+async function executeAction(action, context) {
+  switch (action.type) {
+    case 'search':
+      const result = await modules[action.module][action.method](action.params, context);
+      if (action.save_as) context[action.save_as] = result;
+      return result;
+      
+    case 'create':
+      // Evaluasi kondisi jika ada
+      if (action.condition && !evaluateCondition(action.condition, context)) {
+        return { skipped: true, reason: action.condition };
+      }
+      return await modules[action.module][action.method](action.params, context);
+      
+    case 'update':
+      // ... update logic
+      break;
+  }
+}
+
+function evaluateCondition(condition, context) {
+  // Contoh: "{{existing_task == null}}" atau "{{payload.amount > 100}}"
+  // Gunakan engine seperti expr-eval atau jsep
+  const expr = condition.replace(/{{(.*?)}}/g, (_, key) => {
+    return context[key.trim()] ?? 'null';
+  });
+  return eval(expr); // Hati-hati! Gunakan sandbox di production
+}
+```
+
+---
+
+3. Custom Action → Aksi Kustom dengan Kode Sendiri
+
+Di Zapier, Custom Action memungkinkan developer menulis kode JavaScript (dengan akses ke fetch, store, bundle) untuk melakukan logika yang tidak tersedia sebagai action standar.
+
+Di MusGo-OS 2in1, kita akan menyediakan Custom Code Action yang mirip, namun dieksekusi dalam sandbox untuk keamanan.
+
+Arsitektur Custom Action
+
+· Pengguna menulis kode JavaScript di UI (dengan editor Monaco).
+· Kode disimpan sebagai string di database.
+· Saat task flow dijalankan, executor memanggil sandbox engine (misal: isolated-vm atau vm2) untuk mengeksekusi kode.
+· Kode memiliki akses ke input (dari trigger/action sebelumnya), fetch (terbatas), dan return output.
+
+Contoh Custom Action: Format Tanggal Kustom
+
+```javascript
+// Kode yang ditulis user di UI
+async function run(input) {
+  const date = new Date(input.timestamp);
+  const formatted = date.toLocaleDateString('id-ID', {
+    day: 'numeric', month: 'long', year: 'numeric'
+  });
+  return { formattedDate: formatted };
+}
+```
+
+Implementasi Sandbox Executor
+
+```javascript
+// core/custom-action-sandbox.js
+const ivm = require('isolated-vm');
+
+async function runCustomAction(code, input, timeoutMs = 5000) {
+  const isolate = new ivm.Isolate({ memoryLimit: 32 });
+  const context = await isolate.createContext();
+  
+  // Sediakan fetch terbatas (hanya ke whitelist domain)
+  const jail = context.global;
+  await jail.set('global', jail.derefInto());
+  await jail.set('input', input);
+  await jail.set('fetch', async (url) => {
+    if (!isAllowedDomain(url)) throw new Error('Domain not allowed');
+    return await fetch(url);
+  });
+  
+  const script = await isolate.compileScript(`
+    const result = (async () => {
+      ${code}
+      return await run(input);
+    })();
+    result;
+  `);
+  const output = await script.run(context, { timeout: timeoutMs });
+  return output;
+}
+```
+
+Keamanan Custom Action
+
+· Isolasi memori dan timeout (5 detik).
+· Domain whitelist untuk fetch.
+· Tidak ada akses ke file system atau jaringan internal.
+· Log eksekusi dicatat immutable.
+
+---
+
+4. API Request Action → HTTP Request Generik
+
+Di Zapier, Webhook Action (biasanya disebut "Webhook by Zapier") memungkinkan Anda mengirim HTTP request (GET, POST, PUT, DELETE) ke endpoint mana pun.
+
+Di MusGo-OS 2in1, kita akan menyediakan HTTP Request Action yang dapat dikonfigurasi sepenuhnya oleh pengguna.
+
+Konfigurasi dalam UI
+
+Field Contoh
+Method POST
+URL https://api.telegram.org/bot{{token}}/sendMessage
+Headers Content-Type: application/json
+Body {"chat_id": "{{chat_id}}", "text": "{{payload.title}}"}
+Authentication (opsional) Basic Auth / Bearer Token
+
+Implementasi Executor untuk HTTP Request
+
+```javascript
+// actions/http-request.js
+async function executeHttpRequest(config, context) {
+  // Interpolasi template (misal: {{payload.title}})
+  const url = interpolate(config.url, context);
+  const headers = interpolate(config.headers, context);
+  const body = config.body ? JSON.parse(interpolate(config.body, context)) : undefined;
+  
+  // Tambahkan auth jika ada
+  if (config.auth === 'bearer') {
+    headers['Authorization'] = `Bearer ${interpolate(config.token, context)}`;
+  }
+  
+  const response = await fetch(url, {
+    method: config.method,
+    headers,
+    body: body ? JSON.stringify(body) : undefined
+  });
+  
+  const responseData = await response.json();
+  return { status: response.status, data: responseData };
+}
+```
+
+Contoh Penggunaan: Kirim notifikasi ke Telegram saat lagu baru ditambahkan
+
+· Trigger: music.song_added
+· Action: HTTP Request
+  · Method: POST
+  · URL: https://api.telegram.org/bot123456:ABC-DEF/sendMessage
+  · Body: {"chat_id": "12345", "text": "Lagu baru: {{payload.title}} oleh {{payload.artist}}"}
+
+---
+
+5. Ringkasan Topik 4 (Fitur Lanjutan)
+
+Fitur Deskripsi Implementasi di MusGo-OS 2in1
+REST Hooks Langganan ke event eksternal via callback Hook Manager + subscribe/unsubscribe
+Search Action Mencari data sebelum create/update Method find_task + kondisi di executor
+Custom Action Kode JavaScript kustom dalam sandbox Isolated VM (isolated-vm) + domain whitelist
+HTTP Request Action Request HTTP generik ke API eksternal Fetch dengan interpolasi template
+
+---
+
+Topik 4 selesai.
+Apakah Anda ingin melanjutkan ke Topik 5: CLI & SDK (Platform CLI) yang membahas cara membangun integrasi dengan kode menggunakan Zapier Platform CLI dan bagaimana MusGo-OS 2in1 dapat menyediakan SDK serupa?
+
+End of part (5)
+
+---
+===========🔐™️®️©️🔐===========
+
+---
+
+Begin of part (6)
+
+Topik 5: CLI & SDK (Platform CLI) - Bagian 1
+
+(Pengenalan Zapier Platform CLI dan Konsep SDK untuk MusGo-OS 2in1)
+
+---
+
+1. Apa itu Zapier Platform CLI?
+
+Zapier menyediakan dua alat untuk membangun integrasi:
+
+· Platform UI (Visual Builder) → Tanpa kode, cocok untuk integrasi sederhana.
+· Platform CLI → Berbasis kode (Node.js), cocok untuk integrasi kompleks yang membutuhkan logika kustom, autentikasi rumit (OAuth2 with refresh), atau kontrol penuh atas request/response.
+
+Fitur Zapier Platform CLI:
+
+· Membuat, menguji, dan menerbitkan integrasi secara lokal.
+· Mendukung autentikasi OAuth v2, API Key, Session Auth.
+· Menyediakan create, search, dan trigger (polling + REST hooks).
+· Memiliki testing framework bawaan (zapier test).
+· Dapat di-deploy ke Zapier dan dibagikan secara privat atau publik.
+
+Struktur Proyek Zapier CLI:
+
+```
+my-integration/
+├── .zapier/
+├── authentication.js   # Konfigurasi auth (OAuth, API Key, dll)
+├── triggers/
+│   └── new_playlist.js # Definisi trigger polling atau hook
+├── creates/
+│   └── create_task.js  # Definisi action create
+├── searches/
+│   └── find_task.js    # Definisi action search
+├── test/               # Unit tests
+├── index.js            # Entry point, mendaftarkan semua resources
+└── package.json
+```
+
+Contoh Definisi Trigger (Polling) di Zapier CLI:
+
+```javascript
+// triggers/new_playlist.js
+module.exports = {
+  key: 'new_playlist',
+  noun: 'Playlist',
+  display: { label: 'New Playlist', description: 'Triggers when a new playlist is created.' },
+  operation: {
+    perform: async (z, bundle) => {
+      const response = await z.request({
+        url: 'https://api.spotify.com/v1/me/playlists',
+        headers: { Authorization: `Bearer ${bundle.authData.access_token}` }
+      });
+      return response.data.items;
+    },
+    sample: { id: '123', name: 'My Playlist' }
+  }
+};
+```
+
+---
+
+2. Konsep SDK untuk MusGo-OS 2in1
+
+MusGo-OS 2in1, sebagai Sovereign AI Operating System, perlu menyediakan SDK (Software Development Kit) untuk memungkinkan pengembang eksternal membangun:
+
+· Integrasi kustom dengan aplikasi pihak ketiga (mirip Zapier integrations).
+· Plugin yang berjalan di dalam OS (menambah fitur baru).
+· Agen AI kustom (persona baru dengan pengetahuan spesifik).
+
+SDK ini akan menjadi jembatan antara Core OS yang tertutup (closed-source) dan ekosistem pengembang eksternal.
+
+Prinsip Desain SDK MusGo-OS 2in1
+
+Prinsip Deskripsi
+Keamanan (Zero-Trust) SDK tidak memiliki akses ke kode inti OS. Semua komunikasi melalui API Gateway (Layer 09) dengan rate limiting dan validasi signature.
+Isolasi Multi-Tenant Kode dari pengembang yang berbeda berjalan dalam sandbox terpisah.
+Kepatuhan Konstitusional Setiap action/trigger yang dibuat dengan SDK wajib melewati Layer 00 (Governor) dan Layer 06 (Policy Guard) saat dijalankan.
+Bahasa Pendukung SDK akan tersedia dalam TypeScript/JavaScript (untuk frontend/backend Node.js) dan Python (untuk agen AI dan data science).
+
+---
+
+3. Arsitektur SDK MusGo-OS 2in1
+
+```
+┌────────────────────────────────────────────────────────────┐
+│                   Developer Workstation                     │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │  npm install @musgo/sdk   atau   pip install musgo-sdk │  │
+│  └──────────────────────────────────────────────────────┘  │
+└────────────────────────────────────────────────────────────┘
+                              │
+                              │ API calls (HTTPS + Signature)
+                              ▼
+┌────────────────────────────────────────────────────────────┐
+│              MusGo-OS API Gateway (Layer 09)                │
+│  - Validasi API Key / JWT                                   │
+│  - Rate limiting per developer                              │
+│  - Logging immutable                                        │
+└────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌────────────────────────────────────────────────────────────┐
+│              Sandbox Execution (Layer 01/05)                │
+│  - Kode pengembang dijalankan dalam lingkungan terisolasi   │
+│  - Akses terbatas ke fetch, db, dsb.                        │
+└────────────────────────────────────────────────────────────┘
+```
+
+---
+
+4. Contoh Penggunaan SDK (TypeScript) untuk Membuat Trigger Sederhana
+
+Developer ingin membuat integrasi yang memicu setiap kali ada file baru di Dropbox.
+
+Instalasi:
+
+```bash
+npm install @musgo/sdk
+```
+
+File integrasi (my-dropbox-integration.ts):
+
+```typescript
+import { MusGoIntegration, Trigger, Action } from '@musgo/sdk';
+
+const integration = new MusGoIntegration({
+  name: 'Dropbox Plus',
+  version: '1.0.0',
+  authentication: {
+    type: 'oauth2',
+    clientId: process.env.DROPBOX_CLIENT_ID,
+    clientSecret: process.env.DROPBOX_CLIENT_SECRET,
+    authUrl: 'https://www.dropbox.com/oauth2/authorize',
+    tokenUrl: 'https://api.dropboxapi.com/oauth2/token',
+    scope: 'files.metadata.read'
+  }
+});
+
+// Definisikan trigger polling
+integration.addTrigger({
+  key: 'new_file',
+  noun: 'File',
+  display: { label: 'New File', description: 'Triggers when a new file is added.' },
+  operation: {
+    type: 'polling',
+    perform: async (z, bundle) => {
+      const response = await z.request({
+        url: 'https://api.dropboxapi.com/2/files/list_folder',
+        method: 'POST',
+        body: { path: '', recursive: false }
+      });
+      return response.data.entries.filter(f => f['.tag'] === 'file');
+    }
+  }
+});
+
+export default integration;
+```
+
+Deploy ke MusGo-OS:
+
+```bash
+musgo deploy --integration my-dropbox-integration.ts --visibility private
+```
+
+Setelah deploy, pengguna MusGo-OS dapat menghubungkan akun Dropbox mereka dan menggunakan trigger new_file di Task Flow Builder mereka.
+
+---
+
+5. Perbandingan Zapier Platform CLI vs MusGo-OS SDK
+
+Aspek Zapier CLI MusGo-OS SDK (rencana)
+Bahasa JavaScript (Node.js) TypeScript/JavaScript + Python
+Autentikasi OAuth v2, API Key, Session OAuth v2, API Key, (Session tidak didukung)
+Trigger Polling, REST Hooks Polling, Webhook, REST Hooks
+Action Create, Update, Search Create, Update, Search, HTTP Request, Custom Code
+Testing zapier test (built-in) musgo test + integrasi dengan sandbox
+Deployment Zapier platform MusGo-OS API Gateway (self-hosted atau cloud)
+Keamanan Kredensial disimpan di Zapier Kredensial dienkripsi di Vault OS, developer tidak pernah melihat token pengguna
+Monetisasi Zapier mengambil komisi Pengembang dapat menjual integrasi di App Market MusGo (komisi 30%)
+
+---
+
+6. Langkah Implementasi SDK di MusGo-OS 2in1 (Fase 1)
+
+Langkah Deskripsi Timeline (estimasi)
+1 Rancang API Gateway (Layer 09) yang menerima request dari SDK Minggu 1-2
+2 Implementasi sistem autentikasi developer (API Key + HMAC signature) Minggu 3
+3 Buat SDK dasar (TypeScript) untuk membuat trigger polling sederhana Minggu 4-5
+4 Implementasi sandbox eksekusi untuk kode developer (gunakan isolated-vm atau containers) Minggu 6-7
+5 Tambahkan dukungan OAuth untuk integrasi (developer dapat mendaftarkan OAuth client) Minggu 8
+6 Buat dokumentasi dan contoh integrasi Minggu 9-10
+
+---
+
+7. Ringkasan Topik 5 (Bagian 1)
+
+Topik Poin Utama
+Zapier Platform CLI Alat berbasis kode untuk integrasi kompleks, support OAuth, testing, deployment.
+SDK MusGo-OS Memungkinkan developer eksternal membuat integrasi, plugin, dan agen kustom dengan aman.
+Arsitektur SDK API Gateway + Sandbox + Validasi Konstitusional.
+Contoh Kode Trigger Dropbox polling menggunakan TypeScript.
+Perbandingan MusGo-OS SDK lebih terintegrasi dengan sistem kedaulatan (Governor, Policy Guard).
+
+---
+
+Topik 5, Bagian 1 selesai.
+Apakah Anda ingin melanjutkan ke Bagian 2 dari Topik 5 yang akan membahas detail implementasi sandbox execution, sistem autentikasi developer, serta contoh pembuatan action dan search dengan SDK?
+
+End of part (6)
+
+---
+===========🔐™️®️©️🔐===========
+
+---
+
+Begin of part (7)
+
+Topik 5: CLI & SDK (Platform CLI) - Bagian 2
+
+(Implementasi Sandbox Execution, Autentikasi Developer, dan Contoh Action/Search dengan SDK)
+
+---
+
+1. Sandbox Execution untuk Kode Developer
+
+Kode yang ditulis oleh developer eksternal (misalnya dalam Custom Action atau integrasi kustom) wajib dijalankan dalam lingkungan yang terisolasi untuk mencegah:
+
+· Akses ke file sistem atau jaringan internal OS.
+· Ekseskusi yang terlalu lama (resource exhaustion).
+· Manipulasi data tenant lain.
+
+Pilihan Teknologi Sandbox di MusGo-OS 2in1
+
+Teknologi Kelebihan Kekurangan Pilihan di MusGo-OS
+isolated-vm (Node.js) Isolasi memori, waktu eksekusi, dan akses global Tidak bisa menjalankan kode asinkron dengan mudah? (sebenarnya bisa) ✅ Utama untuk kode JS/TS
+vm2 (deprecated) Mudah digunakan Tidak aman untuk kode tidak tepercaya ❌ Tidak digunakan
+Docker container Isolasi sistem operasi penuh Overhead besar, lambat untuk eksekusi singkat ✅ Opsional untuk integrasi berat
+WebAssembly (Wasm) Aman, cepat, cross-platform Perlu kompilasi 🔄 Masa depan
+
+Implementasi dengan isolated-vm
+
+```javascript
+// services/sandbox/isolated-vm-executor.js
+const ivm = require('isolated-vm');
+
+class SandboxExecutor {
+  constructor() {
+    this.defaultMemoryLimit = 64; // MB
+    this.defaultTimeout = 5000;   // ms
+  }
+  
+  async execute(code, input, options = {}) {
+    const isolate = new ivm.Isolate({ memoryLimit: options.memoryLimit || this.defaultMemoryLimit });
+    const context = await isolate.createContext();
+    const jail = context.global;
+    
+    // Sediakan API terbatas
+    await jail.set('global', jail.derefInto());
+    await jail.set('input', input);
+    
+    // Fetch dengan domain whitelist (bisa dikonfigurasi per developer)
+    const allowedDomains = options.allowedDomains || ['api.github.com', 'api.spotify.com'];
+    await jail.set('fetch', async (url) => {
+      const urlObj = new URL(url);
+      if (!allowedDomains.includes(urlObj.hostname)) {
+        throw new Error(`Domain ${urlObj.hostname} tidak diizinkan.`);
+      }
+      const response = await fetch(url);
+      return await response.json();
+    });
+    
+    // Console.log terbatas (redirect ke logger internal)
+    await jail.set('console', {
+      log: (...args) => console.log('[Sandbox]', ...args)
+    });
+    
+    // Eksekusi kode yang diberikan
+    const scriptCode = `
+      const result = (async () => {
+        ${code}
+        return await run(input);
+      })();
+      result;
+    `;
+    
+    const script = await isolate.compileScript(scriptCode);
+    const output = await script.run(context, { timeout: options.timeout || this.defaultTimeout });
+    
+    // Bersihkan isolate
+    isolate.dispose();
+    return output;
+  }
+}
+```
+
+Integrasi dengan Custom Action di Task Flow
+
+Di database, Custom Action disimpan sebagai:
+
+```json
+{
+  "action_id": "cust_001",
+  "type": "custom_code",
+  "language": "javascript",
+  "code": "async function run(input) { return { formatted: input.text.toUpperCase() }; }",
+  "sandbox_options": {
+    "memory_limit": 32,
+    "timeout": 3000,
+    "allowed_domains": []
+  }
+}
+```
+
+Saat executor memanggil action ini:
+
+```javascript
+// core/executor.js (tambahan)
+case 'custom_code':
+  const sandbox = new SandboxExecutor();
+  const output = await sandbox.execute(
+    action.code, 
+    context, 
+    action.sandbox_options
+  );
+  return output;
+```
+
+---
+
+2. Autentikasi Developer dan Manajemen API Key
+
+Developer yang ingin menggunakan SDK harus mendaftar dan mendapatkan API Key yang digunakan untuk:
+
+· Mengakses API Gateway (Layer 09).
+· Melakukan deploy integrasi.
+· Mengelola integrasi yang telah dibuat.
+
+Skema Database Developer
+
+```sql
+CREATE TABLE developers (
+    id UUID PRIMARY KEY,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    api_key_hash VARCHAR(255) NOT NULL,  -- hash dari API key (bcrypt)
+    api_key_prefix VARCHAR(10),           -- untuk identifikasi (misal: musgo_dev_abc123)
+    name VARCHAR(100),
+    tier VARCHAR(20) DEFAULT 'free',      -- free, pro, enterprise
+    created_at TIMESTAMP,
+    last_active TIMESTAMP
+);
+
+CREATE TABLE integrations (
+    id UUID PRIMARY KEY,
+    developer_id UUID REFERENCES developers(id),
+    name VARCHAR(100),
+    version VARCHAR(20),
+    visibility VARCHAR(20),               -- private, team, public
+    definition JSONB,                     -- definisi lengkap integrasi (trigger, action, auth)
+    is_active BOOLEAN,
+    created_at TIMESTAMP,
+    updated_at TIMESTAMP
+);
+```
+
+Proses Autentikasi Request dari SDK
+
+Setiap request dari SDK ke API Gateway wajib menyertakan header:
+
+· X-API-Key: API key developer (plain text).
+· X-Timestamp: Unix timestamp.
+· X-Signature: HMAC-SHA256 dari (timestamp + body) menggunakan API key sebagai secret.
+
+Di API Gateway (Layer 09):
+
+```javascript
+// middleware/developer-auth.js
+const crypto = require('crypto');
+
+async function validateDeveloperRequest(req, res, next) {
+  const apiKey = req.headers['x-api-key'];
+  const timestamp = req.headers['x-timestamp'];
+  const signature = req.headers['x-signature'];
+  
+  if (!apiKey || !timestamp || !signature) {
+    return res.status(401).json({ error: 'Missing authentication headers' });
+  }
+  
+  // Cek timestamp (maks ±30 detik)
+  const now = Math.floor(Date.now() / 1000);
+  if (Math.abs(now - parseInt(timestamp)) > 30) {
+    return res.status(401).json({ error: 'Request expired' });
+  }
+  
+  // Cari developer berdasarkan api_key prefix (untuk efisiensi)
+  const prefix = apiKey.substring(0, 15);
+  const developer = await db.query(
+    'SELECT id, api_key_hash FROM developers WHERE api_key_prefix = $1',
+    [prefix]
+  );
+  if (!developer.rows[0]) return res.status(401).json({ error: 'Invalid API key' });
+  
+  // Verifikasi hash API key
+  const isValid = await bcrypt.compare(apiKey, developer.rows[0].api_key_hash);
+  if (!isValid) return res.status(401).json({ error: 'Invalid API key' });
+  
+  // Verifikasi signature
+  const body = JSON.stringify(req.body);
+  const expectedSignature = crypto.createHmac('sha256', apiKey)
+    .update(timestamp + body).digest('hex');
+  if (signature !== expectedSignature) {
+    return res.status(401).json({ error: 'Invalid signature' });
+  }
+  
+  req.developer = { id: developer.rows[0].id };
+  next();
+}
+```
+
+---
+
+3. Contoh Pembuatan Action Search dengan SDK (Python)
+
+Selain TypeScript, MusGo-OS SDK juga mendukung Python. Berikut contoh action search untuk mencari file di modul Gudang Bahan.
+
+Instalasi SDK Python:
+
+```bash
+pip install musgo-sdk
+```
+
+Definisi search action (search_file.py):
+
+```python
+from musgo_sdk import MusGoIntegration, SearchAction
+
+integration = MusGoIntegration(
+    name="Gudang Bahan Plus",
+    version="1.0.0",
+    authentication={
+        "type": "api_key",
+        "fields": [{"key": "api_key", "label": "API Key", "required": True}]
+    }
+)
+
+@integration.add_search(key="search_file", noun="File")
+class SearchFile(SearchAction):
+    display = {"label": "Search File", "description": "Find file by name or tag."}
+    
+    def perform(self, bundle):
+        api_key = bundle.auth_data["api_key"]
+        query = bundle.input_data
+        
+        # Panggil internal API MusGo-OS
+        response = self.request(
+            method="GET",
+            url="https://musgo.app/api/internal/gudang-bahan/search",
+            params={"name": query.get("filename"), "tag": query.get("tag")},
+            headers={"Authorization": f"Bearer {api_key}"}
+        )
+        return response.json().get("files", [])
+    
+    def input_fields(self):
+        return [
+            {"key": "filename", "label": "File Name", "type": "string", "required": False},
+            {"key": "tag", "label": "Tag", "type": "string", "required": False}
+        ]
+    
+    def output_fields(self):
+        return [
+            {"key": "id", "label": "File ID"},
+            {"key": "name", "label": "File Name"},
+            {"key": "tags", "label": "Tags", "type": "list"}
+        ]
+
+if __name__ == "__main__":
+    integration.deploy()
+```
+
+Hasil deploy: Integrasi ini akan muncul di App Market MusGo-OS dan dapat dipasang oleh pengguna. Setelah memasang, pengguna dapat menggunakan action "Search File" di Task Flow Builder mereka.
+
+---
+
+4. Testing Framework untuk SDK
+
+MusGo-OS SDK menyediakan testing framework untuk memastikan integrasi berfungsi sebelum di-deploy.
+
+Contoh test (Jest untuk TypeScript):
+
+```typescript
+// __tests__/dropbox-integration.test.ts
+import { createTestBundle } from '@musgo/sdk/testing';
+import myIntegration from '../my-dropbox-integration';
+
+describe('Dropbox Integration', () => {
+  it('should fetch new files', async () => {
+    const bundle = createTestBundle({
+      authData: { access_token: 'mock_token' },
+      inputData: {}
+    });
+    
+    const results = await myIntegration.triggers.new_file.operation.perform(null, bundle);
+    expect(results).toBeInstanceOf(Array);
+    expect(results[0]).toHaveProperty('name');
+  });
+});
+```
+
+Jalankan test:
+
+```bash
+musgo test --integration my-dropbox-integration.ts
+```
+
+---
+
+5. Deployment dan Manajemen Versi
+
+Setelah integrasi selesai, developer dapat melakukan deploy:
+
+```bash
+musgo deploy --integration my-integration.ts --version 1.0.0 --visibility private
+```
+
+Sistem akan:
+
+1. Memvalidasi struktur integrasi (wajib memenuhi schema).
+2. Memeriksa tidak ada akses ilegal (misal: eval, require module terlarang).
+3. Menyimpan definisi integrasi ke database.
+4. Mengaktifkan endpoint API untuk integrasi tersebut.
+
+Manajemen versi:
+
+· Setiap integrasi dapat memiliki banyak versi.
+· Pengguna dapat memilih versi tertentu saat memasang integrasi.
+· Developer dapat melakukan deprecation version dengan memberikan warning ke pengguna.
+
+---
+
+6. Ringkasan Topik 5 (Bagian 2)
+
+Komponen Implementasi di MusGo-OS 2in1
+Sandbox Execution Menggunakan isolated-vm dengan batasan memori, timeout, domain whitelist.
+Autentikasi Developer API Key + HMAC signature, timestamp validation, bcrypt hash.
+SDK Python Mendukung definisi search, create, trigger dengan decorator.
+Testing Framework musgo test dengan mocking bundle.
+Deployment Validasi + simpan ke database, dukungan versioning.
+
+---
+
+Topik 5 selesai (2 bagian).
+Apakah Anda ingin melanjutkan ke Topik 6: Deployment & Testing yang membahas proses deployment integrasi, manajemen versi, pengujian, debugging, dan persiapan rilis ke App Market?
+
+End of part (7)
+
+---
+===========🔐™️®️©️🔐===========
+
+---
+
+Begin of part (8)
+
+Topik 6: Deployment & Testing - Bagian 1
+
+(Proses Deployment Integrasi, Manajemen Versi, dan Pengujian untuk MusGo-OS 2in1)
+
+---
+
+1. Siklus Hidup Integrasi di MusGo-OS 2in1
+
+Setiap integrasi yang dibuat developer (menggunakan SDK) melewati siklus hidup berikut:
+
+```
+Development → Local Testing → Deployment (Sandbox) → Review (jika public) → Production → Versioning → Deprecation
+```
+
+MusGo-OS menyediakan tools untuk setiap tahap, mirip dengan Zapier tetapi dengan tambahan lapisan konstitusional (Governor & Policy Guard) yang memvalidasi integrasi sebelum boleh diakses pengguna.
+
+---
+
+2. Deployment Integrasi ke MusGo-OS
+
+A. Mode Deployment
+
+Mode Deskripsi Penggunaan
+Sandbox Integrasi di-deploy ke environment uji, hanya bisa diakses oleh developer sendiri Development, debugging awal
+Production Integrasi aktif, dapat dipasang oleh pengguna (tergantung visibility) Rilis resmi
+Review Menunggu approval dari tim MusGo (jika visibility = public) Sebelum publikasi ke App Market
+
+B. Perintah Deployment
+
+Developer menggunakan CLI:
+
+```bash
+# Deploy ke sandbox
+musgo deploy --integration ./my-integration --env sandbox
+
+# Deploy ke production (private - hanya developer yang bisa memasang)
+musgo deploy --integration ./my-integration --env production --visibility private
+
+# Deploy ke production (team - anggota tim developer bisa memasang)
+musgo deploy --integration ./my-integration --env production --visibility team --team-id team_123
+
+# Deploy ke production (public - perlu review)
+musgo deploy --integration ./my-integration --env production --visibility public --wait-for-review
+```
+
+C. Validasi Otomatis Sebelum Deployment
+
+Sistem akan melakukan validasi otomatis terhadap integrasi yang di-deploy:
+
+```javascript
+// services/deployment/validator.js
+class IntegrationValidator {
+  async validate(integrationDef) {
+    const checks = [
+      this.checkAuthentication(integrationDef.authentication),
+      this.checkTriggers(integrationDef.triggers),
+      this.checkActions(integrationDef.actions),
+      this.checkSearches(integrationDef.searches),
+      this.checkNoDangerousCode(integrationDef.code), // eval, require('fs'), dll
+      this.checkConstitutionalCompliance(integrationDef) // Tidak melanggar Layer 00/06
+    ];
+    
+    const results = await Promise.all(checks);
+    const errors = results.filter(r => !r.passed);
+    if (errors.length > 0) {
+      throw new DeploymentError(`Validasi gagal: ${errors.map(e => e.message).join(', ')}`);
+    }
+    return true;
+  }
+  
+  async checkConstitutionalCompliance(integrationDef) {
+    // Contoh: Pastikan integrasi tidak mencoba mem-bypass musyawarah
+    if (integrationDef.triggers.some(t => t.operation.type === 'instant' && !t.operation.webhook_validation)) {
+      return { passed: false, message: 'Instant trigger harus memiliki validasi signature' };
+    }
+    return { passed: true };
+  }
+}
+```
+
+---
+
+3. Manajemen Versi Integrasi
+
+Setiap integrasi memiliki semantic versioning (major.minor.patch). Pengguna dapat memilih versi tertentu saat memasang.
+
+Skema Database Versi
+
+```sql
+CREATE TABLE integration_versions (
+    id UUID PRIMARY KEY,
+    integration_id UUID REFERENCES integrations(id),
+    version VARCHAR(20), -- misal: '1.2.3'
+    changelog TEXT,
+    definition JSONB,
+    status VARCHAR(20), -- 'sandbox', 'production', 'deprecated', 'archived'
+    deployed_at TIMESTAMP,
+    deprecated_at TIMESTAMP
+);
+
+CREATE TABLE installation_integration_version (
+    installation_id UUID REFERENCES installations(id),
+    integration_version_id UUID REFERENCES integration_versions(id),
+    pinned_version VARCHAR(20) -- versi spesifik yang digunakan, atau 'latest'
+);
+```
+
+Kebijakan Versi di MusGo-OS
+
+Versi Perubahan Dampak ke Pengguna
+Patch (1.0.0 → 1.0.1) Bug fix, tidak ada perubahan API Otomatis update, tidak perlu persetujuan
+Minor (1.0.0 → 1.1.0) Penambahan fitur, backward compatible Notifikasi ke pengguna, mereka bisa pilih update
+Major (1.0.0 → 2.0.0) Breaking changes Pengguna harus manual upgrade, integrasi versi lama tetap berjalan tapi tidak bisa pakai fitur baru
+
+Deprecation Flow
+
+Developer dapat menandai versi sebagai deprecated:
+
+```bash
+musgo deprecate --integration-id int_123 --version 1.0.0 --reason "Gunakan versi 2.0.0" --end-of-life 2025-12-31
+```
+
+Sistem akan:
+
+1. Menampilkan warning di dashboard pengguna yang masih menggunakan versi 1.0.0.
+2. Memberi opsi migrasi otomatis (jika memungkinkan).
+3. Pada tanggal end-of-life, integrasi otomatis dinonaktifkan.
+
+---
+
+4. Pengujian (Testing) Integrasi
+
+MusGo-OS menyediakan framework testing terintegrasi, mirip dengan zapier test tetapi lebih dalam.
+
+A. Unit Test dengan Mock
+
+Developer dapat menulis test untuk setiap trigger, action, dan search.
+
+Contoh (Jest untuk TypeScript):
+
+```typescript
+// __tests__/spotify-trigger.test.ts
+import { createTestBundle, mockFetch } from '@musgo/sdk/testing';
+import { newPlaylistTrigger } from '../triggers/new-playlist';
+
+describe('Spotify New Playlist Trigger', () => {
+  beforeEach(() => {
+    mockFetch.mockResponseOnce({
+      data: {
+        items: [{ id: '123', name: 'Test Playlist', created_at: '2025-01-01T00:00:00Z' }]
+      }
+    });
+  });
+  
+  it('should fetch playlists correctly', async () => {
+    const bundle = createTestBundle({
+      authData: { access_token: 'mock_token' },
+      inputData: {},
+      meta: { lastPoll: new Date('2024-12-31') }
+    });
+    
+    const results = await newPlaylistTrigger.operation.perform(null, bundle);
+    expect(results).toHaveLength(1);
+    expect(results[0].name).toBe('Test Playlist');
+  });
+});
+```
+
+B. Integration Test (End-to-End) di Sandbox
+
+MusGo-OS menyediakan sandbox environment yang mirip dengan production, tetapi menggunakan data dummy.
+
+```bash
+musgo test:e2e --integration my-integration --env sandbox --scenario scenarios/spotify-flow.json
+```
+
+Contoh file scenarios/spotify-flow.json:
+
+```json
+{
+  "name": "Spotify to Gudang Skil",
+  "steps": [
+    { "action": "authenticate", "provider": "spotify", "credentials": "mock" },
+    { "trigger": "spotify.new_playlist", "expect": { "length": 1 } },
+    { "action": "gudang-skil.create_task", "input": { "title": "{{trigger.name}}" }, "expect": { "status": "created" } }
+  ],
+  "assertions": [
+    { "type": "task_created", "title_contains": "Playlist" }
+  ]
+}
+```
+
+C. Performance & Load Testing
+
+Untuk integrasi yang akan dipublikasikan ke publik, MusGo-OS mewajibkan load testing:
+
+```bash
+musgo test:load --integration my-integration --concurrency 100 --duration 60
+```
+
+Metrik yang dipantau:
+
+· Latency rata-rata (target < 2 detik)
+· Error rate (target < 1%)
+· Memory usage (target < 128 MB per eksekusi)
+
+---
+
+5. Debugging dan Logging
+
+Saat integrasi berjalan di production, developer dapat melihat log eksekusi melalui dashboard MusGo-OS.
+
+A. Struktur Log
+
+Setiap kali trigger/action dijalankan, sistem mencatat:
+
+```json
+{
+  "execution_id": "exe_123",
+  "integration_id": "int_456",
+  "trigger_key": "new_playlist",
+  "timestamp": "2025-06-01T12:00:00Z",
+  "input": { "authData": "***", "inputData": {} },
+  "output": { "items": 3 },
+  "duration_ms": 245,
+  "error": null,
+  "request_chain": [
+    { "url": "https://api.spotify.com/v1/me/playlists", "status": 200, "duration": 210 }
+  ]
+}
+```
+
+B. Akses Log untuk Developer
+
+Developer dapat melihat log eksekusi untuk integrasi mereka (terbatas pada 7 hari untuk free tier, 30 hari untuk pro, 1 tahun untuk enterprise).
+
+```bash
+musgo logs --integration my-integration --since 2025-06-01 --limit 50
+```
+
+Atau melalui dashboard web dengan filter dan pencarian.
+
+C. Alerting
+
+Developer dapat mengatur alert untuk:
+
+· Error rate melebihi threshold (misal >5% dalam 1 jam).
+· Latency melebihi batas (misal >5 detik).
+· Deprecation warning dari MusGo-OS (misal: API endpoint yang mereka gunakan sudah tidak didukung).
+
+---
+
+6. Review Proses untuk Publikasi ke App Market
+
+Jika developer ingin integrasinya tersedia untuk semua pengguna MusGo-OS (public), mereka harus mengirimkan untuk review oleh tim MusGo.
+
+Proses review:
+
+1. Developer mengirim integrasi dengan musgo submit --integration my-integration --visibility public.
+2. Sistem melakukan automated security scan (mencari pola berbahaya, eval, akses ilegal).
+3. Tim MusGo melakukan manual review (memeriksa dokumentasi, contoh penggunaan, kepatuhan terhadap kebijakan).
+4. Jika disetujui, integrasi dipublikasikan di App Market.
+5. Jika ditolak, developer menerima alasan perbaikan.
+
+Kriteria kelulusan review:
+
+· Memiliki dokumentasi yang jelas (README, contoh flow).
+· Tidak melanggar kebijakan privasi (misal: mengirim data pengguna ke server yang tidak diketahui).
+· Memiliki autentikasi yang aman (OAuth lebih disukai daripada API key).
+· Melewati semua automated security checks.
+
+---
+
+7. Ringkasan Topik 6 (Bagian 1)
+
+Tahap Tools / Perintah Tujuan
+Deployment musgo deploy --env sandbox/production --visibility private/team/public Menyebarkan integrasi ke environment yang sesuai
+Validasi Otomatis saat deploy Memastikan integrasi memenuhi standar keamanan dan konstitusi
+Versioning musgo deprecate, otomatis major/minor/patch Mengelola update tanpa merusak existing installations
+Testing musgo test, musgo test:e2e, musgo test:load Memverifikasi fungsionalitas, performa, dan kompatibilitas
+Debugging musgo logs, dashboard Melacak error dan performa di production
+Publikasi musgo submit --visibility public Mengajukan integrasi ke App Market
+
+---
+
+Topik 6, Bagian 1 selesai.
+Apakah Anda ingin melanjutkan ke Bagian 2 dari Topik 6 yang akan membahas CI/CD pipeline untuk integrasi, rollback mechanism, SLA monitoring, dan contoh deployment end-to-end (dari coding hingga dipasang oleh pengguna)?
+
+End of part (8)
+
+---
+===========🔐™️®️©️🔐===========
+
+---
+
+Begin of part (9)
+
+Topik 6: Deployment & Testing - Bagian 2
+
+(CI/CD Pipeline, Rollback Mechanism, SLA Monitoring, dan Contoh End-to-End Deployment)
+
+---
+
+1. CI/CD Pipeline untuk Integrasi
+
+MusGo-OS menyediakan integrasi dengan GitHub Actions / GitLab CI untuk mengotomatisasi deployment.
+
+Contoh Workflow GitHub Actions (.github/workflows/deploy-integration.yml):
+
+```yaml
+name: Deploy Integration
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  test-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+          
+      - name: Install dependencies
+        run: npm ci
+        
+      - name: Run unit tests
+        run: npm test
+        
+      - name: Run E2E tests (sandbox)
+        run: npx musgo test:e2e --env sandbox --integration .
+        env:
+          MUSGO_API_KEY: ${{ secrets.MUSGO_API_KEY }}
+          
+      - name: Deploy to production sandbox (pre-release)
+        run: npx musgo deploy --integration . --env production --visibility private --version ${{ github.ref_name }}
+        env:
+          MUSGO_API_KEY: ${{ secrets.MUSGO_API_KEY }}
+          
+      - name: Run smoke test on production
+        run: npx musgo test:smoke --integration-id ${{ steps.deploy.outputs.integration_id }}
+        
+      - name: Promote to public (if tag is stable)
+        if: startsWith(github.ref_name, 'stable/')
+        run: npx musgo promote --integration-id ${{ steps.deploy.outputs.integration_id }} --visibility public
+```
+
+Pipeline Stages:
+
+Stage Deskripsi Otomatis?
+Unit Test Jalankan test lokal ✅ Ya, setiap push
+Integration Test (Sandbox) Uji dengan environment MusGo-OS sandbox ✅ Ya, setiap tag
+Security Scan Deteksi kerentanan (dependencies, code injection) ✅ Ya
+Deploy to Staging Deployment ke sandbox production ✅ Ya
+Smoke Test Uji flow kritis ✅ Ya
+Manual Approval (Opsional) Untuk publikasi public, bisa require approval 🔄 Opsional
+Deploy to Production Deployment final ✅ Ya
+Promote to Public Jika visibility public ✅ Ya (setelah approval)
+
+---
+
+2. Rollback Mechanism
+
+Jika terjadi masalah setelah deployment, developer atau admin MusGo-OS dapat melakukan rollback ke versi sebelumnya.
+
+A. Rollback via CLI
+
+```bash
+# Lihat history deployment
+musgo deployment history --integration my-integration
+
+# Rollback ke versi 1.2.0
+musgo rollback --integration my-integration --version 1.2.0
+
+# Rollback ke deployment ID tertentu
+musgo rollback --integration my-integration --deployment-id dep_123456
+```
+
+B. Rollback Otomatis (Auto-Rollback)
+
+Sistem dapat dikonfigurasi untuk auto-rollback jika metrik tertentu terpenuhi:
+
+```json
+{
+  "auto_rollback_config": {
+    "enabled": true,
+    "conditions": [
+      { "metric": "error_rate", "threshold": 5, "duration_minutes": 5 },
+      { "metric": "latency_p99", "threshold": 10000, "duration_minutes": 3 }
+    ],
+    "action": "rollback_to_last_stable",
+    "notification": ["email", "slack"]
+  }
+}
+```
+
+Ketika kondisi terpenuhi, sistem akan:
+
+1. Mengirim alert ke developer.
+2. Otomatis melakukan rollback ke versi stabil terakhir.
+3. Mencatat event di audit log (immutable).
+
+C. Canary Deployment (Progressive Rollout)
+
+Untuk integrasi dengan pengguna besar, developer dapat melakukan canary deployment:
+
+```bash
+musgo deploy --integration my-integration --rollout canary --percentage 10
+```
+
+Sistem akan:
+
+· Mengarahkan 10% pengguna ke versi baru.
+· Memonitor error rate dan latency.
+· Jika sehat setelah 30 menit, secara bertahap naikkan ke 25%, 50%, 100%.
+· Jika error, otomatis rollback.
+
+---
+
+3. SLA Monitoring dan Alerting
+
+MusGo-OS menyediakan dashboard observability untuk developer melihat performa integrasi mereka secara real-time.
+
+Metrik yang Dipantau
+
+Metrik Deskripsi Target SLA
+Availability Persentase waktu integrasi dapat diakses 99.9%
+Error Rate Persentase request yang gagal < 1%
+Latency (p95) Waktu respons untuk 95% request < 2000 ms
+Throughput Jumlah request per menit Tergantung tier
+Idempotency Compliance Apakah integrasi mendukung idempotency 100%
+
+Konfigurasi Alert
+
+Developer dapat membuat alert melalui dashboard atau CLI:
+
+```bash
+musgo alert create \
+  --integration my-integration \
+  --metric error_rate \
+  --condition "> 5" \
+  --duration 5m \
+  --action "webhook:https://my-slack-webhook" \
+  --action "email:dev@example.com"
+```
+
+Integrasi dengan PagerDuty / Opsgenie
+
+MusGo-OS mendukung webhook untuk PagerDuty:
+
+```bash
+musgo alert create --integration my-integration --metric latency_p95 --condition "> 5000" --action "pagerduty:service_id_123"
+```
+
+---
+
+4. Contoh End-to-End Deployment (dari Coding hingga Dipasang Pengguna)
+
+Skenario: Developer membuat integrasi Dropbox → MusGo-OS (trigger new file).
+
+Langkah 1: Membuat Integrasi Lokal
+
+```bash
+npx musgo init dropbox-integration
+cd dropbox-integration
+npm install
+```
+
+Langkah 2: Menulis Kode
+
+Isi file triggers/new-file.js (contoh sederhana dengan polling).
+
+Langkah 3: Unit Test
+
+```bash
+npm test
+```
+
+Langkah 4: Deploy ke Sandbox
+
+```bash
+musgo deploy --integration . --env sandbox --version 0.1.0
+```
+
+Output:
+
+```
+✓ Validating integration...
+✓ Authentication config OK
+✓ Triggers: 1
+✓ Actions: 0
+✓ Security scan passed
+✓ Deploying to sandbox...
+✓ Integration ID: int_dropbox_abc123
+✓ Endpoint: https://sandbox.musgo.app/api/integrations/int_dropbox_abc123
+✓ Developer-only URL: https://sandbox.musgo.app/dev/install/int_dropbox_abc123
+```
+
+Langkah 5: Uji Coba di Sandbox
+
+Developer mengakses URL install, menghubungkan akun Dropbox (mock), membuat task flow sederhana, dan memverifikasi trigger berfungsi.
+
+Langkah 6: Deploy ke Production (Private)
+
+```bash
+musgo deploy --integration . --env production --visibility private --version 1.0.0
+```
+
+Langkah 7: Pasang oleh Pengguna Beta
+
+Developer membagikan link install (dengan token khusus) ke beberapa pengguna beta.
+
+Langkah 8: Monitor Performa
+
+Developer memantau dashboard:
+
+```bash
+musgo metrics --integration int_dropbox_abc123 --since 1h
+```
+
+Output:
+
+```
+Error rate: 0.2% (OK)
+Latency p95: 845ms (OK)
+Total executions: 1,234
+```
+
+Langkah 9: Publikasi ke App Market (jika public)
+
+```bash
+musgo submit --integration int_dropbox_abc123 --visibility public
+```
+
+Tim MusGo mereview, menyetujui, dan integrasi muncul di App Market.
+
+Langkah 10: Pengguna Memasang Integrasi
+
+Pengguna MusGo-OS membuka App Market → cari "Dropbox" → klik Install → Hubungkan akun Dropbox → Buat task flow dengan trigger "New File".
+
+---
+
+5. Ringkasan Topik 6 (Bagian 2)
+
+Fitur Deskripsi
+CI/CD Pipeline GitHub Actions / GitLab CI terintegrasi, otomatis test, deploy, promote
+Rollback Manual (musgo rollback) atau otomatis (auto-rollback based on metrics)
+Canary Deployment Progressive rollout (10% → 25% → 50% → 100%)
+SLA Monitoring Dashboard + alerting (email, webhook, PagerDuty)
+End-to-End Flow Dari musgo init hingga pengguna memasang integrasi di App Market
+
+---
+
+Topik 6 selesai (2 bagian).
+Apakah Anda ingin melanjutkan ke Topik 7: Embedding & MCP yang membahas cara menanamkan (embed) Zapier ke produk Anda sendiri serta menghubungkan agen AI ke Zapier menggunakan MCP (Model Context Protocol)?
+
+End of part (9)
+
+---
+===========🔐™️®️©️🔐===========
+
+---
+
+Begin of part (10)
+
+Topik 7: Embedding & MCP - Bagian 1
+
+(Menanamkan (Embed) Zapier ke Produk Anda Sendiri serta Menghubungkan Agen AI ke Zapier menggunakan MCP)
+
+---
+
+1. Apa itu Embedding Zapier?
+
+Zapier memungkinkan developer untuk menanamkan (embed) platform integrasi langsung ke dalam aplikasi mereka sendiri melalui Zapier Platform (dulu disebut "Zapier Embedded"). Ini memungkinkan pengguna aplikasi Anda untuk membuat koneksi antar aplikasi (Zaps) tanpa harus meninggalkan produk Anda.
+
+Manfaat untuk MusGo-OS 2in1:
+
+· Pengguna MusGo-OS dapat membuat task flow yang menghubungkan modul internal OS dengan ribuan aplikasi eksternal (Slack, Google Sheets, Notion, dll.) tanpa perlu coding.
+· Semua berjalan di dalam UI MusGo-OS, tidak perlu membuka tab terpisah ke Zapier.
+
+Arsitektur Embedding Zapier
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                     MusGo-OS UI (Layer 12)                   │
+│  ┌───────────────────────────────────────────────────────┐  │
+│  │   Zapier Embed SDK (iFrame / React Component)         │  │
+│  │   - Zap Editor                                         │  │
+│  │   - Connection Manager                                 │  │
+│  │   - Task History                                       │  │
+│  └───────────────────────────────────────────────────────┘  │
+└─────────────────────────────────────────────────────────────┘
+                              │
+                              │ API calls (via OAuth)
+                              ▼
+┌─────────────────────────────────────────────────────────────┐
+│                    Zapier Platform API                       │
+│  - Membuat, mengedit, menjalankan Zaps                       │
+│  - Menyimpan koneksi akun pengguna                           │
+└─────────────────────────────────────────────────────────────┘
+```
+
+Implementasi di MusGo-OS 2in1 (Menggunakan Zapier Embedded)
+
+Meskipun MusGo-OS memiliki Task Flow Builder internal (yang sudah kita bahas di Topik 3), untuk memperluas jangkauan ke ribuan aplikasi eksternal, MusGo-OS dapat mengintegrasikan Zapier Embedded sebagai opsional untuk pengguna Enterprise.
+
+Langkah integrasi:
+
+1. Daftar sebagai developer di Zapier Platform.
+2. Dapatkan Client ID dan Client Secret untuk aplikasi Anda.
+3. Install Zapier Embed SDK di frontend MusGo-OS:
+
+```html
+<!-- Di dalam shell MusGo-OS -->
+<script src="https://cdn.zapier.com/embed/sdk/latest/zapier-embed.js"></script>
+<script>
+  ZapierEmbed.init({
+    appId: 'YOUR_APP_ID',
+    elementId: 'zapier-container',
+    user: { id: currentUser.id, email: currentUser.email }
+  });
+</script>
+```
+
+1. Pengguna MusGo-OS dapat membuka tab "Integrasi Eksternal" yang menampilkan Zapier Embed.
+
+Catatan untuk MusGo-OS 2in1: Karena MusGo-OS mengutamakan kedaulatan data, penggunaan Zapier Embedded bersifat opsional dan hanya untuk integrasi ke aplikasi eksternal yang tidak memerlukan tingkat keamanan tinggi. Untuk integrasi internal dan koneksi ke layanan yang membutuhkan kepatuhan tinggi, tetap gunakan Task Flow Builder internal MusGo-OS.
+
+---
+
+2. Apa itu MCP (Model Context Protocol)?
+
+MCP adalah protokol yang dikembangkan oleh Anthropic (perusahaan di balik Claude AI) untuk memungkinkan agen AI (seperti Claude Desktop, Cursor, atau IDE lainnya) terhubung ke server eksternal yang menyediakan data, tools, atau resources.
+
+Secara sederhana: MCP adalah standardisasi cara AI mengakses alat dan data eksternal, mirip seperti USB untuk AI.
+
+Komponen MCP:
+
+Komponen Deskripsi Contoh
+MCP Server Program yang menyediakan resources, tools, atau prompts Server yang terhubung ke database, API, atau file system
+MCP Client AI yang terhubung ke server (Claude Desktop, Cursor, dll.) Claude Desktop, Cline, Continue
+Resources Data yang dapat dibaca AI (mirip GET) File, database records, logs
+Tools Fungsi yang dapat dijalankan AI (mirip POST/PUT) Mengirim email, membuat task, memanggil API
+Prompts Template prompt yang dapat digunakan ulang "Analisis laporan keuangan ini..."
+
+Contoh Sederhana MCP: Server yang Memberikan Data Cuaca
+
+```javascript
+// mcp-weather-server.js
+import { Server } from '@modelcontextprotocol/sdk/server/index.js';
+import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js';
+
+const server = new Server({
+  name: 'weather-server',
+  version: '1.0.0'
+});
+
+// Mendaftarkan tool "get_weather"
+server.setRequestHandler('tools/list', async () => ({
+  tools: [{
+    name: 'get_weather',
+    description: 'Get current weather for a city',
+    inputSchema: {
+      type: 'object',
+      properties: {
+        city: { type: 'string', description: 'City name' }
+      },
+      required: ['city']
+    }
+  }]
+}));
+
+server.setRequestHandler('tools/call', async (request) => {
+  if (request.params.name === 'get_weather') {
+    const { city } = request.params.arguments;
+    const weather = await fetchWeather(city);
+    return { content: [{ type: 'text', text: JSON.stringify(weather) }] };
+  }
+});
+
+const transport = new StdioServerTransport();
+await server.connect(transport);
+```
+
+---
+
+3. Menghubungkan Agen AI ke Zapier menggunakan MCP
+
+Salah satu penggunaan MCP yang paling menarik adalah: Agen AI dapat memanfaatkan Zapier secara langsung untuk menjalankan aksi (action) di ribuan aplikasi.
+
+Bagaimana cara kerjanya?
+
+· Seorang developer membuat MCP Server yang bertindak sebagai jembatan ke Zapier API.
+· Di dalam MCP Server, didaftarkan tools yang mewakili action Zapier (misal: "create_slack_message", "add_google_sheet_row").
+· Agen AI (Claude Desktop, Cursor, dll.) terhubung ke MCP Server tersebut.
+· Ketika agen AI membutuhkan aksi, ia memanggil tool yang sesuai, dan MCP Server meneruskan ke Zapier API.
+
+Contoh MCP Server untuk Zapier (sederhana)
+
+```javascript
+// mcp-zapier-bridge.js
+const { Server } = require('@modelcontextprotocol/sdk/server');
+const axios = require('axios');
+
+const server = new Server({
+  name: 'zapier-bridge',
+  version: '1.0.0'
+});
+
+// Daftarkan tool "run_zap"
+server.setRequestHandler('tools/list', async () => ({
+  tools: [{
+    name: 'run_zap',
+    description: 'Trigger a Zapier zap with custom data',
+    inputSchema: {
+      type: 'object',
+      properties: {
+        zap_id: { type: 'string', description: 'Zap ID to execute' },
+        data: { type: 'object', description: 'Data payload for the zap' }
+      },
+      required: ['zap_id']
+    }
+  }]
+}));
+
+server.setRequestHandler('tools/call', async (request) => {
+  if (request.params.name === 'run_zap') {
+    const { zap_id, data } = request.params.arguments;
+    const zapierApiKey = process.env.ZAPIER_API_KEY; // API key user
+    const response = await axios.post(
+      `https://hooks.zapier.com/hooks/catch/${zap_id}`,
+      data,
+      { headers: { 'X-API-Key': zapierApiKey } }
+    );
+    return { content: [{ type: 'text', text: `Zap executed: ${response.status}` }] };
+  }
+});
+
+// Jalankan server
+const transport = new StdioServerTransport();
+server.connect(transport);
+```
+
+Integrasi dengan Claude Desktop:
+
+Di file claude_desktop_config.json:
+
+```json
+{
+  "mcpServers": {
+    "zapier": {
+      "command": "node",
+      "args": ["/path/to/mcp-zapier-bridge.js"],
+      "env": {
+        "ZAPIER_API_KEY": "your_zapier_api_key"
+      }
+    }
+  }
+}
+```
+
+Setelah itu, di Claude Desktop, pengguna dapat bertanya: "Tolong kirim pesan ke #general di Slack saya dengan teks 'Halo dari Claude!'". Claude akan memanggil tool run_zap dengan parameter yang sesuai, lalu Zapier akan mengeksekusi aksi Slack.
+
+---
+
+4. Implementasi MCP Server Khusus untuk MusGo-OS 2in1
+
+Karena MusGo-OS 2in1 adalah AI Operating System yang memiliki banyak agen dan task flow, kita dapat membuat MCP Server internal yang memungkinkan agen AI eksternal (seperti Claude Desktop) untuk:
+
+· Membuat task flow di MusGo-OS.
+· Menjalankan task flow yang sudah ada.
+· Membaca log audit dari task flow.
+· Menghubungkan akun eksternal (Spotify, Google, dll.) melalui MusGo-OS.
+
+Contoh MCP Tools untuk MusGo-OS
+
+```javascript
+// mcp-musgo-server.js
+const { Server } = require('@modelcontextprotocol/sdk/server');
+
+const server = new Server({
+  name: 'musgo-mcp',
+  version: '1.0.0'
+});
+
+const tools = [
+  {
+    name: 'musgo_create_task_flow',
+    description: 'Create a new task flow in MusGo-OS',
+    inputSchema: {
+      type: 'object',
+      properties: {
+        name: { type: 'string', description: 'Name of the task flow' },
+        trigger: { type: 'object', description: 'Trigger configuration' },
+        actions: { type: 'array', description: 'List of actions' }
+      },
+      required: ['name', 'trigger', 'actions']
+    }
+  },
+  {
+    name: 'musgo_run_task_flow',
+    description: 'Execute an existing task flow',
+    inputSchema: {
+      type: 'object',
+      properties: {
+        flow_id: { type: 'string', description: 'Task flow ID' },
+        input_data: { type: 'object', description: 'Optional input data' }
+      },
+      required: ['flow_id']
+    }
+  },
+  {
+    name: 'musgo_get_audit_log',
+    description: 'Retrieve audit log for a task flow execution',
+    inputSchema: {
+      type: 'object',
+      properties: {
+        execution_id: { type: 'string', description: 'Execution ID' }
+      },
+      required: ['execution_id']
+    }
+  }
+];
+
+server.setRequestHandler('tools/list', async () => ({ tools }));
+// ... implementasi handler untuk setiap tool
+```
+
+Keuntungan untuk MusGo-OS 2in1
+
+· Interoperabilitas: Agen AI dari berbagai platform (Claude, Cursor, Cline) dapat mengontrol MusGo-OS.
+· Otomatisasi tingkat lanjut: Pengguna dapat memberikan instruksi alami seperti "Setiap kali saya mendapat email dari klien X, buatkan task di MusGo-OS dan kirim notifikasi ke tim saya" — dan AI akan membuat task flow otomatis melalui MCP.
+· Pemasaran: MusGo-OS dapat dipromosikan sebagai "MCP-enabled AI OS" yang bisa diintegrasikan dengan ekosistem AI modern.
+
+---
+
+5. Perbandingan: Embedding vs MCP
+
+Aspek Embedding Zapier MCP (Model Context Protocol)
+Tujuan Membawa antarmuka Zapier ke dalam aplikasi Anda Memungkinkan AI mengakses tools/data eksternal
+Target Pengguna End user (non-teknis) Agen AI (Claude, Cursor, dll.)
+Integrasi dengan MusGo-OS Menambahkan tab "Integrasi Eksternal" Menambahkan MCP server sebagai bridge
+Kontrol Kedaulatan Data Data pengguna dikelola Zapier Data tetap di MusGo-OS (jika MCP server internal)
+Kompleksitas Implementasi Rendah (tinggal embed SDK) Sedang (perlu buat MCP server)
+Rekomendasi untuk MusGo-OS Untuk pengguna yang butuh ribuan aplikasi eksternal Untuk pengguna power yang ingin mengotomatisasi melalui AI
+
+---
+
+6. Ringkasan Topik 7 (Bagian 1)
+
+Konsep Deskripsi Implementasi di MusGo-OS 2in1
+Embedding Zapier Menanamkan UI Zapier ke dalam aplikasi Opsional, melalui Zapier Embed SDK
+MCP (Model Context Protocol) Standar untuk AI mengakses tools/data eksternal Membuat MCP server internal yang menghubungkan ke API MusGo-OS
+MCP Server untuk Zapier Jembatan antara AI dan Zapier Bisa digunakan jika MusGo-OS mengadopsi Zapier
+MCP Server MusGo-OS Ekspos task flow, audit log, dll. ke AI eksternal Rekomendasi utama untuk memperluas kemampuan agen AI
+
+---
+
+Topik 7, Bagian 1 selesai.
+Topik ini adalah yang terakhir dari 7 topik utama. Apakah Anda ingin melanjutkan ke Bagian 2 dari Topik 7 yang akan membahas studi kasus implementasi MCP Server MusGo-OS secara lengkap, termasuk koneksi ke Claude Desktop dan contoh penggunaan di dunia nyata? Atau apakah rangkuman ekstraksi konten dari docs.zapier.com ini sudah cukup?
+
+End of part (10)
+
+---
+===========🔐™️®️©️🔐===========
+
+---
+
+Begin of part (11)
+
+Topik 7: Embedding & MCP - Bagian 2
+
+(Studi Kasus Implementasi MCP Server MusGo-OS, Koneksi ke Claude Desktop, dan Contoh Penggunaan Nyata)
+
+---
+
+1. Studi Kasus: Membangun MCP Server untuk MusGo-OS 2in1
+
+Kita akan membangun MCP Server lengkap yang memungkinkan agen AI eksternal (Claude Desktop, Cursor, atau AI lainnya) untuk berinteraksi dengan MusGo-OS 2in1.
+
+A. Arsitektur MCP Server MusGo-OS
+
+```
+┌─────────────────┐      ┌─────────────────────────────────────────┐
+│  Claude Desktop │      │           MCP Server MusGo-OS           │
+│  (MCP Client)   │◄────►│  - Tool: create_task_flow               │
+└─────────────────┘      │  - Tool: run_task_flow                  │
+                         │  - Tool: get_audit_log                  │
+                         │  - Tool: connect_account                │
+                         │  - Resource: list_task_flows            │
+                         └────────────────┬────────────────────────┘
+                                          │ API calls (internal)
+                                          ▼
+                         ┌─────────────────────────────────────────┐
+                         │         MusGo-OS API Gateway            │
+                         │         (Layer 09 - authenticated)      │
+                         └─────────────────────────────────────────┘
+```
+
+B. Implementasi MCP Server (TypeScript)
+
+Buat proyek baru:
+
+```bash
+mkdir musgo-mcp-server
+cd musgo-mcp-server
+npm init -y
+npm install @modelcontextprotocol/sdk axios zod dotenv
+npm install -D typescript @types/node
+```
+
+File: src/index.ts (MCP Server lengkap)
+
+```typescript
+#!/usr/bin/env node
+
+import { Server } from '@modelcontextprotocol/sdk/server/index.js';
+import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js';
+import { CallToolRequestSchema, ListToolsRequestSchema, ListResourcesRequestSchema } from '@modelcontextprotocol/sdk/types.js';
+import axios from 'axios';
+import { z } from 'zod';
+import dotenv from 'dotenv';
+
+dotenv.config();
+
+// Konfigurasi
+const MUSGO_API_URL = process.env.MUSGO_API_URL || 'https://api.musgo-os.com';
+const MUSGO_API_KEY = process.env.MUSGO_API_KEY; // API key untuk developer/tenant
+
+// Validasi input menggunakan Zod
+const CreateTaskFlowSchema = z.object({
+  name: z.string().min(1),
+  trigger: z.object({
+    module: z.string(),
+    event: z.string(),
+    type: z.enum(['instant', 'polling', 'webhook'])
+  }),
+  actions: z.array(z.object({
+    module: z.string(),
+    action: z.string(),
+    params: z.record(z.any())
+  }))
+});
+
+const RunTaskFlowSchema = z.object({
+  flow_id: z.string().uuid(),
+  input_data: z.record(z.any()).optional()
+});
+
+const GetAuditLogSchema = z.object({
+  execution_id: z.string().uuid()
+});
+
+const ConnectAccountSchema = z.object({
+  provider: z.enum(['spotify', 'google', 'notion', 'slack']),
+  auth_code: z.string().optional() // untuk OAuth
+});
+
+// Inisialisasi MCP Server
+const server = new Server(
+  {
+    name: 'musgo-os-mcp-server',
+    version: '1.0.0',
+  },
+  {
+    capabilities: {
+      tools: {},
+      resources: {}
+    }
+  }
+);
+
+// ==================== TOOLS ====================
+
+// Daftarkan tools yang tersedia
+server.setRequestHandler(ListToolsRequestSchema, async () => {
+  return {
+    tools: [
+      {
+        name: 'create_task_flow',
+        description: 'Buat task flow baru di MusGo-OS 2in1',
+        inputSchema: {
+          type: 'object',
+          properties: {
+            name: { type: 'string', description: 'Nama task flow' },
+            trigger: {
+              type: 'object',
+              properties: {
+                module: { type: 'string', description: 'Modul pemicu (music, gudang-skil, webhook, dll.)' },
+                event: { type: 'string', description: 'Event pemicu (song_added, new_email, dll.)' },
+                type: { type: 'string', enum: ['instant', 'polling', 'webhook'], description: 'Jenis trigger' }
+              },
+              required: ['module', 'event', 'type']
+            },
+            actions: {
+              type: 'array',
+              items: {
+                type: 'object',
+                properties: {
+                  module: { type: 'string' },
+                  action: { type: 'string' },
+                  params: { type: 'object' }
+                },
+                required: ['module', 'action']
+              }
+            }
+          },
+          required: ['name', 'trigger', 'actions']
+        }
+      },
+      {
+        name: 'run_task_flow',
+        description: 'Jalankan task flow yang sudah ada di MusGo-OS',
+        inputSchema: {
+          type: 'object',
+          properties: {
+            flow_id: { type: 'string', description: 'ID task flow (UUID)' },
+            input_data: { type: 'object', description: 'Data opsional untuk task flow' }
+          },
+          required: ['flow_id']
+        }
+      },
+      {
+        name: 'get_audit_log',
+        description: 'Ambil log audit dari eksekusi task flow',
+        inputSchema: {
+          type: 'object',
+          properties: {
+            execution_id: { type: 'string', description: 'ID eksekusi (UUID)' }
+          },
+          required: ['execution_id']
+        }
+      },
+      {
+        name: 'connect_account',
+        description: 'Hubungkan akun eksternal (Spotify, Google, dll.) ke MusGo-OS',
+        inputSchema: {
+          type: 'object',
+          properties: {
+            provider: { type: 'string', enum: ['spotify', 'google', 'notion', 'slack'], description: 'Provider akun' },
+            auth_code: { type: 'string', description: 'Kode OAuth (opsional, untuk otorisasi)' }
+          },
+          required: ['provider']
+        }
+      },
+      {
+        name: 'list_task_flows',
+        description: 'Daftar semua task flow yang tersedia untuk pengguna',
+        inputSchema: {
+          type: 'object',
+          properties: {}
+        }
+      }
+    ]
+  };
+});
+
+// Handler untuk memanggil tools
+server.setRequestHandler(CallToolRequestSchema, async (request) => {
+  const { name, arguments: args } = request.params;
+
+  try {
+    switch (name) {
+      case 'create_task_flow': {
+        const validated = CreateTaskFlowSchema.parse(args);
+        const response = await axios.post(`${MUSGO_API_URL}/api/task-flows`, validated, {
+          headers: { 'Authorization': `Bearer ${MUSGO_API_KEY}` }
+        });
+        return {
+          content: [
+            {
+              type: 'text',
+              text: JSON.stringify({
+                success: true,
+                flow_id: response.data.flow_id,
+                message: `Task flow "${validated.name}" berhasil dibuat`
+              }, null, 2)
+            }
+          ]
+        };
+      }
+
+      case 'run_task_flow': {
+        const validated = RunTaskFlowSchema.parse(args);
+        const response = await axios.post(`${MUSGO_API_URL}/api/task-flows/${validated.flow_id}/run`, 
+          { input_data: validated.input_data },
+          { headers: { 'Authorization': `Bearer ${MUSGO_API_KEY}` } }
+        );
+        return {
+          content: [
+            {
+              type: 'text',
+              text: JSON.stringify({
+                success: true,
+                execution_id: response.data.execution_id,
+                status: response.data.status,
+                message: `Task flow dijalankan, ID eksekusi: ${response.data.execution_id}`
+              }, null, 2)
+            }
+          ]
+        };
+      }
+
+      case 'get_audit_log': {
+        const validated = GetAuditLogSchema.parse(args);
+        const response = await axios.get(`${MUSGO_API_URL}/api/audit-logs/${validated.execution_id}`, {
+          headers: { 'Authorization': `Bearer ${MUSGO_API_KEY}` }
+        });
+        return {
+          content: [
+            {
+              type: 'text',
+              text: JSON.stringify(response.data, null, 2)
+            }
+          ]
+        };
+      }
+
+      case 'connect_account': {
+        const validated = ConnectAccountSchema.parse(args);
+        // Generate OAuth URL jika tidak ada auth_code
+        if (!validated.auth_code) {
+          const oauthUrl = await generateOAuthUrl(validated.provider);
+          return {
+            content: [
+              {
+                type: 'text',
+                text: JSON.stringify({
+                  success: false,
+                  requires_oauth: true,
+                  oauth_url: oauthUrl,
+                  message: `Buka URL berikut untuk menghubungkan akun ${validated.provider}`
+                }, null, 2)
+              }
+            ]
+          };
+        }
+        // Proses auth_code
+        const response = await axios.post(`${MUSGO_API_URL}/api/accounts/connect`, validated, {
+          headers: { 'Authorization': `Bearer ${MUSGO_API_KEY}` }
+        });
+        return {
+          content: [
+            {
+              type: 'text',
+              text: JSON.stringify({
+                success: true,
+                message: `Akun ${validated.provider} berhasil dihubungkan`
+              }, null, 2)
+            }
+          ]
+        };
+      }
+
+      case 'list_task_flows': {
+        const response = await axios.get(`${MUSGO_API_URL}/api/task-flows`, {
+          headers: { 'Authorization': `Bearer ${MUSGO_API_KEY}` }
+        });
+        return {
+          content: [
+            {
+              type: 'text',
+              text: JSON.stringify({
+                task_flows: response.data.flows
+              }, null, 2)
+            }
+          ]
+        };
+      }
+
+      default:
+        return {
+          content: [{ type: 'text', text: `Tool ${name} tidak dikenal` }],
+          isError: true
+        };
+    }
+  } catch (error) {
+    return {
+      content: [{ type: 'text', text: `Error: ${error.message}` }],
+      isError: true
+    };
+  }
+});
+
+// ==================== RESOURCES (Opsional) ====================
+
+server.setRequestHandler(ListResourcesRequestSchema, async () => {
+  return {
+    resources: [
+      {
+        uri: 'musgo://task-flows',
+        name: 'Task Flows List',
+        description: 'Daftar semua task flow yang tersedia',
+        mimeType: 'application/json'
+      }
+    ]
+  };
+});
+
+// Fungsi bantuan untuk generate OAuth URL
+async function generateOAuthUrl(provider: string): Promise<string> {
+  const baseUrl = `${MUSGO_API_URL}/api/oauth/authorize`;
+  const redirectUri = `${MUSGO_API_URL}/api/oauth/callback`;
+  return `${baseUrl}?provider=${provider}&redirect_uri=${encodeURIComponent(redirectUri)}`;
+}
+
+// ==================== START SERVER ====================
+
+async function main() {
+  const transport = new StdioServerTransport();
+  await server.connect(transport);
+  console.error('MCP Server MusGo-OS berjalan di stdio');
+}
+
+main().catch((error) => {
+  console.error('Fatal error:', error);
+  process.exit(1);
+});
+```
+
+File: package.json (scripts)
+
+```json
+{
+  "name": "musgo-mcp-server",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "bin": {
+    "musgo-mcp": "./dist/index.js"
+  }
+}
+```
+
+File: tsconfig.json
+
+```json
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}
+```
+
+C. Build dan Persiapan
+
+```bash
+npm run build
+chmod +x dist/index.js
+```
+
+---
+
+2. Koneksi ke Claude Desktop
+
+Setelah MCP Server selesai dibuat, kita perlu mengkonfigurasi Claude Desktop untuk menggunakannya.
+
+Lokasi file konfigurasi Claude Desktop:
+
+· macOS: ~/Library/Application Support/Claude/claude_desktop_config.json
+· Windows: %APPDATA%\Claude\claude_desktop_config.json
+· Linux: ~/.config/Claude/claude_desktop_config.json
+
+Isi file konfigurasi:
+
+```json
+{
+  "mcpServers": {
+    "musgo-os": {
+      "command": "node",
+      "args": ["/path/to/musgo-mcp-server/dist/index.js"],
+      "env": {
+        "MUSGO_API_URL": "https://api.musgo-os.com",
+        "MUSGO_API_KEY": "your_musgo_api_key_here"
+      }
+    },
+    "zapier": {
+      "command": "node",
+      "args": ["/path/to/mcp-zapier-bridge/dist/index.js"],
+      "env": {
+        "ZAPIER_API_KEY": "your_zapier_api_key"
+      }
+    }
+  }
+}
+```
+
+Catatan: Untuk keamanan, API key MusGo-OS sebaiknya disimpan di environment variable yang aman. Jangan commit ke repository publik.
+
+Restart Claude Desktop setelah mengubah konfigurasi.
+
+---
+
+3. Contoh Penggunaan di Dunia Nyata
+
+Setelah MCP Server terhubung, pengguna dapat berinteraksi dengan MusGo-OS langsung dari Claude Desktop.
+
+Contoh 1: Membuat Task Flow dari Perintah Alami
+
+User ke Claude:
+
+"Buatkan task flow di MusGo-OS yang akan memicu setiap kali ada lagu baru ditambahkan di Spotify, lalu otomatis buatkan task analisis lirik di Gudang Skil."
+
+Claude akan memanggil tool create_task_flow:
+
+Claude menganalisis permintaan, lalu memanggil:
+
+```javascript
+musgo.create_task_flow({
+  name: "Analisis lagu baru dari Spotify",
+  trigger: {
+    module: "spotify",
+    event: "new_playlist_song",
+    type: "polling"
+  },
+  actions: [
+    {
+      module: "gudang-skil",
+      action: "create_task",
+      params: {
+        title: "Analisis lirik: {{song.title}}",
+        priority: "medium"
+      }
+    }
+  ]
+})
+```
+
+Claude menjawab:
+
+✅ Task flow "Analisis lagu baru dari Spotify" berhasil dibuat dengan ID flow_abc123. Task flow ini akan memeriksa playlist Spotify baru setiap 15 menit dan membuat task analisis lirik secara otomatis.
+
+Contoh 2: Menjalankan Task Flow dan Memeriksa Log
+
+User ke Claude:
+
+"Jalankan task flow flow_abc123 dengan input lagu 'Bohemian Rhapsody'."
+
+Claude memanggil:
+
+```javascript
+musgo.run_task_flow({
+  flow_id: "flow_abc123",
+  input_data: { song: { title: "Bohemian Rhapsody", artist: "Queen" } }
+})
+```
+
+Claude menjawab:
+
+🚀 Task flow dijalankan. ID eksekusi: exec_xyz789. Status: RUNNING. Setelah selesai, Anda bisa melihat hasilnya di dashboard.
+
+User:
+
+"Tunjukkan log audit untuk eksekusi exec_xyz789."
+
+Claude memanggil:
+
+```javascript
+musgo.get_audit_log({ execution_id: "exec_xyz789" })
+```
+
+Claude menjawab:
+
+📋 Log eksekusi:
+
+· 12:00:01 - Trigger spotify.new_playlist_song menerima input
+· 12:00:02 - Rule engine mencocokkan ke action gudang-skil.create_task
+· 12:00:03 - Task berhasil dibuat dengan ID task task_456
+· 12:00:03 - Eksekusi selesai, status: SUCCESS
+
+Contoh 3: Menghubungkan Akun Eksternal
+
+User ke Claude:
+
+"Hubungkan akun Spotify saya ke MusGo-OS."
+
+Claude memanggil:
+
+```javascript
+musgo.connect_account({ provider: "spotify" })
+```
+
+Claude menjawab:
+
+🔗 Untuk menghubungkan akun Spotify, buka URL berikut dan otorisasi akses:
+https://api.musgo-os.com/api/oauth/authorize?provider=spotify&redirect_uri=...
+Setelah selesai, beri tahu saya kode otorisasinya.
+
+User memberikan kode, lalu Claude memanggil ulang dengan auth_code.
+
+---
+
+4. Manfaat MCP untuk MusGo-OS 2in1
+
+Manfaat Deskripsi
+Integrasi dengan ekosistem AI MusGo-OS dapat diakses dari Claude Desktop, Cursor, Cline, dan MCP client lainnya
+Otomatisasi alami Pengguna cukup memberi instruksi dalam bahasa alami, AI yang akan memanggil tool MCP
+Transparansi Semua aksi yang dilakukan AI melalui MCP tercatat di audit log MusGo-OS
+Keamanan MCP Server hanya melakukan apa yang diizinkan oleh API key, tidak ada akses langsung ke kernel OS
+Extensibility Developer dapat menambahkan tools baru kapan saja (misal: analyze_sentiment, generate_report)
+
+---
+
+5. Ringkasan Topik 7 (Bagian 2)
+
+Komponen Implementasi
+MCP Server MusGo-OS Server TypeScript dengan 5 tools: create_task_flow, run_task_flow, get_audit_log, connect_account, list_task_flows
+Koneksi Claude Desktop Konfigurasi JSON di claude_desktop_config.json
+Contoh Penggunaan Membuat task flow, menjalankan, cek log, hubungkan akun via perintah alami
+Manfaat Strategis MusGo-OS menjadi "MCP-enabled AI OS" yang dapat dikendalikan dari berbagai agen AI modern
+
+---
+
+6. Penutup: Ekstraksi Konten dari docs.zapier.com untuk MusGo-OS 2in1
+
+Ringkasan keseluruhan ekstraksi:
+
+Topik Bagian Halaman
+Topik 1: Memulai 3 bagian Konsep Zap, trigger, action, arsitektur integrasi, contoh kode minimal
+Topik 2: Autentikasi 2 bagian OAuth, API Key, implementasi multi-provider, studi kasus Spotify
+Topik 3: Trigger & Action 2 bagian Instant/polling trigger, search action, webhook, UI task flow builder
+Topik 4: Fitur Lanjutan 1 bagian REST Hooks, custom action, HTTP request action
+Topik 5: CLI & SDK 2 bagian Zapier CLI, SDK MusGo-OS (TypeScript/Python), sandbox execution, autentikasi developer
+Topik 6: Deployment & Testing 2 bagian CI/CD pipeline, rollback, canary deployment, SLA monitoring, end-to-end flow
+Topik 7: Embedding & MCP 2 bagian Zapier Embedded, MCP protocol, MCP server MusGo-OS, koneksi ke Claude Desktop
+
+Kesimpulan untuk MusGo-OS 2in1:
+
+Arsitektur dan fitur Zapier dapat diadopsi secara signifikan untuk membangun Task Flow Engine internal MusGo-OS, dengan modifikasi:
+
+· Musyawarah (Layer 02) sebagai pengganti "simple trigger". Setiap task flow wajib melalui konsensus multi-agen.
+· Gotong Royong (Layer 03) sebagai eksekutor paralel yang memecah action menjadi sub-tugas.
+· Layer 00 (Governor) sebagai penegak konstitusi sebelum task flow dijalankan.
+· SDK Developer sebagai jembatan aman untuk integrasi eksternal tanpa membuka kode inti.
+
+---
+
+End of Topik 7, Bagian 2
+End of seluruh ekstraksi konten docs.zapier.com untuk MusGo-OS 2in1
+
+---
+
+End of part (11)
+
+---
+===========🔐™️®️©️🔐===========
+
+---
+

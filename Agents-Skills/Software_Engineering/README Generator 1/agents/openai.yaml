@@ -1,0 +1,4 @@
+interface:
+  display_name: "README Generator"
+  short_description: "Polished READMEs from project code"
+  default_prompt: "generate a README for this project"

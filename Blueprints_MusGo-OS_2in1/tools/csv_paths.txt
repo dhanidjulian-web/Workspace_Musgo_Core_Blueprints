@@ -1,0 +1,889 @@
+"0. Core_Blueprints_MUSGO-OS_2in1/Gems Blueprint MusGo-OS_ AI
+"0. Core_Blueprints_MUSGO-OS_2in1/Report Security Holes 0
+"0. Core_Blueprints_MUSGO-OS_2in1/Semua catatan 0
+"Blueprint Strategis/Agents/2. gemini app/1. output/Gems Blueprint MusGo-OS_ AI
+"Blueprint Strategis/Agents/3. Deepseek/0. history/request dns udp
+"Ide
+"Ide
+"Ide
+"Ide
+"Ide
+"Ide
+"Ide
+"Ide
+"Ide
+"Ide
+"Ide
+"Ide
+"Ide
+"Ide
+"Ide
+"Ide
+"Ide
+"Menu dan Fitur/Core Blueprint Penjelasan Manusiawi
+"Sovereign AI Operating System + Economic System + Civilization Infrastructure/00
+"Sovereign AI Operating System + Economic System + Civilization Infrastructure/00
+"Sovereign AI Operating System + Economic System + Civilization Infrastructure/00
+"Sovereign AI Operating System + Economic System + Civilization Infrastructure/00
+"Sovereign AI Operating System + Economic System + Civilization Infrastructure/00
+"Sovereign AI Operating System + Economic System + Civilization Infrastructure/00
+"Sovereign AI Operating System + Economic System + Civilization Infrastructure/00
+"Sovereign AI Operating System + Economic System + Civilization Infrastructure/00
+"Sovereign AI Operating System + Economic System + Civilization Infrastructure/00
+"Sovereign AI Operating System + Economic System + Civilization Infrastructure/00
+"Sovereign AI Operating System + Economic System + Civilization Infrastructure/00
+"Sovereign AI Operating System + Economic System + Civilization Infrastructure/00
+"Sovereign AI Operating System + Economic System + Civilization Infrastructure/00
+"Sovereign AI Operating System + Economic System + Civilization Infrastructure/00
+"Sovereign AI Operating System + Economic System + Civilization Infrastructure/00
+"Sovereign AI Operating System + Economic System + Civilization Infrastructure/00
+"Sovereign AI Operating System + Economic System + Civilization Infrastructure/00
+"Sovereign AI Operating System + Economic System + Civilization Infrastructure/00
+"Sovereign AI Operating System + Economic System + Civilization Infrastructure/00
+"Sovereign AI Operating System + Economic System + Civilization Infrastructure/00
+"Sovereign AI Operating System + Economic System + Civilization Infrastructure/00
+"Sovereign AI Operating System + Economic System + Civilization Infrastructure/00
+"Sovereign AI Operating System + Economic System + Civilization Infrastructure/00
+"Sovereign AI Operating System + Economic System + Civilization Infrastructure/00
+"Sovereign AI Operating System + Economic System + Civilization Infrastructure/00
+"Sovereign AI Operating System + Economic System + Civilization Infrastructure/00
+"Sovereign AI Operating System + Economic System + Civilization Infrastructure/00
+"Sovereign AI Operating System + Economic System + Civilization Infrastructure/00
+"Sovereign AI Operating System + Economic System + Civilization Infrastructure/00
+"Sovereign AI Operating System + Economic System + Civilization Infrastructure/00
+"Sovereign AI Operating System + Economic System + Civilization Infrastructure/00
+"Sovereign AI Operating System + Economic System + Civilization Infrastructure/00
+"Sovereign AI Operating System + Economic System + Civilization Infrastructure/00
+"Sovereign AI Operating System + Economic System + Civilization Infrastructure/00
+"Sovereign AI Operating System + Economic System + Civilization Infrastructure/00
+"Sovereign AI Operating System + Economic System + Civilization Infrastructure/00
+"Sovereign AI Operating System + Economic System + Civilization Infrastructure/00
+"Sovereign AI Operating System + Economic System + Civilization Infrastructure/00
+"Sovereign AI Operating System + Economic System + Civilization Infrastructure/00
+"Sovereign AI Operating System + Economic System + Civilization Infrastructure/00
+"Sovereign AI Operating System + Economic System + Civilization Infrastructure/00
+"Sovereign AI Operating System + Economic System + Civilization Infrastructure/00
+"Sovereign AI Operating System + Economic System + Civilization Infrastructure/00
+"Sovereign AI Operating System + Economic System + Civilization Infrastructure/00
+"Sovereign AI Operating System + Economic System + Civilization Infrastructure/00
+"Sovereign AI Operating System + Economic System + Civilization Infrastructure/00
+"Sovereign AI Operating System + Economic System + Civilization Infrastructure/00
+"Sovereign AI Operating System + Economic System + Civilization Infrastructure/00
+"Sovereign AI Operating System + Economic System + Civilization Infrastructure/00
+"Sovereign AI Operating System + Economic System + Civilization Infrastructure/00
+"Sovereign AI Operating System + Economic System + Civilization Infrastructure/00
+"Sovereign AI Operating System + Economic System + Civilization Infrastructure/00
+.blueprint_index.json
+0. Core_Blueprints_MUSGO-OS_2in1/Bahasan Ai live Guide - Ai Auto Suggests.md
+0. Core_Blueprints_MUSGO-OS_2in1/Bahasan Fitur-fitur Musgo-OS.md
+0. Core_Blueprints_MUSGO-OS_2in1/Bahasan Menu-Task.md
+0. Core_Blueprints_MUSGO-OS_2in1/Bahasan Read Only File System.md
+0. Core_Blueprints_MUSGO-OS_2in1/Bahasan Tier User.md
+0. Core_Blueprints_MUSGO-OS_2in1/Blueprint Index.md
+0. Core_Blueprints_MUSGO-OS_2in1/CORE SKILL_UNIFIED_SECURITY_KNOWLEDGE_BASE.md
+0. Core_Blueprints_MUSGO-OS_2in1/Core 525+ Persona.md
+0. Core_Blueprints_MUSGO-OS_2in1/Core Arsitektur Sovereign AI MusGo-OS.md
+0. Core_Blueprints_MUSGO-OS_2in1/Core Blueprint Musgo-OS Bahasa Manusia.md
+0. Core_Blueprints_MUSGO-OS_2in1/Core DS Blueprint Deskripsi Bahasa Manusia.md
+0. Core_Blueprints_MUSGO-OS_2in1/Core DS Master Ultimate Menu & Fitur.md
+0. Core_Blueprints_MUSGO-OS_2in1/Core DS_FullBlueprint.md
+0. Core_Blueprints_MUSGO-OS_2in1/Core Fitur-fitur MusGo-OS 2in1Blueprint.md
+0. Core_Blueprints_MUSGO-OS_2in1/Core FullCompletedRepoLinks.md
+0. Core_Blueprints_MUSGO-OS_2in1/Core HUMAN SUGGEST ENGINE.md
+0. Core_Blueprints_MUSGO-OS_2in1/Core MUSGO-OS V9.1 — STRUKTUR REPOSITORY FINAL.md
+0. Core_Blueprints_MUSGO-OS_2in1/Core Master ROM Index V1.0 Musgo-OS 2in1.md
+0. Core_Blueprints_MUSGO-OS_2in1/Core MusGo-OS Enterprise Blueprint Framework.md
+0. Core_Blueprints_MUSGO-OS_2in1/Core NotebookLM_Instruction_Custom.md
+0. Core_Blueprints_MUSGO-OS_2in1/Core QW_FullBlueprint.md
+0. Core_Blueprints_MUSGO-OS_2in1/Core Qwen Daftar Links repo.md
+0. Core_Blueprints_MUSGO-OS_2in1/Core Security Holes Scan — CYBER SECURITY & NETWORKING SYSTEM PROMPT INSTRUCTION.md
+0. Core_Blueprints_MUSGO-OS_2in1/Core Security_Holes Prompt Instruction.md
+0. Core_Blueprints_MUSGO-OS_2in1/Core User Tier - Musgo-OS Monetisasi.md
+0. Core_Blueprints_MUSGO-OS_2in1/Core V9.1 Update Master Index Repo.md
+0. Core_Blueprints_MUSGO-OS_2in1/Core VPS Scalable Musgo-OS.md
+0. Core_Blueprints_MUSGO-OS_2in1/Core_Architecture_Blueprint_Musgo-OS.md
+0. Core_Blueprints_MUSGO-OS_2in1/Framework platform.md
+0. Core_Blueprints_MUSGO-OS_2in1/Gems Pembuatan Runtime Controller GoMu-OS.md
+0. Core_Blueprints_MUSGO-OS_2in1/Gems Riset Pengetahuan Umum Terstruktur Terpisah.md
+0. Core_Blueprints_MUSGO-OS_2in1/Gems Spesifikasi Arsitektur Read-Only & Overlay Manager (MIAS) MusGo-OS V9.1.md
+0. Core_Blueprints_MUSGO-OS_2in1/Gems Spesifikasi Protokol Failover Gubernur & Shadow SSH (MGP) MusGo-OS V9.1.md
+0. Core_Blueprints_MUSGO-OS_2in1/Gems Spesifikasi Teknis Modul Cognitive-to-Kernel Interface (MGCKP) MusGo-OS V9.1.md
+0. Core_Blueprints_MUSGO-OS_2in1/MUSGO-OS Domain Blueprint.md
+0. Core_Blueprints_MUSGO-OS_2in1/Report 0-2. Sovereign AI Operating System + Economic System + Civilization Infrastructure.md
+0. Core_Blueprints_MUSGO-OS_2in1/Report 0.1. Modul Cyber Security Musgo-OS V9.1 Update.md
+0. Core_Blueprints_MUSGO-OS_2in1/Report 3. MUSGO-OS INFRASTRUCTURE & RUNTIME SYSTEM PART 101–140.md
+0. Core_Blueprints_MUSGO-OS_2in1/Report 4. MUSGO-OS GOVERNANCE PART 141-180.md
+0. Core_Blueprints_MUSGO-OS_2in1/Report 5. MUSGO-OS DATA STORAGE & RESILIENCE SYSTEM PART 181–210.md
+0. Core_Blueprints_MUSGO-OS_2in1/Report Core Database Musgo-OS.md
+0. Core_Blueprints_MUSGO-OS_2in1/Report MusGo Governor Constitutional Framework.md
+0. Core_Blueprints_MUSGO-OS_2in1/Report Security Holes Blueprint Database Update.md
+0. Core_Blueprints_MUSGO-OS_2in1/Report Security Holes V9.1 Update.md
+0. Core_Blueprints_MUSGO-OS_2in1/Report VPS SCALABLE.md
+0. Core_Blueprints_MUSGO-OS_2in1/Report riset mendalam gemini.md
+0. Core_Blueprints_MUSGO-OS_2in1/SDK List.md
+0. Core_Blueprints_MUSGO-OS_2in1/SKILL_CYBER SECURITY & NETWORKING KNOWLEDGE BASE_ETHACK.md
+0. Core_Blueprints_MUSGO-OS_2in1/SKILL_KNOWLEDGE BASE — CYBER SECURITY & NETWORKING_AMELIA.md
+0. Core_Blueprints_MUSGO-OS_2in1/Semua Catatan 0.1. Modul Cyber Security Musgo-OS V9.1 Update.md
+0. Core_Blueprints_MUSGO-OS_2in1/Semua Catatan 5. MUSGO-OS DATA STORAGE & RESILIENCE SYSTEM PART 181–210.md
+0. Core_Blueprints_MUSGO-OS_2in1/Semua Catatan 7-8-2026.md
+0. Core_Blueprints_MUSGO-OS_2in1/Semua Catatan Core Database Musgo-OS 2in1.md
+0. Core_Blueprints_MUSGO-OS_2in1/Semua Catatan Database Musgo-OS 2in1 (1).md
+0. Core_Blueprints_MUSGO-OS_2in1/Semua Catatan Database Musgo-OS 2in1.md
+0. Core_Blueprints_MUSGO-OS_2in1/Semua Catatan MusGo Governor Constitutional Framework + 525 Persona.md
+0. Core_Blueprints_MUSGO-OS_2in1/Semua catatan 4. MUSGO-OS SECURITY & IDENTITY GOVERNANCE PART 141-180.md
+0. Core_Blueprints_MUSGO-OS_2in1/Semua catatan VPS SCALABLE.md
+0. Core_Blueprints_MUSGO-OS_2in1/System Prompt Instruction Musgo-OS Custom.md
+0. Core_Blueprints_MUSGO-OS_2in1/TECHNICAL PERSPECTIVE (ARCHITECTURE & SOLUTIONS).md
+0. Core_Blueprints_MUSGO-OS_2in1/Tambahan Fitur-fitur.md
+0. Core_Blueprints_MUSGO-OS_2in1/Vibe-Mst COMPREHENSIVE SECURITY AUDIT & HARDENING REPORT.md
+0. Core_Blueprints_MUSGO-OS_2in1/VibeMst Autonomous Repository Design.md
+0. Core_Blueprints_MUSGO-OS_2in1/VibeMst Musgo-OS Blueprint Generate.md
+0. Core_Blueprints_MUSGO-OS_2in1/Whitepaper Teknis Sovereignty as a Service - SIaaS.md
+0. Core_Blueprints_MUSGO-OS_2in1/content.md
+0. Core_Blueprints_MUSGO-OS_2in1/doc_qwen & cs.md
+0. Core_Blueprints_MUSGO-OS_2in1/docs hugging face.md
+0. Core_Blueprints_MUSGO-OS_2in1/docs_1min_ai.md
+0. Core_Blueprints_MUSGO-OS_2in1/docs_hermes_agent.md
+0. Core_Blueprints_MUSGO-OS_2in1/docs_zapier.md
+0. Core_Blueprints_MUSGO-OS_2in1/semua catatan 3. MUSGO-OS INFRASTRUCTURE & RUNTIME SYSTEM PART 101–140.md
+AGENT_INDEX.md
+Ai Library/Awesome Free Models/Awesome Free Models.md
+Ai Library/Awesome Free Models/awesome-free-models_README.md at main · 12britz_awesome-free-mod.pdf
+Ai Library/Model Hosting Platforms/Model Hosting Platforms.md
+Ai_models-agent-personas_Pool/Agent files/MindPal Agent - MUSGO-OS 2in1 Core Intelligence Engine.json
+Ai_models-agent-personas_Pool/Agent files/MusGo.json
+Ai_models-agent-personas_Pool/Agent files/musgo-os-software-architect.json
+Ai_models-agent-personas_Pool/Agent files/wan2-5-t2v-preview.json
+Ai_models-agent-personas_Pool/Gpt custom Hugging Face model.md
+Ai_models-agent-personas_Pool/Grok_ai-open-source.md
+Ai_models-agent-personas_Pool/agents/1. CORE GOVERNOR AGENT.md
+Ai_models-agent-personas_Pool/agents/1. software architecture.md
+Ai_models-agent-personas_Pool/agents/10. SECURITY ENGINEER AGENT.md
+Ai_models-agent-personas_Pool/agents/10. distributed systems expert.md
+Ai_models-agent-personas_Pool/agents/11. INFRASTRUCTURE ENGINEER AGENT.md
+Ai_models-agent-personas_Pool/agents/11. Next.js expert.md
+Ai_models-agent-personas_Pool/agents/12. AI & INTELLIGENCE AGENTS.md
+Ai_models-agent-personas_Pool/agents/12. Node.js expert focused on backend patterns.md
+Ai_models-agent-personas_Pool/agents/13. AI ARCHITECT AGENT.md
+Ai_models-agent-personas_Pool/agents/13. performance optimization expert.md
+Ai_models-agent-personas_Pool/agents/14. AGENT ORCHESTRATOR AGENT.md
+Ai_models-agent-personas_Pool/agents/14. Python expert focused.md
+Ai_models-agent-personas_Pool/agents/15. PROMPT ENGINEER AGENT.md
+Ai_models-agent-personas_Pool/agents/15. React expert focused.md
+Ai_models-agent-personas_Pool/agents/16. RAG ENGINEER AGENT.md
+Ai_models-agent-personas_Pool/agents/16. compliance expert.md
+Ai_models-agent-personas_Pool/agents/17. KNOWLEDGE GRAPH ENGINEER.md
+Ai_models-agent-personas_Pool/agents/17. senior security engineer performing.md
+Ai_models-agent-personas_Pool/agents/18. MEMORY SYSTEM ENGINEER.md
+Ai_models-agent-personas_Pool/agents/18. Spring Boot expert.md
+Ai_models-agent-personas_Pool/agents/19. AI SECURITY ENGINEER.md
+Ai_models-agent-personas_Pool/agents/19. refactoring specialist.md
+Ai_models-agent-personas_Pool/agents/2. SOFTWARE ARCHITECT AGENT.md
+Ai_models-agent-personas_Pool/agents/2. bug detection specialist.md
+Ai_models-agent-personas_Pool/agents/20. MLOPS ENGINEER AGENT.md
+Ai_models-agent-personas_Pool/agents/20. testing specialist.md
+Ai_models-agent-personas_Pool/agents/21. MODEL RESEARCH AGENT.md
+Ai_models-agent-personas_Pool/agents/21. TypeScript expert.md
+Ai_models-agent-personas_Pool/agents/22. AUTONOMOUS PLANNER AGENT.md
+Ai_models-agent-personas_Pool/agents/22. Vue expert focused.md
+Ai_models-agent-personas_Pool/agents/23. AUTONOMOUS EXECUTOR AGENT.md
+Ai_models-agent-personas_Pool/agents/24. AI GOVERNOR AGENT
+Ai_models-agent-personas_Pool/agents/25. AI SWARM COMMANDER AGENT.md
+Ai_models-agent-personas_Pool/agents/26. PRODUCT MANAGER AGENT.md
+Ai_models-agent-personas_Pool/agents/27. MONETIZATION STRATEGIST AGENT.md
+Ai_models-agent-personas_Pool/agents/28. SAAS ARCHITECT AGENT.md
+Ai_models-agent-personas_Pool/agents/29. MARKET RESEARCH AGENT.md
+Ai_models-agent-personas_Pool/agents/3. BACKEND ENGINEER AGENT.md
+Ai_models-agent-personas_Pool/agents/3. C# expert focused.md
+Ai_models-agent-personas_Pool/agents/30. BUSINESS INTELLIGENCE AGENT.md
+Ai_models-agent-personas_Pool/agents/31. GROWTH HACKER AGENT.md
+Ai_models-agent-personas_Pool/agents/32. ENTERPRISE CONSULTANT AGENT.md
+Ai_models-agent-personas_Pool/agents/33. INVESTOR DECK AGENT.md
+Ai_models-agent-personas_Pool/agents/34. RESEARCH ANALYST AGENT.md
+Ai_models-agent-personas_Pool/agents/35. TECHNICAL WRITER AGENT.md
+Ai_models-agent-personas_Pool/agents/36. DOCUMENTATION GOVERNOR AGENT.md
+Ai_models-agent-personas_Pool/agents/37. RISK ANALYST AGENT.md
+Ai_models-agent-personas_Pool/agents/38. POLICY GOVERNOR AGENT.md
+Ai_models-agent-personas_Pool/agents/39. COMPLIANCE AUDITOR AGENT.md
+Ai_models-agent-personas_Pool/agents/4. FRONTEND ENGINEER AGENT.md
+Ai_models-agent-personas_Pool/agents/4. code consistency expert.md
+Ai_models-agent-personas_Pool/agents/40. STRATEGIC ADVISOR AGENT.md
+Ai_models-agent-personas_Pool/agents/41. SECURITY GOVERNOR AGENT.md
+Ai_models-agent-personas_Pool/agents/42. ZERO TRUST ARCHITECT AGENT.md
+Ai_models-agent-personas_Pool/agents/43. THREAT HUNTER AGENT.md
+Ai_models-agent-personas_Pool/agents/44. CYBER DEFENSE AGENT.md
+Ai_models-agent-personas_Pool/agents/45. NETWORK ARCHITECT AGENT.md
+Ai_models-agent-personas_Pool/agents/46. PROTOCOL ENGINEER AGENT.md
+Ai_models-agent-personas_Pool/agents/47. FEDERATION ARCHITECT AGENT.md
+Ai_models-agent-personas_Pool/agents/48. TRUST ENGINE AGENT.md
+Ai_models-agent-personas_Pool/agents/49. CONSTITUTIONAL AI AGENT.md
+Ai_models-agent-personas_Pool/agents/5. FULLSTACK ENGINEER AGENT.md
+Ai_models-agent-personas_Pool/agents/5. code quality specialist.md
+Ai_models-agent-personas_Pool/agents/50. ETHICAL GOVERNOR AGENT.md
+Ai_models-agent-personas_Pool/agents/51. CONSENSUS ARCHITECT AGENT.md
+Ai_models-agent-personas_Pool/agents/52. DIGITAL SOVEREIGNTY AGENT.md
+Ai_models-agent-personas_Pool/agents/53. INFRASTRUCTURE GOVERNOR AGENT.md
+Ai_models-agent-personas_Pool/agents/54. RESILIENCE ENGINEER AGENT.md
+Ai_models-agent-personas_Pool/agents/55. DISASTER RECOVERY AGENT.md
+Ai_models-agent-personas_Pool/agents/56. SELF-HEALING ARCHITECT AGENT.md
+Ai_models-agent-personas_Pool/agents/57. OBSERVABILITY ENGINEER AGENT.md
+Ai_models-agent-personas_Pool/agents/58. RUNTIME SECURITY AGENT.md
+Ai_models-agent-personas_Pool/agents/59. CIVILIZATION CONTINUITY AGENT.md
+Ai_models-agent-personas_Pool/agents/6. DEVOPS ENGINEER AGENT.md
+Ai_models-agent-personas_Pool/agents/6. dependency security expert.md
+Ai_models-agent-personas_Pool/agents/60. QUANTUM SECURITY AGENT.md
+Ai_models-agent-personas_Pool/agents/61. META GOVERNOR AGENT.md
+Ai_models-agent-personas_Pool/agents/62. AGENT FACTORY AGENT.md
+Ai_models-agent-personas_Pool/agents/63. AGENT REGISTRY AGENT.md
+Ai_models-agent-personas_Pool/agents/64. SKILL REGISTRY AGENT.md
+Ai_models-agent-personas_Pool/agents/65. CAPABILITY ROUTER AGENT.md
+Ai_models-agent-personas_Pool/agents/66. KNOWLEDGE FEDERATION AGENT.md
+Ai_models-agent-personas_Pool/agents/67. KNOWLEDGE CURATOR AGENT.md
+Ai_models-agent-personas_Pool/agents/68. WORLD MODEL ENGINE.md
+Ai_models-agent-personas_Pool/agents/69. STRATEGIC SIMULATION AGENT.md
+Ai_models-agent-personas_Pool/agents/7. CI-CD ENGINEER AGENT.md
+Ai_models-agent-personas_Pool/agents/7. documentation quality specialist.md
+Ai_models-agent-personas_Pool/agents/70. SELF-EVOLUTION ENGINE.md
+Ai_models-agent-personas_Pool/agents/71. AUTONOMOUS LEARNING ENGINE.md
+Ai_models-agent-personas_Pool/agents/72. MEMORY FEDERATION AGENT.md
+Ai_models-agent-personas_Pool/agents/73. DECISION ENGINE AGENT.md
+Ai_models-agent-personas_Pool/agents/74. POLICY EVOLUTION AGENT.md
+Ai_models-agent-personas_Pool/agents/75. ECOSYSTEM EXPANSION AGENT.md
+Ai_models-agent-personas_Pool/agents/8. GITHUB MANAGER AGENT.md
+Ai_models-agent-personas_Pool/agents/8. fallback reviewer for issues.md
+Ai_models-agent-personas_Pool/agents/9. GraphQL expert focused.md
+Ai_models-agent-personas_Pool/agents/9. QA ENGINEER AGENT.md
+Ai_models-agent-personas_Pool/agents/Expert AI coding.md
+Ai_models-agent-personas_Pool/agents/General-purpose.md
+Ai_models-agent-personas_Pool/agents/creating-agent-skills.md
+Ai_models-agent-personas_Pool/agents/explorer.md
+Ai_models-agent-personas_Pool/agents/planner.md
+Ai_models-agent-personas_Pool/agents/scheduler.md
+Ai_models-agent-personas_Pool/agents/toolmaker.md
+Ai_models-agent-personas_Pool/ai agent/Daftar platform agent.md
+Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/.gitignore
+Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/README.md
+Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/components.json
+Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/eslint.config.js
+Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/index.html
+Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/info.md
+Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/package-lock.json
+Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/package.json
+Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/postcss.config.js
+Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/App.css
+Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/WindowManager.tsx
+Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/ui/aspect-ratio.tsx
+Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/hooks/use-mobile.ts
+Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/index.css
+Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/lib/utils.ts
+Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/main.tsx
+Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/tailwind.config.js
+Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/tsconfig.app.json
+Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/tsconfig.json
+Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/tsconfig.node.json
+Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/vite.config.ts
+Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /plan.md
+Ai_models-agent-personas_Pool/ai agent/RagMyAi.md
+Ai_models-agent-personas_Pool/avatar/2026_05_27_23_58_07_911_302387.glb
+Ai_models-agent-personas_Pool/cache/agnesai.index.json
+Ai_models-agent-personas_Pool/cache/agnesai.models.json
+Ai_models-agent-personas_Pool/cache/anyapi.index.json
+Ai_models-agent-personas_Pool/cache/anyapi.models.json
+Ai_models-agent-personas_Pool/cache/cheaperinference.index.json
+Ai_models-agent-personas_Pool/cache/cheaperinference.models.json
+Ai_models-agent-personas_Pool/cache/freetheai.index.json
+Ai_models-agent-personas_Pool/cache/freetheai.models.json
+Ai_models-agent-personas_Pool/cache/kiloai.index.json
+Ai_models-agent-personas_Pool/cache/kiloai.models.json
+Ai_models-agent-personas_Pool/cache/kunciai.index.json
+Ai_models-agent-personas_Pool/cache/kunciai.models.json
+Ai_models-agent-personas_Pool/cache/nvidia.index.json
+Ai_models-agent-personas_Pool/cache/nvidia.models.json
+Ai_models-agent-personas_Pool/models/capability/ap_identity.py
+Ai_models-agent-personas_Pool/models/capability/price-map.txt
+Ai_models-agent-personas_Pool/models/capability/score-map.txt
+Ai_models-agent-personas_Pool/models/capability/score_map.txt
+Ai_models-agent-personas_Pool/models/models.md
+Ai_models-agent-personas_Pool/personas/1. Ai live guide 25 persona/1. Ai live guide 25 persona.md
+Ai_models-agent-personas_Pool/personas/2. Musyawarah Planner persona/2. Musyawarah Planner 250 persona.md
+Ai_models-agent-personas_Pool/personas/3. GoRo Executor persona/3. GoRo Executor 250 persona.md
+Ai_models-agent-personas_Pool/personas/Core 525+ Persona.md
+Ai_models-agent-personas_Pool/telegram bot commands.md
+Ai_models-agent-personas_Pool/telegram bot/Aimusgobot.md
+Ai_models-agent-personas_Pool/telegram bot/Bot command.md
+Ai_models-agent-personas_Pool/telegram bot/TPY bot command.md/GPT bot command Template.md
+Ai_models-agent-personas_Pool/telegram bot/TPY bot command.md/GPT bot command.md
+Ai_models-agent-personas_Pool/telegram bot/TPY bot command.md/TPY bot command.md
+Ai_models-agent-personas_Pool/telegram bot/TPY bot command.md/TPY language reference.md
+Ai_models-agent-personas_Pool/telegram bot/TPY bot command.md/advance feature.md
+Ai_models-agent-personas_Pool/telegram bot/TPY bot command.md/bot feature.md
+Ai_models-agent-personas_Pool/telegram bot/default command.md
+Arsitektur MusGo-OS_2in1/Core Arsitektur Sovereign AI MusGo-OS.md
+Arsitektur MusGo-OS_2in1/Core Semua catatan Architecture MusGo.md
+Arsitektur MusGo-OS_2in1/content.md
+Arsitektur MusGo-OS_2in1/note/Arsitektur 17-Layer Konstitusional MusGo-OS 2in1.pdf
+Arsitektur MusGo-OS_2in1/note/Briefing Doc_ Ekosistem Sovereign AI MusGo-OS 2in1.md
+Arsitektur MusGo-OS_2in1/note/Briefing Doc_ Ekosistem Sovereign AI MusGo-OS 2in1.pdf
+Arsitektur MusGo-OS_2in1/note/Mengenal MusGo-OS 2in1_ Rahasia di Balik AI yang _Bermusyawarah_ dan _Bergotong Royong_.md
+Arsitektur MusGo-OS_2in1/note/Mengenal MusGo-OS 2in1_ Rahasia di Balik AI yang _Bermusyawarah_ dan _Bergotong Royong_.pdf
+Arsitektur MusGo-OS_2in1/note/Menjelajahi Jantung MusGo-OS 2in1_ Glosarium & Panduan Arsitektur untuk Pemula.md
+Arsitektur MusGo-OS_2in1/note/Menjelajahi Jantung MusGo-OS 2in1_ Glosarium & Panduan Arsitektur untuk Pemula.pdf
+Arsitektur MusGo-OS_2in1/note/MusGo-OS 2in1_ Mengapa OS AI Berbasis Kearifan Lokal Ini Akan Mengubah Standar Kedaulatan Digital Kita_.md
+Arsitektur MusGo-OS_2in1/note/MusGo-OS 2in1_ Mengapa OS AI Berbasis Kearifan Lokal Ini Akan Mengubah Standar Kedaulatan Digital Kita_.pdf
+Arsitektur MusGo-OS_2in1/note/NotebookLM Mind Map.png
+Arsitektur MusGo-OS_2in1/note/Panduan Belajar_ Ekosistem Sovereign AI MusGo-OS 2in1.md
+Arsitektur MusGo-OS_2in1/note/Panduan Belajar_ Ekosistem Sovereign AI MusGo-OS 2in1.pdf
+Arsitektur MusGo-OS_2in1/note/Pedoman Tata Kelola Pengambilan Keputusan Kolektif MusGo-OS 2in1.md
+Arsitektur MusGo-OS_2in1/note/Pedoman Tata Kelola Pengambilan Keputusan Kolektif MusGo-OS 2in1.pdf
+Arsitektur MusGo-OS_2in1/note/Semua catatan Architecture MusGo.md
+Arsitektur MusGo-OS_2in1/note/Strategi Pengerasan Infrastruktur dan Pertahanan Jaringan Zero-Trust MusGo-OS 2in1.md
+Arsitektur MusGo-OS_2in1/note/Strategi Pengerasan Infrastruktur dan Pertahanan Jaringan Zero-Trust MusGo-OS 2in1.pdf
+BI & Monetization/Core User Tier - Musgo-OS Monetisasi.md
+BI & Monetization/FULL DEPLOYMENT REALITY STACK.md
+BI & Monetization/LEVEL SYSTEM FINAL MUSGO-OS 2IN1.md
+BI & Monetization/MUSGO-OS 2in1 FULL PRODUCTION BLUEPRINT 1–5.md
+BI & Monetization/SECURE_EXECUTION_GOVERNOR.md
+BI & Monetization/billing engine.md
+BI & Monetization/endgame architecture.md
+BI & Monetization/production-grade.md
+BI & Monetization/tier user.md
+Blueprint Strategis/0. V5.4 Blueprint architecture manusia Musgo-OS.md
+Blueprint Strategis/Agent/Notebooklm/NBLM BLUEPRINT ARSITEKTUR MUSGO-OS 2in1 V9.1.md
+Blueprint Strategis/Agent/Vibe mistral/Autonomous workflow Blueprint.md
+Blueprint Strategis/Agent/Vibe mistral/Scheduled Autonomous Repository Builder.md
+Blueprint Strategis/Agent/Vibe mistral/TEMPLATE_BLUEPRINT.md
+Blueprint Strategis/Agent/Vibe mistral/Vibe Mst Musgo-OS Library Overview.md
+Blueprint Strategis/Agent/Vibe mistral/Vibe-Mst COMPREHENSIVE SECURITY AUDIT & HARDENING REPORT.md
+Blueprint Strategis/Agents/0. MusGo-OS 2in1_Generator/0. history/0. MusGo-OS 2in1 Generator Overview.md
+Blueprint Strategis/Agents/0. MusGo-OS 2in1_Generator/1. output/Core Blueprint Musgo-OS Bahasa Manusia.md
+Blueprint Strategis/Agents/0. MusGo-OS 2in1_Generator/1. output/Core Fitur-fitur MusGo-OS 2in1Blueprint.md
+Blueprint Strategis/Agents/0. MusGo-OS 2in1_Generator/1. output/Inti Dasar Hukum Musgo-OS.md
+Blueprint Strategis/Agents/0. MusGo-OS 2in1_Generator/1. output/Service account.md
+Blueprint Strategis/Agents/0. MusGo-OS 2in1_Generator/1. output/Tech Stack_MusGo-OS 2in1.md
+Blueprint Strategis/Agents/0. MusGo-OS 2in1_Generator/1. output/repo_generator_MusGo-OS 2in1.md
+Blueprint Strategis/Agents/1. mistral vibe/1. output/Core MusGo-OS Enterprise Blueprint Framework.md
+Blueprint Strategis/Agents/1. mistral vibe/1. output/VibeMst MusGo-OS Enterprise Blueprint Framework.md
+Blueprint Strategis/Agents/1. mistral vibe/1. output/core-musgo-os-2in1-repository-structure-blueprint.pdf
+Blueprint Strategis/Agents/1. mistral vibe/1. output/table/table Urutan Pengerjaan Prioritas.csv
+Blueprint Strategis/Agents/1. mistral vibe/Autonomous workflow/MUSGO-OS Domain Blueprint.md
+Blueprint Strategis/Agents/1. mistral vibe/Core MusGo-OS Enterprise Blueprint Framework.md
+Blueprint Strategis/Agents/1. mistral vibe/MUSGO-OS Domain Blueprint.md
+Blueprint Strategis/Agents/1. mistral vibe/Manual Workflow Instruction/Musgo-OS Domain Blueprint.md
+Blueprint Strategis/Agents/1. mistral vibe/Manual Workflow Instruction/MusgoOS Domain Architecture Blueprint.md
+Blueprint Strategis/Agents/1. mistral vibe/Manual Workflow Instruction/VibeMst_Manual_Workflow_Instruction.md
+Blueprint Strategis/Agents/1. mistral vibe/VibeMst Musgo-OS Blueprint Generate.md
+Blueprint Strategis/Agents/2. gemini app/0. history/0. ekstraksi konten 1min.ai bahasa Id.md
+Blueprint Strategis/Agents/2. gemini app/0. history/1. extract docs zapier ke indo.md
+Blueprint Strategis/Agents/2. gemini app/1. output/Gems Pembuatan Runtime Controller GoMu-OS.md
+Blueprint Strategis/Agents/2. gemini app/1. output/Gems Riset Pengetahuan Umum Terstruktur Terpisah.md
+Blueprint Strategis/Agents/2. gemini app/1. output/Gems Spesifikasi Arsitektur Read-Only & Overlay Manager (MIAS) MusGo-OS V9.1.md
+Blueprint Strategis/Agents/2. gemini app/1. output/Gems Spesifikasi Protokol Failover Gubernur & Shadow SSH (MGP) MusGo-OS V9.1.md
+Blueprint Strategis/Agents/2. gemini app/1. output/Gems Spesifikasi Teknis Modul Cognitive-to-Kernel Interface (MGCKP) MusGo-OS V9.1.md
+Blueprint Strategis/Agents/2. gemini app/1. output/Report riset mendalam gemini.md
+Blueprint Strategis/Agents/3. Deepseek/0. history/0. DS docs ekstraksi konten link zapier.md
+Blueprint Strategis/Agents/3. Deepseek/0. history/0. DS ekstrak link docs Hermes agent.md
+Blueprint Strategis/Agents/3. Deepseek/0. history/0. DS gabungan menu & fitur musgo os.md
+Blueprint Strategis/Agents/3. Deepseek/1. output/Core DS Blueprint Deskripsi Bahasa Manusia.md
+Blueprint Strategis/Agents/3. Deepseek/1. output/Core DS Master Ultimate Menu & Fitur.md
+Blueprint Strategis/Agents/3. Deepseek/1. output/Core MUSGO-OS V9.1 — STRUKTUR REPOSITORY FINAL.md
+Blueprint Strategis/Agents/3. Deepseek/1. output/Core V9.1 Update Master Index Repo.md
+Blueprint Strategis/Agents/3. Deepseek/1. output/DS FULL Menu & Fitur MusGo-OS 2in1.md
+Blueprint Strategis/Agents/3. Deepseek/1. output/DS_docs zapier.md
+Blueprint Strategis/Agents/6. Kai9000/history/Blueprint Core MusGo-OS 2in1 Enterprise Framework.md
+Blueprint Strategis/Agents/6. Kai9000/history/History Blueprint Core MusGo-OS 2in1 Enterprise Framework.md
+Blueprint Strategis/Agents/GPT Great Islmic Library/0. History Musgo Governor Constitutional Framework.md
+Blueprint Strategis/Agents/GPT Great Islmic Library/Core 1-30 Governor Constitutional Framework 1-30.md
+Blueprint Strategis/Agents/GPT Great Islmic Library/Core 31-61 Governor Constitutional Framework.md
+Blueprint Strategis/Agents/GPT Great Islmic Library/Report MusGo Governor Constitutional Framework.md
+Blueprint Strategis/Agents/GPT Great Islmic Library/Semua Catatan MusGo Governor Constitutional Framework + 525 Persona.md
+Blueprint Strategis/Agents/Gpt Project MusGo-OS/Bahas Human Suggest Engine.md
+Blueprint Strategis/Agents/Gpt Project MusGo-OS/Core HUMAN SUGGEST ENGINE.md
+Blueprint Strategis/Agents/Gpt Project MusGo-OS/Core_Architecture_Blueprint_Musgo-OS.md
+Blueprint Strategis/Agents/Gpt Project MusGo-OS/Discussed_Architecture_Blueprint_Musgo_Project_Gpt.md
+Blueprint Strategis/Agents/Notion/history/0. greeting arab.md
+Blueprint Strategis/Agents/Zai GLM/history/AutoClaw.md
+Blueprint Strategis/Agents/Zai GLM/output/Long-Term Memory.md
+Blueprint Strategis/Agents/Zai GLM/output/memory 1 Juni 2026.md
+Blueprint Strategis/Agents/Zai GLM/output/user.md
+Blueprint Strategis/Agents/docs Gomu-OS/ENTERPRISE_DEPLOYMENT_ARCHITECTURE_SPEC.md
+Blueprint Strategis/Agents/docs Gomu-OS/GOMU-OS 2in1 — SOVEREIGN MASTER CONSTITUTION.md
+Blueprint Strategis/Agents/docs Gomu-OS/GOMU_OS_SOVEREIGN_ENTERPRISE_CONSTITUTION.md
+Blueprint Strategis/Agents/docs Gomu-OS/GOVERNOR_CHARTER.md
+Blueprint Strategis/Agents/docs Gomu-OS/GOVERNOR_IP_LEGAL_FRAMEWORK.md
+Blueprint Strategis/Agents/docs Gomu-OS/GOVERNOR_IP_LEGAL_FRAMEWORK_PART_III_IP_PROTECTION_ARCHITECTURE.md
+Blueprint Strategis/Agents/docs Gomu-OS/GOVERNOR_IP_LEGAL_FRAMEWORK_PART_II_GOVERNANCE_LIABILITY.md
+Blueprint Strategis/Agents/docs Gomu-OS/GOVERNOR_IP_LEGAL_FRAMEWORK_PART_I_CONSTITUTIONAL_CORE.md
+Blueprint Strategis/Agents/docs Gomu-OS/IP_LEGAL_FRAMEWORK.md
+Blueprint Strategis/Agents/docs Gomu-OS/business/ENTERPRISE_SALES_ARCHITECTURE.md
+Blueprint Strategis/Agents/docs Gomu-OS/business/PRICING_STRATEGY_MODEL.md
+Blueprint Strategis/Agents/docs Gomu-OS/compliance/COMPLIANCE_CERTIFICATION_ROADMAP.md
+Blueprint Strategis/Agents/docs Gomu-OS/investor/GOMU_OS_INVESTOR_EXECUTIVE_SUMMARY.md
+Blueprint Strategis/Agents/docs Gomu-OS/legal/ARCHITECTURAL_DOCTRINE.md
+Blueprint Strategis/Agents/docs Gomu-OS/legal/COMMERCIAL_LICENSING_MODEL.md
+Blueprint Strategis/Agents/docs Gomu-OS/legal/ENGINEERING_EXECUTION_CONSTITUTION_FINAL.md
+Blueprint Strategis/Agents/docs Gomu-OS/legal/GOMU_OS_SOVEREIGN_MASTER_CONSTITUTION.md
+Blueprint Strategis/Agents/docs Gomu-OS/legal/IP_DECLARATION.md
+Blueprint Strategis/Agents/docs Gomu-OS/legal/OFFICIAL_VERSION_FREEZE.md
+Blueprint Strategis/Agents/docs Gomu-OS/production/DATABASE_BACKUP_STRATEGY.md
+Blueprint Strategis/Agents/docs Gomu-OS/production/DISASTER_RECOVERY_PLAN.md
+Blueprint Strategis/Agents/docs Gomu-OS/production/SOVEREIGN_CLOUD_ARCHITECTURE_SPEC.md
+Blueprint Strategis/Agents/docs Gomu-OS/release/ENTERPRISE_RELEASE_NOTES.md
+Blueprint Strategis/Agents/docs Gomu-OS/whitepaper/GOMU_OS_SOVEREIGN_TECHNICAL_WHITEPAPER.md
+Blueprint Strategis/Agents/online services/docs musgo folder-structure.csv
+Blueprint Strategis/Agents/online services/docs musgo folder-structure.xlsx
+Blueprint Strategis/Agents/online services/folder-structure musgo.csv
+Blueprint Strategis/Agents/online services/folder-structure musgo.xlsx
+Blueprint Strategis/Agents/online services/struktur repo generate folder.md
+Blueprint Strategis/Core Blueprint Musgo-OS Bahasa Manusia.md
+Blueprint Strategis/Core DS Blueprint Deskripsi Bahasa Manusia.md
+Blueprint Strategis/Core DS_FullBlueprint.md
+Blueprint Strategis/Core MUSGO-OS V9.1 — STRUKTUR REPOSITORY FINAL.md
+Blueprint Strategis/Core QW_FullBlueprint.md
+Blueprint Strategis/Core V9.1 Update Master Index Repo.md
+Core Database Musgo-OS 2in1/Agent/Autonomous Repository Design/VibeMst Autonomous Repository Design.md
+Core Database Musgo-OS 2in1/Agent/Musgo-OS Blueprint Generate/VibeMst Musgo-OS Blueprint Generate.md
+Core Database Musgo-OS 2in1/Bahasan Fitur-fitur.md
+Core Database Musgo-OS 2in1/Github/Action/2in1-MusGo-OS/2in1-MusGo-OS.git
+Core Database Musgo-OS 2in1/Github/Action/Ai-Code-Assistant-MusGo-OS/Ai-Code-Assistant-MusGo-OS.git
+Core Database Musgo-OS 2in1/Github/Action/Core_2in1_MusGo-OS/Core_2in1_MusGo-OS.git
+Core Database Musgo-OS 2in1/Github/Action/Human-CLI-MusGo-OS-Workspace/Human-CLI-MusGo-OS-Workspace.git
+Core Database Musgo-OS 2in1/Github/Action/Minang-MusGo-OS/Minang-MusGo-OS.git
+Core Database Musgo-OS 2in1/Github/Action/MusGo-OS-2in1/MusGo-OS-2in1.git
+Core Database Musgo-OS 2in1/Github/Action/Webapp-Human-CLI/Webapp-Human-CLI.git
+Core Database Musgo-OS 2in1/Github/Action/grk4.6_human_cli_musgo/grk4.6_human_cli_musgo.git
+Core Database Musgo-OS 2in1/Github/Docs/0. Semua Catatan Github Repository MusGo-OS 2in1.md
+Core Database Musgo-OS 2in1/Github/Docs/1. Github Repository.md
+Core Database Musgo-OS 2in1/Github/Docs/2. github repo.md
+Core Database Musgo-OS 2in1/Github/Repository/2in1-MusGo-OS/2in1-MusGo-OS.git
+Core Database Musgo-OS 2in1/Github/Repository/2in1-MusGo-OS/LICENSE
+Core Database Musgo-OS 2in1/Github/Repository/2in1-MusGo-OS/LICENSE-COMMERCIAL.md
+Core Database Musgo-OS 2in1/Github/Repository/2in1-MusGo-OS/LICENSE-COMMERCIAL.pdf
+Core Database Musgo-OS 2in1/Github/Repository/2in1-MusGo-OS/README.md
+Core Database Musgo-OS 2in1/Github/Repository/2in1-MusGo-OS/README.pdf
+Core Database Musgo-OS 2in1/Github/Repository/Ai-Code-Assistant-MusGo-OS/Ai-Code-Assistant-MusGo-OS.git
+Core Database Musgo-OS 2in1/Github/Repository/Core_2in1_MusGo-OS/Core_2in1_MusGo-OS.git
+Core Database Musgo-OS 2in1/Github/Repository/Core_2in1_MusGo-OS/LICENSE
+Core Database Musgo-OS 2in1/Github/Repository/Core_2in1_MusGo-OS/LICENSE-COMMERCIAL.md
+Core Database Musgo-OS 2in1/Github/Repository/Core_2in1_MusGo-OS/LICENSE-COMMERCIAL.pdf
+Core Database Musgo-OS 2in1/Github/Repository/Core_2in1_MusGo-OS/README.md
+Core Database Musgo-OS 2in1/Github/Repository/Core_2in1_MusGo-OS/README.pdf
+Core Database Musgo-OS 2in1/Github/Repository/Human-CLI-MusGo-OS-Workspace/Human-CLI-MusGo-OS-Workspace.git
+Core Database Musgo-OS 2in1/Github/Repository/Minang-MusGo-OS/Minang-MusGo-OS.git
+Core Database Musgo-OS 2in1/Github/Repository/MusGo-CLI/MusGo-CLI.git
+Core Database Musgo-OS 2in1/Github/Repository/MusGo-OS-2in1/LICENSE
+Core Database Musgo-OS 2in1/Github/Repository/MusGo-OS-2in1/LICENSE-COMMERCIAL.md
+Core Database Musgo-OS 2in1/Github/Repository/MusGo-OS-2in1/MusGo-OS-2in1.git
+Core Database Musgo-OS 2in1/Github/Repository/MusGo-OS-2in1/README.md
+Core Database Musgo-OS 2in1/Github/Repository/Webapp-Human-CLI/Webapp-Human-CLI.git
+Core Database Musgo-OS 2in1/Github/Repository/grk4.6_human_cli_musgo/grk4.6_human_cli_musgo.git
+Core Database Musgo-OS 2in1/Semua Catatan Database Musgo-OS 2in1 (1).md
+Core Database Musgo-OS 2in1/Semua Catatan Database Musgo-OS 2in1.md
+Core Database Musgo-OS 2in1/TECHNICAL PERSPECTIVE (ARCHITECTURE & SOLUTIONS).md
+Core Database Musgo-OS 2in1/Whitepaper Teknis Sovereignty as a Service - SIaaS.md
+Core Database Musgo-OS 2in1/content.md
+Core Database Musgo-OS 2in1/notes/Bahasan Ai live Guide - Ai Auto Suggests.md
+Core Database Musgo-OS 2in1/notes/Bahasan Fitur-fitur Musgo-OS.md
+Core Database Musgo-OS 2in1/notes/Bahasan Menu-Task.md
+Core Database Musgo-OS 2in1/notes/Bahasan Read Only File System.md
+Core Database Musgo-OS 2in1/notes/Bahasan Tier User.md
+Core Database Musgo-OS 2in1/notes/Report Core Database Musgo-OS.md
+Core Database Musgo-OS 2in1/notes/Report Security Holes Blueprint Database Update.md
+Cyber Security Defence & Networking/Amelia Cyber Security/0. MASTER IMPLEMENTATION ROADMAP.md
+Cyber Security Defence & Networking/Amelia Cyber Security/1. MusGo-OS 2in1_MASTER SECURITY CONSTITUTION.md
+Cyber Security Defence & Networking/Amelia Cyber Security/1.0 SKILL_CYBER SECURITY & NETWORKING KNOWLEDGE BASE_ETHACK.md
+Cyber Security Defence & Networking/Amelia Cyber Security/1.1 SKILL_KNOWLEDGE BASE — CYBER SECURITY & NETWORKING_AMELIA.md
+Cyber Security Defence & Networking/Amelia Cyber Security/CORE SKILL_UNIFIED_SECURITY_KNOWLEDGE_BASE.md
+Cyber Security Defence & Networking/Ethical Hacker/0. Modul Cyber Security Musgo-OS V8.0.md
+Cyber Security Defence & Networking/Ethical Hacker/0.1.  Modul Cyber Security Musgo-OS V9.1.md
+Cyber Security Defence & Networking/Ethical Hacker/1. Upgrade layer 13.md
+Cyber Security Defence & Networking/Ethical Hacker/2. Upgrade layer 16 threat intelligence.md
+Cyber Security Defence & Networking/Ethical Hacker/3. Upgrade 17 Layers to 19 Layer Musgo-OS.md
+Cyber Security Defence & Networking/Ethical Hacker/4. Final Architecture Musgo-OS.md
+Cyber Security Defence & Networking/Ethical Hacker/Core MUSGO-OS V9.1 — STRUKTUR REPOSITORY FINAL.md
+Cyber Security Defence & Networking/Ethical Hacker/Core V9.1 Update Master Index Repo.md
+Cyber Security Defence & Networking/Ethical Hacker/V8.0/0. Modul Cyber Security Musgo-OS.md
+Cyber Security Defence & Networking/Ethical Hacker/V8.0/V8.0. DS — MASTER INDEX REPOSITORY MUSGO-OS 2IN1.md
+Cyber Security Defence & Networking/Ethical Hacker/V8.0/notes/Arsitektur Kedaulatan Digital Panduan Memahami 21 Layer MusGo-OS.md
+Cyber Security Defence & Networking/Ethical Hacker/V8.0/notes/Doktrin Pertahanan Siber Berdaulat Manifesto Infrastruktur Digital MusGo-OS V8.0.md
+Cyber Security Defence & Networking/Ethical Hacker/V8.0/notes/Dokumen Briefing Arsitektur Keamanan Siber Berdaulat MusGo-OS V8.0.md
+Cyber Security Defence & Networking/Ethical Hacker/V8.0/notes/Laporan Strategis Kedaulatan Digital Ekosistem MusGo-OS V8.0 Edisi Founder & Investor.md
+Cyber Security Defence & Networking/Ethical Hacker/V8.0/notes/Masa Depan Kedaulatan Digital 7 Terobosan Radikal MusGo-OS V8.0 yang Mengubah Aturan Main Keamanan Siber.md
+Cyber Security Defence & Networking/Ethical Hacker/V8.0/notes/Narasi Logika Pertahanan MusGo-OS V8.0 Memahami Sistem Imun Digital yang Berdaulat.md
+Cyber Security Defence & Networking/Ethical Hacker/V8.0/notes/Panduan Standar Implementasi MusGo-OS V8.0 Arsitektur Kedaulatan Digital dan Pertahanan Aktif.md
+Cyber Security Defence & Networking/Ethical Hacker/V8.0/notes/Panduan Studi Keamanan Siber MusGo-OS V8.0.md
+Cyber Security Defence & Networking/Ethical Hacker/V8.0/semua catatan Cyber Security Musgo-OS.md
+Cyber Security Defence & Networking/Ethical Hacker/V8.0/studio/NotebookLM Mind Map.png
+Cyber Security Defence & Networking/Ethical Hacker/V8.0/update kritik/Menyempurnakan_Cetak_Biru_MusGo-OS_V8.md
+Cyber Security Defence & Networking/Ethical Hacker/V9.1/0.1.  Modul Cyber Security Musgo-OS V9.1.md
+Cyber Security Defence & Networking/Ethical Hacker/V9.1/Semua catatan V9.1 Module Cyber Security Musgo-OS.md
+Cyber Security Defence & Networking/Ethical Hacker/V9.1/V9.1 Master Index Repository Musgo-OS.md
+Cyber Security Defence & Networking/Ethical Hacker/V9.1/update kritik/Menutup_Celah_Silikon_dan_Zero-Day_MusGo-OS.m4a.md
+Cyber Security Defence & Networking/Ethical Hacker/v9.1 update/0.1. Modul Cyber Security Musgo-OS V9.1 Update.md
+Cyber Security Defence & Networking/Ethical Hacker/v9.1 update/Core MUSGO-OS V9.1 — STRUKTUR REPOSITORY FINAL.md
+Cyber Security Defence & Networking/Ethical Hacker/v9.1 update/Core V9.1 Update Master Index Repo.md
+Cyber Security Defence & Networking/Ethical Hacker/v9.1 update/Report 0.1. Modul Cyber Security Musgo-OS V9.1 Update.md
+Cyber Security Defence & Networking/Ethical Hacker/v9.1 update/Report Security Holes V9.1 Update.md
+Cyber Security Defence & Networking/Ethical Hacker/v9.1 update/Semua Catatan 0.1. Modul Cyber Security Musgo-OS V9.1 Update.md
+Cyber Security Defence & Networking/Ethical Hacker/v9.1 update/kritik/Menutup_Celah_Keamanan_Kernel_MusGo-OS v9.1 update.md
+Cyber Security Defence & Networking/Ethical Hacker/v9.1 update/kritik/Penguatan_Arsitektur_Keamanan_MusGo-OS_9.md
+Cyber Security Defence & Networking/Ethical Hacker/v9.1 update/notes/Daftar Patch Keamanan dan Pembaruan Arsitektur MusGo-OS V9.1.pdf
+Cyber Security Defence & Networking/MusGo-OS 2in1_MASTER SECURITY CONSTITUTION.md
+Cyber Security Defence & Networking/Security Knowledge Base/1. MASTER SECURITY CONSTITUTION/federation/federation_consensus.md
+Cyber Security Defence & Networking/Security Knowledge Base/1. MASTER SECURITY CONSTITUTION/federation/federation_identity.md
+Cyber Security Defence & Networking/Security Knowledge Base/1. MASTER SECURITY CONSTITUTION/federation/federation_recovery.md
+Cyber Security Defence & Networking/Security Knowledge Base/1. MASTER SECURITY CONSTITUTION/federation/federation_security.md
+Cyber Security Defence & Networking/Security Knowledge Base/1. MASTER SECURITY CONSTITUTION/federation/federation_sync.md
+Cyber Security Defence & Networking/Security Knowledge Base/1. MASTER SECURITY CONSTITUTION/orchestration/orchestration_consensus.md
+Cyber Security Defence & Networking/Security Knowledge Base/1. MASTER SECURITY CONSTITUTION/orchestration/orchestration_continuity.md
+Cyber Security Defence & Networking/Security Knowledge Base/1. MASTER SECURITY CONSTITUTION/orchestration/orchestration_isolation.md
+Cyber Security Defence & Networking/Security Knowledge Base/1. MASTER SECURITY CONSTITUTION/orchestration/orchestration_recovery.md
+Cyber Security Defence & Networking/Security Knowledge Base/1. MASTER SECURITY CONSTITUTION/orchestration/orchestration_security.md
+Cyber Security Defence & Networking/Security Knowledge Base/1. MASTER SECURITY CONSTITUTION/resilience/autonomous_recovery.md
+Cyber Security Defence & Networking/Security Knowledge Base/1. MASTER SECURITY CONSTITUTION/resilience/continuity_rules.md
+Cyber Security Defence & Networking/Security Knowledge Base/1. MASTER SECURITY CONSTITUTION/resilience/existential_security.md
+Cyber Security Defence & Networking/Security Knowledge Base/1. MASTER SECURITY CONSTITUTION/resilience/fail_safe_rules.md
+Cyber Security Defence & Networking/Security Knowledge Base/1. MASTER SECURITY CONSTITUTION/resilience/resilience_doctrine.md
+Cyber Security Defence & Networking/Security Knowledge Base/1. MASTER SECURITY CONSTITUTION/security_constitution/civilization_principles.md
+Cyber Security Defence & Networking/Security Knowledge Base/1. MASTER SECURITY CONSTITUTION/security_constitution/constitutional_principles.md
+Cyber Security Defence & Networking/Security Knowledge Base/1. MASTER SECURITY CONSTITUTION/security_constitution/forbidden_patterns.md
+Cyber Security Defence & Networking/Security Knowledge Base/1. MASTER SECURITY CONSTITUTION/security_constitution/immutable_laws.md
+Cyber Security Defence & Networking/Security Knowledge Base/1. MASTER SECURITY CONSTITUTION/security_constitution/sovereignty_principles.md
+Cyber Security Defence & Networking/Security Knowledge Base/1. MASTER SECURITY CONSTITUTION/zero_trust/federation_validation.md
+Cyber Security Defence & Networking/Security Knowledge Base/1. MASTER SECURITY CONSTITUTION/zero_trust/replay_protection.md
+Cyber Security Defence & Networking/Security Knowledge Base/1. MASTER SECURITY CONSTITUTION/zero_trust/runtime_identity.md
+Cyber Security Defence & Networking/Security Knowledge Base/1. MASTER SECURITY CONSTITUTION/zero_trust/trust_validation.md
+Cyber Security Defence & Networking/Security Knowledge Base/1. MASTER SECURITY CONSTITUTION/zero_trust/zero_trust_foundation.md
+Cyber Security Defence & Networking/Security Knowledge Base/5. BLUEPRINT VALIDATION LAYER/blueprint_validation/approval_pipeline.md
+Cyber Security Defence & Networking/Security Knowledge Base/5. BLUEPRINT VALIDATION LAYER/blueprint_validation/constitutional_validation.md
+Cyber Security Defence & Networking/Security Knowledge Base/5. BLUEPRINT VALIDATION LAYER/blueprint_validation/federation_validation.md
+Cyber Security Defence & Networking/Security Knowledge Base/5. BLUEPRINT VALIDATION LAYER/blueprint_validation/orchestration_validation.md
+Cyber Security Defence & Networking/Security Knowledge Base/5. BLUEPRINT VALIDATION LAYER/blueprint_validation/runtime_validation.md
+Cyber Security Defence & Networking/Security Knowledge Base/5. BLUEPRINT VALIDATION LAYER/blueprint_validation/schema_validation.md
+Cyber Security Defence & Networking/Security Knowledge Base/5. BLUEPRINT VALIDATION LAYER/blueprint_validation/secure_blueprint_rules.md
+Cyber Security Defence & Networking/Security Knowledge Base/5. BLUEPRINT VALIDATION LAYER/federation_validation/federation_integrity.md
+Cyber Security Defence & Networking/Security Knowledge Base/5. BLUEPRINT VALIDATION LAYER/federation_validation/federation_resilience.md
+Cyber Security Defence & Networking/Security Knowledge Base/5. BLUEPRINT VALIDATION LAYER/federation_validation/federation_sync.md
+Cyber Security Defence & Networking/Security Knowledge Base/5. BLUEPRINT VALIDATION LAYER/federation_validation/federation_trust.md
+Cyber Security Defence & Networking/Security Knowledge Base/5. BLUEPRINT VALIDATION LAYER/runtime_validation/runtime_identity.md
+Cyber Security Defence & Networking/Security Knowledge Base/5. BLUEPRINT VALIDATION LAYER/runtime_validation/runtime_integrity.md
+Cyber Security Defence & Networking/Security Knowledge Base/5. BLUEPRINT VALIDATION LAYER/runtime_validation/runtime_recovery.md
+Development MusGo-OS 2in1 Prompt.md
+Documentary/1min_Ai.md
+Documentary/Agent skill qwen.md
+Documentary/Docs_lists.md
+Documentary/ENTERPRISE_DEPLOYMENT_ARCHITECTURE_SPEC.md
+Documentary/GOMU-OS 2in1 — SOVEREIGN MASTER CONSTITUTION.md
+Documentary/GOMU_OS_SOVEREIGN_ENTERPRISE_CONSTITUTION.md
+Documentary/GOVERNOR_CHARTER.md
+Documentary/GOVERNOR_IP_LEGAL_FRAMEWORK.md
+Documentary/GOVERNOR_IP_LEGAL_FRAMEWORK_PART_III_IP_PROTECTION_ARCHITECTURE.md
+Documentary/GOVERNOR_IP_LEGAL_FRAMEWORK_PART_II_GOVERNANCE_LIABILITY.md
+Documentary/GOVERNOR_IP_LEGAL_FRAMEWORK_PART_I_CONSTITUTIONAL_CORE.md
+Documentary/IP_LEGAL_FRAMEWORK.md
+Documentary/business/ENTERPRISE_SALES_ARCHITECTURE.md
+Documentary/business/PRICING_STRATEGY_MODEL.md
+Documentary/compliance/COMPLIANCE_CERTIFICATION_ROADMAP.md
+Documentary/doc_qwen & cs.md
+Documentary/docs MCP.md
+Documentary/docs Mistral.md
+Documentary/docs agent skill.md
+Documentary/docs hugging face.md
+Documentary/docs n8n.md
+Documentary/docs telebot creator.md
+Documentary/docs_1min_ai.md
+Documentary/docs_LLM.md
+Documentary/docs_hermes_agent.md
+Documentary/docs_zapier.md
+Documentary/gpt audit 1min.ai .md
+Documentary/investor/GOMU_OS_INVESTOR_EXECUTIVE_SUMMARY.md
+Documentary/legal/ARCHITECTURAL_DOCTRINE.md
+Documentary/legal/COMMERCIAL_LICENSING_MODEL.md
+Documentary/legal/ENGINEERING_EXECUTION_CONSTITUTION_FINAL.md
+Documentary/legal/GOMU_OS_SOVEREIGN_MASTER_CONSTITUTION.md
+Documentary/legal/IP_DECLARATION.md
+Documentary/legal/OFFICIAL_VERSION_FREEZE.md
+Documentary/production/DATABASE_BACKUP_STRATEGY.md
+Documentary/production/DISASTER_RECOVERY_PLAN.md
+Documentary/production/SOVEREIGN_CLOUD_ARCHITECTURE_SPEC.md
+Documentary/release/ENTERPRISE_RELEASE_NOTES.md
+Documentary/whitepaper/GOMU_OS_SOVEREIGN_TECHNICAL_WHITEPAPER.md
+Framework/Framework platform.md
+Github/Agent/Open Code/Config.md
+Github/Agent/Open Code/Overview Open Code.md
+Github/Agent/VibeMst/VibeMst Github Action Enterprise Blueprint.md
+Github/Agent/gpt/histgpt proyek Musgo-OS 2in1.md
+Github/Agent/kilo.ai/MUSGO-OS 2in1 Repository Github.md
+Github/Agent/tue_jul_14_2026_musgo_os_master_prompt_overview.md
+Github/Musgo Repository Builder Engine/GitExpert Instruksi autonomous workflow.md
+Github/Musgo Repository Builder Engine/filesystem.py
+Human Suggest Engine/Core HUMAN SUGGEST ENGINE.md
+INDEX.md
+LICENSE
+LICENSE-COMMERCIAL.md
+MCP/MCP server list.md
+Memory/Memory from Gpt.md
+Menu dan Fitur/Core DS Blueprint Deskripsi Bahasa Manusia.md
+Menu dan Fitur/Core DS Master Ultimate Menu & Fitur.md
+Menu dan Fitur/Core Fitur-fitur MusGo-OS 2in1Blueprint.md
+Miscellaneous/4-Part_Agent Builder OS.md
+Miscellaneous/Aeon SKILL.md
+Miscellaneous/Agent Builder OS.md
+Miscellaneous/Agent app builder.html
+Miscellaneous/AzureOpenAI.md
+Miscellaneous/Core 1-30 Governor Constitutional Framework 1-30.md
+Miscellaneous/Core 31-61 Governor Constitutional Framework.md
+Miscellaneous/End Point.md
+Miscellaneous/End Point_eng.md
+Miscellaneous/Human CLI.html
+Miscellaneous/Index Agent Builder OS.html
+Miscellaneous/Index Agent Builder Spec.html
+Miscellaneous/Inti Dasar Hukum Musgo-OS.md
+Miscellaneous/Langchain.md
+Miscellaneous/Llama index.md
+Miscellaneous/MUSGO-OS_2IN1_API - ROUTER.md
+Miscellaneous/Modul_Tambahan.md
+Miscellaneous/MusGo.json
+Miscellaneous/Musgo_Command.md
+Miscellaneous/Open Ai SDK.md
+Miscellaneous/Openshell_wellcome.html
+Miscellaneous/Opera.ai.md
+Miscellaneous/README_Awesome Free Models.md
+Miscellaneous/Repo folder generate 1.md
+Miscellaneous/Repo folder generate.md
+Miscellaneous/Repo folder generate.txt
+Miscellaneous/Repo+folder+generate.csv
+Miscellaneous/expo.md
+Miscellaneous/models.md
+Miscellaneous/operaAi-cli.md
+Miscellaneous/temporary 1.md
+Miscellaneous/temporary 2.md
+Miscellaneous/temporary 5.md
+Miscellaneous/temporary.md
+Miscellaneous/temporary3.md
+Miscellaneous/temporary4.md
+Miscellaneous/temporary6.md
+Miscellaneous/temporary7.md
+Miscellaneous/web term command.md
+Mobile Apps/Semua_Catatan_Human_CLI.md
+Notebooklm/note/Arsitektur 17-Layer Konstitusional MUSGO-OS 2in1.md
+Notebooklm/note/Arsitektur AI Berdaulat MUSGO-OS 2in1: Fondasi Peradaban Digital Terpusat.md
+Notebooklm/note/Arsitektur Ekonomi AI Otomatis Ekosistem MUSGO-OS 2in1.md
+Notebooklm/note/Arsitektur Ekonomi AI Otomatis MusGo-OS 2in1.md
+Notebooklm/note/Arsitektur Federasi Sumber Daya Peradaban MUSGO-OS.md
+Notebooklm/note/Arsitektur GAON: Jaringan Operasi Otonom Peradaban MUSGO-OS.md
+Notebooklm/note/Arsitektur Infrastruktur Kognitif Global MUSGO-OS 2in1.md
+Notebooklm/note/Arsitektur Infrastruktur Peradaban Digital MusGo-OS.md
+Notebooklm/note/Arsitektur Infrastruktur Peradaban Sovereign MUSGO-OS 2in1.md
+Notebooklm/note/Arsitektur Jantung Operasional MUSGO-OS 2in1.md
+Notebooklm/note/Arsitektur Jaringan Komunikasi Universal MUSGO-OS 2in1.md
+Notebooklm/note/Arsitektur Jaringan Operasi Otonom Global MUSGO-OS.md
+Notebooklm/note/Arsitektur Keamanan Konstitusional Ekosistem MUSGO-OS 2in1.md
+Notebooklm/note/Arsitektur Keamanan Zero-Trust MUSGO-OS: Benteng AI Berdaulat.md
+Notebooklm/note/Arsitektur Kedaulatan Digital Panduan Memahami 21 Layer MusGo-OS.md
+Notebooklm/note/Arsitektur Klaster SSH Tunnel 2in1 MUSGO-OS 2in1.md
+Notebooklm/note/Arsitektur Kolektif Musyawarah dan Gotong Royong MUSGO-OS.md
+Notebooklm/note/Arsitektur Memori Kolektif Peradaban Digital MUSGO-OS.md
+Notebooklm/note/Arsitektur MusGo-OS 2in1: Fondasi Peradaban AI Berdaulat.md
+Notebooklm/note/Arsitektur Musyawarah dan Gotong Royong dalam MUSGO-OS 2in1.md
+Notebooklm/note/Arsitektur Operasional dan Tata Kelola Peradaban MusGo-OS 2in1.md
+Notebooklm/note/Arsitektur Orkestrasi Multi-Agen MUSGO-OS 2in1.md
+Notebooklm/note/Arsitektur Otak Keputusan Rekursif MUSGO-OS.md
+Notebooklm/note/Arsitektur Peradaban Digital MUSGO-OS 2in1 Berbasis Musyawarah Gotong Royong.md
+Notebooklm/note/Arsitektur Pertahanan Aktif Sovereign Firewall Engine MUSGO-OS.md
+Notebooklm/note/Arsitektur Pertumbuhan Peradaban Otomatis MUSGO-OS.md
+Notebooklm/note/Arsitektur Saraf Kognitif Terpadu MUSGO-OS 2in1.md
+Notebooklm/note/Arsitektur Sistem Internal dan Pertahanan Berdaulat MUSGO-OS 2in1.md
+Notebooklm/note/Arsitektur Sovereign AI: Fondasi Peradaban Digital MUSGO-OS.md
+Notebooklm/note/Arsitektur Strategis Kecerdasan Buatan Berdaulat MUSGO-OS 2in1.md
+Notebooklm/note/Arsitektur Strategis dan Kedaulatan Sistem MusGo-OS 2in1.md
+Notebooklm/note/Arsitektur Tata Kelola Keamanan Konstitusional MUSGO-OS 2in1.md
+Notebooklm/note/Arsitektur Tata Kelola Kebijaksanaan Peradaban MUSGO-OS 2in1.md
+Notebooklm/note/Arsitektur dan FAQ Strategis MUSGO-OS 2in1: Kedaulatan AI Berbasis Musyawarah.md
+Notebooklm/note/Arsitektur dan Tata Kelola Sovereign MUSGO-OS 2in1.md
+Notebooklm/note/Bahasan Tier User.md
+Notebooklm/note/Blueprint Peradaban Abadi 5 Lompatan Radikal di Dalam MUSGO-OS.md
+Notebooklm/note/Blueprint Strategis Musgo-OS 2in1 Arsitektur Peradaban AI Berdaulat Founder's Edition.md
+Notebooklm/note/Blueprint Strategis Transformasi Menuju Ekonomi Kelimpahan Sistemik Civilization PSCE-IRF Framework.md
+Notebooklm/note/Blueprint Strategis dan Arsitektur MusGo-OS 2in1.md
+Notebooklm/note/Briefing Doc Arsitektur Strategis dan Infrastruktur Musgo-OS 2in1.md
+Notebooklm/note/Briefing Doc_ Ekosistem Sovereign AI MusGo-OS 2in1.md
+Notebooklm/note/Briefing Dokumen Infrastruktur dan Sistem Runtime MUSGO-OS Bagian 101–123.md
+Notebooklm/note/Cetak Biru Arsitektur Musgo-OS 2in1 Strategi Infrastruktur Peradaban AI Berdaulat.md
+Notebooklm/note/Core VPS Scalable Musgo-OS.md
+Notebooklm/note/Daftar Patch Keamanan dan Pembaruan Arsitektur MusGo-OS V9.1.pdf
+Notebooklm/note/Dari Individu ke Kosmos Narasi Evolusi Kesadaran Kolektif Peradaban.md
+Notebooklm/note/Doktrin Pertahanan Siber Berdaulat Manifesto Infrastruktur Digital MusGo-OS V8.0.md
+Notebooklm/note/Dokumen Briefing Arsitektur Keamanan Siber Berdaulat MusGo-OS V8.0.md
+Notebooklm/note/Integrasi Strategis AI Auto-Suggest pada Arsitektur MusGo-OS 2in1.md
+Notebooklm/note/Keamanan Strategis dan Kedaulatan Infrastruktur Peradaban Digital MUSGO-OS.md
+Notebooklm/note/Kedaulatan MusGo-OS: Fondasi Konstitusi dan Otonomi Sistem AI 2in1.md
+Notebooklm/note/Konstitusi Digital dan Tata Kelola Otonom MUSGO-OS 2in1.md
+Notebooklm/note/Laporan Strategis Kedaulatan Digital Ekosistem MusGo-OS V8.0 Edisi Founder & Investor.md
+Notebooklm/note/Manifesto Arsitektur Master MusGo-OS 2in1 Berdaulat.md
+Notebooklm/note/Manifesto Kedaulatan Data dan Benteng Digital MUSGO-OS 2in1.md
+Notebooklm/note/Masa Depan Kedaulatan Digital 7 Terobosan Radikal MusGo-OS V8.0 yang Mengubah Aturan Main Keamanan Siber.md
+Notebooklm/note/Matriks Operasi Meta-Intelijen Peradaban MUSGO-OS.md
+Notebooklm/note/Mekanisme MutationObserver dalam Injeksi Dinamis AI MusGo-OS.md
+Notebooklm/note/Membangun Peradaban AI di Atas Server Pas-pasan 5 Rahasia di Balik Musgo-OS 2in1.md
+Notebooklm/note/Mengenal MusGo-OS 2in1_ Rahasia di Balik AI yang _Bermusyawarah_ dan _Bergotong Royong_.md
+Notebooklm/note/Menjelajahi Jantung MusGo-OS 2in1_ Glosarium & Panduan Arsitektur untuk Pemula.md
+Notebooklm/note/Menutup_Celah_Keamanan_Kernel_MusGo-OS v9.1 update.md
+Notebooklm/note/MusGo-OS 2in1_ Mengapa OS AI Berbasis Kearifan Lokal Ini Akan Mengubah Standar Kedaulatan Digital Kita_.md
+Notebooklm/note/Narasi Logika Pertahanan MusGo-OS V8.0 Memahami Sistem Imun Digital yang Berdaulat.md
+Notebooklm/note/Optimasi Ambang Batas Scaling Infrastruktur MUSGO-OS 2in1.md
+Notebooklm/note/Optimasi Jaringan Super-Baseline dan Redundansi MUSGO-OS 2in1.md
+Notebooklm/note/Orkestrasi Multi-Agen MUSGO-OS: Arsitektur Peradaban Digital Berdaulat.md
+Notebooklm/note/PROTOKOL KEAMANAN MITIGASI ANCAMAN KEDAULATAN KOGNITIF DAN INTEGRITAS SISTEMIK PERADABAN KOSMIK.md
+Notebooklm/note/Panduan Belajar_ Ekosistem Sovereign AI MusGo-OS 2in1.md
+Notebooklm/note/Panduan Dasar Sistem Koordinasi Universal dan Rekayasa Realitas.md
+Notebooklm/note/Panduan Dasar Skalabilitas Musgo-OS Dari Komputer Kecil Menuju Peradaban Global.md
+Notebooklm/note/Panduan Standar Implementasi MusGo-OS V8.0 Arsitektur Kedaulatan Digital dan Pertahanan Aktif.md
+Notebooklm/note/Panduan Studi Arsitektur Strategis Musgo-OS 2in1.md
+Notebooklm/note/Panduan Studi Keamanan Siber MusGo-OS V8.0.md
+Notebooklm/note/Panduan Studi MUSGO-OS 2IN1 Cluster A Infrastruktur & Sistem Runtime Peradaban.md
+Notebooklm/note/Pedoman Tata Kelola Pengambilan Keputusan Kolektif MusGo-OS 2in1.md
+Notebooklm/note/Penguatan_Arsitektur_Keamanan_MusGo-OS_9.md
+Notebooklm/note/Perisai Digital Memahami Firecracker MicroVM vs. gVisor dalam Isolasi Agen AI.md
+Notebooklm/note/Protokol Inisialisasi 3 SSH Tunnel Boot-Time MUSGO-OS 2in1.md
+Notebooklm/note/Report Core Database Musgo-OS.md
+Notebooklm/note/Report Security Holes Blueprint Database Update.md
+Notebooklm/note/Report VPS SCALABLE.md
+Notebooklm/note/Saran Perbaikn 0.1. Modul Cyber Security Musgo-OS V9.1 Update.md
+Notebooklm/note/Semua catatan Architecture MusGo.md
+Notebooklm/note/Semua catatan VPS SCALABLE.md
+Notebooklm/note/Sistem Self-Healing Watchdog: Saraf Otonom Infrastruktur Peradaban Digital.md
+Notebooklm/note/Spesifikasi Sub-sistem Arsitektur Lapisan Eksekusi dan Tata Kelola MusGo-OS.pdf
+Notebooklm/note/Spesifikasi Subsistem Tata Kelola Keamanan dan Peradaban MusGo-OS.pdf
+Notebooklm/note/Strategi Pengerasan Infrastruktur dan Pertahanan Jaringan Zero-Trust MusGo-OS 2in1.md
+Notebooklm/note/Strategi Pertahanan Keamanan Musgo-OS Arsitektur Nirkelala dan Kedaulatan AI Berdaulat.md
+Notebooklm/note/Tata Kelola Keamanan MusGo-OS 2in1: Benteng AI Berdaulat.md
+Notebooklm/note/VPS Scale by Ds.md
+Notebooklm/note/VPS Scale by Gem.md
+Notebooklm/note/VPS scalable Musgo-OS.md
+Notebooklm/note/content.md
+Notebooklm/studio/Arsitek___Sang_Oracle.mp4.txt
+Notebooklm/studio/Konstitusi_AI_pada_Kernel_MusGo-OS_v9.m4a.txt
+Notebooklm/studio/MUSGO-OS_2in1-1.mp4.txt
+Notebooklm/studio/MUSGO_OS_Peradaban_AI_Berdaulat.m4a.txt
+Notebooklm/studio/MusGo-OS_2in1.mp4.txt
+Notebooklm/studio/MusGo-OS_Kembalikan_Kedaulatan_Manusia_atas_AI.m4a.txt
+Notebooklm/studio/MusGo-OS_Lawan_Eksploitasi_Data_dengan_Amanah.m4a.txt
+Notebooklm/studio/MusGo-OS_V9-1.mp4.txt
+Notebooklm/studio/MusGo-OS_V9.mp4.txt
+PART 1
+Prompts/Amelia — CYBER SECURITY & NETWORKING SYSTEM PROMPT.md
+Prompts/Core NotebookLM_Instruction_Custom.md
+Prompts/Core Notebooklm Instruction.md
+Prompts/Core Security Holes Scan — CYBER SECURITY & NETWORKING SYSTEM PROMPT INSTRUCTION.md
+Prompts/Core Security_Holes Prompt Instruction.md
+Prompts/Core_Knowledge_Rules.md
+Prompts/EthHack_CYBER SECURITY & NETWORKING MASTER PROMPT.md
+Prompts/GLOBAL SYSTEM PROMPT v2 Musgo-OS 2in1.md
+Prompts/Heart beat Prompt.md
+Prompts/INTEGRITAS ANTI-PENIPUAN.md
+Prompts/MASTER PROMPT INSTRUCTION.md
+Prompts/Master Blueprint Musgo-OS 2in1 Generator.md
+Prompts/Memory import Prompt.md
+Prompts/MusGo 2in1 Custom_Ai_Model_Conversation.md
+Prompts/MusGo 2in1 Generator Description.md
+Prompts/MusGo 2in1 Generator Prompt Ai Model Custom DEEP THINKING.md
+Prompts/Personal Prompt Instruction Strategic.md
+Prompts/Private Prompt_HYBRID EXECUTIVE ASSISTANT.md
+Prompts/Prompt Gpt Default.md
+Prompts/Prompt Pencari Ide.md
+Prompts/Prompt editor tulisan.md
+Prompts/Prompt konsultan.md
+Prompts/Prompt partner coding.md
+Prompts/Prompt pembimbing belajar.md
+Prompts/Short prompt custom+personal+Compact.md
+Prompts/Soul Prompt Kai9000.md
+Prompts/Spesifik Prompt/Development MusGo-OS 2in1/Development MusGo-OS 2in1 Prompt.md
+Prompts/System Prompt Instruction Musgo-OS Custom.md
+Prompts/merged Prompt Gemini Custom.md
+Prompts/xai instructions.md
+README.md
+Repository Musgo-OS 2in1/0. V5.4 Blueprint architecture manusia Musgo-OS.md
+Repository Musgo-OS 2in1/AUTONOMOUS GITHUB REPOSITORY ARCHITECT AGENT.md
+Repository Musgo-OS 2in1/Core FullCompletedRepoLinks.md
+Repository Musgo-OS 2in1/Core MUSGO-OS V9.1 — STRUKTUR REPOSITORY FINAL.md
+Repository Musgo-OS 2in1/Core Qwen Daftar Links repo.md
+Repository Musgo-OS 2in1/Core V9.1 Update Master Index Repo.md
+Repository Musgo-OS 2in1/DS Blueprint Deskripsi Setiap Folder dan Subfolder dalam Bahasa Manusia.md
+Repository Musgo-OS 2in1/FullCompletedRepoLinks.md
+Repository Musgo-OS 2in1/Gem_struktur tree repo MusGo-OS 2in1.md
+Repository Musgo-OS 2in1/STRUKTUR REPOSITORY MUSGO-OS.md
+Repository Musgo-OS 2in1/deepseek/0. DS Musgo-OS V6.0 Master Repo.md
+Repository Musgo-OS 2in1/deepseek/Core MUSGO-OS V9.1 — STRUKTUR REPOSITORY FINAL.md
+Repository Musgo-OS 2in1/deepseek/Core V9.1 Update Master Index Repo.md
+Repository Musgo-OS 2in1/deepseek/table/table_20260624.csv
+Repository Musgo-OS 2in1/fullRepoLinks.md
+Repository Musgo-OS 2in1/mistral vibe/0. V6.0 Struktur Repo Musgo-OS 2in1.md
+Repository Musgo-OS 2in1/mistral vibe/STRUKTUR V6.0.md
+Repository Musgo-OS 2in1/mistral vibe/V6.0. Vibe - MASTER INDEX STRUKTUR.md
+Repository Musgo-OS 2in1/mistral vibe/V6.0. Vibe - Struktur Repo Musgo-OS 2in1.md
+SDK/SDK List.md
+SDK/daftar_sdk.md
+STRUKTUR REPOSITORY FINAL.md
+Sanboxing/Mini root filesystem/Alpine/alpine-minirootfs-3.24.1-aarch64.tar.gz.asc
+Sanboxing/Mini root filesystem/Alpine/alpine-minirootfs-3.24.1-aarch64.tar.gz.sha256
+Sanboxing/Mini root filesystem/Microbox/README.md.md
+Sanboxing/Mini root filesystem/Ubuntu 24.04/ubuntu-base-24.04.3-base-arm64.tar.gz.gz
+Sanboxing/Proot/Debian/proot_5.4.0-3_arm64.deb
+Sanboxing/Proot/Ubuntu/SHA 256 Checkaum.md
+Sanboxing/Proot/Ubuntu/proot_5.4.0-3.debian.tar.xz
+Sanboxing/Proot/Ubuntu/proot_5.4.0-3.dsc
+Sanboxing/Proot/Ubuntu/proot_5.4.0.orig.tar.gz
+Sanboxing/Standard/alpine-standard-3.24.1-aarch64.iso.asc
+Sanboxing/Standard/alpine-standard-3.24.1-aarch64.iso.sha256
+Secret/.env
+Secret/Protokol Inisialisasi Kunci Master Sovereign MUSGO-OS.md
+Secret/ezfolders-template.csv
+Secret/ollama-local-ai-settings.json
+Sovereign AI Operating System + Economic System + Civilization Infrastructure/0. CORE_KERNEL_PART_1-43/0. MUSGO-OS CORE_KERNEL_PART_1-43.md
+Sovereign AI Operating System + Economic System + Civilization Infrastructure/00. MASTER_ROM_INDEX_v1/00. MASTER_ROM_INDEX_v1.md
+Sovereign AI Operating System + Economic System + Civilization Infrastructure/1. MUSGO-OS CORE OS EXPANSION LAYER PART 44-60/1. MUSGO-OS CORE OS EXPANSION LAYER PART 44-60.md
+Sovereign AI Operating System + Economic System + Civilization Infrastructure/2. MUSGO-OS AI EXECUTION & INTELLIGENCE LAYER PART 61-100/2. MUSGO-OS AI EXECUTION & INTELLIGENCE LAYER PART 61-100.md
+Sovereign AI Operating System + Economic System + Civilization Infrastructure/3. MUSGO-OS INFRASTRUCTURE & RUNTIME SYSTEM PART 101–140/3. MUSGO-OS INFRASTRUCTURE & RUNTIME SYSTEM PART 101–140.md
+Sovereign AI Operating System + Economic System + Civilization Infrastructure/3. MUSGO-OS INFRASTRUCTURE & RUNTIME SYSTEM PART 101–140/Report 3. MUSGO-OS INFRASTRUCTURE & RUNTIME SYSTEM PART 101–140.md
+Sovereign AI Operating System + Economic System + Civilization Infrastructure/3. MUSGO-OS INFRASTRUCTURE & RUNTIME SYSTEM PART 101–140/notes/Blueprint Peradaban Abadi 5 Lompatan Radikal di Dalam MUSGO-OS.md
+Sovereign AI Operating System + Economic System + Civilization Infrastructure/3. MUSGO-OS INFRASTRUCTURE & RUNTIME SYSTEM PART 101–140/notes/Blueprint Strategis Transformasi Menuju Ekonomi Kelimpahan Sistemik Civilization PSCE-IRF Framework.md
+Sovereign AI Operating System + Economic System + Civilization Infrastructure/3. MUSGO-OS INFRASTRUCTURE & RUNTIME SYSTEM PART 101–140/notes/Briefing Dokumen Infrastruktur dan Sistem Runtime MUSGO-OS Bagian 101–123.md
+Sovereign AI Operating System + Economic System + Civilization Infrastructure/3. MUSGO-OS INFRASTRUCTURE & RUNTIME SYSTEM PART 101–140/notes/Dari Individu ke Kosmos Narasi Evolusi Kesadaran Kolektif Peradaban.md
+Sovereign AI Operating System + Economic System + Civilization Infrastructure/3. MUSGO-OS INFRASTRUCTURE & RUNTIME SYSTEM PART 101–140/notes/Matriks Operasi Meta-Intelijen Peradaban MUSGO-OS.md
+Sovereign AI Operating System + Economic System + Civilization Infrastructure/3. MUSGO-OS INFRASTRUCTURE & RUNTIME SYSTEM PART 101–140/notes/PROTOKOL KEAMANAN MITIGASI ANCAMAN KEDAULATAN KOGNITIF DAN INTEGRITAS SISTEMIK PERADABAN KOSMIK.md
+Sovereign AI Operating System + Economic System + Civilization Infrastructure/3. MUSGO-OS INFRASTRUCTURE & RUNTIME SYSTEM PART 101–140/notes/Panduan Dasar Sistem Koordinasi Universal dan Rekayasa Realitas.md
+Sovereign AI Operating System + Economic System + Civilization Infrastructure/3. MUSGO-OS INFRASTRUCTURE & RUNTIME SYSTEM PART 101–140/notes/Panduan Studi MUSGO-OS 2IN1 Cluster A Infrastruktur & Sistem Runtime Peradaban.md
+Sovereign AI Operating System + Economic System + Civilization Infrastructure/3. MUSGO-OS INFRASTRUCTURE & RUNTIME SYSTEM PART 101–140/semua catatan 3. MUSGO-OS INFRASTRUCTURE & RUNTIME SYSTEM PART 101–140.md
+Sovereign AI Operating System + Economic System + Civilization Infrastructure/4. MUSGO-OS SECURITY & IDENTITY GOVERNANCE PART 141-180/4. MUSGO-OS SECURITY & IDENTITY GOVERNANCE PART 141-180.md
+Sovereign AI Operating System + Economic System + Civilization Infrastructure/4. MUSGO-OS SECURITY & IDENTITY GOVERNANCE PART 141-180/Report 4. MUSGO-OS GOVERNANCE PART 141-180.md
+Sovereign AI Operating System + Economic System + Civilization Infrastructure/4. MUSGO-OS SECURITY & IDENTITY GOVERNANCE PART 141-180/Semua catatan 4. MUSGO-OS SECURITY & IDENTITY GOVERNANCE PART 141-180.md
+Sovereign AI Operating System + Economic System + Civilization Infrastructure/4. MUSGO-OS SECURITY & IDENTITY GOVERNANCE PART 141-180/notes/Spesifikasi Subsistem Tata Kelola Keamanan dan Peradaban MusGo-OS.pdf
+Sovereign AI Operating System + Economic System + Civilization Infrastructure/5. MUSGO-OS DATA STORAGE & RESILIENCE SYSTEM PART 181–210/5. MUSGO-OS DATA STORAGE & RESILIENCE SYSTEM PART 181–210.md
+Sovereign AI Operating System + Economic System + Civilization Infrastructure/5. MUSGO-OS DATA STORAGE & RESILIENCE SYSTEM PART 181–210/Report 5. MUSGO-OS DATA STORAGE & RESILIENCE SYSTEM PART 181–210.md
+Sovereign AI Operating System + Economic System + Civilization Infrastructure/5. MUSGO-OS DATA STORAGE & RESILIENCE SYSTEM PART 181–210/Semua Catatan 5. MUSGO-OS DATA STORAGE & RESILIENCE SYSTEM PART 181–210.md
+Sovereign AI Operating System + Economic System + Civilization Infrastructure/5. MUSGO-OS DATA STORAGE & RESILIENCE SYSTEM PART 181–210/notes/Spesifikasi Tabel Arsitektur Peradaban MusGo-OS (Bagian 181–210).pdf
+Sovereign AI Operating System + Economic System + Civilization Infrastructure/6. MUSGO-OS AI ECONOMY SYSTEM PART 211–250/6. MUSGO-OS AI ECONOMY SYSTEM PART 211–250.md
+Sovereign AI Operating System + Economic System + Civilization Infrastructure/7. MUSGO-OS AI GOVERNANCE & CIVILIZATION LAYER PART 251–280/7. MUSGO-OS AI GOVERNANCE & CIVILIZATION LAYER PART 251–280.md
+Sovereign AI Operating System + Economic System + Civilization Infrastructure/8. MUSGO-OS SOVEREIGN GLOBAL OS FINAL FORM PART 281–300/8. MUSGO-OS SOVEREIGN GLOBAL OS FINAL FORM PART 281–300.md
+Sovereign AI Operating System + Economic System + Civilization Infrastructure/9. MUSGO-OS FUTURE EXPANSION ROADMAP/9. MUSGO-OS FUTURE EXPANSION ROADMAP.md
+System Prompt Instruction Musgo-OS Custom.md
+VPS SCALABLE/Agent/Deepseek/VPS Scale by Ds.md
+VPS SCALABLE/Agent/Gemini/VPS Scale by Gem.md
+VPS SCALABLE/Core VPS Scalable Musgo-OS.md
+VPS SCALABLE/Report VPS SCALABLE.md
+VPS SCALABLE/Semua catatan VPS SCALABLE.md
+VPS SCALABLE/VPS Scale by Ds.md
+VPS SCALABLE/VPS Scale by Gem.md
+VPS SCALABLE/VPS scalable Musgo-OS.md
+VPS SCALABLE/notes/Blueprint Strategis Musgo-OS 2in1 Arsitektur Peradaban AI Berdaulat Founder's Edition.md
+VPS SCALABLE/notes/Briefing Doc Arsitektur Strategis dan Infrastruktur Musgo-OS 2in1.md
+VPS SCALABLE/notes/Cetak Biru Arsitektur Musgo-OS 2in1 Strategi Infrastruktur Peradaban AI Berdaulat.md
+VPS SCALABLE/notes/Matriks Skalabilitas Infrastruktur VPS Musgo-OS 2in1.pdf
+VPS SCALABLE/notes/Membangun Peradaban AI di Atas Server Pas-pasan 5 Rahasia di Balik Musgo-OS 2in1.md
+VPS SCALABLE/notes/Panduan Dasar Skalabilitas Musgo-OS Dari Komputer Kecil Menuju Peradaban Global.md
+VPS SCALABLE/notes/Panduan Studi Arsitektur Strategis Musgo-OS 2in1.md
+VPS SCALABLE/notes/Perisai Digital Memahami Firecracker MicroVM vs. gVisor dalam Isolasi Agen AI.md
+VPS SCALABLE/notes/Strategi Pertahanan Keamanan Musgo-OS Arsitektur Nirkelala dan Kedaulatan AI Berdaulat.md
+configuration/ezfolders-template.csv
+configuration/markdown_editor.md
+tools/scan_blueprints.py

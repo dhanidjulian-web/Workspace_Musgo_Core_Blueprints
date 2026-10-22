@@ -1,0 +1,36 @@
+{
+  "format_version": "1.0",
+  "exported_at": "2026-08-09T21:18:26.987611Z",
+  "name": "outage-communication-orchestrator",
+  "slug": "system.outage-communication-orchestrator",
+  "description": "Orchestrate communication during service outages across multiple audiences (customers, executives, support, public). Provides templates, timing guidance, and channel coordination for crisis communication. Use when an outage occurs and stakeholders need to be informed.",
+  "skill_type": "instruction",
+  "category": "Software Development",
+  "tags": [
+    "outage",
+    "incident",
+    "communication",
+    "status-page",
+    "crisis",
+    "customer-communication",
+    "SRE",
+    "DevOps",
+    "stakeholder"
+  ],
+  "visibility": "public",
+  "skill_version": null,
+  "dependencies": null,
+  "author_name": "Agentman",
+  "author_url": "https://agentman.ai",
+  "license": null,
+  "prerequisite_skills": [],
+  "related_skills": [],
+  "content_version": 1,
+  "version_note": "Imported from package",
+  "content_hash": "4e7d795046c7c342d8a61b2213b6019f1b33470f298c4686a4fe06082b59d756",
+  "exported_from": {
+    "system": "agentman",
+    "tenant_id": null,
+    "skill_id": "3b3ac732-cc46-4316-9502-d6c166b97756"
+  }
+}

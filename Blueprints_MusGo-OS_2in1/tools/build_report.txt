@@ -1,0 +1,15 @@
+manifest files: 888
+INDEX rows: 888
+AGENT entries: 888
+CSV rows: 889
+dup files: 239 in 200 groups
+  01-governance        96  Konstitusi, Tata Kelola & Kedaulatan
+  02-architecture     169  Arsitektur Sistem & Layer
+  03-security          95  Keamanan Siber, Zero-Trust & Hardening
+  04-agent-persona    247  Agent, Persona & Prompt Engineering
+  05-economy           14  Ekonomi, Monetisasi & Business Intelligence
+  06-infrastructure    39  Infrastruktur, VPS, Deployment & Storage
+  07-features          25  Menu, Fitur & Product Specification
+  08-repository        79  Repository, Git & Development Workflow
+  09-research         120  Riset, Catatan & Laporan (Reports)
+  99-other              4  Lain-lain / Unclassified

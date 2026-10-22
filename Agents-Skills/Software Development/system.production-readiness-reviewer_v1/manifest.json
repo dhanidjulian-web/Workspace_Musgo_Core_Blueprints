@@ -1,0 +1,36 @@
+{
+  "format_version": "1.0",
+  "exported_at": "2026-08-09T21:20:00.491363Z",
+  "name": "production-readiness-reviewer",
+  "slug": "system.production-readiness-reviewer",
+  "description": "Assess operational readiness of services before production launch. Covers observability, alerting, runbooks, capacity, and on-call preparedness beyond just \"code works.\" Use before launching new services or major features to ensure they are supportable in production.",
+  "skill_type": "instruction",
+  "category": "Software Development",
+  "tags": [
+    "production-readiness",
+    "PRR",
+    "operability",
+    "observability",
+    "alerting",
+    "runbooks",
+    "launch",
+    "SRE",
+    "DevOps"
+  ],
+  "visibility": "public",
+  "skill_version": null,
+  "dependencies": null,
+  "author_name": "Agentman",
+  "author_url": "https://agentman.ai",
+  "license": null,
+  "prerequisite_skills": [],
+  "related_skills": [],
+  "content_version": 1,
+  "version_note": "Imported from package",
+  "content_hash": "0ccd1ed6c238ea6b2b4e67cea71fd57a505f6f3af00d5c4fb75a80c98468b273",
+  "exported_from": {
+    "system": "agentman",
+    "tenant_id": null,
+    "skill_id": "36d873ee-3ce0-4fc6-be4d-4a3a7d3665ac"
+  }
+}

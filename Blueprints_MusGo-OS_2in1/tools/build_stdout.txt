@@ -1,0 +1,1 @@
+[python: 330 workspace file(s) over the mirror limits (5,000 files, 4 MB each, 64 MB total) are not visible to Python]

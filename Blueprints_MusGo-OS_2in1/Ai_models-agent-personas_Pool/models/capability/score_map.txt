@@ -1,0 +1,29 @@
+# MusGo-OS Model Score Map — Prioritas FREE/FREMIUM/PAID per Kategori
+# Ditetapkan oleh Founder Dhani YulIawan
+# Format: model_name|category|tier|score
+# Tier: FREE=100, FREMIUM=50, PAID=20 (nilai lebih tinggi = lebih diutamakan)
+# score bonus: free/freemium model akan mendapat peningkatan +20 di kategori cocok
+
+# === KunciAi Models (FREE/AUTO prioritized) ===
+kunciai/deepseek-v4-flash|code|FREE|120
+kunciai/deepseek-v4-flash|text|FREE|120
+kunciai/deepseek-v4-flash|plan|FREE|115
+kunciai/deepseek-v4-flash|vision|FREE|110
+kunciai/deepseek-v4-flash|embed|FREE|100
+
+kunciai/gemini-2.5-flash|code|FREE|115
+kunciai/gemini-2.5-flash|text|FREE|115
+kunciai/gemini-2.5-flash|plan|FREE|110
+kunciai/gemini-2.5-flash|vision|FREE|105
+
+kunciai/deepseek-v4|code|FREE|110
+kunciai/deepseek-v4|text|FREE|110
+kunciai/deepseek-v4|plan|FREE|105
+
+# === MODEL ALIH (FREE jika ada) ===
+# Tambah model FREE dari provider lain di sini sesuai format:
+# provider/nama-model|kategori|tier|score
+
+# === MODEL YANG DILARANG (PAID, kecuali manual dipaksa) ===
+# Semua model paid otomatis diabaikan oleh detektor,
+# kecuali Founder memaksa via MUSGO_MODEL=... (akan menampilkan peringatan)

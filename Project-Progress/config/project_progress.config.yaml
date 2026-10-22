@@ -1,0 +1,167 @@
+version: "1.0.0"
+title: "MusGo-OS 2in1 — Project Progress Workflow Contract"
+$schema_ref: "../config/schemas/memory_entry.schema.json"
+
+# ============================================================
+# TUJUAN PROJECT (dari PROMPT — tidak boleh diredaksi)
+# ============================================================
+project:
+  name: "MusGo-OS 2in1"
+  tagline: "(2in1 Musyawarah & Gotong-Royong)"
+  classification: "Sovereign AI Operating Civilization"
+  owner: "Dhani Yuliawan"
+  copyright: "© 2026 — Dhani Yuliawan | All Rights Reserved"
+  tujuan: >
+    Membangun 2in1 Musyawarah & Gotong Royong Sovereign AI Operating
+    Civilization: ekosistem multi-agent yang scalable, autonomous, adaptive,
+    monetizable, secure, modular, enterprise-grade, dan self-expanding.
+
+# ============================================================
+# NETWORK & IDS
+# ============================================================
+network:
+  name: "musgo-project-progress"
+  bind: "127.0.0.1"
+  # Zero-trust: hanya loopback. Ekspos ke LAN wajib lewat reverse proxy mTLS.
+  harden:
+    - "no_wildcard_host"
+    - "reject_unknown_host"
+    - "structured_logging"
+    - "request_id_tracing"
+  services:
+    agent_api:
+      ports: ["8710"]
+      role: "step runner (sequence execute/verify) + artifacts"
+      api:
+        auth: "bearer-token (opsional; jika kosong: hanya localhost)"
+        endpoints:
+          - "GET  /health"
+          - "GET  /types"
+          - "POST /run/<type>"
+          - "GET  /runs/{run_id}"
+    progress_ui:
+      ports: ["8711"]
+      role: "Project Progress Monitor (read-only + trigger manual)"
+      read_only: true
+  gateway:
+    # Gateway untuk menembak API dari luar container (test)
+    ports: ["8099"]
+    type: "frontend-proxy (OpenResty/Nginx) → agent_api"
+
+# ============================================================
+# RUNNER / EXECUTION
+# ============================================================
+runners:
+  default:
+    input_dirs: ["{workspace}/input"]
+    output_dir: "{runtime}/runs"
+    work_dir: "{runtime}/work"
+  limits:
+    max_concurrent_runs: 2
+    run_timeout_sec: 600
+    step_timeout_sec: 180
+    max_input_bytes: 10485760
+  retry:
+    max_attempts: 2
+    backoff_sec: [2, 8]
+  rollback:
+    strategy: "snapshot_before_write"   # copy file target ke runtime/snapshots
+    enabled: true
+
+# ============================================================
+# MEMORY & KNOWLEDGE (PROMPT §10)
+# ============================================================
+memory:
+  root: "{memory}"
+  sessions_dir: "{memory}/sessions"
+  decisions_dir: "{memory}/decisions"
+  index_file: "{memory}/MEMORY_INDEX.md"
+  session_index: "{memory}/SESSION_INDEX.md"
+  retention:
+    max_entries_scanned: 200
+    summarize_after_entries: 50
+  write_policy:
+    append_only: true
+    require_schema_validation: true
+    require_founder_signature: true
+
+knowledge:
+  root: "{knowledge}"
+  index_file: "{knowledge}/KNOWLEDGE_INDEX.md"
+  files:
+    project_state: "{knowledge}/PROJECT_STATE.md"
+    progress_log: "{knowledge}/PROGRESS_LOG.md"
+    open_questions: "{knowledge}/OPEN_QUESTIONS.md"
+    glossary: "{knowledge}/GLOSSARY.md"
+  entity_types:
+    - blueprint
+    - architecture
+    - agent
+    - skill
+    - decision
+    - risk
+    - roadmap
+    - metric
+
+# ============================================================
+# ANTI-AMBIGUITY / ANTI-HALLUCINATION
+# ============================================================
+guards:
+  grounding_required: true
+  min_grounding_completeness: 70
+  forbidden_claims_without_source: true
+  path_resolution_mandatory: true
+  duplicate_path_literal_allowed: false
+  cite_format: "path:line"
+  unknown_markers:
+    - "TIDAK ADA DI SOURCE"
+    - "PERLU KONFIRMASI FOUNDER"
+
+# ============================================================
+# SIGNATURE
+# ============================================================
+signature:
+  template: "{config}/signature_block.md"
+  inject_at: "end_of_output"
+  checksum_algorithm: "sha256"
+
+# ============================================================
+# VALIDATION MATRIX (dipakai verify_config.py)
+# ============================================================
+checks:
+  - id: C01
+    name: "paths.yaml memuat semua path inti"
+    type: yaml_required_keys
+  - id: C02
+    name: "founder_rules immutable & priority 0"
+    type: founder_rules_guard
+  - id: C03
+    name: "canonical workflow urut A..D"
+    type: workflow_order
+  - id: C04
+    name: "schema memory_entry valid JSON"
+    type: json_parse
+  - id: C05
+    name: "schema session_state valid JSON"
+    type: json_parse
+  - id: C06
+    name: "schema agent_skill_registry valid JSON"
+    type: json_parse
+  - id: C07
+    name: "index Agents-Skills ada & ter-parse"
+    type: index_parse
+  - id: C08
+    name: "duality Agent↔Skill terpenuhi"
+    type: duality_check
+  - id: C09
+    name: "memory & knowledge writable"
+    type: fs_write_check
+  - id: C10
+    name: "repository & router path ada"
+    type: fs_exists
+  - id: C11
+    name: "signature block lengkap"
+    type: signature_check
+  - id: C12
+    name: "tidak ada path literal di luar workspace"
+    type: path_scope

@@ -1,0 +1,1599 @@
+ 
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agent Builder OS — Android IDE/CLI dengan Sandbox, Signals, Screen Aware, BYOK & Ai✨Suggest</title>
+  <meta name="description" content="Spesifikasi produk dan arsitektur UI/UX untuk Android app builder: Linux sandbox, Termux, BYOK external providers, external routers, signals spec, project profile sessions, internal browser/webview, dan Ai✨Suggest screen-aware." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#f3ecdf;
+      --paper:#fbf7ef;
+      --paper-2:#f4ede1;
+      --ink:#171513;
+      --muted:#665f58;
+      --line:#211d19;
+      --accent:#b84a16;
+      --accent-2:#1f6e60;
+      --accent-3:#7a3556;
+      --accent-4:#8b7922;
+      --soft:#e9deca;
+      --shell:#181411;
+      --shell-2:#2a231d;
+      --white:#fffdfa;
+      --radius:24px;
+      --max:1380px;
+      --shadow:0 22px 70px rgba(17,15,13,.09);
+      --shadow-strong:0 18px 50px rgba(17,15,13,.18);
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:"IBM Plex Sans",sans-serif;
+      color:var(--ink);
+      background:
+        radial-gradient(circle at 12% 16%, rgba(184,74,22,.08), transparent 24%),
+        radial-gradient(circle at 84% 12%, rgba(31,110,96,.08), transparent 24%),
+        linear-gradient(180deg, #f8f1e7 0%, #f2ebdf 100%);
+      min-height:100vh;
+    }
+
+    body::before{
+      content:"";
+      position:fixed; inset:0;
+      pointer-events:none; opacity:.055;
+      background-image:
+        linear-gradient(to right, var(--line) 1px, transparent 1px),
+        linear-gradient(to bottom, var(--line) 1px, transparent 1px);
+      background-size:34px 34px;
+      mask-image:linear-gradient(to bottom, rgba(0,0,0,.28), transparent 88%);
+    }
+
+    a{text-decoration:none;color:inherit}
+    button,input,select,textarea{font:inherit}
+    .wrap{width:min(calc(100% - 2rem), var(--max)); margin-inline:auto}
+    .mono{font-family:ui-monospace, SFMono-Regular, Menlo, monospace}
+    .sr-only{
+      position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;
+      overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important
+    }
+
+    .reveal{
+      opacity:0; transform:translateY(26px);
+      transition:opacity .72s ease, transform .72s ease;
+    }
+    .reveal.in{opacity:1; transform:translateY(0)}
+
+    .topbar{
+      position:sticky; top:0; z-index:1000;
+      backdrop-filter:blur(12px);
+      background:rgba(251,247,239,.78);
+      border-bottom:1px solid rgba(33,29,25,.12);
+    }
+
+    .nav{
+      min-height:76px;
+      display:flex; align-items:center; justify-content:space-between; gap:1rem;
+    }
+
+    .brand{
+      display:flex; align-items:center; gap:.9rem;
+      font-family:"Space Grotesk",sans-serif;
+      font-weight:700; letter-spacing:-.05em;
+    }
+
+    .brand-mark{
+      width:44px; height:44px; border-radius:12px;
+      border:2px solid var(--line);
+      background:
+        linear-gradient(135deg, var(--ink) 0 40%, var(--accent) 40% 62%, var(--soft) 62% 100%);
+      box-shadow:6px 6px 0 rgba(33,29,25,.1);
+    }
+
+    .brand small{
+      display:block;
+      font-family:"IBM Plex Sans",sans-serif;
+      color:var(--muted); font-weight:500; font-size:.78rem; letter-spacing:.02em;
+    }
+
+    .navlinks{
+      display:flex; gap:1.1rem; align-items:center; flex-wrap:wrap; font-size:.95rem;
+    }
+    .navlinks a{
+      position:relative; padding:.25rem 0;
+    }
+    .navlinks a::after{
+      content:""; position:absolute; left:0; bottom:-2px; width:100%; height:2px;
+      background:var(--ink); transform:scaleX(0); transform-origin:left; transition:transform .25s ease;
+    }
+    .navlinks a:hover::after{transform:scaleX(1)}
+
+    .cta{
+      display:inline-flex; align-items:center; justify-content:center; gap:.65rem;
+      border:2px solid var(--line);
+      padding:.9rem 1.12rem;
+      border-radius:999px;
+      background:var(--ink); color:#fff;
+      font-weight:600; cursor:pointer;
+      transition:transform .2s ease, box-shadow .2s ease, background .2s ease;
+      box-shadow:0 10px 28px rgba(17,15,13,.12);
+    }
+    .cta:hover{transform:translateY(-2px) scale(1.01)}
+    .cta:active{transform:translateY(0) scale(.99)}
+    .cta.alt{background:transparent; color:var(--ink); box-shadow:none}
+    .cta.alt:hover{background:#fff}
+
+    .hero{padding:clamp(2rem, 4vw, 3rem) 0 2rem}
+    .hero-grid{
+      display:grid;
+      grid-template-columns:1.02fr .98fr;
+      gap:1.2rem;
+      align-items:stretch;
+    }
+
+    .hero-copy,.hero-os,.sheet,.panel,.codebox,.tray,.profile-session{
+      border:2px solid rgba(33,29,25,.95);
+      border-radius:var(--radius);
+      background:rgba(255,253,249,.78);
+      backdrop-filter:blur(10px);
+      box-shadow:var(--shadow);
+      overflow:hidden;
+    }
+
+    .hero-copy{
+      padding:clamp(1.5rem, 4vw, 3rem);
+      min-height:700px;
+      display:flex; flex-direction:column; justify-content:space-between;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.58), rgba(255,255,255,.2)),
+        radial-gradient(circle at 88% 10%, rgba(184,74,22,.12), transparent 23%),
+        radial-gradient(circle at 8% 90%, rgba(31,110,96,.12), transparent 24%),
+        var(--paper);
+    }
+
+    .eyebrow{
+      display:inline-flex; align-items:center; gap:.65rem;
+      width:max-content;
+      font-size:.82rem; font-weight:700; text-transform:uppercase; letter-spacing:.1em;
+      border:1.5px solid rgba(33,29,25,.18);
+      border-radius:999px;
+      padding:.45rem .8rem;
+      background:rgba(255,255,255,.58);
+    }
+    .eyebrow::before{
+      content:"";
+      width:10px; height:10px; border-radius:999px;
+      background:var(--accent-2);
+      box-shadow:0 0 0 5px rgba(31,110,96,.12);
+    }
+
+    h1,h2,h3,h4{
+      margin:0;
+      font-family:"Space Grotesk",sans-serif;
+      line-height:.96;
+      letter-spacing:-.06em;
+    }
+    h1{
+      font-size:clamp(3rem, 7.8vw, 7rem);
+      max-width:10.5ch;
+      margin-top:1rem;
+    }
+    .lead{
+      margin:1rem 0 0;
+      font-size:clamp(1rem, 1.55vw, 1.18rem);
+      line-height:1.75;
+      color:var(--muted);
+      max-width:60ch;
+    }
+
+    .hero-actions{display:flex; gap:.85rem; flex-wrap:wrap; margin-top:1.55rem}
+
+    .hero-meta{
+      margin-top:1.7rem;
+      display:grid; grid-template-columns:repeat(4,1fr); gap:.8rem;
+    }
+    .metric{
+      padding:1rem;
+      border-top:2px solid var(--line);
+      background:rgba(255,255,255,.46);
+    }
+    .metric b{
+      display:block;
+      font-family:"Space Grotesk",sans-serif;
+      font-size:1.36rem; letter-spacing:-.05em;
+    }
+    .metric span{font-size:.9rem; color:var(--muted)}
+
+    .hero-os{
+      padding:1rem;
+      min-height:700px;
+      color:#f9f2e8;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.02)),
+        linear-gradient(135deg, var(--shell) 0%, var(--shell-2) 100%);
+      position:relative;
+    }
+
+    .os-top{
+      display:flex; align-items:center; justify-content:space-between; gap:1rem;
+      margin-bottom:.9rem;
+    }
+    .dots{display:flex; gap:.45rem}
+    .dots span{
+      width:12px; height:12px; border-radius:999px; display:block;
+      border:1px solid rgba(255,255,255,.28);
+    }
+    .dots span:nth-child(1){background:#ef6a53}
+    .dots span:nth-child(2){background:#f0b248}
+    .dots span:nth-child(3){background:#61c676}
+
+    .workspace{
+      display:grid;
+      grid-template-columns:250px 1fr;
+      gap:.9rem;
+      height:calc(100% - 40px);
+    }
+
+    .sidebar{
+      border:1.5px solid rgba(255,255,255,.14);
+      border-radius:20px;
+      padding:.9rem;
+      background:rgba(255,255,255,.05);
+      display:grid; gap:.75rem; align-content:start;
+    }
+
+    .side-group{
+      border-bottom:1px solid rgba(255,255,255,.1);
+      padding-bottom:.7rem;
+    }
+    .side-group:last-child{border-bottom:none}
+    .side-label{
+      font-size:.72rem; text-transform:uppercase; letter-spacing:.12em; opacity:.7; margin-bottom:.55rem;
+    }
+    .side-item{
+      display:flex; justify-content:space-between; gap:.8rem; align-items:center;
+      padding:.58rem .65rem; border-radius:12px;
+      transition:background .2s ease, transform .2s ease;
+      cursor:pointer;
+    }
+    .side-item:hover{background:rgba(255,255,255,.08); transform:translateX(2px)}
+
+    .pill{
+      display:inline-flex; align-items:center; justify-content:center;
+      min-width:28px; height:28px; border-radius:999px;
+      border:1px solid rgba(255,255,255,.14);
+      font-size:.76rem; color:#ddd3c3; padding:0 .45rem;
+    }
+
+    .mainstack{
+      display:grid;
+      grid-template-rows:auto auto auto 1fr;
+      gap:.9rem;
+      min-height:0;
+    }
+
+    .profile-session{
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.02)),
+        rgba(255,255,255,.05);
+      border-color:rgba(255,255,255,.14);
+      box-shadow:none;
+      color:#f6efdf;
+      padding:.85rem;
+    }
+    .profile-session-top{
+      display:flex; align-items:center; justify-content:space-between; gap:1rem; flex-wrap:wrap;
+      margin-bottom:.75rem;
+    }
+    .profile-name{
+      font-family:"Space Grotesk",sans-serif; font-size:1.1rem; letter-spacing:-.04em;
+    }
+    .session-controls{
+      display:flex; gap:.5rem; flex-wrap:wrap;
+    }
+    .toolbtn{
+      border:1px solid rgba(255,255,255,.14);
+      background:rgba(255,255,255,.06);
+      color:#f6efdf;
+      border-radius:999px;
+      padding:.5rem .8rem;
+      font-size:.82rem;
+      cursor:pointer;
+      transition:background .2s ease, transform .2s ease;
+    }
+    .toolbtn:hover{background:rgba(255,255,255,.1); transform:translateY(-1px)}
+    .toolbtn.live{border-color:rgba(139,208,187,.45); color:#a9e7d2}
+    .toolbtn.warn{border-color:rgba(240,178,72,.42); color:#f0c477}
+    .toolbtn.stop{border-color:rgba(239,106,83,.38); color:#ffb5a5}
+    .session-timeline{
+      display:grid; grid-template-columns:repeat(4,1fr); gap:.7rem;
+    }
+    .session-stat{
+      padding:.75rem;
+      border-top:1.5px solid rgba(255,255,255,.15);
+      background:rgba(255,255,255,.04);
+    }
+    .session-stat b{
+      display:block; font-family:"Space Grotesk",sans-serif; font-size:1.1rem; letter-spacing:-.04em;
+    }
+    .session-stat span{font-size:.84rem; color:#d6ccbc}
+
+    .winbar{
+      border:1.5px solid rgba(255,255,255,.14);
+      border-radius:18px;
+      padding:.75rem;
+      background:rgba(255,255,255,.05);
+      display:flex; gap:.55rem; flex-wrap:wrap;
+    }
+    .chip{
+      border:1px solid rgba(255,255,255,.14);
+      padding:.55rem .8rem;
+      border-radius:999px;
+      font-size:.82rem;
+      background:rgba(255,255,255,.04);
+      color:#efe7d8;
+      transition:background .2s ease, transform .2s ease;
+    }
+    .chip:hover{background:rgba(255,255,255,.08); transform:translateY(-1px)}
+
+    .chatpane{
+      border:1.5px solid rgba(255,255,255,.14);
+      border-radius:20px;
+      padding:1rem;
+      background:
+        radial-gradient(circle at 88% 8%, rgba(184,74,22,.16), transparent 22%),
+        rgba(255,255,255,.04);
+      display:grid; gap:.8rem;
+      min-height:190px;
+    }
+    .msg{
+      max-width:88%;
+      padding:.85rem .95rem;
+      border-radius:18px;
+      line-height:1.62;
+      font-size:.94rem;
+    }
+    .msg.user{
+      margin-left:auto;
+      background:#f3e4cf;
+      color:#1b1713;
+      border:1px solid rgba(27,23,19,.14);
+    }
+    .msg.agent{
+      background:rgba(255,255,255,.08);
+      border:1px solid rgba(255,255,255,.12);
+      color:#f5efdf;
+    }
+    .msg.proactive{
+      background:rgba(255,240,210,.1);
+      border:1px solid rgba(240,178,72,.22);
+      color:#f4d7a6;
+    }
+
+    .editor-grid{
+      display:grid;
+      grid-template-columns:1.1fr .9fr;
+      gap:.9rem;
+      min-height:0;
+    }
+
+    .terminal,.panel-stack{
+      border:1.5px solid rgba(255,255,255,.14);
+      border-radius:20px;
+      overflow:hidden;
+    }
+    .terminal{
+      padding:0;
+      background:rgba(255,255,255,.04);
+      display:flex; flex-direction:column;
+      min-height:310px;
+    }
+    .panel-head{
+      display:flex; justify-content:space-between; align-items:center; gap:.8rem;
+      padding:.82rem .95rem;
+      border-bottom:1px solid rgba(255,255,255,.12);
+      background:rgba(255,255,255,.04);
+    }
+    .panel-head h4{
+      font-size:1rem; color:#fff5e4; letter-spacing:-.03em;
+    }
+    .head-tools{
+      display:flex; align-items:center; gap:.45rem; flex-wrap:wrap;
+    }
+
+    .toggle-ai{
+      display:inline-flex; align-items:center; gap:.55rem;
+      border:1px solid rgba(255,255,255,.14);
+      border-radius:999px;
+      padding:.35rem .45rem .35rem .7rem;
+      color:#efe7d8;
+      background:rgba(255,255,255,.04);
+      font-size:.8rem;
+      cursor:pointer;
+      user-select:none;
+      transition:background .2s ease, transform .2s ease, border-color .2s ease;
+    }
+    .toggle-ai:hover{background:rgba(255,255,255,.08); transform:translateY(-1px)}
+    .toggle-ai .dot{
+      width:22px; height:22px; border-radius:999px;
+      display:grid; place-items:center;
+      background:#46382f; color:#f9efe0; font-size:.78rem;
+      transition:background .2s ease, transform .2s ease;
+    }
+    .toggle-ai.active{
+      border-color:rgba(169,231,210,.3);
+      background:rgba(169,231,210,.08);
+    }
+    .toggle-ai.active .dot{
+      background:var(--accent-2);
+      transform:scale(1.04);
+    }
+
+    .toggle-sub{
+      font-size:.72rem; opacity:.72;
+    }
+
+    .terminal-body{
+      padding:1rem;
+      display:flex; flex-direction:column; justify-content:space-between; gap:.7rem; min-height:240px;
+    }
+    .term-title{
+      font-size:.78rem; text-transform:uppercase; letter-spacing:.12em; opacity:.72; margin-bottom:.2rem;
+    }
+    .term-line{
+      font-family:ui-monospace, SFMono-Regular, Menlo, monospace;
+      white-space:pre-wrap;
+      line-height:1.7;
+      font-size:.92rem;
+      color:#ddd4c7;
+    }
+    .term-line .ok{color:#8bd0bb}
+    .term-line .warn{color:#efbd5b}
+    .term-line .hot{color:#ffb38e}
+    .cursor{
+      display:inline-block; width:.65ch; height:1.02em; background:#f8f3ea;
+      vertical-align:-.16em; animation:blink 1s steps(1,end) infinite;
+    }
+    @keyframes blink{50%{opacity:0}}
+
+    .panel-stack{
+      display:grid;
+      grid-template-rows:1fr 1fr;
+      gap:.9rem;
+      background:none;
+      border:none;
+    }
+    .stackbox{
+      border:1.5px solid rgba(255,255,255,.14);
+      border-radius:20px;
+      background:rgba(255,255,255,.04);
+      overflow:hidden;
+    }
+    .stackbox-body{
+      padding:1rem;
+    }
+    .stackbox-body p{
+      margin:0; color:#d9cfbf; line-height:1.58; font-size:.92rem;
+    }
+
+    .section{padding:2rem 0}
+    .section-head{
+      display:grid; grid-template-columns:.82fr 1.18fr; gap:1rem; align-items:end;
+      margin-bottom:1.15rem;
+    }
+    .kicker{
+      font-size:.78rem; text-transform:uppercase; letter-spacing:.14em;
+      color:var(--accent); font-weight:700;
+    }
+    .section-head p{
+      margin:0; color:var(--muted); line-height:1.74; max-width:76ch;
+    }
+
+    .grid-2{display:grid; grid-template-columns:1.08fr .92fr; gap:1rem}
+    .grid-3{display:grid; grid-template-columns:repeat(3,1fr); gap:1rem}
+    .grid-4{display:grid; grid-template-columns:repeat(4,1fr); gap:1rem}
+
+    .sheet{
+      padding:1.15rem;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.62), rgba(255,255,255,.24)),
+        var(--paper);
+    }
+    .sheet-title{
+      display:flex; justify-content:space-between; align-items:flex-end; gap:1rem;
+      border-bottom:2px solid var(--line);
+      padding-bottom:.85rem; margin-bottom:1rem;
+    }
+    .sheet-title h3{font-size:clamp(1.55rem, 3vw, 2.45rem)}
+    .sheet-title span{color:var(--muted); font-size:.94rem}
+
+    .spec-list{display:grid; gap:.9rem}
+    .spec-item{
+      display:grid; grid-template-columns:108px 1fr; gap:1rem;
+      padding:.95rem 0;
+      border-bottom:1.5px solid rgba(33,29,25,.12);
+    }
+    .spec-item:last-child{border-bottom:none}
+    .spec-key{
+      font-family:"Space Grotesk",sans-serif;
+      letter-spacing:-.04em; font-size:1rem;
+    }
+    .spec-item p{
+      margin:0; color:var(--muted); line-height:1.7;
+    }
+
+    .panel{
+      padding:1rem;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.62), rgba(255,255,255,.34)),
+        var(--paper);
+      transition:transform .22s ease;
+    }
+    .panel:hover{transform:translateY(-3px)}
+    .panel h4{font-size:1.16rem; margin-bottom:.45rem}
+    .panel p{margin:0; color:var(--muted); line-height:1.62; font-size:.94rem}
+    .tagrow{display:flex; flex-wrap:wrap; gap:.48rem; margin-top:.85rem}
+    .tag{
+      display:inline-flex; align-items:center;
+      border:1.5px solid rgba(33,29,25,.14);
+      border-radius:999px;
+      padding:.42rem .7rem;
+      background:rgba(255,255,255,.55);
+      font-size:.8rem; font-weight:600;
+    }
+
+    .pipeline{
+      display:grid; grid-template-columns:repeat(4,1fr); gap:1rem; margin-top:1rem;
+    }
+    .step{
+      padding:1rem;
+      border-top:3px solid var(--line);
+      background:rgba(255,255,255,.44);
+      min-height:200px;
+    }
+    .step em{
+      display:block; font-style:normal; color:var(--accent);
+      font-weight:700; margin-bottom:.55rem;
+    }
+    .step p{margin:0; color:var(--muted); line-height:1.62}
+
+    .codegrid{
+      display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-top:1rem;
+    }
+    .codebox{
+      background:#151311;
+      color:#f3eadb;
+      padding:1rem;
+      min-height:340px;
+    }
+    .codehead{
+      display:flex; justify-content:space-between; gap:1rem; align-items:center;
+      margin-bottom:.8rem;
+      color:#cfbfa4;
+      font-size:.84rem; letter-spacing:.08em; text-transform:uppercase;
+    }
+    pre{
+      margin:0; overflow:auto;
+      white-space:pre-wrap; word-break:break-word;
+      font-family:ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size:.9rem; line-height:1.65;
+    }
+
+    .table{
+      margin-top:1rem;
+      border:2px solid var(--line);
+      border-radius:22px;
+      overflow:hidden;
+      background:rgba(255,255,255,.5);
+    }
+    .row{
+      display:grid;
+      grid-template-columns:1.05fr .95fr .95fr;
+      border-bottom:1.5px solid rgba(33,29,25,.14);
+    }
+    .row:last-child{border-bottom:none}
+    .row.head{
+      background:var(--ink);
+      color:#fff;
+      font-weight:700;
+      font-family:"Space Grotesk",sans-serif;
+      letter-spacing:-.03em;
+    }
+    .cell{padding:1rem; min-height:100%}
+    .row:not(.head) .cell:nth-child(2){
+      border-left:1.5px solid rgba(33,29,25,.12);
+      border-right:1.5px solid rgba(33,29,25,.12);
+    }
+    .cell p{
+      margin:.35rem 0 0;
+      color:var(--muted);
+      line-height:1.62;
+    }
+    .row.head .cell p{color:rgba(255,255,255,.8)}
+
+    .toolbar-demo{
+      display:grid; grid-template-columns:repeat(3,1fr); gap:1rem;
+      margin-top:1rem;
+    }
+    .tray{
+      padding:1rem;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.58), rgba(255,255,255,.26)),
+        var(--paper);
+    }
+    .tray-head{
+      display:flex; justify-content:space-between; align-items:center; gap:.8rem;
+      border-bottom:1.5px solid rgba(33,29,25,.12);
+      padding-bottom:.75rem; margin-bottom:.85rem;
+    }
+    .tray p{
+      margin:0; color:var(--muted); line-height:1.62; font-size:.93rem;
+    }
+
+    .notify{
+      position:fixed;
+      right:1rem;
+      bottom:1rem;
+      z-index:1200;
+      display:grid; gap:.75rem;
+      width:min(360px, calc(100vw - 2rem));
+    }
+    .toast{
+      border:2px solid var(--line);
+      border-radius:18px;
+      background:rgba(255,249,239,.94);
+      box-shadow:var(--shadow-strong);
+      padding:.9rem 1rem;
+      transform:translateY(12px);
+      opacity:0;
+      pointer-events:none;
+      transition:opacity .3s ease, transform .3s ease;
+    }
+    .toast.show{
+      opacity:1; transform:translateY(0); pointer-events:auto;
+    }
+    .toast strong{
+      display:block;
+      font-family:"Space Grotesk",sans-serif;
+      letter-spacing:-.03em;
+      margin-bottom:.25rem;
+    }
+    .toast p{
+      margin:0;
+      color:var(--muted);
+      line-height:1.55;
+      font-size:.92rem;
+    }
+
+    .footer{padding:2.5rem 0 4rem}
+    .footer-box{
+      border-top:2px solid var(--line);
+      padding-top:1rem;
+      display:flex; justify-content:space-between; gap:1rem; flex-wrap:wrap;
+    }
+    .footer p{
+      margin:0; color:var(--muted); line-height:1.72; max-width:80ch;
+    }
+
+    .stagger-1{animation:rise .75s ease .05s both}
+    .stagger-2{animation:rise .75s ease .14s both}
+    .stagger-3{animation:rise .75s ease .24s both}
+    .stagger-4{animation:rise .75s ease .34s both}
+    @keyframes rise{
+      from{opacity:0; transform:translateY(26px)}
+      to{opacity:1; transform:translateY(0)}
+    }
+
+    @media (max-width:1140px){
+      .hero-grid,.grid-2,.section-head,.codegrid{grid-template-columns:1fr}
+      .workspace{grid-template-columns:1fr}
+      .editor-grid{grid-template-columns:1fr}
+      .pipeline,.toolbar-demo{grid-template-columns:1fr 1fr}
+    }
+
+    @media (max-width:820px){
+      .navlinks{display:none}
+      .hero-meta,.grid-3,.grid-4,.pipeline,.toolbar-demo,.session-timeline{grid-template-columns:1fr}
+      .spec-item{grid-template-columns:1fr}
+      .row{grid-template-columns:1fr}
+      .row:not(.head) .cell:nth-child(2),
+      .row:not(.head) .cell:nth-child(3){
+        border-top:1.5px solid rgba(33,29,25,.12);
+        border-left:none; border-right:none;
+      }
+      h1{max-width:10ch}
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap nav">
+      <a href="#top" class="brand" aria-label="Agent Builder OS">
+        <div class="brand-mark" aria-hidden="true"></div>
+        <div>
+          Agent Builder OS
+          <small>Android IDE / CLI / Screen-Aware Orchestrator</small>
+        </div>
+      </a>
+
+      <nav class="navlinks" aria-label="Navigasi utama">
+        <a href="#session">Profile Session</a>
+        <a href="#signals">Signals Spec</a>
+        <a href="#aisuggest">Ai✨Suggest</a>
+        <a href="#byok">BYOK Ai✨</a>
+        <a href="#screenaware">Screen Aware</a>
+        <a href="#browser">Browser/WebView</a>
+      </nav>
+
+      <a class="cta alt" href="#implementasi">Versi Terbaru</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <article class="hero-copy">
+          <div>
+            <div class="eyebrow stagger-1">screen-aware profile runtime</div>
+            <h1 class="stagger-2">Profile sekarang hidup sebagai session aktif yang bisa run, pause, resume, stop, dan edit time.</h1>
+            <p class="lead stagger-3">
+              Versi terbaru ini menambahkan <strong>Profile Session lifecycle</strong>, <strong>Signals Spec</strong>,
+              <strong>internal browser/webview</strong>, agent tunggal <strong>Ai✨Suggest</strong>, tab <strong>Ai✨</strong> di BYOK,
+              serta layer <strong>Screen Aware</strong> yang ditanamkan ke setiap panel dengan toggle khusus.
+              Ia bisa memberi <strong>notif proaktif</strong>, menganalisa konteks layar, dan aman bila user lupa mematikannya karena
+              default-nya <strong>5min-Auto / off</strong>.
+            </p>
+
+            <div class="hero-actions stagger-4">
+              <a href="#signals" class="cta">Lihat Signals Spec</a>
+              <a href="#screenaware" class="cta alt">Screen Aware Layer</a>
+            </div>
+          </div>
+
+          <div class="hero-meta">
+            <div class="metric">
+              <b>Profile Session</b>
+              <span>run / pause / resume / stop / edit time</span>
+            </div>
+            <div class="metric">
+              <b>Signals</b>
+              <span>command, workflow, email, git, time, task</span>
+            </div>
+            <div class="metric">
+              <b>Ai✨Suggest</b>
+              <span>single-model screen-aware helper</span>
+            </div>
+            <div class="metric">
+              <b>Safe Auto</b>
+              <span>aktif 5 menit lalu auto-off</span>
+            </div>
+          </div>
+        </article>
+
+        <aside class="hero-os">
+          <div class="os-top">
+            <div class="dots" aria-hidden="true"><span></span><span></span><span></span></div>
+            <div style="font-size:.84rem; opacity:.72;">live workspace / session-aware / proactive notifications</div>
+          </div>
+
+          <div class="workspace">
+            <div class="sidebar">
+              <div class="side-group">
+                <div class="side-label">profile sessions</div>
+                <div class="side-item"><span>agent-builder</span><span class="pill">RUN</span></div>
+                <div class="side-item"><span>debian-dev</span><span class="pill">PAUSE</span></div>
+                <div class="side-item"><span>nethunter-lite</span><span class="pill">STOP</span></div>
+              </div>
+
+              <div class="side-group">
+                <div class="side-label">signal inputs</div>
+                <div class="side-item"><span>command</span><span class="pill">cmd</span></div>
+                <div class="side-item"><span>workflow.json</span><span class="pill">wf</span></div>
+                <div class="side-item"><span>notification</span><span class="pill">ntf</span></div>
+                <div class="side-item"><span>email</span><span class="pill">@</span></div>
+                <div class="side-item"><span>git</span><span class="pill">git</span></div>
+                <div class="side-item"><span>time / task</span><span class="pill">t</span></div>
+              </div>
+
+              <div class="side-group">
+                <div class="side-label">Ai✨ routes</div>
+                <div class="side-item"><span>Ai✨ single model</span><span class="pill">1</span></div>
+                <div class="side-item"><span>Screen Aware</span><span class="pill">on</span></div>
+                <div class="side-item"><span>5min Auto</span><span class="pill">safe</span></div>
+              </div>
+            </div>
+
+            <div class="mainstack">
+              <section class="profile-session" aria-label="Profile session state">
+                <div class="profile-session-top">
+                  <div>
+                    <div class="profile-name">Profile Session: <strong>agent-builder</strong></div>
+                    <div style="font-size:.84rem; color:#d8cdbd; margin-top:.2rem;">Sandbox Debian + Provider Balance + Ai✨Suggest Screen Aware</div>
+                  </div>
+                  <div class="session-controls">
+                    <button class="toolbtn live" type="button">Run</button>
+                    <button class="toolbtn warn" type="button">Pause</button>
+                    <button class="toolbtn" type="button">Resume</button>
+                    <button class="toolbtn stop" type="button">Stop</button>
+                    <button class="toolbtn" type="button">Edit Time</button>
+                  </div>
+                </div>
+                <div class="session-timeline">
+                  <div class="session-stat"><b>01:28:12</b><span>active session time</span></div>
+                  <div class="session-stat"><b>5 min</b><span>Ai✨ auto window</span></div>
+                  <div class="session-stat"><b>14</b><span>signals processed</span></div>
+                  <div class="session-stat"><b>3</b><span>proactive suggestions</span></div>
+                </div>
+              </section>
+
+              <div class="winbar">
+                <span class="chip">Show/Hide Pages</span>
+                <span class="chip">Dock Panels</span>
+                <span class="chip">Split View</span>
+                <span class="chip">Internal Browser</span>
+                <span class="chip">Profile Runtime</span>
+                <span class="chip">Proactive Notifications</span>
+              </div>
+
+              <div class="chatpane">
+                <div class="msg user">Aktifkan Ai✨ 5 menit di terminal, cek error build terakhir, lalu kasih opsi perbaikan tanpa mengeksekusi dulu.</div>
+                <div class="msg agent">Ai✨ aktif untuk panel Terminal selama 5 menit. Saya sedang menganalisa output terakhir, struktur error, dependency terkait, dan opsi penyebab-efek.</div>
+                <div class="msg proactive">Notif proaktif: saya mendeteksi workflow <span class="mono">nightly-review</span> gagal karena token git tidak tersedia di profile aktif. Mau saya buka panel credential atau siapkan fallback local-only review?</div>
+              </div>
+
+              <div class="editor-grid">
+                <section class="terminal">
+                  <div class="panel-head">
+                    <h4>Terminal / Termux Session</h4>
+                    <div class="head-tools">
+                      <button class="toolbtn" type="button">Run</button>
+                      <label class="toggle-ai active" role="switch" aria-checked="true" tabindex="0" data-target="terminal">
+                        <span>Ai✨</span>
+                        <span class="toggle-sub">5min-Auto</span>
+                        <span class="dot">✦</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="terminal-body">
+                    <div>
+                      <div class="term-title">screen-aware analysis / terminal context</div>
+                      <div class="term-line">$ workflow run bootstrap-dev</div>
+                      <div class="term-line"><span class="warn">[task]</span> dependency lock mismatch detected</div>
+                      <div class="term-line"><span class="hot">[ai]</span> Ai✨Suggest found 3 likely causes:
+1. pinned repo branch changed
+2. missing env var in active profile
+3. package cache stale inside sandbox</div>
+                      <div class="term-line"><span class="ok">[suggest]</span> available options:
+- refresh env from profile
+- clear package cache
+- checkout pinned branch
+- open browser docs in side webview</div>
+                    </div>
+                    <div class="term-line">user@android:~$ <span class="cursor"></span></div>
+                  </div>
+                </section>
+
+                <div class="panel-stack">
+                  <section class="stackbox">
+                    <div class="panel-head">
+                      <h4>Files / Workspace</h4>
+                      <div class="head-tools">
+                        <button class="toolbtn" type="button">Preview</button>
+                        <label class="toggle-ai" role="switch" aria-checked="false" tabindex="0" data-target="files">
+                          <span>Ai✨</span>
+                          <span class="toggle-sub">off</span>
+                          <span class="dot">✦</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="stackbox-body">
+                      <p>Screen Aware di panel Files dapat menganalisa struktur folder, sumber file, hubungan artifact, risiko hapus/move, dan menyiapkan opsi zip/export/run bila diminta.</p>
+                    </div>
+                  </section>
+
+                  <section class="stackbox">
+                    <div class="panel-head">
+                      <h4>Internal Browser / WebView</h4>
+                      <div class="head-tools">
+                        <button class="toolbtn" type="button">Open Docs</button>
+                        <label class="toggle-ai active" role="switch" aria-checked="true" tabindex="0" data-target="browser">
+                          <span>Ai✨</span>
+                          <span class="toggle-sub">5min-Auto</span>
+                          <span class="dot">✦</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="stackbox-body">
+                      <p>Panel browser/webview dipakai untuk dokumentasi, dashboard provider, halaman repo, validasi API, dan pembacaan konteks web secara aman untuk bahan masukan user.</p>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="session">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <div class="kicker">Profile Session Spec</div>
+            <h2>Profile bukan cuma konfigurasi, tapi runtime session aktif seperti chat session.</h2>
+          </div>
+          <p>
+            Setiap Project Profile harus menghasilkan <strong>active session</strong> yang bisa dijalankan, dihentikan sementara,
+            dilanjutkan, dihentikan total, dan diatur waktunya. Session ini menyimpan hubungan hidup antara sandbox, provider,
+            router, workflows, env vars, repos, browser state, dan working agents.
+          </p>
+        </div>
+
+        <div class="table reveal">
+          <div class="row head">
+            <div class="cell">State / aksi</div>
+            <div class="cell">Field minimum</div>
+            <div class="cell">Makna operasional</div>
+          </div>
+
+          <div class="row">
+            <div class="cell"><strong>RUN</strong><p>Menjalankan session profile.</p></div>
+            <div class="cell">sessionId, startedAt, activeBindings, timerPolicy</div>
+            <div class="cell">Memasang sandbox, route, agent set, dan screen-aware context untuk profile aktif.</div>
+          </div>
+
+          <div class="row">
+            <div class="cell"><strong>PAUSE</strong><p>Membekukan aktivitas non-esensial.</p></div>
+            <div class="cell">pausedAt, suspendedTasks, aiState</div>
+            <div class="cell">Workflow tertentu dan Ai✨ auto-suggest bisa dihentikan tanpa melepas state profile.</div>
+          </div>
+
+          <div class="row">
+            <div class="cell"><strong>RESUME</strong><p>Melanjutkan session yang dibekukan.</p></div>
+            <div class="cell">resumedAt, restorePolicy</div>
+            <div class="cell">Mengembalikan agent, router, file mounts, dan panel context ke posisi terakhir.</div>
+          </div>
+
+          <div class="row">
+            <div class="cell"><strong>STOP</strong><p>Mengakhiri session aktif.</p></div>
+            <div class="cell">stoppedAt, cleanupPolicy, exportSnapshot</div>
+            <div class="cell">Menutup lifecycle profile, opsional menyimpan snapshot state dan log.</div>
+          </div>
+
+          <div class="row">
+            <div class="cell"><strong>EDIT TIME</strong><p>Kontrol durasi dan jendela aktivitas.</p></div>
+            <div class="cell">sessionTTL, aiAutoWindow, workflowWindows</div>
+            <div class="cell">Dipakai untuk batas aktif profile, 5min-Auto Ai✨, atau jadwal kerja terikat profile.</div>
+          </div>
+        </div>
+
+        <div class="codegrid">
+          <div class="codebox reveal">
+            <div class="codehead">
+              <span>profile-session.spec.json</span>
+              <span>runtime state</span>
+            </div>
+<pre>{
+  "sessionId": "session-agent-builder-001",
+  "profileId": "agent-builder",
+  "state": "RUNNING",
+  "startedAt": "2026-09-30T10:00:00Z",
+  "pausedAt": null,
+  "resumedAt": null,
+  "stoppedAt": null,
+  "sessionTTL": "08:00:00",
+  "aiAutoWindow": "00:05:00",
+  "activeBindings": {
+    "sandboxId": "debian-main",
+    "providerId": "provider-01",
+    "routerId": "router-01",
+    "workingAgents": ["planner", "coder", "runner", "AiSuggest"]
+  }
+}</pre>
+          </div>
+
+          <div class="codebox reveal">
+            <div class="codehead">
+              <span>session-rules.txt</span>
+              <span>behavior summary</span>
+            </div>
+<pre>- one active profile session at a time by default
+- switch profile = prompt to pause or stop current session
+- Ai✨ auto mode defaults to 5 minutes then turns off
+- explicit user request can execute real actions
+- without explicit request, Ai✨ only analyzes and suggests
+- proactive notifications allowed but non-destructive</pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="signals">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <div class="kicker">Signals Spec</div>
+            <h2>Sistem pemicu lintas-layer untuk command, workflow, notification, email, git, agent lain, time, task, dan lainnya.</h2>
+          </div>
+          <p>
+            Modul Signals adalah event fabric utama. Semua pemicu masuk ke format sinyal yang seragam, lalu didistribusikan ke profile session,
+            workflow, agents, router, file manager, browser, atau Ai✨Suggest. Dengan ini, sistem tetap modular dan dapat diputus-sambung.
+          </p>
+        </div>
+
+        <div class="grid-4">
+          <div class="panel reveal">
+            <h4>Input sources</h4>
+            <p>Command, workflow.json, notification, email, git hooks, agent outputs, timer, scheduler, task state, browser events.</p>
+          </div>
+          <div class="panel reveal">
+            <h4>Normalization</h4>
+            <p>Semua event dinormalisasi ke satu format signal agar mudah diproses oleh router, session runtime, dan Ai✨.</p>
+          </div>
+          <div class="panel reveal">
+            <h4>Policies</h4>
+            <p>Signal bisa dibatasi per profile, per layer, per permission, dan per tingkat risiko eksekusi.</p>
+          </div>
+          <div class="panel reveal">
+            <h4>Actions</h4>
+            <p>Signal dapat memicu suggest-only, notify-only, queue workflow, run task, atau menunggu approval user.</p>
+          </div>
+        </div>
+
+        <div class="codegrid">
+          <div class="codebox reveal">
+            <div class="codehead">
+              <span>signal.spec.json</span>
+              <span>canonical event object</span>
+            </div>
+<pre>{
+  "signalId": "sig-2026-09-30-001",
+  "sourceType": "git",
+  "sourceRef": "repo:agent-builder",
+  "trigger": "push.failed",
+  "timestamp": "2026-09-30T10:12:10Z",
+  "profileId": "agent-builder",
+  "sessionId": "session-agent-builder-001",
+  "payload": {
+    "branch": "main",
+    "reason": "missing-credentials"
+  },
+  "intentHint": "notify-and-suggest",
+  "riskLevel": "low"
+}</pre>
+          </div>
+
+          <div class="codebox reveal">
+            <div class="codehead">
+              <span>signal-dispatch.map</span>
+              <span>source examples</span>
+            </div>
+<pre>supported sources:
+- command
+- workflow.json
+- notification
+- email
+- git
+- agent
+- time
+- task
+- browser/webview
+- file-manager
+- provider/router status
+
+possible handlers:
+- session runtime
+- AiSuggest
+- workflow scheduler
+- provider validator
+- browser opener
+- user notification center</pre>
+          </div>
+        </div>
+
+        <div class="pipeline">
+          <div class="step reveal">
+            <em>Flow 01</em>
+            <h3>Receive</h3>
+            <p>Signal diterima dari command, task, email, git, atau notifikasi sistem.</p>
+          </div>
+          <div class="step reveal">
+            <em>Flow 02</em>
+            <h3>Normalize</h3>
+            <p>Sumber dan payload diterjemahkan ke schema signal tunggal yang bisa dipahami semua modul.</p>
+          </div>
+          <div class="step reveal">
+            <em>Flow 03</em>
+            <h3>Analyze</h3>
+            <p>Screen Aware atau policy engine menilai konteks, tujuan, risiko, sebab-akibat, dan relevansi terhadap profile aktif.</p>
+          </div>
+          <div class="step reveal">
+            <em>Flow 04</em>
+            <h3>Act / Suggest</h3>
+            <p>Hasilnya bisa berupa notifikasi proaktif, opsi sugesti, atau eksekusi nyata bila user secara eksplisit meminta.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="aisuggest">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <div class="kicker">Ai✨Suggest Agent</div>
+            <h2>Satu model dijadikan agent pembantu lintas-panel, berfungsi menghasilkan bahan input untuk user.</h2>
+          </div>
+          <p>
+            Fungsi utama modul ini adalah <strong>Ai Agent generate output dari berbagai sumber untuk jadi bahan input oleh User</strong>.
+            Artinya Ai✨Suggest tidak otomatis mengambil alih. Ia menyusun konteks, menyarankan pilihan, menjelaskan sebab-akibat,
+            dan baru mengeksekusi jika user meminta secara eksplisit.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <section class="sheet reveal">
+            <div class="sheet-title">
+              <h3>Peran Ai✨Suggest</h3>
+              <span>single-model helper agent</span>
+            </div>
+            <div class="spec-list">
+              <div class="spec-item">
+                <div class="spec-key">Analyze</div>
+                <div><p>Menganalisa screen context, sumber data, struktur, kebutuhan, tujuan, relasi sebab-akibat, dan risiko tindakan.</p></div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-key">Suggest</div>
+                <div><p>Memberikan pilihan tindakan walau tidak diminta, selama bersifat aman, non-destruktif, dan relevan terhadap panel aktif.</p></div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-key">Prepare</div>
+                <div><p>Menghasilkan draft command, ringkasan error, perubahan file yang disarankan, prompt lanjutan, atau route recommendation.</p></div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-key">Execute</div>
+                <div><p>Hanya mengeksekusi nyata bila ada perintah eksplisit user atau workflow policy yang memang mengizinkan tindakan otomatis.</p></div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-key">Notify</div>
+                <div><p>Mengirim notif proaktif untuk failure, mismatch, peluang optimasi, dependency hilang, kredensial bermasalah, atau task tertunda.</p></div>
+              </div>
+            </div>
+          </section>
+
+          <aside class="sheet reveal">
+            <div class="sheet-title">
+              <h3>Aturan keamanan</h3>
+              <span>aman kalau user lupa switch off</span>
+            </div>
+            <div class="spec-list">
+              <div class="spec-item">
+                <div class="spec-key">Default</div>
+                <div><p>Toggle Ai✨ default ke mode <strong>5min-Auto / off</strong>, bukan always-on permanen.</p></div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-key">Expiry</div>
+                <div><p>Sesudah 5 menit, mode auto kembali nonaktif kecuali user mengaktifkan ulang.</p></div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-key">Non-destructive</div>
+                <div><p>Tanpa permintaan eksplisit, Ai✨ terbatas pada analisa, draft, notifikasi, dan saran.</p></div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-key">Panel scope</div>
+                <div><p>Toggle di setiap header panel berlaku per panel, jadi user bisa aktifkan di Terminal tapi mematikan di Files.</p></div>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+        <div class="toolbar-demo reveal">
+          <div class="tray">
+            <div class="tray-head">
+              <strong>Chat Header</strong>
+              <label class="toggle-ai active" role="switch" aria-checked="true" tabindex="0" data-target="chat">
+                <span>Ai✨</span><span class="toggle-sub">5min-Auto</span><span class="dot">✦</span>
+              </label>
+            </div>
+            <p>Memberi draft prompt, alternatif tanya, ringkasan konteks percakapan, dan notifikasi proaktif yang aman.</p>
+          </div>
+          <div class="tray">
+            <div class="tray-head">
+              <strong>Files Header</strong>
+              <label class="toggle-ai" role="switch" aria-checked="false" tabindex="0" data-target="files-head">
+                <span>Ai✨</span><span class="toggle-sub">off</span><span class="dot">✦</span>
+              </label>
+            </div>
+            <p>Mendeteksi peluang zip/export, rename batch, file orphan, artifact penting, atau script yang layak dipreview.</p>
+          </div>
+          <div class="tray">
+            <div class="tray-head">
+              <strong>Browser Header</strong>
+              <label class="toggle-ai active" role="switch" aria-checked="true" tabindex="0" data-target="browser-head">
+                <span>Ai✨</span><span class="toggle-sub">5min-Auto</span><span class="dot">✦</span>
+              </label>
+            </div>
+            <p>Menyusun ringkasan halaman, mendeteksi form penting, menandai docs relevan, dan menyiapkan pertanyaan lanjutan.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="byok">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <div class="kicker">BYOK — Tab Ai✨</div>
+            <h2>Tambahkan tab khusus “Ai✨” untuk konfigurasi single model agent.</h2>
+          </div>
+          <p>
+            Di modul BYOK, harus ada tab khusus <strong>Ai✨</strong> yang lebih ringkas dibanding provider multi-model biasa.
+            Tujuannya adalah mengikat satu model tunggal untuk agent Ai✨Suggest dengan alur: <strong>Base URL, API Key, single model, test key, validation, save</strong>.
+          </p>
+        </div>
+
+        <div class="codegrid">
+          <div class="codebox reveal">
+            <div class="codehead">
+              <span>byok-ai-tab.spec.json</span>
+              <span>single model config</span>
+            </div>
+<pre>{
+  "tabId": "AiSparkle",
+  "label": "Ai✨",
+  "baseUrl": "https://api.example.com/v1",
+  "apiKeyRef": "keystore://ai-suggest/provider-key",
+  "singleModel": "model-suggest-01",
+  "testKey": {
+    "enabled": true,
+    "lastStatus": "success"
+  },
+  "validation": {
+    "status": "validated",
+    "lastCheckedAt": "2026-09-30T10:15:00Z"
+  },
+  "savePolicy": "manual-confirm"
+}</pre>
+          </div>
+
+          <div class="codebox reveal">
+            <div class="codehead">
+              <span>Ai✨ setup flow</span>
+              <span>short UX</span>
+            </div>
+<pre>1. user opens BYOK > tab "Ai✨"
+2. user enters Base URL
+3. user enters API Key
+4. user selects single model
+5. app runs Test Key
+6. validation status shown
+7. user clicks Save
+8. Ai✨Suggest becomes available in panel toggles</pre>
+          </div>
+        </div>
+
+        <div class="grid-3">
+          <div class="panel reveal">
+            <h4>Base URL</h4>
+            <p>Editable untuk gateway, proxy, self-hosted, atau vendor kompatibel.</p>
+          </div>
+          <div class="panel reveal">
+            <h4>Test & Validation</h4>
+            <p>Auto-test key lalu tampilkan hasil validasi sebelum config bisa dipakai.</p>
+          </div>
+          <div class="panel reveal">
+            <h4>Single Model</h4>
+            <p>Memastikan Ai✨Suggest konsisten dan tidak berubah-ubah antar route.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="screenaware">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <div class="kicker">Screen Aware Layer</div>
+            <h2>Ditancapkan ke setiap layer sebagai modul analisa konteks layar.</h2>
+          </div>
+          <p>
+            Layer <strong>Screen Aware</strong> wajib tertanam ke semua modul utama: Chat, Terminal, Files, Browser, Providers, Agents,
+            Workflow, Project Profiles. Ia membaca konteks visual dan struktural, lalu menghasilkan bahan bantuan untuk user:
+            bukan mengambil alih, melainkan memperkuat pengambilan keputusan.
+          </p>
+        </div>
+
+        <div class="table reveal">
+          <div class="row head">
+            <div class="cell">Kemampuan Screen Aware</div>
+            <div class="cell">Apa yang dianalisa</div>
+            <div class="cell">Output ke user</div>
+          </div>
+
+          <div class="row">
+            <div class="cell"><strong>Context Mapping</strong><p>Konteks panel aktif.</p></div>
+            <div class="cell">screen context, sumber, struktur tampilan, panel state</div>
+            <div class="cell">Ringkasan apa yang sedang dilihat user.</div>
+          </div>
+
+          <div class="row">
+            <div class="cell"><strong>Need Detection</strong><p>Deteksi kebutuhan.</p></div>
+            <div class="cell">tujuan, hambatan, missing dependency, missing credential</div>
+            <div class="cell">Saran next-step, checklist, atau prompt lanjutan.</div>
+          </div>
+
+          <div class="row">
+            <div class="cell"><strong>Cause–Effect</strong><p>Hubungan sebab-akibat.</p></div>
+            <div class="cell">error chain, workflow consequence, file impact, route impact</div>
+            <div class="cell">Penjelasan kenapa sesuatu gagal dan apa efeknya.</div>
+          </div>
+
+          <div class="row">
+            <div class="cell"><strong>Suggestion Engine</strong><p>Opsional meski tak diminta.</p></div>
+            <div class="cell">pilihan aman, peluang efisiensi, docs relevan, route hints</div>
+            <div class="cell">Pilihan sugesti proaktif yang aman dan non-destruktif.</div>
+          </div>
+
+          <div class="row">
+            <div class="cell"><strong>Execution Gate</strong><p>Eksekusi nyata bila diminta.</p></div>
+            <div class="cell">explicit user intent, policy permission, risk level</div>
+            <div class="cell">Command nyata, file operation, workflow trigger, atau browser action.</div>
+          </div>
+        </div>
+
+        <div class="codegrid">
+          <div class="codebox reveal">
+            <div class="codehead">
+              <span>screen-aware.layer.json</span>
+              <span>embedded module</span>
+            </div>
+<pre>{
+  "layerId": "screen-aware-core",
+  "embeddedIn": [
+    "chat",
+    "terminal",
+    "files",
+    "browser",
+    "providers",
+    "agents",
+    "workflow",
+    "profiles"
+  ],
+  "toggleMode": "per-panel",
+  "defaultState": "off",
+  "autoModeWindow": "00:05:00",
+  "capabilities": [
+    "analyze-context",
+    "detect-needs",
+    "map-cause-effect",
+    "suggest-options",
+    "prepare-actions",
+    "execute-on-user-request"
+  ]
+}</pre>
+          </div>
+
+          <div class="codebox reveal">
+            <div class="codehead">
+              <span>proactive-notification.policy</span>
+              <span>safe behavior</span>
+            </div>
+<pre>allowed proactive notifications:
+- failed workflow
+- expired credentials
+- missing env vars
+- provider validation errors
+- route fallback activation
+- orphan artifacts
+- docs recommendation
+
+not allowed without explicit request:
+- destructive delete
+- credential overwrite
+- repo force push
+- arbitrary shell execution</pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="browser">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <div class="kicker">Internal Browser / WebView</div>
+            <h2>Browser internal bukan pelengkap, tapi panel kerja resmi.</h2>
+          </div>
+          <p>
+            Modul browser/webview internal dipakai untuk dokumentasi, dashboard provider, halaman Git/GitHub, preview web apps,
+            membuka link dari chat, validasi form, dan menjadi sumber konteks tambahan untuk Ai✨Suggest.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <section class="sheet reveal">
+            <div class="sheet-title">
+              <h3>Fungsi browser internal</h3>
+              <span>panel kerja lintas-sumber</span>
+            </div>
+            <div class="spec-list">
+              <div class="spec-item">
+                <div class="spec-key">Docs</div>
+                <div><p>Membuka dokumentasi teknis dan membiarkan Ai✨Suggest membuat ringkasan atau langkah aksi.</p></div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-key">Provider UI</div>
+                <div><p>Memuat dashboard provider, auth flow, atau endpoint docs sebagai referensi konfigurasi BYOK.</p></div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-key">Repo View</div>
+                <div><p>Membuka halaman repo, issue, pull request, workflow status, dan artifact links.</p></div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-key">Preview</div>
+                <div><p>Preview hasil build web atau halaman lokal yang dilayani dari sandbox aktif.</p></div>
+              </div>
+            </div>
+          </section>
+
+          <aside class="sheet reveal">
+            <div class="sheet-title">
+              <h3>Integrasi ke layer lain</h3>
+              <span>browser-aware signals</span>
+            </div>
+            <div class="spec-list">
+              <div class="spec-item">
+                <div class="spec-key">Signals</div>
+                <div><p>URL change, auth callback, download complete, form detection, page title change, DOM-ready event.</p></div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-key">Ai✨</div>
+                <div><p>Menganalisa halaman aktif, menyiapkan ringkasan, highlight docs penting, dan notifikasi proaktif.</p></div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-key">Profile</div>
+                <div><p>Menyimpan browser tabs atau pinned docs sebagai bagian dari state Project Profile bila diperlukan.</p></div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="implementasi">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <div class="kicker">Kesimpulan versi terbaru</div>
+            <h2>Sekarang sistemmu resmi menjadi session-based, signal-driven, screen-aware Android IDE/CLI.</h2>
+          </div>
+          <p>
+            Penambahan profile session, signals, browser internal, Ai✨Suggest, tab BYOK Ai✨, dan toggle Screen Aware per panel
+            membuat arsitektur ini jauh lebih matang. Ia bukan lagi sekadar app builder, tetapi operating surface kerja modular
+            yang digerakkan oleh profile, event, dan konteks layar.
+          </p>
+        </div>
+
+        <div class="grid-4">
+          <div class="panel reveal">
+            <h4>Session Runtime</h4>
+            <p>Profile hidup sebagai session aktif yang bisa run, pause, resume, stop, dan edit time.</p>
+          </div>
+          <div class="panel reveal">
+            <h4>Signal Fabric</h4>
+            <p>Semua pemicu dinormalisasi agar bisa diproses oleh workflow, agent, router, file manager, dan browser.</p>
+          </div>
+          <div class="panel reveal">
+            <h4>Ai✨Suggest</h4>
+            <p>Single-model helper yang memberi analisa, notifikasi proaktif, draft aksi, dan eksekusi saat diminta.</p>
+          </div>
+          <div class="panel reveal">
+            <h4>Safe Screen Aware</h4>
+            <p>Toggle per panel, default 5 menit auto lalu off, aman jika user lupa mematikannya.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="notify" aria-live="polite" aria-atomic="true">
+    <div class="toast" id="toast">
+      <strong>Ai✨ Notif Proaktif</strong>
+      <p id="toast-text">Workflow mendeteksi peluang optimasi route pada profile aktif.</p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="wrap footer-box reveal">
+      <p>
+        Ringkasnya: <strong>Profile = session aktif</strong>, <strong>Signals = pemicu universal</strong>,
+        <strong>Ai✨Suggest = agent single-model screen-aware</strong>, <strong>BYOK Ai✨ = konfigurasi cepat</strong>,
+        dan <strong>toggle Ai✨ per panel + 5min-Auto/off</strong> membuat sistem tetap kuat namun aman.
+      </p>
+      <a href="#top" class="cta alt">Kembali ke atas</a>
+    </div>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(entry=>{
+        if(entry.isIntersecting){
+          entry.target.classList.add('in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, {threshold:0.14});
+    document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+    const toggles = document.querySelectorAll('.toggle-ai');
+    toggles.forEach(toggle=>{
+      toggle.addEventListener('click', ()=>toggleAi(toggle));
+      toggle.addEventListener('keydown', (e)=>{
+        if(e.key === 'Enter' || e.key === ' '){
+          e.preventDefault();
+          toggleAi(toggle);
+        }
+      });
+    });
+
+    function toggleAi(toggle){
+      const isActive = toggle.classList.toggle('active');
+      toggle.setAttribute('aria-checked', String(isActive));
+      const sub = toggle.querySelector('.toggle-sub');
+      if(sub){
+        sub.textContent = isActive ? '5min-Auto' : 'off';
+      }
+      if(isActive){
+        showToast('Ai✨ aktif untuk panel ini selama 5 menit. Mode aman akan otomatis off jika tidak diperpanjang.');
+        scheduleAutoOff(toggle, 5000);
+      }else{
+        showToast('Ai✨ dimatikan untuk panel ini.');
+      }
+    }
+
+    function scheduleAutoOff(toggle, duration){
+      clearTimeout(toggle._aiTimer);
+      toggle._aiTimer = setTimeout(()=>{
+        if(toggle.classList.contains('active')){
+          toggle.classList.remove('active');
+          toggle.setAttribute('aria-checked', 'false');
+          const sub = toggle.querySelector('.toggle-sub');
+          if(sub) sub.textContent = 'off';
+          showToast('Ai✨ auto-off aktif. Panel kembali ke mode aman.');
+        }
+      }, duration);
+    }
+
+    const toast = document.getElementById('toast');
+    const toastText = document.getElementById('toast-text');
+    let toastTimer;
+
+    function showToast(message){
+      toastText.textContent = message;
+      toast.classList.add('show');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(()=>toast.classList.remove('show'), 4200);
+    }
+
+    const proactiveMessages = [
+      'Workflow nightly-review gagal: git credential belum tersedia di profile aktif.',
+      'Ai✨ mendeteksi env variable APP_ENV tidak sinkron dengan sandbox Debian aktif.',
+      'Provider route balance melakukan fallback ke small model karena timeout frontier.',
+      'Browser menemukan dokumentasi yang relevan dengan error build terbaru.',
+      'Artifacts export bertambah besar. Pertimbangkan zip + cleanup cache workspace.'
+    ];
+
+    let proactiveIndex = 0;
+    setInterval(()=>{
+      showToast(proactiveMessages[proactiveIndex % proactiveMessages.length]);
+      proactiveIndex++;
+    }, 9000);
+  </script>
+</body>
+</html>
+ 

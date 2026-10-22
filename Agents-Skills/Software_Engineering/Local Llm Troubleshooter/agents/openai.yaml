@@ -1,0 +1,7 @@
+interface:
+  display_name: "Local LLM Troubleshooter"
+  short_description: "Diagnose stuck local LLM stacks"
+  default_prompt: "Use $local-llm-troubleshooter to find out why my local model is stuck."
+
+policy:
+  allow_implicit_invocation: true

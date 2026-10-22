@@ -1,0 +1,44 @@
+interface:
+  display_name: "Agensi Skill Authoring"
+  short_description: "Write SKILL.md files for the Agensi open standard that stay portable across agents and load cleanly in Grok Build."
+  default_prompt: "I want to write a new SKILL.md for [describe the purpose]. Apply Agensi Skill Authoring. Start with Phase 1 (Define Purpose and Boundaries). Include Grok Build packaging if I will load it in Grok."
+
+metadata:
+  price: 0
+  tags:
+    - agensi
+    - skill-authoring
+    - meta
+    - documentation
+    - best-practices
+    - free
+    - grok
+  version: 1.4.0
+  target_agent: grok
+  agensi_slug: agensi-skill-authoring
+
+compatibility:
+  note: |
+    Phases 1–4 are model-agnostic. Phase 5 adds Grok Build notes (auto-invoke description, agents/grok.yaml, kebab slug). Complements Grok bundled create-skill; does not replace it for Grok-only personal skills.
+
+permissions:
+  profile: "Documentation and Skill Creation (Read + Write)"
+
+  tools_used:
+    terminal_shell: "Sometimes – inspect example skills or confirm files exist."
+    read_files: "Yes – existing skills and drafts."
+    write_files: "Yes – SKILL.md, optional agents/*.yaml and references/."
+    browser: "No"
+    network_access: "No"
+
+  file_scopes:
+    - "**/*.md"
+    - "agents/**"
+    - "references/**"
+
+  environment_variables: []
+
+  allowed_hosts: []
+
+  notes: |
+    Token-constrained sessions: see references/token-economy-patterns.md.

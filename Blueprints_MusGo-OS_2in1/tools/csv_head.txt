@@ -1,0 +1,3 @@
+category,path,title,lines,size_bytes,ext,kind,keywords
+01-governance,0. Core_Blueprints_MUSGO-OS_2in1/Blueprint Index.md,"🏛️ KLASTER 1: DOMAIN KONSTITUSI, ETIKA, & TATA KELOLA (Constitutional & Governance Domain)",207,13108,.md,text,fungsi;musgo-os;core;system;security;report;catatan;kognitif
+01-g

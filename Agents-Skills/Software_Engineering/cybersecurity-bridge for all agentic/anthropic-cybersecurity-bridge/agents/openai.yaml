@@ -1,0 +1,6 @@
+interface:
+  display_name: "Anthropic Cybersecurity Bridge"
+  short_description: "Connect directly to Anthropic-Cybersecurity-Skills"
+  default_prompt: "Use $anthropic-cybersecurity-bridge to locate the right Anthropic-Cybersecurity-Skills entry for this security task before proceeding."
+policy:
+  allow_implicit_invocation: true

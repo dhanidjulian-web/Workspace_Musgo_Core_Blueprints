@@ -1,0 +1,34 @@
+{
+  "format_version": "1.0",
+  "exported_at": "2026-08-09T21:20:43.700817Z",
+  "name": "technical-risk-translator",
+  "slug": "system.technical-risk-translator",
+  "description": "Translate technical risks into business terms for non-technical stakeholders. Provides frameworks for impact quantification, urgency calibration, and executive communication. Use when communicating technical concerns, requesting resources, or escalating decisions to leadership.",
+  "skill_type": "instruction",
+  "category": "Software Development",
+  "tags": [
+    "risk-communication",
+    "technical-risk",
+    "stakeholder",
+    "executive-communication",
+    "business-impact",
+    "engineering-leadership",
+    "translation"
+  ],
+  "visibility": "public",
+  "skill_version": null,
+  "dependencies": null,
+  "author_name": "Agentman",
+  "author_url": "https://agentman.ai",
+  "license": null,
+  "prerequisite_skills": [],
+  "related_skills": [],
+  "content_version": 1,
+  "version_note": "Imported from package",
+  "content_hash": "4c93fa0f4feed335a8bbf8e1975ace143c5864dd4fd829b405048ed6e657d97b",
+  "exported_from": {
+    "system": "agentman",
+    "tenant_id": null,
+    "skill_id": "9764d123-9c7a-4623-9d22-d6f150eb2f66"
+  }
+}

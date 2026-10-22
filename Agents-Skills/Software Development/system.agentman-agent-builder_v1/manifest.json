@@ -1,0 +1,33 @@
+{
+  "format_version": "1.0",
+  "exported_at": "2026-08-09T21:14:17.638555Z",
+  "name": "agentman-agent-builder",
+  "slug": "system.agentman-agent-builder",
+  "description": "Deterministic agent generator that transforms structured input into valid Agentman AgentPlan JSON. Use when you need to programmatically create smart/basic agents from a spec containing role, goal, instructions, tone, and guardrails. Outputs either a complete AgentPlan or validation errors. Designed for flow/API usage where all input is provided upfront.",
+  "skill_type": "instruction",
+  "category": "Agent Development",
+  "tags": [
+    "agentman",
+    "agent-generator",
+    "agentplan",
+    "meta-agent",
+    "flow",
+    "automation"
+  ],
+  "visibility": "public",
+  "skill_version": null,
+  "dependencies": null,
+  "author_name": "Agentman",
+  "author_url": "https://agentman.ai",
+  "license": null,
+  "prerequisite_skills": [],
+  "related_skills": [],
+  "content_version": 1,
+  "version_note": null,
+  "content_hash": "59ef08fd5948b02c6c6c43c7b73623b0488b259f3fd052ba06d120356194f0ab",
+  "exported_from": {
+    "system": "agentman",
+    "tenant_id": null,
+    "skill_id": "a04fbebe-24cb-4cfd-822c-fdb153819fd0"
+  }
+}

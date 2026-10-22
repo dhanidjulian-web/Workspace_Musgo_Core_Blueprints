@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "musgo.project_progress.agent_skill_registry.v1",
+  "title": "MusGo-OS 2in1 — Agent↔Skill Registry (Runtime)",
+  "description": "Hasil kompilasi INDEX_AGENTS_SKILLS.md menjadi registry terstruktur untuk routing cepat. Disimpan di .state/agent_skill_registry.json.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "source", "generated_at", "pairs"],
+  "properties": {
+    "schema_version": { "const": "1.0.0" },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "entries_parsed", "checksum_sha256"],
+      "properties": {
+        "path": { "type": "string" },
+        "entries_parsed": { "type": "integer", "minimum": 0 },
+        "checksum_sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+      }
+    },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "pairs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["group", "agents", "skills", "duality_ok"],
+        "properties": {
+          "group": { "type": "integer", "minimum": 0, "maximum": 75 },
+          "agents": { "type": "array", "items": { "type": "string" } },
+          "skills": { "type": "array", "items": { "type": "string" } },
+          "duality_ok": { "type": "boolean" },
+          "file_exists": {
+            "type": "object",
+            "additionalProperties": { "type": "boolean" }
+          }
+        }
+      }
+    },
+    "external_collections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name", "exists"],
+        "properties": {
+          "name": { "type": "string" },
+          "exists": { "type": "boolean" }
+        }
+      }
+    },
+    "gaps": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["group", "missing"],
+        "properties": {
+          "group": { "type": "integer", "minimum": 0, "maximum": 75 },
+          "missing": { "type": "string", "enum": ["agent", "skill"] },
+          "policy_applied": { "type": "string" }
+        }
+      }
+    }
+  }
+}

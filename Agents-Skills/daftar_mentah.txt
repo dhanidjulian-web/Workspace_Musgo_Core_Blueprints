@@ -1,0 +1,145 @@
+0. MusGo-OS_2in1_Skills
+1. CORE GOVERNOR AGENT.md
+1. software architecture.md
+10. distributed systems expert.md
+10. SECURITY ENGINEER AGENT.md
+11. INFRASTRUCTURE ENGINEER AGENT.md
+11. Next.js expert.md
+12. AI & INTELLIGENCE AGENTS.md
+12. Node.js expert focused on backend patterns.md
+13. AI ARCHITECT AGENT.md
+13. performance optimization expert.md
+14. AGENT ORCHESTRATOR AGENT.md
+14. Python expert focused.md
+15. PROMPT ENGINEER AGENT.md
+15. React expert focused.md
+16. compliance expert.md
+16. RAG ENGINEER AGENT.md
+17. KNOWLEDGE GRAPH ENGINEER.md
+17. senior security engineer performing.md
+18. MEMORY SYSTEM ENGINEER.md
+18. Spring Boot expert.md
+19. AI SECURITY ENGINEER.md
+19. refactoring specialist.md
+2. bug detection specialist.md
+2. SOFTWARE ARCHITECT AGENT.md
+20. MLOPS ENGINEER AGENT.md
+20. testing specialist.md
+21. MODEL RESEARCH AGENT.md
+21. TypeScript expert.md
+22. AUTONOMOUS PLANNER AGENT.md
+22. Vue expert focused.md
+23. AUTONOMOUS EXECUTOR AGENT.md
+24. AI GOVERNOR AGENT
+25. AI SWARM COMMANDER AGENT.md
+26. PRODUCT MANAGER AGENT.md
+27. MONETIZATION STRATEGIST AGENT.md
+28. SAAS ARCHITECT AGENT.md
+29. MARKET RESEARCH AGENT.md
+3. BACKEND ENGINEER AGENT.md
+3. C# expert focused.md
+30. BUSINESS INTELLIGENCE AGENT.md
+31. GROWTH HACKER AGENT.md
+32. ENTERPRISE CONSULTANT AGENT.md
+33. INVESTOR DECK AGENT.md
+34. RESEARCH ANALYST AGENT.md
+35. TECHNICAL WRITER AGENT.md
+36. DOCUMENTATION GOVERNOR AGENT.md
+37. RISK ANALYST AGENT.md
+38. POLICY GOVERNOR AGENT.md
+39. COMPLIANCE AUDITOR AGENT.md
+4. code consistency expert.md
+4. FRONTEND ENGINEER AGENT.md
+40. STRATEGIC ADVISOR AGENT.md
+41. SECURITY GOVERNOR AGENT.md
+42. ZERO TRUST ARCHITECT AGENT.md
+43. THREAT HUNTER AGENT.md
+44. CYBER DEFENSE AGENT.md
+45. NETWORK ARCHITECT AGENT.md
+46. PROTOCOL ENGINEER AGENT.md
+47. FEDERATION ARCHITECT AGENT.md
+48. TRUST ENGINE AGENT.md
+49. CONSTITUTIONAL AI AGENT.md
+5. code quality specialist.md
+5. FULLSTACK ENGINEER AGENT.md
+50. ETHICAL GOVERNOR AGENT.md
+51. CONSENSUS ARCHITECT AGENT.md
+52. DIGITAL SOVEREIGNTY AGENT.md
+53. INFRASTRUCTURE GOVERNOR AGENT.md
+54. RESILIENCE ENGINEER AGENT.md
+55. DISASTER RECOVERY AGENT.md
+56. SELF-HEALING ARCHITECT AGENT.md
+57. OBSERVABILITY ENGINEER AGENT.md
+58. RUNTIME SECURITY AGENT.md
+59. CIVILIZATION CONTINUITY AGENT.md
+6. dependency security expert.md
+6. DEVOPS ENGINEER AGENT.md
+60. QUANTUM SECURITY AGENT.md
+61. META GOVERNOR AGENT.md
+62. AGENT FACTORY AGENT.md
+63. AGENT REGISTRY AGENT.md
+64. SKILL REGISTRY AGENT.md
+65. CAPABILITY ROUTER AGENT.md
+66. KNOWLEDGE FEDERATION AGENT.md
+67. KNOWLEDGE CURATOR AGENT.md
+68. WORLD MODEL ENGINE.md
+69. STRATEGIC SIMULATION AGENT.md
+7. CI-CD ENGINEER AGENT.md
+7. documentation quality specialist.md
+70. SELF-EVOLUTION ENGINE.md
+71. AUTONOMOUS LEARNING ENGINE.md
+72. MEMORY FEDERATION AGENT.md
+73. DECISION ENGINE AGENT.md
+74. POLICY EVOLUTION AGENT.md
+75. ECOSYSTEM EXPANSION AGENT.md
+8. fallback reviewer for issues.md
+8. GITHUB MANAGER AGENT.md
+9. GraphQL expert focused.md
+9. QA ENGINEER AGENT.md
+agentHack-skills-master
+AI-Research-SKILLs-main
+alphagbm skills-main
+android
+Android_skills-main
+Anthropic-Cybersecurity-Skills-main
+awesome-claude-skills-master
+awesome-copilot-main
+claude
+claude-skills-main
+composio-skills
+creating-agent-skills.md
+CyberStrikeAI-main
+Expert AI coding.md
+explorer.md
+expo skills-main
+FreeTheAI API Skill
+General-purpose.md
+Github
+Google
+INTEGRITAS ANTI-PENIPUAN.md
+Markdown skills-main 
+mercury-agent-skills-main
+microsoft
+Novita.ai
+Openshell
+oracle skills-main
+PANDUAN-API-KEY-PROVIDER.md
+planner.md
+plugins
+pt-skills
+Python_Skill
+scheduler.md
+scientific-agent-skills-main
+SKILL.md
+skills-main nVidia
+Software Development
+Software_Engineering
+supaba agent-skills-main
+taste-skill-main
+teach lab agent-skills-main
+toolmaker.md
+ui-ux-pro-max-skill-main
+unggulan
+Unity-Skills-main
+web url skill.md
+wondel ai skills-main

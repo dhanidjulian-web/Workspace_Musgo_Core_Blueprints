@@ -1,0 +1,4 @@
+interface:
+  display_name: "Git Commit Writer"
+  short_description: "Conventional commit messages from staged changes"
+  default_prompt: "write a commit message for my staged changes"

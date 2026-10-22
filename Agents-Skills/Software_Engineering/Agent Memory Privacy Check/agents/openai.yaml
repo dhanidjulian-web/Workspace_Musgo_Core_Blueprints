@@ -1,0 +1,7 @@
+interface:
+  display_name: "Agent Memory Privacy Check"
+  short_description: "Audit AI memory files for privacy risk"
+  default_prompt: "Use $agent-memory-privacy-check to audit these agent memory files for privacy, bloat, and stale assumptions."
+
+policy:
+  allow_implicit_invocation: true

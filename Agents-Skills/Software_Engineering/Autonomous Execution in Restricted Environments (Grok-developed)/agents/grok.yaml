@@ -1,0 +1,52 @@
+interface:
+  display_name: "Health-Gated Autonomous Operator"
+  short_description: "Reliable, health-gated autonomous operations for Grok agents in restricted or sandboxed terminal environments. The practical counterpart to understanding complex systems."
+  default_prompt: "I need to delegate autonomous repository or maintenance work to a specialized operator that can work reliably even when terminal execution is restricted. Please use the Health-Gated Autonomous Operator skill and the HealthGatedOperator persona."
+
+metadata:
+  price: 0
+  tags:
+    - grok
+    - autonomous-agents
+    - sub-agents
+    - devops
+    - automation
+    - github
+    - ci-cd
+    - constraints
+    - health-gating
+    - resumption
+  version: 0.2.0
+  target_agent: grok
+  agensi_slug: health-gated-autonomous-operator
+
+compatibility:
+  note: |
+    This skill follows the open SKILL.md standard and is optimized for **Grok** inside the **Grok Build CLI / TUI**.
+
+    It is designed as an internal-first sub-agent skill that can be published to Agensi. It works especially well as a companion to "Making Complex Systems Agent-Readable with Grok".
+
+permissions:
+  profile: "Autonomous Execution + Sub-Agent Delegation"
+
+  tools_used:
+    terminal_shell: "No (intentionally avoids direct terminal execution in restricted environments)"
+    read_files: "Yes – Required to read health reports, living documents (Blockers.md, LEGACY-ARTIFACTS.md), and project state."
+    write_files: "Yes – Creates job files for the Spooler, updates living documents, and generates structured execution results."
+    browser: "No"
+    network_access: "No"
+
+  file_scopes:
+    - "**/*.md"
+    - "agents/**"
+    - "personas/**"
+    - "scripts/**"
+
+  environment_variables: []
+
+  allowed_hosts: []
+
+  notes: |
+    This skill is intentionally designed to minimize reliance on the host's restricted `run_terminal_command` tool. It operates primarily through reliable file I/O and development and iteration of launcher scripts.
+
+    It is meant to be delegated to by a parent agent for long-running, health-critical autonomous work.

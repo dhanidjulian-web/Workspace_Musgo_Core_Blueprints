@@ -1,0 +1,121 @@
+{
+ "slug": "freetheai",
+ "url": "https://api.freetheai.org/v1",
+ "role": "auto",
+ "auto": "yes",
+ "nkeys": 1,
+ "synced_at": 1791131339,
+ "source": "SYNC",
+ "models": [
+  {
+   "id": "fta/kai/cohere/north-mini-code:free",
+   "tier": "free",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "fta/kai/inclusionai/ling-3.0-flash-sante:free",
+   "tier": "free",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "fta/kai/kilo-auto/free",
+   "tier": "free",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "fta/kai/liquid/lfm-2.5-2.6b:free",
+   "tier": "free",
+   "caps": [
+    "general"
+   ],
+   "size": "small",
+   "tools": false
+  },
+  {
+   "id": "fta/kai/nvidia/nemotron-3-super-120b-a12b:free",
+   "tier": "free",
+   "caps": [
+    "general"
+   ],
+   "size": "mid",
+   "tools": false
+  },
+  {
+   "id": "fta/kai/nvidia/nemotron-3-ultra-550b-a55b:free",
+   "tier": "free",
+   "caps": [
+    "general"
+   ],
+   "size": "large",
+   "tools": false
+  },
+  {
+   "id": "fta/kai/nvidia/nemotron-3.5-lightning:free",
+   "tier": "free",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "fta/kai/openrouter/free",
+   "tier": "free",
+   "caps": [
+    "automation"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "fta/kai/poolside/laguna-xs-2.1:free",
+   "tier": "free",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "fta/kai/stepfun/step-3.7-flash:free",
+   "tier": "free",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "fta/ocz/space-bunny-free",
+   "tier": "free",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  }
+ ],
+ "tiers": {
+  "free": 11
+ },
+ "caps": {
+  "general": 10,
+  "automation": 1
+ },
+ "total": 11,
+ "health": "DEGRADED",
+ "probe": "fta/kai/cohere/north-mini-code:free",
+ "probe_detail": "jawaban kosong"
+}

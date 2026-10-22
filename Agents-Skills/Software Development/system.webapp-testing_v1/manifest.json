@@ -1,0 +1,30 @@
+{
+  "format_version": "1.0",
+  "exported_at": "2026-08-09T21:21:03.861128Z",
+  "name": "webapp-testing",
+  "slug": "system.webapp-testing",
+  "description": "Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI behavior, capturing browser screenshots, and viewing browser logs.",
+  "skill_type": "instruction",
+  "category": "Software Development",
+  "tags": [
+    "QA",
+    "testing",
+    "webapp"
+  ],
+  "visibility": "public",
+  "skill_version": null,
+  "dependencies": null,
+  "author_name": "Anthropic",
+  "author_url": "https://www.anthropic.com/",
+  "license": null,
+  "prerequisite_skills": [],
+  "related_skills": [],
+  "content_version": 1,
+  "version_note": "Imported from package",
+  "content_hash": "51d9c3c4af02d1437877fc2c521918917e8df20152e6258642725e0ece563756",
+  "exported_from": {
+    "system": "agentman",
+    "tenant_id": null,
+    "skill_id": "d845817b-1731-491a-a5a8-f7fff1787fbc"
+  }
+}

@@ -1,0 +1,935 @@
+{
+ "slug": "cheaperinference",
+ "url": "https://api.cheaperinference.com/v1",
+ "role": "auto",
+ "auto": "yes",
+ "nkeys": 1,
+ "synced_at": 1791131344,
+ "source": "SYNC",
+ "models": [
+  {
+   "id": "aion-labs-aion-3-0",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "aion-labs-aion-3-0-mini",
+   "tier": "freemium",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "claude-fable-5",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "claude-fable-5.1",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "claude-haiku-4.5",
+   "tier": "freemium",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "claude-opus-4-8-fast",
+   "tier": "paid",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "claude-opus-4.5",
+   "tier": "paid",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "claude-opus-4.6",
+   "tier": "paid",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "claude-opus-4.7",
+   "tier": "paid",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "claude-opus-4.8",
+   "tier": "paid",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "claude-opus-5",
+   "tier": "paid",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "claude-opus-5-fast",
+   "tier": "paid",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "claude-opus-5.5",
+   "tier": "paid",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "claude-sonnet-4.5",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "claude-sonnet-4.6",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "claude-sonnet-5",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "claude-sonnet-5.5",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "deepseek-v4-flash",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "deepseek-v4-flash-0731",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "deepseek-v4-pro",
+   "tier": "paid",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "deepseek-v4-pro-0813",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "deepseek-v4.1-flash",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "gemini-2.5-flash",
+   "tier": "freemium",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "gemini-3-5-flash",
+   "tier": "freemium",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "gemini-3-flash-preview",
+   "tier": "free",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "gemini-3.1-flash-lite",
+   "tier": "freemium",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "gemini-3.1-pro",
+   "tier": "freemium",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "gemini-3.1-pro-preview",
+   "tier": "free",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "gemini-3.6-flash",
+   "tier": "freemium",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "gemini-3.7-flash",
+   "tier": "freemium",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "gemini-3.8-flash",
+   "tier": "freemium",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "gemma-3-12b-it",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "small",
+   "tools": false
+  },
+  {
+   "id": "gemma-3-27b-it",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "small",
+   "tools": false
+  },
+  {
+   "id": "gemma-3-4b-it",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "small",
+   "tools": false
+  },
+  {
+   "id": "gemma-4-26b-a4b-it",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "small",
+   "tools": false
+  },
+  {
+   "id": "gemma-4-31b",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "small",
+   "tools": false
+  },
+  {
+   "id": "gemma-4-31b-it",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "small",
+   "tools": false
+  },
+  {
+   "id": "gemma-4-e2b",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "small",
+   "tools": false
+  },
+  {
+   "id": "glm-4.5",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "glm-4.5-air",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "glm-4.6",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "glm-4.7",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "glm-4.7-flash",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "glm-5",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "glm-5.1",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "glm-5.2",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "glm-5.3",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "glm-5.3-flash",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "glm-5.3-prime",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "google/gemini-3.5-flash-lite",
+   "tier": "freemium",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "gpt-4.1-nano",
+   "tier": "freemium",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "gpt-5-mini",
+   "tier": "freemium",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "gpt-5-nano",
+   "tier": "freemium",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "gpt-5.2-codex",
+   "tier": "unknown",
+   "caps": [
+    "code"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "gpt-5.4",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "gpt-5.4-mini",
+   "tier": "freemium",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "gpt-5.4-nano",
+   "tier": "freemium",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "gpt-5.5",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "gpt-5.5-pro",
+   "tier": "paid",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "gpt-5.6-luna",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "gpt-5.6-sol",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "gpt-5.6-terra",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "gpt-6-astra",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "gpt-6-luna",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "gpt-6-sol",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "gpt-6.1-sol",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "gpt-image-2",
+   "tier": "unknown",
+   "caps": [
+    "vision"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "gpt-oss-120b",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "mid",
+   "tools": false
+  },
+  {
+   "id": "grok-4.3",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "grok-4.5",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "grok-4.6",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "grok-4.7",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "grok-imagine",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "kimi-k2-thinking",
+   "tier": "paid",
+   "caps": [
+    "code"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "kimi-k2.5",
+   "tier": "unknown",
+   "caps": [
+    "code"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "kimi-k3",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "mimo-v2.6-flash",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "mimo-v2.6-pro",
+   "tier": "paid",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "minimax-m2",
+   "tier": "freemium",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "minimax-m2.1",
+   "tier": "freemium",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "minimax-m2.5",
+   "tier": "freemium",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "minimax-m2.7",
+   "tier": "freemium",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "minimax-m3",
+   "tier": "freemium",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "minimax-m3-preview",
+   "tier": "free",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "muse-spark-1.2",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "nano-banana",
+   "tier": "freemium",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "nano-banana-2",
+   "tier": "freemium",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "nano-banana-pro",
+   "tier": "freemium",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "qwen-3-8-27b",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "small",
+   "tools": false
+  },
+  {
+   "id": "qwen-3-8-max",
+   "tier": "paid",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "qwen3-32b",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "small",
+   "tools": false
+  },
+  {
+   "id": "qwen3-5-35b-a3b",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "small",
+   "tools": false
+  },
+  {
+   "id": "qwen3-6-35b-a3b",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "small",
+   "tools": false
+  },
+  {
+   "id": "qwen3-coder-30b-a3b-instruct",
+   "tier": "unknown",
+   "caps": [
+    "code"
+   ],
+   "size": "small",
+   "tools": false
+  },
+  {
+   "id": "qwen3-coder-next",
+   "tier": "unknown",
+   "caps": [
+    "code"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "qwen3-next-80b-a3b-instruct",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "mid",
+   "tools": false
+  },
+  {
+   "id": "qwen3-vl-235b-a22b-instruct",
+   "tier": "unknown",
+   "caps": [
+    "vision"
+   ],
+   "size": "mid",
+   "tools": false
+  },
+  {
+   "id": "qwen3.6-27b",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "small",
+   "tools": false
+  },
+  {
+   "id": "qwen3.8-2.4t-a95b",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "mid",
+   "tools": false
+  },
+  {
+   "id": "qwen3.8-flash",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "seedance-2.0",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  }
+ ],
+ "tiers": {
+  "unknown": 62,
+  "freemium": 23,
+  "paid": 13,
+  "free": 3
+ },
+ "caps": {
+  "general": 94,
+  "code": 5,
+  "vision": 2
+ },
+ "total": 101,
+ "health": "DEGRADED",
+ "probe": "aion-labs-aion-3-0-mini",
+ "probe_detail": "HTTP 402"
+}

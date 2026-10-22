@@ -1,0 +1,6 @@
+{
+  "apiProvider": "openai-native",
+  "openAiBaseUrl": "https://kunciai.id/v1",
+  "openAiApiKey": "KUNCIAI_API_KEY_ANDA",
+  "openAiModelId": "kunciai/deepseek-v4-flash"
+}

@@ -1,0 +1,121 @@
+{
+ "slug": "anyapi",
+ "url": "https://api.anyapi.ai/v1",
+ "role": "auto",
+ "auto": "yes",
+ "nkeys": 1,
+ "synced_at": 1791131336,
+ "source": "SYNC",
+ "models": [
+  {
+   "id": "dots-studio/dots-3-note-preview:free",
+   "tier": "free",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "google/gemma-4-26b-a4b-it:free",
+   "tier": "free",
+   "caps": [
+    "general"
+   ],
+   "size": "small",
+   "tools": false
+  },
+  {
+   "id": "inclusionai/ling-3.0-flash-fin:free",
+   "tier": "free",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "inclusionai/ling-3.0-flash-sante:free",
+   "tier": "free",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "inclusionai/ling-3.0-flash-vl:free",
+   "tier": "free",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "nex-agi/nex-n2.5-mini:free",
+   "tier": "free",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+   "tier": "free",
+   "caps": [
+    "general"
+   ],
+   "size": "small",
+   "tools": false
+  },
+  {
+   "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "tier": "free",
+   "caps": [
+    "general"
+   ],
+   "size": "large",
+   "tools": false
+  },
+  {
+   "id": "poolside/laguna-m.1:free",
+   "tier": "free",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "poolside/laguna-xs.2:free",
+   "tier": "free",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "qwen/qwen3-coder:free",
+   "tier": "free",
+   "caps": [
+    "code"
+   ],
+   "size": "unknown",
+   "tools": false
+  }
+ ],
+ "tiers": {
+  "free": 11
+ },
+ "caps": {
+  "general": 10,
+  "code": 1
+ },
+ "total": 11,
+ "health": "DEGRADED",
+ "probe": "dots-studio/dots-3-note-preview:free",
+ "probe_detail": "HTTP 429"
+}

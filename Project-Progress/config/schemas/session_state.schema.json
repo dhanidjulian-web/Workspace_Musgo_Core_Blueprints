@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "musgo.project_progress.session_state.v1",
+  "title": "MusGo-OS 2in1 — Session State",
+  "description": "State sesi aktif pada /home/Project-Progress/.state/current_session.json. Dipakai phase A grounding agar agent berikutnya melanjutkan tanpa ambigu.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "session", "last_grounding", "resume"],
+  "properties": {
+    "schema_version": { "const": "1.0.0" },
+    "session": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "number", "status", "started_at", "founder"],
+      "properties": {
+        "id": { "type": "string" },
+        "number": { "type": "integer", "minimum": 1 },
+        "status": { "type": "string", "enum": ["open", "closed", "blocked"] },
+        "started_at": { "type": "string", "format": "date-time" },
+        "updated_at": { "type": "string", "format": "date-time" },
+        "founder": { "const": "DHANI YULIAWAN" },
+        "mode": { "type": "string", "enum": ["auto-agent", "swarm", "single-pair", "maintenance"] }
+      }
+    },
+    "last_grounding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["timestamp", "completeness"],
+      "properties": {
+        "timestamp": { "type": "string", "format": "date-time" },
+        "completeness": { "type": "number", "minimum": 0, "maximum": 100 },
+        "sources": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["key", "status"],
+            "properties": {
+              "key": { "type": "string" },
+              "path": { "type": "string" },
+              "status": { "type": "string", "enum": ["loaded", "missing", "empty", "stale"] }
+            }
+          }
+        }
+      }
+    },
+    "resume": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["next_action", "context_files"],
+      "properties": {
+        "next_action": { "type": "string" },
+        "context_files": { "type": "array", "items": { "type": "string" } },
+        "open_tasks": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "title", "status"],
+            "properties": {
+              "id": { "type": "string" },
+              "title": { "type": "string" },
+              "status": { "type": "string", "enum": ["pending", "in_progress", "blocked", "done"] },
+              "owner_pair": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "metrics": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "sessions_total": { "type": "integer", "minimum": 0 },
+        "entries_total": { "type": "integer", "minimum": 0 },
+        "last_entry_id": { "type": ["string", "null"] },
+        "knowledge_entities": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "integrity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["founder_signature"],
+      "properties": {
+        "founder_signature": { "const": "DHANI YULIAWAN" },
+        "checksum_sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+      }
+    }
+  }
+}

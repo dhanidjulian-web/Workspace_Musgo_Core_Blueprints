@@ -1,0 +1,566 @@
+{
+ "slug": "kunciai",
+ "url": "https://kunciai.id/v1",
+ "role": "default",
+ "auto": "manual",
+ "nkeys": 1,
+ "synced_at": 1791131313,
+ "source": "SYNC",
+ "models": [
+  {
+   "id": "kunciai/claude-haiku-4.5",
+   "tier": "freemium",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "kunciai/claude-opus-4.6",
+   "tier": "paid",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "kunciai/claude-opus-4.6-thinking",
+   "tier": "paid",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "kunciai/claude-opus-4.7",
+   "tier": "paid",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "kunciai/claude-opus-4.8",
+   "tier": "paid",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "kunciai/claude-opus-5",
+   "tier": "paid",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "kunciai/claude-opus-5.5",
+   "tier": "paid",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "kunciai/claude-sonnet-4.6",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "kunciai/claude-sonnet-5",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "kunciai/deepseek-v4-flash",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "kunciai/deepseek-v4-flash-0731",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "kunciai/deepseek-v4-flash-vision-exp",
+   "tier": "unknown",
+   "caps": [
+    "vision"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "kunciai/deepseek-v4-pro",
+   "tier": "paid",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "kunciai/deepseek-v4-pro-0813",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "kunciai/deepseek-v4.1-flash",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "kunciai/gemini-3.1-pro-high",
+   "tier": "freemium",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "kunciai/gemini-3.1-pro-low",
+   "tier": "freemium",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "kunciai/gemini-3.6-flash-high",
+   "tier": "freemium",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "kunciai/gemini-3.6-flash-low",
+   "tier": "freemium",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "kunciai/gemini-3.6-flash-medium",
+   "tier": "freemium",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "kunciai/gemini-3.7-flash-high",
+   "tier": "freemium",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "kunciai/gemini-3.7-flash-low",
+   "tier": "freemium",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "kunciai/gemini-3.7-flash-medium",
+   "tier": "freemium",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "kunciai/glm-5.0-turbo",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "kunciai/glm-5.1",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "kunciai/glm-5.2",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "kunciai/glm-5.3",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "kunciai/glm-5.3-flash",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "kunciai/glm-5.3-flashx",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "kunciai/glm-5v-turbo",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "kunciai/gpt-5.4-mini",
+   "tier": "freemium",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "kunciai/gpt-5.5",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "kunciai/gpt-5.6-luna",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "kunciai/gpt-5.6-sol",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "kunciai/gpt-5.6-terra",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "kunciai/gpt-6-astra",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "kunciai/gpt-6-luna",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "kunciai/gpt-6-sol",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "kunciai/gpt-6.1-sol",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "kunciai/grok-4.5",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "kunciai/grok-4.6",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "kunciai/hy3-preview",
+   "tier": "free",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "kunciai/hy4-preview",
+   "tier": "free",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "kunciai/kimi-k2.5",
+   "tier": "unknown",
+   "caps": [
+    "code"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "kunciai/kimi-k2.6",
+   "tier": "unknown",
+   "caps": [
+    "code"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "kunciai/kimi-k3",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "kunciai/minimax-m3",
+   "tier": "freemium",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "kunciai/prov3-claude-opus-5",
+   "tier": "paid",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "kunciai/prov3-deepseek-v4-flash",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "kunciai/prov3-deepseek-v4-flash-0731",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "kunciai/prov3-deepseek-v4-pro",
+   "tier": "paid",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "kunciai/prov3-deepseek-v4.1-flash",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "kunciai/prov3-glm-5.2",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "kunciai/prov3-gpt-5.5",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "kunciai/prov3-gpt-5.6-luna",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "kunciai/prov3-gpt-5.6-sol",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "kunciai/prov3-grok-4.5",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "kunciai/prov3-kimi-k2.5",
+   "tier": "unknown",
+   "caps": [
+    "code"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "kunciai/qwen3.7-plus",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "kunciai/qwen3.8-max",
+   "tier": "paid",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  }
+ ],
+ "tiers": {
+  "freemium": 11,
+  "paid": 10,
+  "unknown": 37,
+  "free": 2
+ },
+ "caps": {
+  "general": 56,
+  "vision": 1,
+  "code": 3
+ },
+ "total": 60,
+ "health": "HEALTHY",
+ "probe": "kunciai/claude-haiku-4.5",
+ "probe_detail": "Pong."
+}

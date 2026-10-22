@@ -1,0 +1,202 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "musgo.project_progress.memory_entry.v1",
+  "title": "MusGo-OS 2in1 — Endpoint Memori & Progress (Canonical Format)",
+  "description": "Kontrak baku untuk setiap entri memory/knowledge agar agent berikutnya faham tanpa ambigu & halusinasi. Disimpan di /home/Project-Progress/{memory,knowledge}.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "entry_id",
+    "type",
+    "created_at",
+    "session",
+    "task",
+    "grounding",
+    "orchestration",
+    "execution",
+    "handoff",
+    "integrity"
+  ],
+  "properties": {
+    "schema_version": { "const": "1.0.0" },
+    "entry_id": {
+      "type": "string",
+      "pattern": "^(MEM|KNOW|DEC|SES)-[0-9]{8}-[0-9]{4}-[a-z0-9-]{3,60}$",
+      "description": "MEM = memory, KNOW = knowledge, DEC = decision, SES = session"
+    },
+    "type": {
+      "type": "string",
+      "enum": ["memory", "knowledge", "decision", "session", "progress"]
+    },
+    "created_at": { "type": "string", "format": "date-time" },
+    "supersedes": {
+      "type": ["string", "null"],
+      "description": "entry_id yang digantikan (append-only, bukan hapus)"
+    },
+    "session": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "number", "founder"],
+      "properties": {
+        "id": { "type": "string" },
+        "number": { "type": "integer", "minimum": 1 },
+        "founder": { "const": "DHANI YULIAWAN" },
+        "platform": { "type": "string" },
+        "working_dir": { "type": "string" }
+      }
+    },
+    "task": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["objective", "raw_input"],
+      "properties": {
+        "objective": { "type": "string", "minLength": 8 },
+        "raw_input": { "type": "string" },
+        "hidden_objective": { "type": ["string", "null"] },
+        "dependencies": { "type": "array", "items": { "type": "string" } },
+        "constraints": { "type": "array", "items": { "type": "string" } },
+        "attack_surface": { "type": "array", "items": { "type": "string" } },
+        "operational_impact": { "type": ["string", "null"] }
+      }
+    },
+    "grounding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sources_loaded", "completeness"],
+      "properties": {
+        "sources_loaded": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["path", "status"],
+            "properties": {
+              "path": { "type": "string" },
+              "status": { "type": "string", "enum": ["loaded", "missing", "empty", "stale"] },
+              "notes": { "type": "string" }
+            }
+          }
+        },
+        "completeness": { "type": "number", "minimum": 0, "maximum": 100 }
+      }
+    },
+    "orchestration": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["pairs"],
+      "properties": {
+        "pairs": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["group", "agent", "skill", "goal_alignment"],
+            "properties": {
+              "group": { "type": "integer", "minimum": 0, "maximum": 75 },
+              "agent": { "type": "string" },
+              "skill": { "type": "string" },
+              "goal_alignment": { "type": "number", "minimum": 0, "maximum": 100 },
+              "rationale": { "type": "string" }
+            }
+          }
+        },
+        "swarm": { "type": "boolean", "default": false },
+        "conflict_resolution": { "type": ["string", "null"] },
+        "trust_scoring": {
+          "type": "object",
+          "additionalProperties": { "type": "number", "minimum": 0, "maximum": 1 }
+        }
+      }
+    },
+    "execution": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "steps"],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": ["Analyzing", "Mobilizing", "Executing", "Verifying", "Done", "Blocked"]
+        },
+        "steps": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["step", "result"],
+            "properties": {
+              "step": { "type": "string" },
+              "result": { "type": "string", "enum": ["ok", "failed", "skipped", "partial"] },
+              "detail": { "type": "string" },
+              "rollback": { "type": ["string", "null"] }
+            }
+          }
+        },
+        "files_changed": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["path", "action"],
+            "properties": {
+              "path": { "type": "string" },
+              "action": { "type": "string", "enum": ["create", "update", "append", "delete"] },
+              "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+            }
+          }
+        },
+        "validation": { "type": "array", "items": { "type": "string" } },
+        "monitoring_hooks": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "handoff": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["summary", "decisions", "next_steps", "open_risks"],
+      "properties": {
+        "summary": { "type": "string", "minLength": 20 },
+        "decisions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "decision", "reason"],
+            "properties": {
+              "id": { "type": "string" },
+              "decision": { "type": "string" },
+              "reason": { "type": "string" },
+              "adr_path": { "type": "string" }
+            }
+          }
+        },
+        "next_steps": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+        "open_risks": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["risk", "severity"],
+            "properties": {
+              "risk": { "type": "string" },
+              "severity": { "type": "string", "enum": ["low", "medium", "high", "critical"] },
+              "mitigation": { "type": "string" }
+            }
+          }
+        },
+        "assumptions_unverified": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "integrity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["founder_signature", "checksum_sha256"],
+      "properties": {
+        "founder_signature": { "const": "DHANI YULIAWAN" },
+        "checksum_sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+        "prev_entry_hash": { "type": ["string", "null"], "pattern": "^([a-f0-9]{64})?$" },
+        "chain_head": { "type": "boolean" }
+      }
+    }
+  }
+}

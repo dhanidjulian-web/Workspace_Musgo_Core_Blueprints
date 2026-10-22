@@ -1,0 +1,88 @@
+# ============================================================
+# MusGo-OS 2in1 — PATHS CONFIGURATION (SINGLE SOURCE OF TRUTH)
+# File    : /home/Project-Progress/config/paths.yaml
+# Founder : Dhani Yuliawan
+# Version : 1.0.0
+# ============================================================
+# CATATAN ARSITEKTUR (WAJIB DIBACA AGENT):
+# 1. Root nyata workspace tetap TIDAK DIUBAH mengikuti instruksi prompt
+#    (yang memakai "root /home/..."). Prompt menulis "/home/X" sebagai
+#    NOTASI RELATIF terhadap --home-dir, sedangkan ROOT_DIRS di bawah
+#    adalah path ABSOLUT nyata pada device (Android writable root).
+# 2. Semua path di bawah HARUS diakses via resolver (scripts/musgo_config.py
+#    atau shell function mr-cfg) supaya tidak ada duplikasi path literal.
+# 3. Variabel environment dengan prefix MUSGO_* selalu menang (override).
+# ============================================================
+
+schema_version: "1.0.0"
+
+# --- Root absolut per device (portable: pindah device cukup ubah blok ini)
+root_dirs:
+  workspace: "/data/user/0/com.openshell/files"
+  home: "/data/user/0/com.openshell/files/home"
+  prompt_root: "/home"        # notasi logis dari prompt (bukan path fisik)
+
+# --- Path inti sesuai PROMPT §1, §2, dan §10
+paths:
+  project_progress: "{workspace}/home/Project-Progress"      # ~ = working dir agent
+  prompt_instruction: "{project_progress}/Prompt_Instructions_Project_Progress_Workflow.md"
+  knowledge: "{project_progress}/knowledge"
+  memory: "{project_progress}/memory"
+  config: "{project_progress}/config"
+  runtime: "{project_progress}/runtime"
+  state: "{project_progress}/.state"
+
+  # Grounding source (PROMPT §2 — /home)
+  blueprints_index: "{home}/Blueprints_MusGo-OS_2in1/INDEX.md"
+  blueprints_agent_index: "{home}/Blueprints_MusGo-OS_2in1/AGENT_INDEX.md"
+  blueprints_root: "{home}/Blueprints_MusGo-OS_2in1"
+  agents_skills_index: "{home}/Agents-Skills/INDEX_AGENTS_SKILLS.md"
+  agents_skills_root: "{home}/Agents-Skills"
+  agent_files_root: "{home}/Agent files"
+  auto_agent_persona: "{home}/Agents-Skills/Auto-Agent.md"
+
+  # Repo + Router
+  repo_root: "{home}/Repository MusGo-OS_2in1-main"
+  repo_structure: "{home}/Repository MusGo-OS_2in1-main/STRUKTUR REPOSITORY.md"
+  router_root: "{home}/Musgo-Router"
+  router_index: "{home}/Musgo-Router/Musgo-Router_index.md"
+  router_config: "{home}/Musgo-Router/AgentPool/config/auto_agent.yaml"
+  router_engine: "{home}/Musgo-Router/AgentPool/ap_engine.py"
+  router_pool: "{home}/Musgo-Router/AgentPool"
+
+# --- File turunan yang DIHASILKAN sistem (append-only / generated)
+generated:
+  verify_report: "{runtime}/config_verify_report.json"
+  session_state: "{state}/current_session.json"
+  session_index: "{memory}/SESSION_INDEX.md"
+  memory_index: "{memory}/MEMORY_INDEX.md"
+  knowledge_index: "{knowledge}/KNOWLEDGE_INDEX.md"
+  agent_registry: "{state}/agent_skill_registry.json"
+
+# --- Environment override map (nama ENV -> key paths)
+env_overrides:
+  MUSGO_ROOT: workspace
+  MUSGO_HOME: home
+  MUSGO_PROJECT_PROGRESS: project_progress
+  MUSGO_MEMORY: memory
+  MUSGO_KNOWLEDGE: knowledge
+
+# --- Kontrak direktori memory (PROMPT §10)
+memory_layout:
+  sessions: "{memory}/sessions"          # 1 file per sesi: YYYY-MM-DD_<slug>.md
+  decisions: "{memory}/decisions"        # keputusan founder (ADR ringan)
+  project_state: "{knowledge}/PROJECT_STATE.md"
+  progress_log: "{knowledge}/PROGRESS_LOG.md"
+  open_questions: "{knowledge}/OPEN_QUESTIONS.md"
+  glossary: "{knowledge}/GLOSSARY.md"
+
+# --- Aturan integritas path
+integrity:
+  allow_outside_workspace: false   # agent TIDAK boleh menulis di luar workspace
+  write_scopes:                    # whitelist tulis (zero-trust filesystem)
+    - "{project_progress}"
+  append_only:
+    - "{knowledge}/PROGRESS_LOG.md"
+    - "{memory}/SESSION_INDEX.md"
+  immutable_prefix: "FOUNDER-"
+  max_file_write_bytes: 2097152

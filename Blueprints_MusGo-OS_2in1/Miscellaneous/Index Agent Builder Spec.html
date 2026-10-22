@@ -1,0 +1,1361 @@
+ 
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agent Builder Spec — IDE/CLI Android dengan Sandbox, BYOK Provider, Router, Project Profile</title>
+  <meta name="description" content="Spesifikasi produk dan arsitektur UI/UX untuk Android app builder: Linux sandbox, Termux, BYOK external providers, external routers, project profiles, workflow, agent swarm, dan chat-first IDE/CLI." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#f2ecdf;
+      --paper:#faf6ef;
+      --paper-2:#f5efe5;
+      --ink:#171513;
+      --muted:#655f58;
+      --line:#221e1a;
+      --accent:#b74a16;
+      --accent-2:#1f6f60;
+      --accent-3:#8d7724;
+      --accent-4:#7b3556;
+      --soft:#e8decb;
+      --shadow:0 20px 60px rgba(17,15,13,.09);
+      --radius:24px;
+      --max:1360px;
+      --nav-h:76px;
+      --panel:#fffdf9cc;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:"IBM Plex Sans", sans-serif;
+      color:var(--ink);
+      background:
+        radial-gradient(circle at 12% 14%, rgba(183,74,22,.08), transparent 24%),
+        radial-gradient(circle at 86% 10%, rgba(31,111,96,.08), transparent 25%),
+        linear-gradient(180deg, #f8f2e7 0%, #f1ebdf 100%);
+      min-height:100vh;
+    }
+
+    body::before{
+      content:"";
+      position:fixed; inset:0;
+      pointer-events:none; opacity:.055;
+      background-image:
+        linear-gradient(to right, var(--line) 1px, transparent 1px),
+        linear-gradient(to bottom, var(--line) 1px, transparent 1px);
+      background-size:34px 34px;
+      mask-image:linear-gradient(to bottom, rgba(0,0,0,.3), transparent 90%);
+    }
+
+    a{text-decoration:none;color:inherit}
+    button,input,select,textarea{font:inherit}
+    .wrap{width:min(calc(100% - 2rem), var(--max)); margin-inline:auto}
+    .mono{font-family:ui-monospace, SFMono-Regular, Menlo, monospace}
+
+    .reveal{
+      opacity:0; transform:translateY(26px);
+      transition:opacity .7s ease, transform .7s ease;
+    }
+    .reveal.in{opacity:1; transform:translateY(0)}
+
+    .topbar{
+      position:sticky; top:0; z-index:1000;
+      backdrop-filter:blur(12px);
+      background:rgba(250,246,239,.8);
+      border-bottom:1px solid rgba(34,30,26,.12);
+    }
+
+    .nav{
+      min-height:var(--nav-h);
+      display:flex; align-items:center; justify-content:space-between; gap:1rem;
+    }
+
+    .brand{
+      display:flex; align-items:center; gap:.9rem;
+      font-family:"Space Grotesk", sans-serif;
+      font-weight:700; letter-spacing:-.05em;
+    }
+
+    .brand-mark{
+      width:44px; height:44px; border-radius:12px;
+      border:2px solid var(--line);
+      background:
+        linear-gradient(135deg, var(--ink) 0 42%, var(--accent) 42% 63%, var(--soft) 63% 100%);
+      box-shadow:6px 6px 0 rgba(34,30,26,.1);
+    }
+
+    .brand small{
+      display:block;
+      font-family:"IBM Plex Sans", sans-serif;
+      letter-spacing:.02em;
+      color:var(--muted);
+      font-weight:500;
+      font-size:.78rem;
+    }
+
+    .navlinks{
+      display:flex; gap:1.15rem; align-items:center; flex-wrap:wrap;
+      font-size:.95rem;
+    }
+    .navlinks a{
+      position:relative; padding:.25rem 0;
+    }
+    .navlinks a::after{
+      content:"";
+      position:absolute; left:0; bottom:-2px; width:100%; height:2px;
+      background:var(--ink); transform:scaleX(0); transform-origin:left;
+      transition:transform .25s ease;
+    }
+    .navlinks a:hover::after{transform:scaleX(1)}
+
+    .cta{
+      display:inline-flex; align-items:center; justify-content:center; gap:.65rem;
+      border:2px solid var(--line);
+      padding:.9rem 1.12rem;
+      border-radius:999px;
+      background:var(--ink); color:#fff;
+      font-weight:600; cursor:pointer;
+      transition:transform .22s ease, box-shadow .22s ease, background .22s ease;
+      box-shadow:0 12px 28px rgba(17,15,13,.12);
+    }
+    .cta:hover{transform:translateY(-2px) scale(1.01)}
+    .cta:active{transform:translateY(0) scale(.99)}
+    .cta.alt{
+      background:transparent; color:var(--ink); box-shadow:none;
+    }
+    .cta.alt:hover{background:#fff}
+
+    .hero{padding:clamp(2rem, 4vw, 3rem) 0 2rem}
+    .hero-grid{
+      display:grid;
+      grid-template-columns:1.02fr .98fr;
+      gap:1.2rem;
+      align-items:stretch;
+    }
+
+    .hero-copy,.hero-os,.sheet,.panel,.codebox{
+      border:2px solid rgba(34,30,26,.95);
+      border-radius:var(--radius);
+      background:var(--panel);
+      backdrop-filter:blur(8px);
+      box-shadow:var(--shadow);
+      overflow:hidden;
+    }
+
+    .hero-copy{
+      padding:clamp(1.5rem, 4vw, 3rem);
+      min-height:620px;
+      display:flex; flex-direction:column; justify-content:space-between;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.56), rgba(255,255,255,.18)),
+        radial-gradient(circle at 88% 12%, rgba(183,74,22,.12), transparent 22%),
+        radial-gradient(circle at 10% 90%, rgba(31,111,96,.12), transparent 24%),
+        var(--paper);
+    }
+
+    .eyebrow{
+      display:inline-flex; align-items:center; gap:.65rem;
+      width:max-content;
+      font-size:.82rem; letter-spacing:.1em; text-transform:uppercase; font-weight:700;
+      border:1.5px solid rgba(34,30,26,.18);
+      border-radius:999px;
+      padding:.45rem .8rem;
+      background:rgba(255,255,255,.58);
+    }
+    .eyebrow::before{
+      content:"";
+      width:10px; height:10px; border-radius:999px;
+      background:var(--accent-2);
+      box-shadow:0 0 0 5px rgba(31,111,96,.12);
+    }
+
+    h1,h2,h3,h4{
+      margin:0;
+      font-family:"Space Grotesk", sans-serif;
+      line-height:.96;
+      letter-spacing:-.06em;
+    }
+
+    h1{
+      font-size:clamp(3rem, 7.8vw, 7rem);
+      max-width:11ch;
+      margin-top:1rem;
+    }
+
+    .lead{
+      margin:1rem 0 0;
+      font-size:clamp(1rem, 1.6vw, 1.18rem);
+      line-height:1.75;
+      color:var(--muted);
+      max-width:60ch;
+    }
+
+    .hero-actions{
+      display:flex; gap:.85rem; flex-wrap:wrap; margin-top:1.6rem;
+    }
+
+    .hero-meta{
+      margin-top:1.8rem;
+      display:grid; grid-template-columns:repeat(4,1fr); gap:.8rem;
+    }
+    .metric{
+      padding:1rem;
+      border-top:2px solid var(--line);
+      background:rgba(255,255,255,.46);
+    }
+    .metric b{
+      display:block;
+      font-family:"Space Grotesk", sans-serif;
+      font-size:1.4rem;
+      letter-spacing:-.05em;
+    }
+    .metric span{font-size:.9rem; color:var(--muted)}
+
+    .hero-os{
+      padding:1rem;
+      min-height:620px;
+      color:#f8f3ea;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.02)),
+        linear-gradient(135deg, #181411, #2b241e);
+    }
+
+    .os-top{
+      display:flex; align-items:center; justify-content:space-between; gap:1rem;
+      margin-bottom:.9rem;
+    }
+    .dots{display:flex; gap:.45rem}
+    .dots span{
+      width:12px; height:12px; border-radius:999px; display:block;
+      border:1px solid rgba(255,255,255,.28);
+    }
+    .dots span:nth-child(1){background:#ef6a53}
+    .dots span:nth-child(2){background:#f0b248}
+    .dots span:nth-child(3){background:#61c676}
+
+    .workspace{
+      display:grid;
+      grid-template-columns:250px 1fr;
+      gap:.9rem;
+      height:calc(100% - 38px);
+    }
+
+    .sidebar{
+      border:1.5px solid rgba(255,255,255,.14);
+      border-radius:20px;
+      padding:.9rem;
+      background:rgba(255,255,255,.05);
+      display:grid; gap:.75rem; align-content:start;
+    }
+
+    .side-group{
+      border-bottom:1px solid rgba(255,255,255,.1);
+      padding-bottom:.7rem;
+    }
+    .side-group:last-child{border-bottom:none}
+    .side-label{
+      font-size:.72rem; text-transform:uppercase; letter-spacing:.12em;
+      opacity:.7; margin-bottom:.55rem;
+    }
+    .side-item{
+      display:flex; justify-content:space-between; gap:.8rem; align-items:center;
+      padding:.58rem .65rem;
+      border-radius:12px;
+      transition:background .2s ease, transform .2s ease;
+      cursor:pointer;
+    }
+    .side-item:hover{background:rgba(255,255,255,.08); transform:translateX(2px)}
+    .pill{
+      display:inline-flex; align-items:center; justify-content:center;
+      min-width:28px; height:28px; border-radius:999px;
+      border:1px solid rgba(255,255,255,.14);
+      font-size:.78rem; color:#d8cfbf;
+    }
+
+    .mainstack{
+      display:grid;
+      grid-template-rows:auto auto 1fr;
+      gap:.9rem;
+      min-height:0;
+    }
+
+    .winbar{
+      border:1.5px solid rgba(255,255,255,.14);
+      border-radius:18px;
+      padding:.75rem;
+      background:rgba(255,255,255,.05);
+      display:flex; gap:.6rem; flex-wrap:wrap;
+    }
+
+    .chip{
+      border:1px solid rgba(255,255,255,.14);
+      padding:.55rem .8rem;
+      border-radius:999px;
+      font-size:.82rem;
+      background:rgba(255,255,255,.04);
+      color:#efe7d7;
+      transition:background .2s ease, transform .2s ease;
+    }
+    .chip:hover{background:rgba(255,255,255,.08); transform:translateY(-1px)}
+
+    .chatpane{
+      border:1.5px solid rgba(255,255,255,.14);
+      border-radius:20px;
+      padding:1rem;
+      background:
+        radial-gradient(circle at 88% 8%, rgba(183,74,22,.16), transparent 20%),
+        rgba(255,255,255,.04);
+      display:grid; gap:.8rem;
+      min-height:170px;
+    }
+    .msg{
+      max-width:86%;
+      padding:.85rem .95rem;
+      border-radius:18px;
+      line-height:1.6;
+      font-size:.94rem;
+    }
+    .msg.user{
+      margin-left:auto;
+      background:#f3e5cf;
+      color:#1b1713;
+      border:1px solid rgba(27,23,19,.14);
+    }
+    .msg.agent{
+      background:rgba(255,255,255,.08);
+      border:1px solid rgba(255,255,255,.12);
+      color:#f5efdf;
+    }
+
+    .editor-grid{
+      display:grid;
+      grid-template-columns:1.1fr .9fr;
+      gap:.9rem;
+      min-height:0;
+    }
+
+    .terminal,.panel-stack{
+      border:1.5px solid rgba(255,255,255,.14);
+      border-radius:20px;
+      background:rgba(255,255,255,.04);
+      overflow:hidden;
+    }
+
+    .terminal{
+      padding:1rem;
+      display:flex; flex-direction:column; justify-content:space-between;
+      min-height:280px;
+    }
+    .term-title{
+      font-size:.78rem; text-transform:uppercase; letter-spacing:.12em; opacity:.7;
+      margin-bottom:.7rem;
+    }
+    .term-line{
+      font-family:ui-monospace, SFMono-Regular, Menlo, monospace;
+      white-space:pre-wrap;
+      line-height:1.7;
+      font-size:.92rem;
+      color:#ddd4c7;
+    }
+    .term-line .ok{color:#8bd0bb}
+    .term-line .warn{color:#efbd5b}
+    .term-line .hot{color:#ffb38e}
+    .cursor{
+      display:inline-block; width:.65ch; height:1.02em; background:#f8f3ea;
+      vertical-align:-.16em; animation:blink 1s steps(1,end) infinite;
+    }
+    @keyframes blink{50%{opacity:0}}
+
+    .panel-stack{
+      display:grid; grid-template-rows:1fr 1fr;
+      gap:0;
+      background:none;
+      border:none;
+    }
+
+    .stackbox{
+      border:1.5px solid rgba(255,255,255,.14);
+      border-radius:20px;
+      padding:1rem;
+      background:rgba(255,255,255,.04);
+      min-height:136px;
+    }
+
+    .stackbox h4{
+      font-size:1.1rem; margin-bottom:.45rem;
+      display:flex; justify-content:space-between; gap:1rem;
+    }
+    .stackbox p{
+      margin:0; color:#d8cfbf; line-height:1.55; font-size:.92rem;
+    }
+
+    .section{padding:2rem 0}
+    .section-head{
+      display:grid; grid-template-columns:.82fr 1.18fr; gap:1rem; align-items:end;
+      margin-bottom:1.15rem;
+    }
+    .kicker{
+      font-size:.78rem; text-transform:uppercase; letter-spacing:.14em;
+      color:var(--accent); font-weight:700;
+    }
+    .section-head p{
+      margin:0; color:var(--muted); line-height:1.75; max-width:75ch;
+    }
+
+    .grid-2{display:grid; grid-template-columns:1.08fr .92fr; gap:1rem}
+    .grid-3{display:grid; grid-template-columns:repeat(3,1fr); gap:1rem}
+    .grid-4{display:grid; grid-template-columns:repeat(4,1fr); gap:1rem}
+
+    .sheet{
+      padding:1.15rem;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.6), rgba(255,255,255,.24)),
+        var(--paper);
+    }
+
+    .sheet-title{
+      display:flex; justify-content:space-between; align-items:flex-end; gap:1rem;
+      border-bottom:2px solid var(--line);
+      padding-bottom:.85rem; margin-bottom:1rem;
+    }
+    .sheet-title h3{font-size:clamp(1.55rem, 3vw, 2.45rem)}
+    .sheet-title span{color:var(--muted); font-size:.94rem}
+
+    .spec-list{display:grid; gap:.9rem}
+    .spec-item{
+      display:grid; grid-template-columns:105px 1fr; gap:1rem;
+      padding:.95rem 0;
+      border-bottom:1.5px solid rgba(34,30,26,.12);
+    }
+    .spec-item:last-child{border-bottom:none}
+    .spec-key{
+      font-family:"Space Grotesk", sans-serif;
+      letter-spacing:-.04em;
+      font-size:1rem;
+    }
+    .spec-item p{
+      margin:0; color:var(--muted); line-height:1.7;
+    }
+
+    .panel{
+      padding:1rem;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.62), rgba(255,255,255,.34)),
+        var(--paper);
+      transition:transform .22s ease;
+    }
+    .panel:hover{transform:translateY(-3px)}
+    .panel h4{font-size:1.16rem; margin-bottom:.45rem}
+    .panel p{margin:0; color:var(--muted); line-height:1.62; font-size:.94rem}
+
+    .tagrow{
+      display:flex; flex-wrap:wrap; gap:.48rem; margin-top:.85rem;
+    }
+    .tag{
+      display:inline-flex; align-items:center;
+      border:1.5px solid rgba(34,30,26,.14);
+      border-radius:999px;
+      padding:.42rem .7rem;
+      background:rgba(255,255,255,.55);
+      font-size:.8rem; font-weight:600;
+    }
+
+    .pipeline{
+      display:grid; grid-template-columns:repeat(4,1fr); gap:1rem;
+      margin-top:1rem;
+    }
+    .step{
+      padding:1rem;
+      border-top:3px solid var(--line);
+      background:rgba(255,255,255,.44);
+      min-height:190px;
+    }
+    .step em{
+      display:block; font-style:normal; color:var(--accent);
+      font-weight:700; margin-bottom:.55rem;
+    }
+    .step p{margin:0; color:var(--muted); line-height:1.62}
+
+    .codegrid{
+      display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-top:1rem;
+    }
+    .codebox{
+      background:#151311;
+      color:#f3eadb;
+      padding:1rem;
+      min-height:330px;
+    }
+    .codehead{
+      display:flex; justify-content:space-between; gap:1rem; align-items:center;
+      margin-bottom:.8rem;
+      color:#cfbfa4;
+      font-size:.84rem;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+    }
+    pre{
+      margin:0; overflow:auto;
+      white-space:pre-wrap; word-break:break-word;
+      font-family:ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size:.9rem; line-height:1.65;
+    }
+
+    .table{
+      margin-top:1rem;
+      border:2px solid var(--line);
+      border-radius:22px;
+      overflow:hidden;
+      background:rgba(255,255,255,.5);
+    }
+    .row{
+      display:grid;
+      grid-template-columns:1.05fr .95fr .95fr;
+      border-bottom:1.5px solid rgba(34,30,26,.14);
+    }
+    .row:last-child{border-bottom:none}
+    .row.head{
+      background:var(--ink);
+      color:#fff;
+      font-weight:700;
+      font-family:"Space Grotesk", sans-serif;
+      letter-spacing:-.03em;
+    }
+    .cell{
+      padding:1rem;
+      min-height:100%;
+    }
+    .row:not(.head) .cell:nth-child(2){
+      border-left:1.5px solid rgba(34,30,26,.12);
+      border-right:1.5px solid rgba(34,30,26,.12);
+    }
+    .cell p{
+      margin:.35rem 0 0;
+      color:var(--muted);
+      line-height:1.62;
+    }
+    .row.head .cell p{color:rgba(255,255,255,.8)}
+
+    .footer{padding:2.5rem 0 4rem}
+    .footer-box{
+      border-top:2px solid var(--line);
+      padding-top:1rem;
+      display:flex; justify-content:space-between; gap:1rem; flex-wrap:wrap;
+    }
+    .footer p{
+      margin:0; color:var(--muted); line-height:1.7; max-width:78ch;
+    }
+
+    .stagger-1{animation:rise .75s ease .05s both}
+    .stagger-2{animation:rise .75s ease .14s both}
+    .stagger-3{animation:rise .75s ease .24s both}
+    .stagger-4{animation:rise .75s ease .34s both}
+    @keyframes rise{
+      from{opacity:0; transform:translateY(26px)}
+      to{opacity:1; transform:translateY(0)}
+    }
+
+    @media (max-width:1140px){
+      .hero-grid,.grid-2,.section-head,.codegrid{grid-template-columns:1fr}
+      .workspace{grid-template-columns:1fr}
+      .editor-grid{grid-template-columns:1fr}
+      .pipeline{grid-template-columns:1fr 1fr}
+    }
+
+    @media (max-width:820px){
+      .navlinks{display:none}
+      .hero-meta,.grid-3,.grid-4,.pipeline{grid-template-columns:1fr}
+      .spec-item{grid-template-columns:1fr}
+      .row{grid-template-columns:1fr}
+      .row:not(.head) .cell:nth-child(2),
+      .row:not(.head) .cell:nth-child(3){
+        border-top:1.5px solid rgba(34,30,26,.12);
+        border-left:none; border-right:none;
+      }
+      h1{max-width:10ch}
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap nav">
+      <a href="#top" class="brand" aria-label="Agent Builder Spec">
+        <div class="brand-mark" aria-hidden="true"></div>
+        <div>
+          Agent Builder Spec
+          <small>Android IDE / CLI / Chat Orchestrator</small>
+        </div>
+      </a>
+
+      <nav class="navlinks" aria-label="Navigasi utama">
+        <a href="#visi">Visi Produk</a>
+        <a href="#provider">Provider BYOK</a>
+        <a href="#router">External Routers</a>
+        <a href="#profile">Project Profile</a>
+        <a href="#filemanager">File Manager</a>
+        <a href="#implementasi">Implementasi</a>
+      </nav>
+
+      <a class="cta alt" href="#implementasi">Lihat Spec Lengkap</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" id="visi">
+      <div class="wrap hero-grid">
+        <article class="hero-copy">
+          <div>
+            <div class="eyebrow stagger-1">chat-first android workstation</div>
+            <h1 class="stagger-2">Ini bukan sekadar app chat. Ini sudah masuk wilayah IDE / CLI modular.</h1>
+            <p class="lead stagger-3">
+              Kalau semua layer bisa <strong>putus-sambung</strong>, provider bisa <strong>BYOK</strong>, router bisa eksternal,
+              sandbox bisa install/uninstall, workflow bisa dijadwalkan, dan semua state terikat ke <strong>Project Profile</strong>,
+              maka produkmu pada dasarnya adalah <strong>chat-driven IDE/CLI</strong> dengan runtime Linux di Android.
+            </p>
+
+            <div class="hero-actions stagger-4">
+              <a href="#provider" class="cta">Provider & Router Spec</a>
+              <a href="#profile" class="cta alt">Project Profile System</a>
+            </div>
+          </div>
+
+          <div class="hero-meta">
+            <div class="metric">
+              <b>CLI alami</b>
+              <span>User berbicara dengan bahasa natural</span>
+            </div>
+            <div class="metric">
+              <b>Termux</b>
+              <span>Default terminal runtime</span>
+            </div>
+            <div class="metric">
+              <b>Profiles</b>
+              <span>Sandbox + agent + env + repo</span>
+            </div>
+            <div class="metric">
+              <b>Modular</b>
+              <span>Layer putus-sambung</span>
+            </div>
+          </div>
+        </article>
+
+        <aside class="hero-os">
+          <div class="os-top">
+            <div class="dots" aria-hidden="true"><span></span><span></span><span></span></div>
+            <div style="font-size:.84rem; opacity:.72;">main workspace / chat + ide + cli</div>
+          </div>
+
+          <div class="workspace">
+            <div class="sidebar">
+              <div class="side-group">
+                <div class="side-label">project profile</div>
+                <div class="side-item"><span>mobile-agent</span><span class="pill">A</span></div>
+                <div class="side-item"><span>debian-dev</span><span class="pill">D</span></div>
+                <div class="side-item"><span>nethunter-lite</span><span class="pill">K</span></div>
+              </div>
+
+              <div class="side-group">
+                <div class="side-label">windows / panels</div>
+                <div class="side-item"><span>Chat</span><span class="pill">on</span></div>
+                <div class="side-item"><span>Terminal</span><span class="pill">on</span></div>
+                <div class="side-item"><span>Files</span><span class="pill">on</span></div>
+                <div class="side-item"><span>Tasks</span><span class="pill">off</span></div>
+                <div class="side-item"><span>Agents</span><span class="pill">on</span></div>
+              </div>
+
+              <div class="side-group">
+                <div class="side-label">route presets</div>
+                <div class="side-item"><span>provider-auto/free</span><span class="pill">01</span></div>
+                <div class="side-item"><span>provider-auto/small</span><span class="pill">02</span></div>
+                <div class="side-item"><span>provider-auto/balance</span><span class="pill">03</span></div>
+                <div class="side-item"><span>provider-auto/frontier</span><span class="pill">04</span></div>
+                <div class="side-item"><span>provider-single/model</span><span class="pill">05</span></div>
+              </div>
+            </div>
+
+            <div class="mainstack">
+              <div class="winbar">
+                <span class="chip">Show/Hide Pages</span>
+                <span class="chip">Dock Panels</span>
+                <span class="chip">Split View</span>
+                <span class="chip">Profiles</span>
+                <span class="chip">External Routers</span>
+              </div>
+
+              <div class="chatpane">
+                <div class="msg user">Buat profile baru untuk project “agent-builder”, pakai Debian sandbox, router balance, dan sync repo utama.</div>
+                <div class="msg agent">Profile dibuat. Saya hubungkan sandbox Debian, provider route balance, env variables project, repos pin, dan working agents default. Mau saya buka terminal atau file workspace?</div>
+              </div>
+
+              <div class="editor-grid">
+                <div class="terminal">
+                  <div>
+                    <div class="term-title">termux / working session</div>
+                    <div class="term-line">$ profile use agent-builder</div>
+                    <div class="term-line"><span class="ok">[ok]</span> sandbox: debian-main</div>
+                    <div class="term-line"><span class="ok">[ok]</span> provider-route: provider-auto/balance</div>
+                    <div class="term-line"><span class="ok">[ok]</span> working-agent: planner,coder,runner</div>
+                    <div class="term-line">$ git status</div>
+                    <div class="term-line">$ workflow run bootstrap-dev</div>
+                    <div class="term-line"><span class="warn">[task]</span> scheduled workflow found: nightly-review</div>
+                    <div class="term-line"><span class="hot">[router]</span> fallback chain loaded for coder</div>
+                  </div>
+                  <div class="term-line">user@android:~$ <span class="cursor"></span></div>
+                </div>
+
+                <div class="panel-stack">
+                  <div class="stackbox">
+                    <h4><span>Provider Status</span><span>BYOK</span></h4>
+                    <p>Base URL, API key auto-test, auto-validasi sukses, refresh models, assign route-config per provider.</p>
+                  </div>
+                  <div class="stackbox">
+                    <h4><span>Project Context</span><span>Profile</span></h4>
+                    <p>Sandbox, skill, agent, workflow, schedule, env vars, repos pin, git credentials, dan working agent menempel ke satu profil kerja.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="provider">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <div class="kicker">Modul utama</div>
+            <h2>Add External Provider (BYOK) harus jadi citizen utama, bukan pengaturan tersembunyi.</h2>
+          </div>
+          <p>
+            Modul utama provider wajib mendukung penambahan provider eksternal dengan input
+            <strong>Provider Base URL</strong>, <strong>nama provider</strong>, <strong>API Key</strong>,
+            <strong>auto-test</strong>, <strong>auto-validasi jika sukses</strong>, dan <strong>refresh models</strong>.
+            Setelah valid, setiap provider harus punya <strong>route-config</strong> sendiri.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <section class="sheet reveal">
+            <div class="sheet-title">
+              <h3>Provider BYOK Module Spec</h3>
+              <span>mandatory main module</span>
+            </div>
+            <div class="spec-list">
+              <div class="spec-item">
+                <div class="spec-key">Input</div>
+                <div><p>Provider name, base URL, API key, optional headers, compatibility type, timeout policy, dan toggle enable/disable provider.</p></div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-key">Auto-test</div>
+                <div><p>Begitu user simpan API key, modul otomatis menjalankan healthcheck atau endpoint test. Jika sukses, status provider berubah menjadi validated.</p></div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-key">Refresh</div>
+                <div><p>Refresh models mengambil model list terbaru dari provider lalu menyimpan metadata model: capability, context, tools, vision, reasoning, pricing tag.</p></div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-key">Route Config</div>
+                <div><p>Setiap provider punya mapping model untuk provider-auto/free, provider-auto/small, provider-auto/balance, provider-auto/frontier, dan provider-single/model.</p></div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-key">Fallback</div>
+                <div><p>Jika provider utama gagal, fallback bisa pindah ke provider lain atau ke external router provider, tergantung policy profile/project.</p></div>
+              </div>
+            </div>
+          </section>
+
+          <aside class="sheet reveal">
+            <div class="sheet-title">
+              <h3>UX alur ideal</h3>
+              <span>tambah provider dalam 4 langkah</span>
+            </div>
+            <div class="spec-list">
+              <div class="spec-item">
+                <div class="spec-key">01</div>
+                <div><p>User isi nama provider dan base URL.</p></div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-key">02</div>
+                <div><p>User tempel API key lalu klik simpan. App langsung auto-test dan auto-validasi.</p></div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-key">03</div>
+                <div><p>Jika valid, app refresh models secara otomatis dan tampilkan model picker untuk free/small/balance/frontier/single.</p></div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-key">04</div>
+                <div><p>Provider siap dipakai oleh chat, agent, workflow, scheduled task, dan project profile tertentu.</p></div>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+        <div class="codegrid">
+          <div class="codebox reveal">
+            <div class="codehead">
+              <span>external-provider.spec.json</span>
+              <span>BYOK canonical contract</span>
+            </div>
+<pre>{
+  "providerId": "provider-01",
+  "providerName": "Primary Gateway",
+  "baseUrl": "https://api.example.com/v1",
+  "apiKeyRef": "keystore://providers/provider-01",
+  "headers": {
+    "X-App-Client": "android-agent-builder"
+  },
+  "compatibility": "openai-compatible",
+  "validation": {
+    "status": "validated",
+    "lastCheckedAt": "2026-09-30T10:00:00Z",
+    "testPath": "/models"
+  },
+  "models": [],
+  "routeConfig": {
+    "provider-auto/free": "model-free-a",
+    "provider-auto/small": "model-small-a",
+    "provider-auto/balance": "model-balance-a",
+    "provider-auto/frontier": "model-frontier-a",
+    "provider-single/model": "model-balance-a"
+  },
+  "enabled": true
+}</pre>
+          </div>
+
+          <div class="codebox reveal">
+            <div class="codehead">
+              <span>provider-validation.flow</span>
+              <span>auto-test + auto-validasi</span>
+            </div>
+<pre>1. user submits providerName + baseUrl + apiKey
+2. app stores api key into secure storage reference
+3. app calls healthcheck endpoint
+4. if HTTP success:
+   - status = validated
+   - refresh models
+   - hydrate route-config editor
+5. if failed:
+   - status = invalid
+   - show error details
+   - keep draft config for retry</pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="router">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <div class="kicker">External Routers Provider Spec</div>
+            <h2>Router juga bisa diperlakukan sebagai provider eksternal.</h2>
+          </div>
+          <p>
+            Selain provider model langsung, kamu juga minta <strong>External Routers Provider Spec</strong>.
+            Ini berarti app harus bisa terhubung ke layanan router eksternal yang memilih model/provider secara remote,
+            tapi tetap tunduk pada Project Profile, policy lokal, dan fallback lokal.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <div class="panel reveal">
+            <h4>Router sebagai endpoint</h4>
+            <p>Router eksternal punya base URL, auth, route modes, pool policies, dan response schema yang dinormalisasi.</p>
+            <div class="tagrow">
+              <span class="tag">remote route</span>
+              <span class="tag">policy sync</span>
+              <span class="tag">fallback local</span>
+            </div>
+          </div>
+          <div class="panel reveal">
+            <h4>Hybrid routing</h4>
+            <p>Jika external router tersedia, request bisa diarahkan ke sana. Jika mati, local route-config per provider tetap bisa jalan.</p>
+            <div class="tagrow">
+              <span class="tag">redundant</span>
+              <span class="tag">resilient</span>
+              <span class="tag">offline fallback</span>
+            </div>
+          </div>
+          <div class="panel reveal">
+            <h4>Agent-aware routes</h4>
+            <p>Planner, coder, reviewer, runner, atau shell-agent bisa punya route preference berbeda dari external router maupun lokal.</p>
+            <div class="tagrow">
+              <span class="tag">role routing</span>
+              <span class="tag">agent affinity</span>
+              <span class="tag">cost tiers</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="codegrid">
+          <div class="codebox reveal">
+            <div class="codehead">
+              <span>external-router.spec.json</span>
+              <span>remote route provider</span>
+            </div>
+<pre>{
+  "routerId": "router-01",
+  "routerName": "Global Smart Router",
+  "baseUrl": "https://router.example.com/api",
+  "apiKeyRef": "keystore://routers/router-01",
+  "compatibility": "router-compatible",
+  "supportedModes": [
+    "provider-auto/free",
+    "provider-auto/small",
+    "provider-auto/balance",
+    "provider-auto/frontier",
+    "provider-single/model"
+  ],
+  "healthcheck": {
+    "path": "/health",
+    "method": "GET"
+  },
+  "fallbackPolicy": {
+    "onUnavailable": "use-local-route-config"
+  },
+  "enabled": true
+}</pre>
+          </div>
+
+          <div class="codebox reveal">
+            <div class="codehead">
+              <span>router-behavior</span>
+              <span>priority resolution</span>
+            </div>
+<pre>priority order:
+1. project profile explicit single-model pin
+2. project profile explicit route mode
+3. external router resolution
+4. provider local route-config
+5. fallback provider chain
+6. emergency offline small/free model
+
+agent override:
+- planner -> frontier
+- coder -> balance
+- runner -> small
+- summarizer -> free</pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="profile">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <div class="kicker">Project Profile System</div>
+            <h2>Semua layer harus menempel ke Project Profile.</h2>
+          </div>
+          <p>
+            Kamu sudah menetapkan bahwa semua layer <strong>Sandbox, Skill, Agent, Workflow, Scheduled Workflow, Env Variable,
+            Repos Pin, Git Credentials, Working Agent</strong> harus terhubung ke <strong>Project Profile</strong>.
+            Itu keputusan yang tepat, karena profile menjadi unit kerja utama yang bisa dibuat, diedit, dihapus, di-clone, dan di-export/import.
+          </p>
+        </div>
+
+        <div class="table reveal">
+          <div class="row head">
+            <div class="cell">Komponen profile</div>
+            <div class="cell">Field minimum</div>
+            <div class="cell">Fungsi</div>
+          </div>
+
+          <div class="row">
+            <div class="cell"><strong>Identity</strong><p>Identitas profile proyek.</p></div>
+            <div class="cell">profileId, name, description, tags, createdAt</div>
+            <div class="cell">Menjadi root object bagi semua modul lain.</div>
+          </div>
+
+          <div class="row">
+            <div class="cell"><strong>Sandbox Binding</strong><p>Hubungan ke runtime Linux.</p></div>
+            <div class="cell">sandboxId, mounts, workspacePath, terminalPreference</div>
+            <div class="cell">Menentukan sandbox aktif saat profile dipilih.</div>
+          </div>
+
+          <div class="row">
+            <div class="cell"><strong>Provider Binding</strong><p>Hubungan ke model/provider.</p></div>
+            <div class="cell">providerIds, routerId, routeMode, fallbackChains</div>
+            <div class="cell">Mengatur model yang dipakai profile untuk semua task.</div>
+          </div>
+
+          <div class="row">
+            <div class="cell"><strong>Skills & Agents</strong><p>Kapasitas kerja profile.</p></div>
+            <div class="cell">skills[], agents[], workingAgentSet, permissions</div>
+            <div class="cell">Menentukan tool yang tersedia bagi agent swarm.</div>
+          </div>
+
+          <div class="row">
+            <div class="cell"><strong>Workflow</strong><p>Automasi proyek.</p></div>
+            <div class="cell">workflows[], scheduledWorkflows[], triggers[]</div>
+            <div class="cell">Menyimpan pipeline harian, bootstrap, lint, review, deploy.</div>
+          </div>
+
+          <div class="row">
+            <div class="cell"><strong>Repo & Git</strong><p>Koneksi repositori.</p></div>
+            <div class="cell">reposPin[], gitCredentialsRef, defaultBranch, remotes</div>
+            <div class="cell">Mengikat proyek ke source code dan kredensial git.</div>
+          </div>
+
+          <div class="row">
+            <div class="cell"><strong>Environment</strong><p>Variable & secrets.</p></div>
+            <div class="cell">envVars[], secretRefs[], profileFlags</div>
+            <div class="cell">Menentukan environment eksekusi profile.</div>
+          </div>
+        </div>
+
+        <div class="grid-4" style="margin-top:1rem;">
+          <div class="panel reveal">
+            <h4>Create</h4>
+            <p>Buat profile baru dari nol atau dari template distro/provider tertentu.</p>
+          </div>
+          <div class="panel reveal">
+            <h4>Edit</h4>
+            <p>Ubah route, sandbox, repo, env vars, working agents, dan workflow tanpa memengaruhi profile lain.</p>
+          </div>
+          <div class="panel reveal">
+            <h4>Clone</h4>
+            <p>Duplikasi profile untuk staging, eksperimen, atau varian agent stack.</p>
+          </div>
+          <div class="panel reveal">
+            <h4>Export/Import</h4>
+            <p>Pindahkan profile antar device atau backup konfigurasi kerja secara terstruktur.</p>
+          </div>
+        </div>
+
+        <div class="codegrid">
+          <div class="codebox reveal">
+            <div class="codehead">
+              <span>project-profile.spec.json</span>
+              <span>root object</span>
+            </div>
+<pre>{
+  "profileId": "agent-builder",
+  "name": "Agent Builder",
+  "sandboxId": "debian-main",
+  "providerBindings": {
+    "providers": ["provider-01"],
+    "routerId": "router-01",
+    "routeMode": "provider-auto/balance",
+    "singleModel": null
+  },
+  "skills": ["shell", "git", "file-manager", "workflow-runner"],
+  "agents": ["planner", "coder", "runner", "reviewer"],
+  "workingAgentSet": ["planner", "coder", "runner"],
+  "workflows": ["bootstrap-dev", "repo-review"],
+  "scheduledWorkflows": ["nightly-review", "hourly-sync"],
+  "envVars": [
+    {"key":"APP_ENV","value":"dev"}
+  ],
+  "reposPin": [
+    {"repo":"git@github.com:org/agent-builder.git","branch":"main"}
+  ],
+  "gitCredentialsRef": "keystore://git/agent-builder"
+}</pre>
+          </div>
+
+          <div class="codebox reveal">
+            <div class="codehead">
+              <span>profile-actions</span>
+              <span>lifecycle operations</span>
+            </div>
+<pre>supported operations:
+- createProfile()
+- editProfile()
+- deleteProfile()
+- cloneProfile()
+- exportProfile()
+- importProfile()
+- activateProfile()
+- validateProfileBindings()
+
+validation checks:
+- sandbox exists
+- provider validated
+- router reachable
+- repo credentials available
+- scheduled workflows syntactically valid</pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="filemanager">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <div class="kicker">Sandbox File Manager Spec</div>
+            <h2>Bukan file picker biasa: ini file workspace engine.</h2>
+          </div>
+          <p>
+            Fitur file manager yang kamu sebutkan sudah cukup untuk disebut <strong>workspace-level file system module</strong>.
+            Karena ia terhubung ke sandbox, agent, workflow, preview, run, dan GitHub Action, maka posisinya setara dengan panel Files pada IDE modern.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <section class="sheet reveal">
+            <div class="sheet-title">
+              <h3>Operasi inti</h3>
+              <span>minimum feature set</span>
+            </div>
+            <div class="spec-list">
+              <div class="spec-item">
+                <div class="spec-key">CRUD</div>
+                <div><p>New file/folder, delete, rename, move, cut, paste, duplicate, dan multi-select operations.</p></div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-key">I/O</div>
+                <div><p>Import/export file, upload/download antar sandbox dan local storage, serta zip/unzip batch.</p></div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-key">Selection</div>
+                <div><p>Select one, beberapa, atau semua; lengkap dengan action bar kontekstual.</p></div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-key">Bookmarks</div>
+                <div><p>Simpan lokasi penting seperti /workspace, /exports, repo root, config root, assets, logs.</p></div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-key">Preview/Run</div>
+                <div><p>Preview file teks, markdown, json, image, log, lalu run script/command langsung ke sandbox atau Termux session.</p></div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-key">GitHub Action</div>
+                <div><p>Trigger workflow repository dari file manager context, misalnya untuk deploy, lint, test, atau sync artifacts.</p></div>
+              </div>
+            </div>
+          </section>
+
+          <aside class="sheet reveal">
+            <div class="sheet-title">
+              <h3>Hubungan ke modul lain</h3>
+              <span>file manager sebagai pusat kerja</span>
+            </div>
+            <div class="spec-list">
+              <div class="spec-item">
+                <div class="spec-key">Sandbox</div>
+                <div><p>Menampilkan tree file dari mount workspace dan export path profile aktif.</p></div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-key">Agent</div>
+                <div><p>Agent bisa membaca/menulis file sesuai permission dan profile policy.</p></div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-key">Workflow</div>
+                <div><p>Workflow dapat memakai selected files sebagai input artifact.</p></div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-key">Chat CLI</div>
+                <div><p>User bisa bilang: “rename semua file log jadi .bak” atau “zip folder outputs dan export ke Downloads”.</p></div>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+        <div class="pipeline">
+          <div class="step reveal">
+            <em>Mode 01</em>
+            <h3>Preview</h3>
+            <p>Panel cepat untuk markdown, json, yaml, logs, image ringan, diff file, dan output artifacts.</p>
+          </div>
+          <div class="step reveal">
+            <em>Mode 02</em>
+            <h3>Run</h3>
+            <p>Eksekusi shell script, python, node, atau command khusus di sandbox terpilih via Termux.</p>
+          </div>
+          <div class="step reveal">
+            <em>Mode 03</em>
+            <h3>Batch</h3>
+            <p>Multi-select file/folder lalu zip, move, rename pattern, delete, export, atau trigger workflow.</p>
+          </div>
+          <div class="step reveal">
+            <em>Mode 04</em>
+            <h3>Repo Action</h3>
+            <p>File/folder tertentu bisa memicu GitHub Action berdasarkan repo binding pada Project Profile.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="chatcli">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <div class="kicker">Interaksi User-Agent</div>
+            <h2>Chat berasa CLI, CLI berasa IDE.</h2>
+          </div>
+          <p>
+            Kamu meminta interaksi user-agent seperti CLI menggunakan bahasa alami. Itu artinya chat utama bukan cuma percakapan,
+            tetapi <strong>command surface</strong> yang mengubah natural language menjadi aksi terhadap provider, sandbox, file manager,
+            workflow, agent, dan profile aktif.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <div class="panel reveal">
+            <h4>Contoh intent</h4>
+            <p>“Tambahkan provider baru, validasi key, refresh model, lalu set balance route ke model coding termurah.”</p>
+          </div>
+          <div class="panel reveal">
+            <h4>Contoh file ops</h4>
+            <p>“Zip folder logs, export ke Downloads, lalu kirim ringkasan error dari 3 file terbaru.”</p>
+          </div>
+          <div class="panel reveal">
+            <h4>Contoh project ops</h4>
+            <p>“Clone profile production jadi staging, ganti sandbox ke Debian, dan aktifkan nightly workflow.”</p>
+          </div>
+        </div>
+
+        <div class="table reveal">
+          <div class="row head">
+            <div class="cell">Surface UI utama</div>
+            <div class="cell">Show / hide / dock</div>
+            <div class="cell">Fungsi</div>
+          </div>
+          <div class="row">
+            <div class="cell"><strong>Chat</strong><p>Permukaan utama interaksi natural language.</p></div>
+            <div class="cell">show/hide, floating, split</div>
+            <div class="cell">Prompt, command, review, assist, planning, routing control.</div>
+          </div>
+          <div class="row">
+            <div class="cell"><strong>Terminal</strong><p>Shell aktual berbasis Termux.</p></div>
+            <div class="cell">show/hide, bottom dock</div>
+            <div class="cell">Eksekusi nyata terhadap sandbox dan tools Linux.</div>
+          </div>
+          <div class="row">
+            <div class="cell"><strong>Files</strong><p>Tree workspace & sandbox mount.</p></div>
+            <div class="cell">show/hide, side dock</div>
+            <div class="cell">Operasi file, preview, run, batch, export.</div>
+          </div>
+          <div class="row">
+            <div class="cell"><strong>Agents</strong><p>State dan swarm inspector.</p></div>
+            <div class="cell">show/hide, tabbed</div>
+            <div class="cell">Lihat peran, route, fallback, artifact flow, status kerja.</div>
+          </div>
+          <div class="row">
+            <div class="cell"><strong>Workflow</strong><p>Task runner dan scheduler.</p></div>
+            <div class="cell">show/hide, page view</div>
+            <div class="cell">Manual run, scheduled run, logs, retry, trigger history.</div>
+          </div>
+          <div class="row">
+            <div class="cell"><strong>Profiles</strong><p>Project profile browser.</p></div>
+            <div class="cell">show/hide, modal/page</div>
+            <div class="cell">Create, edit, clone, import/export, activate profile.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="implementasi">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <div class="kicker">Kesimpulan implementasi</div>
+            <h2>Ya, ini sudah bisa dibilang IDE/CLI Android modular.</h2>
+          </div>
+          <p>
+            Dengan semua requirement yang kamu sebutkan, produk ini sudah melampaui “AI chat app”.
+            Definisi yang lebih tepat adalah: <strong>modular Android IDE/CLI dengan chat-native orchestration</strong>.
+          </p>
+        </div>
+
+        <div class="grid-4">
+          <div class="panel reveal">
+            <h4>Core Runtime</h4>
+            <p>Termux default terminal + sandbox manager untuk Ubuntu/Debian/Kali rootless.</p>
+          </div>
+          <div class="panel reveal">
+            <h4>Model Layer</h4>
+            <p>External Provider Spec + External Router Spec + route presets + fallback chain.</p>
+          </div>
+          <div class="panel reveal">
+            <h4>Project Layer</h4>
+            <p>Project Profile sebagai root binding untuk semua modul dan state kerja.</p>
+          </div>
+          <div class="panel reveal">
+            <h4>Workspace Layer</h4>
+            <p>Chat, terminal, file manager, workflows, agents, dan panels yang bisa show/hide.</p>
+          </div>
+        </div>
+
+        <div class="codegrid">
+          <div class="codebox reveal">
+            <div class="codehead">
+              <span>module-boundary.map</span>
+              <span>putus-sambung architecture</span>
+            </div>
+<pre>layers:
+- UI Workspace Layer
+- Chat CLI Intent Layer
+- Project Profile Layer
+- External Provider Layer
+- External Router Layer
+- Sandbox Runtime Layer
+- File Manager Layer
+- Agent & Skill Layer
+- Workflow & Scheduler Layer
+
+all layers:
+- independently attachable
+- independently replaceable
+- profile-bound
+- capability-gated</pre>
+          </div>
+
+          <div class="codebox reveal">
+            <div class="codehead">
+              <span>product-definition.txt</span>
+              <span>short verdict</span>
+            </div>
+<pre>product category:
+chat-first Android IDE/CLI
+
+because it includes:
+- terminal runtime
+- linux sandbox
+- file workspace
+- provider orchestration
+- routing policies
+- project profiles
+- workflows and schedules
+- git/repo integration
+- agent swarm execution</pre>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-box reveal">
+      <p>
+        Ringkasnya: modul utama yang kamu minta sebaiknya dibangun dengan <strong>Project Profile sebagai pusat state</strong>,
+        <strong>Termux sebagai runtime terminal</strong>, <strong>BYOK provider + external routers sebagai model fabric</strong>,
+        dan <strong>chat utama sebagai permukaan CLI berbahasa alami</strong>.
+      </p>
+      <a href="#top" class="cta alt">Kembali ke atas</a>
+    </div>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(entry=>{
+        if(entry.isIntersecting){
+          entry.target.classList.add('in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, {threshold:0.14});
+
+    document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+  </script>
+</body>
+</html>
+ 

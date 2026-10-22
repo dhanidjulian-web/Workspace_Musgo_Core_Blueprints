@@ -1,0 +1,35 @@
+{
+  "format_version": "1.0",
+  "exported_at": "2026-08-09T21:19:34.644633Z",
+  "name": "postmortem-action-closer",
+  "slug": "system.postmortem-action-closer",
+  "description": "Ensure postmortem action items are completed, not just written. Provides frameworks for action item quality, prioritization, tracking, and accountability. Use after postmortems to drive follow-through and prevent recurring incidents.",
+  "skill_type": "instruction",
+  "category": "Software Development",
+  "tags": [
+    "postmortem",
+    "action-items",
+    "accountability",
+    "follow-up",
+    "incident",
+    "continuous-improvement",
+    "tracking",
+    "SRE"
+  ],
+  "visibility": "public",
+  "skill_version": null,
+  "dependencies": null,
+  "author_name": "Agentman",
+  "author_url": "https://agentman.ai",
+  "license": null,
+  "prerequisite_skills": [],
+  "related_skills": [],
+  "content_version": 1,
+  "version_note": "Imported from package",
+  "content_hash": "ff83243b2d23ec6109962003981ae83ff0da42cf95442a7a0eef1cd53856170f",
+  "exported_from": {
+    "system": "agentman",
+    "tenant_id": null,
+    "skill_id": "983037ca-81d2-4aca-8b1a-af886852b62e"
+  }
+}

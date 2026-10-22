@@ -1,0 +1,131 @@
+{
+ "slug": "agnesai",
+ "url": "https://apihub.agnes-ai.com/v1",
+ "role": "auto",
+ "auto": "yes",
+ "nkeys": 1,
+ "synced_at": 1791131342,
+ "source": "SYNC",
+ "models": [
+  {
+   "id": "agnes-2.0-flash",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "agnes-2.5-flash",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "agnes-2.5-pro",
+   "tier": "paid",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "agnes-2.5-pro-alpha",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "agnes-2.5-pro-beta",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "agnes-3.0-flash",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "agnes-image-2.0-flash",
+   "tier": "unknown",
+   "caps": [
+    "vision"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "agnes-image-2.1-flash",
+   "tier": "unknown",
+   "caps": [
+    "vision"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "agnes-image-2.5-flash",
+   "tier": "unknown",
+   "caps": [
+    "vision"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "agnes-video-2.5",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "agnes-video-2.5-flash",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  },
+  {
+   "id": "agnes-video-v2.0",
+   "tier": "unknown",
+   "caps": [
+    "general"
+   ],
+   "size": "unknown",
+   "tools": false
+  }
+ ],
+ "tiers": {
+  "unknown": 11,
+  "paid": 1
+ },
+ "caps": {
+  "general": 9,
+  "vision": 3
+ },
+ "total": 12,
+ "health": "DEGRADED",
+ "probe": "agnes-2.0-flash",
+ "probe_detail": "jawaban kosong"
+}

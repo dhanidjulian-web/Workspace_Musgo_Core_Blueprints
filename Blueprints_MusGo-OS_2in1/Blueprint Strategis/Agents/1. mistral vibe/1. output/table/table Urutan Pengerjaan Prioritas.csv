@@ -1,0 +1,11 @@
+﻿No.,Modul,Deskripsi,Estimasi Part,Status
+1,Constitution (Layer 00),Sovereign Governor, Constitutional Guard, Emergency Override,1-2 PAR,⏳ Selanjutnya
+2,Core Layers (01-16),Kernel, Musyawarah Planner, GoRo Executor, Risk Engine, dll.,16 PAR,⏳ Rencana
+3,Apps Ecosystem,Browser (sudah selesai PAR 1-10), File Manager, Gallery, dll.,5-10 PAR,⏳ Rencana
+4,Framework,Atomic Transaction, Event Bus, Rollback Manager, dll.,3-5 PAR,⏳ Rencana
+5,Database,Models, Connections, Migrations,2-3 PAR,⏳ Rencana
+6,Deployment,Docker, Kubernetes, CI/CD,2-3 PAR,⏳ Rencana
+7,Services,Maintenance, System Services, Sovereign Cloud,3-5 PAR,⏳ Rencana
+8,UI,Desktop Shell, Apps UI, Shared Components, Mobile/Web/Electron,5-8 PAR,⏳ Rencana
+9,SDK,Python & TypeScript SDKs,2-3 PAR,⏳ Rencana
+10,Documentation,Developer Guide, API Reference, Architecture, dll.,1-2 PAR,⏳ Rencana

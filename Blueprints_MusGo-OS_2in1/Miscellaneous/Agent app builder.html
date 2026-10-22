@@ -1,0 +1,1184 @@
+ 
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agent App Builder — Sandbox Linux, Termux, BYOK Provider, Auto-Routing</title>
+  <meta name="description" content="Spesifikasi arsitektur Android app untuk sandbox Linux berbasis Termux/proot, file manager sandbox, BYOK provider, model pool, fallback, auto-routing, dan agent swarm." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#f3efe6;
+      --paper:#faf7f1;
+      --ink:#151515;
+      --muted:#605b55;
+      --line:#1e1b18;
+      --accent:#b54d19;
+      --accent-2:#236a5e;
+      --accent-3:#8f7a2b;
+      --soft:#e8ddca;
+      --shadow:0 18px 60px rgba(21,21,21,.08);
+      --radius:22px;
+      --max:1280px;
+      --nav-h:74px;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:"IBM Plex Sans", sans-serif;
+      color:var(--ink);
+      background:
+        radial-gradient(circle at 15% 20%, rgba(181,77,25,.08), transparent 28%),
+        radial-gradient(circle at 82% 14%, rgba(35,106,94,.08), transparent 26%),
+        linear-gradient(180deg, #f7f2e9 0%, #f1ece3 100%);
+      min-height:100vh;
+    }
+
+    body::before{
+      content:"";
+      position:fixed; inset:0;
+      pointer-events:none;
+      opacity:.06;
+      background-image:
+        linear-gradient(to right, var(--line) 1px, transparent 1px),
+        linear-gradient(to bottom, var(--line) 1px, transparent 1px);
+      background-size: 36px 36px;
+      mask-image: linear-gradient(to bottom, rgba(0,0,0,.25), transparent 85%);
+    }
+
+    a{color:inherit;text-decoration:none}
+    img,svg{display:block;max-width:100%}
+    button,input,select,textarea{font:inherit}
+
+    .wrap{width:min(calc(100% - 2rem), var(--max)); margin-inline:auto}
+
+    .reveal{
+      opacity:0; transform:translateY(26px);
+      transition:opacity .75s ease, transform .75s ease;
+    }
+    .reveal.in{opacity:1; transform:translateY(0)}
+
+    .topbar{
+      position:sticky; top:0; z-index:1000;
+      backdrop-filter:blur(12px);
+      background:rgba(250,247,241,.78);
+      border-bottom:1px solid rgba(30,27,24,.12);
+    }
+    .nav{
+      min-height:var(--nav-h);
+      display:flex; align-items:center; justify-content:space-between; gap:1rem;
+    }
+    .brand{
+      display:flex; align-items:center; gap:.85rem;
+      font-family:"Space Grotesk", sans-serif;
+      font-weight:700; letter-spacing:-.04em;
+    }
+    .brand-mark{
+      width:42px; height:42px; border-radius:12px;
+      background:
+        linear-gradient(135deg, var(--ink) 0 49%, var(--accent) 49% 67%, var(--soft) 67% 100%);
+      border:2px solid var(--line);
+      box-shadow:6px 6px 0 rgba(30,27,24,.12);
+    }
+    .brand small{
+      display:block; font-family:"IBM Plex Sans",sans-serif; letter-spacing:.02em;
+      font-weight:500; color:var(--muted); font-size:.78rem;
+    }
+
+    .navlinks{
+      display:flex; gap:1.25rem; align-items:center; flex-wrap:wrap;
+      font-size:.95rem;
+    }
+    .navlinks a{
+      position:relative; padding:.25rem 0;
+    }
+    .navlinks a::after{
+      content:""; position:absolute; left:0; bottom:-2px; width:100%; height:2px;
+      background:var(--ink); transform:scaleX(0); transform-origin:left; transition:transform .25s ease;
+    }
+    .navlinks a:hover::after{transform:scaleX(1)}
+
+    .cta{
+      display:inline-flex; align-items:center; justify-content:center; gap:.65rem;
+      border:2px solid var(--line);
+      padding:.92rem 1.15rem;
+      border-radius:999px;
+      background:var(--ink);
+      color:#fff;
+      font-weight:600;
+      transition:transform .22s ease, box-shadow .22s ease, background .22s ease, color .22s ease;
+      box-shadow:0 10px 24px rgba(21,21,21,.14);
+      cursor:pointer;
+    }
+    .cta:hover{transform:translateY(-2px) scale(1.01)}
+    .cta:active{transform:translateY(0) scale(.99)}
+    .cta.alt{
+      background:transparent; color:var(--ink);
+      box-shadow:none;
+    }
+    .cta.alt:hover{background:#fff}
+
+    .hero{
+      padding:clamp(2rem, 4vw, 3.5rem) 0 2rem;
+    }
+    .hero-grid{
+      display:grid;
+      grid-template-columns:1.1fr .9fr;
+      gap:1.4rem;
+      align-items:stretch;
+    }
+
+    .hero-copy, .hero-board, .panel, .codebox, .section-sheet{
+      background:rgba(250,247,241,.76);
+      border:2px solid rgba(30,27,24,.92);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      overflow:hidden;
+    }
+
+    .hero-copy{
+      padding:clamp(1.5rem, 4vw, 3rem);
+      display:flex; flex-direction:column; justify-content:space-between;
+      min-height:540px;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.55), rgba(255,255,255,.2)),
+        radial-gradient(circle at 90% 10%, rgba(181,77,25,.12), transparent 22%),
+        radial-gradient(circle at 12% 92%, rgba(35,106,94,.12), transparent 22%),
+        var(--paper);
+    }
+
+    .eyebrow{
+      display:inline-flex; align-items:center; gap:.65rem;
+      width:max-content;
+      font-size:.83rem; font-weight:600; letter-spacing:.08em; text-transform:uppercase;
+      padding:.45rem .8rem; border-radius:999px;
+      border:1.5px solid rgba(30,27,24,.2);
+      background:rgba(255,255,255,.58);
+      backdrop-filter:blur(8px);
+    }
+    .eyebrow::before{
+      content:"";
+      width:10px; height:10px; border-radius:999px;
+      background:var(--accent-2);
+      box-shadow:0 0 0 5px rgba(35,106,94,.12);
+    }
+
+    h1,h2,h3,h4{
+      font-family:"Space Grotesk", sans-serif;
+      line-height:.95;
+      letter-spacing:-.06em;
+      margin:0;
+    }
+    h1{
+      font-size:clamp(3rem, 8vw, 7rem);
+      max-width:12ch;
+      margin-top:1rem;
+    }
+    .lead{
+      font-size:clamp(1rem, 1.7vw, 1.2rem);
+      line-height:1.7;
+      color:var(--muted);
+      max-width:58ch;
+      margin:1.1rem 0 0;
+    }
+
+    .hero-actions{
+      display:flex; gap:.85rem; flex-wrap:wrap; margin-top:1.6rem;
+    }
+
+    .hero-meta{
+      margin-top:1.8rem;
+      display:grid; grid-template-columns:repeat(3,1fr); gap:.85rem;
+    }
+    .metric{
+      padding:1rem;
+      border-top:2px solid var(--line);
+      background:rgba(255,255,255,.48);
+    }
+    .metric b{
+      display:block; font-family:"Space Grotesk", sans-serif;
+      font-size:1.6rem;
+      letter-spacing:-.06em;
+    }
+    .metric span{font-size:.92rem; color:var(--muted)}
+
+    .hero-board{
+      position:relative;
+      padding:1rem;
+      min-height:540px;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.25), rgba(255,255,255,.08)),
+        linear-gradient(135deg, #1d1a17, #2d251d);
+      color:#f6f1e8;
+    }
+    .board-top{
+      display:flex; align-items:center; justify-content:space-between; gap:1rem;
+      margin-bottom:1rem;
+    }
+    .dots{display:flex; gap:.45rem}
+    .dots span{
+      width:12px; height:12px; border-radius:999px; display:block;
+      border:1px solid rgba(255,255,255,.35);
+    }
+    .dots span:nth-child(1){background:#f16850}
+    .dots span:nth-child(2){background:#f0b443}
+    .dots span:nth-child(3){background:#5bc16e}
+
+    .board-shell{
+      display:grid; gap:1rem;
+      grid-template-columns:1.1fr .9fr;
+      height:calc(100% - 42px);
+    }
+    .terminal{
+      border:1.5px solid rgba(255,255,255,.14);
+      border-radius:18px;
+      background:
+        radial-gradient(circle at top right, rgba(181,77,25,.16), transparent 22%),
+        rgba(8,8,8,.42);
+      padding:1rem;
+      display:flex; flex-direction:column; justify-content:space-between;
+      min-height:420px;
+    }
+    .term-title{
+      font-size:.82rem; text-transform:uppercase; letter-spacing:.12em; opacity:.72;
+      margin-bottom:.8rem;
+    }
+    .term-line{
+      font-family:ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size:.93rem; line-height:1.7;
+      color:#d9d1c4;
+      white-space:pre-wrap;
+    }
+    .term-line .ok{color:#8bd2bb}
+    .term-line .warn{color:#f0b443}
+    .term-line .hl{color:#ffb48e}
+    .cursor{
+      display:inline-block; width:.65ch; background:#f6f1e8; height:1.05em;
+      vertical-align:-.15em; animation:blink 1s steps(1,end) infinite;
+    }
+    @keyframes blink{50%{opacity:0}}
+
+    .router-grid{
+      display:grid; gap:.8rem;
+      grid-template-columns:1fr;
+    }
+    .router-box{
+      border:1.5px solid rgba(255,255,255,.14);
+      border-radius:18px;
+      padding:1rem;
+      background:rgba(255,255,255,.05);
+      backdrop-filter:blur(8px);
+      transition:transform .2s ease, background .2s ease;
+    }
+    .router-box:hover{transform:translateY(-2px); background:rgba(255,255,255,.08)}
+    .router-box strong{
+      display:flex; justify-content:space-between; gap:1rem;
+      font-size:1rem; margin-bottom:.4rem;
+    }
+    .router-box p{
+      margin:0; color:rgba(246,241,232,.74); line-height:1.5; font-size:.92rem;
+    }
+
+    .section{
+      padding:2rem 0;
+    }
+    .section-head{
+      display:grid; grid-template-columns:.8fr 1.2fr; gap:1rem; align-items:end;
+      margin-bottom:1.25rem;
+    }
+    .kicker{
+      font-size:.78rem; text-transform:uppercase; letter-spacing:.14em;
+      color:var(--accent); font-weight:700;
+    }
+    .section-head p{
+      margin:0; color:var(--muted); line-height:1.7; max-width:72ch;
+    }
+
+    .spec-grid{
+      display:grid;
+      grid-template-columns:1.15fr .85fr;
+      gap:1rem;
+    }
+
+    .section-sheet{
+      padding:1.2rem;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.54), rgba(255,255,255,.24)),
+        var(--paper);
+    }
+
+    .sheet-title{
+      display:flex; align-items:flex-end; justify-content:space-between; gap:1rem;
+      border-bottom:2px solid var(--line);
+      padding-bottom:.9rem; margin-bottom:1rem;
+    }
+    .sheet-title h3{font-size:clamp(1.6rem, 3vw, 2.5rem)}
+    .sheet-title span{color:var(--muted); font-size:.95rem}
+
+    .spec-list{
+      display:grid; gap:1rem;
+    }
+    .spec-item{
+      display:grid; grid-template-columns:90px 1fr;
+      gap:1rem;
+      padding:1rem 0;
+      border-bottom:1.5px solid rgba(30,27,24,.12);
+    }
+    .spec-item:last-child{border-bottom:none}
+    .spec-key{
+      font-family:"Space Grotesk", sans-serif;
+      font-size:1rem; letter-spacing:-.04em;
+    }
+    .spec-item p{
+      margin:0; color:var(--muted); line-height:1.7;
+    }
+
+    .mini-map{
+      display:grid; gap:1rem;
+      grid-template-columns:1fr 1fr;
+    }
+    .panel{
+      padding:1rem;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.62), rgba(255,255,255,.34)),
+        var(--paper);
+      transition:transform .2s ease, box-shadow .2s ease;
+    }
+    .panel:hover{transform:translateY(-3px)}
+    .panel h4{
+      font-size:1.2rem;
+      margin-bottom:.45rem;
+    }
+    .panel p{
+      margin:0; color:var(--muted); line-height:1.6; font-size:.94rem;
+    }
+    .tagrow{
+      display:flex; flex-wrap:wrap; gap:.5rem; margin-top:.9rem;
+    }
+    .tag{
+      display:inline-flex; align-items:center;
+      border:1.5px solid rgba(30,27,24,.16);
+      border-radius:999px;
+      padding:.45rem .72rem;
+      font-size:.82rem; font-weight:600;
+      background:rgba(255,255,255,.58);
+    }
+
+    .pipeline{
+      display:grid; gap:1rem;
+      grid-template-columns:repeat(4, 1fr);
+      margin-top:1rem;
+    }
+    .step{
+      position:relative;
+      padding:1rem;
+      border-top:3px solid var(--line);
+      background:rgba(255,255,255,.42);
+      min-height:180px;
+    }
+    .step em{
+      display:block; font-style:normal;
+      color:var(--accent); font-weight:700; margin-bottom:.6rem;
+    }
+    .step p{margin:0; color:var(--muted); line-height:1.6}
+
+    .codegrid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:1rem;
+      margin-top:1rem;
+    }
+    .codebox{
+      background:#151311;
+      color:#f4ecdf;
+      padding:1rem;
+      min-height:320px;
+    }
+    .codehead{
+      display:flex; justify-content:space-between; gap:1rem; align-items:center;
+      margin-bottom:.8rem;
+      color:#cdbfa7;
+      font-size:.86rem; letter-spacing:.08em; text-transform:uppercase;
+    }
+    pre{
+      margin:0; overflow:auto;
+      font-family:ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size:.9rem; line-height:1.65;
+      white-space:pre-wrap;
+      word-break:break-word;
+    }
+
+    .big-table{
+      margin-top:1rem;
+      border:2px solid var(--line);
+      border-radius:22px;
+      overflow:hidden;
+      background:rgba(255,255,255,.5);
+    }
+    .row{
+      display:grid; grid-template-columns:1.1fr .95fr .95fr;
+      gap:0;
+      border-bottom:1.5px solid rgba(30,27,24,.14);
+    }
+    .row:last-child{border-bottom:none}
+    .cell{
+      padding:1rem;
+      min-height:100%;
+    }
+    .row.head{
+      background:var(--ink);
+      color:#fff;
+      font-weight:700;
+      font-family:"Space Grotesk", sans-serif;
+      letter-spacing:-.03em;
+    }
+    .row:not(.head) .cell:nth-child(2){
+      border-left:1.5px solid rgba(30,27,24,.12);
+      border-right:1.5px solid rgba(30,27,24,.12);
+    }
+    .cell p{margin:.35rem 0 0; color:var(--muted); line-height:1.6}
+    .row.head .cell p{color:rgba(255,255,255,.8)}
+
+    .footer{
+      padding:2.5rem 0 4rem;
+    }
+    .footer-box{
+      border-top:2px solid var(--line);
+      padding-top:1rem;
+      display:flex; justify-content:space-between; gap:1rem; flex-wrap:wrap;
+    }
+    .footer p{
+      margin:0; color:var(--muted); line-height:1.7;
+      max-width:72ch;
+    }
+
+    .stagger-1{animation:rise .75s ease .05s both}
+    .stagger-2{animation:rise .75s ease .14s both}
+    .stagger-3{animation:rise .75s ease .24s both}
+    .stagger-4{animation:rise .75s ease .34s both}
+    @keyframes rise{
+      from{opacity:0; transform:translateY(26px)}
+      to{opacity:1; transform:translateY(0)}
+    }
+
+    @media (max-width: 1100px){
+      .hero-grid, .spec-grid, .section-head, .codegrid{grid-template-columns:1fr}
+      .board-shell{grid-template-columns:1fr}
+      .pipeline{grid-template-columns:1fr 1fr}
+    }
+
+    @media (max-width: 760px){
+      .nav{align-items:flex-start; padding:.9rem 0}
+      .navlinks{display:none}
+      .hero-copy, .hero-board{min-height:auto}
+      .hero-meta, .mini-map, .pipeline{grid-template-columns:1fr}
+      .spec-item{grid-template-columns:1fr}
+      .row{grid-template-columns:1fr}
+      .row:not(.head) .cell:nth-child(2),
+      .row:not(.head) .cell:nth-child(3){border-top:1.5px solid rgba(30,27,24,.12); border-left:none; border-right:none}
+      h1{max-width:10ch}
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap nav">
+      <a href="#top" class="brand" aria-label="Agent App Builder">
+        <div class="brand-mark" aria-hidden="true"></div>
+        <div>
+          Agent App Builder
+          <small>Android Sandbox + Termux + External Providers</small>
+        </div>
+      </a>
+
+      <nav class="navlinks" aria-label="Navigasi utama">
+        <a href="#arsitektur">Arsitektur</a>
+        <a href="#sandbox">Sandbox Spec</a>
+        <a href="#provider">Provider Spec</a>
+        <a href="#routing">Auto-Routing</a>
+        <a href="#implementasi">Implementasi</a>
+      </nav>
+
+      <a class="cta alt" href="#implementasi">Lihat Spec</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <article class="hero-copy">
+          <div>
+            <div class="eyebrow stagger-1">Android orchestration stack</div>
+            <h1 class="stagger-2">App kamu jadi control plane untuk Linux sandbox, model routing, dan agent swarm.</h1>
+            <p class="lead stagger-3">
+              Dengan <strong>Termux sebagai terminal emulator default</strong>, app mengelola sandbox install/uninstall, file manager spec,
+              akses local storage, BYOK provider, model pools, fallback chain, auto-route mode, dan eksekusi multi-agent berbasis
+              <strong>External Provider spec</strong>.
+            </p>
+
+            <div class="hero-actions stagger-4">
+              <a class="cta" href="#arsitektur">Mulai dari arsitektur</a>
+              <a class="cta alt" href="#provider">Provider & Routing</a>
+            </div>
+          </div>
+
+          <div class="hero-meta">
+            <div class="metric">
+              <b>Termux</b>
+              <span>Default terminal runtime & shell bridge</span>
+            </div>
+            <div class="metric">
+              <b>Sandbox</b>
+              <span>Ubuntu, Debian, Kali rootless via proot/rootfs</span>
+            </div>
+            <div class="metric">
+              <b>BYOK</b>
+              <span>Base URL, API key, pool, route, fallback</span>
+            </div>
+          </div>
+        </article>
+
+        <aside class="hero-board">
+          <div class="board-top">
+            <div class="dots" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+            <div style="font-size:.86rem; opacity:.72;">runtime board / agent orchestrator</div>
+          </div>
+
+          <div class="board-shell">
+            <div class="terminal">
+              <div>
+                <div class="term-title">termux session / sandbox bootstrap</div>
+                <div class="term-line">$ pkg update -y</div>
+                <div class="term-line">$ pkg install proot-distro termux-api -y</div>
+                <div class="term-line">$ proot-distro install debian</div>
+                <div class="term-line"><span class="ok">[ok]</span> rootfs extracted to sandbox volume</div>
+                <div class="term-line">$ proot-distro login debian --shared-tmp</div>
+                <div class="term-line">$ agent-runtime --route balance --swarm planner,coder,runner</div>
+                <div class="term-line"><span class="warn">[route]</span> selected pool: byok-primary + free-fallback</div>
+                <div class="term-line"><span class="hl">[fs]</span> mounted: app cache / local workspace / exports</div>
+              </div>
+              <div class="term-line">user@android:~$ <span class="cursor" aria-hidden="true"></span></div>
+            </div>
+
+            <div class="router-grid">
+              <div class="router-box">
+                <strong><span>Auto-route / free</span><span>01</span></strong>
+                <p>Pilih model biaya nol atau termurah untuk draft, indexing, summarization, dan task ringan.</p>
+              </div>
+              <div class="router-box">
+                <strong><span>Auto-route / small</span><span>02</span></strong>
+                <p>Arahkan task cepat ke small-context / low-latency models untuk UX yang responsif.</p>
+              </div>
+              <div class="router-box">
+                <strong><span>Auto-route / balance</span><span>03</span></strong>
+                <p>Optimalkan biaya, kualitas, dan kecepatan dengan rule-based scoring pada model pool.</p>
+              </div>
+              <div class="router-box">
+                <strong><span>Auto-route / frontier</span><span>04</span></strong>
+                <p>Gunakan model terkuat untuk planning, tool reasoning, evaluasi agen, dan fallback premium.</p>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="arsitektur">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <div class="kicker">Arsitektur inti</div>
+            <h2>Control plane yang rapi, bukan terminal tempelan.</h2>
+          </div>
+          <p>
+            Karena app kamu mengelola banyak domain sekaligus—sandbox Linux, local storage, model provider, routing, fallback,
+            dan swarm—arsitekturnya harus dipisah jelas: <strong>UI layer</strong>, <strong>Provider spec layer</strong>,
+            <strong>Sandbox runtime layer</strong>, dan <strong>Agent orchestration layer</strong>.
+          </p>
+        </div>
+
+        <div class="spec-grid">
+          <section class="section-sheet reveal">
+            <div class="sheet-title">
+              <h3>Module map</h3>
+              <span>Android app sebagai orchestrator</span>
+            </div>
+
+            <div class="spec-list">
+              <div class="spec-item">
+                <div class="spec-key">01 / UI</div>
+                <div>
+                  <p>
+                    Dashboard untuk install distro, pilih terminal default, lihat storage mount, atur provider BYOK,
+                    auto-route mode, fallback chain, model pool, dan swarm topology.
+                  </p>
+                </div>
+              </div>
+
+              <div class="spec-item">
+                <div class="spec-key">02 / Sandbox</div>
+                <div>
+                  <p>
+                    Manager untuk download rootfs / proot image, install, uninstall, update metadata,
+                    mount workspace, dan expose terminal session via Termux.
+                  </p>
+                </div>
+              </div>
+
+              <div class="spec-item">
+                <div class="spec-key">03 / Provider</div>
+                <div>
+                  <p>
+                    Satu spec generik untuk base URL, API key, headers opsional, model discovery, routing tags,
+                    limits, dan healthcheck. Semua provider dipaksa masuk ke format External Provider spec yang sama.
+                  </p>
+                </div>
+              </div>
+
+              <div class="spec-item">
+                <div class="spec-key">04 / Router</div>
+                <div>
+                  <p>
+                    Layer pemilihan model berdasarkan mode <strong>free</strong>, <strong>small</strong>,
+                    <strong>balance</strong>, <strong>frontier</strong>, ditambah fallback dan weighted model pools.
+                  </p>
+                </div>
+              </div>
+
+              <div class="spec-item">
+                <div class="spec-key">05 / Agent</div>
+                <div>
+                  <p>
+                    Agent registry, tool permissions, sandbox affinity, shared memory/session context, dan swarm execution
+                    untuk planner, coder, reviewer, runner, atau file-ops agent.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <aside class="mini-map reveal">
+            <div class="panel">
+              <h4>Termux default runtime</h4>
+              <p>Jangan bikin terminal emulator penuh dari nol. Jadikan Termux terminal default, lalu app hanya bertindak sebagai launcher, bridge, dan manager session.</p>
+              <div class="tagrow">
+                <span class="tag">Intent bridge</span>
+                <span class="tag">bootstrap script</span>
+                <span class="tag">session handoff</span>
+              </div>
+            </div>
+
+            <div class="panel">
+              <h4>Sandbox file manager spec</h4>
+              <p>Setiap sandbox punya mount map, workspace roots, export folders, policy read/write, dan opsi cleanup per sandbox.</p>
+              <div class="tagrow">
+                <span class="tag">mount table</span>
+                <span class="tag">quota</span>
+                <span class="tag">cleanup policy</span>
+              </div>
+            </div>
+
+            <div class="panel">
+              <h4>BYOK provider registry</h4>
+              <p>User bisa tambah beberapa provider dengan base URL dan API key berbeda, lalu kelompokan ke model pools dan routing policies.</p>
+              <div class="tagrow">
+                <span class="tag">base URL</span>
+                <span class="tag">API key</span>
+                <span class="tag">headers</span>
+              </div>
+            </div>
+
+            <div class="panel">
+              <h4>Swarm-aware routing</h4>
+              <p>Planner boleh ke frontier, coder ke balance, summarizer ke free, reviewer ke fallback premium—semua dari spec yang sama.</p>
+              <div class="tagrow">
+                <span class="tag">role map</span>
+                <span class="tag">cost policy</span>
+                <span class="tag">fallback chain</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="sandbox">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <div class="kicker">Sandbox spec</div>
+            <h2>Install, uninstall, mount, dan kelola file secara deterministik.</h2>
+          </div>
+          <p>
+            App bertugas bukan cuma “membuka shell”, tapi juga mengelola lifecycle sandbox: metadata distro, lokasi rootfs,
+            ukuran, akses storage, mount workspace, cache, export, backup, dan permission policy.
+          </p>
+        </div>
+
+        <div class="pipeline">
+          <div class="step reveal">
+            <em>Step 01</em>
+            <h3>Catalog sandbox</h3>
+            <p>Sediakan daftar Ubuntu, Debian, Kali rootless/NetHunter-like rootfs, versi, arsitektur, ukuran, checksum, dan metode install.</p>
+          </div>
+          <div class="step reveal">
+            <em>Step 02</em>
+            <h3>Install manager</h3>
+            <p>Download rootfs atau trigger proot-distro install via Termux, verifikasi integritas, lalu catat state install.</p>
+          </div>
+          <div class="step reveal">
+            <em>Step 03</em>
+            <h3>File manager</h3>
+            <p>Map local storage ke workspace sandbox: read-only docs, writable project dir, temp dir, exports, shared agent memory.</p>
+          </div>
+          <div class="step reveal">
+            <em>Step 04</em>
+            <h3>Remove safely</h3>
+            <p>Uninstall harus tahu mana rootfs inti, mana user data, mana cache, dan mana hasil export agar tidak menghapus file penting user.</p>
+          </div>
+        </div>
+
+        <div class="big-table reveal" aria-label="Tabel sandbox spec">
+          <div class="row head">
+            <div class="cell">Spec area</div>
+            <div class="cell">Field minimum</div>
+            <div class="cell">Tujuan</div>
+          </div>
+
+          <div class="row">
+            <div class="cell"><strong>Sandbox Identity</strong><p>Identitas distro dan runtime.</p></div>
+            <div class="cell">id, name, distro, version, arch, runtimeType, installMethod</div>
+            <div class="cell">Membedakan Debian vs Ubuntu vs Kali, juga proot vs rootfs manual.</div>
+          </div>
+
+          <div class="row">
+            <div class="cell"><strong>Storage Layout</strong><p>Root path dan folder kerja.</p></div>
+            <div class="cell">rootfsPath, workPath, cachePath, exportPath, backupPath</div>
+            <div class="cell">Mendefinisikan semua lokasi file yang dipakai app dan agen.</div>
+          </div>
+
+          <div class="row">
+            <div class="cell"><strong>Mount Policy</strong><p>Kontrol akses local storage.</p></div>
+            <div class="cell">mounts[], readOnly[], writable[], scopedAccess, mediaAccess</div>
+            <div class="cell">Mencegah agen atau shell menulis ke lokasi yang tidak seharusnya.</div>
+          </div>
+
+          <div class="row">
+            <div class="cell"><strong>Runtime Command</strong><p>Cara masuk ke sandbox.</p></div>
+            <div class="cell">loginCommand, envVars, bootstrapScript, postInstallScript</div>
+            <div class="cell">Standarisasi start command agar bisa dipakai UI maupun swarm runner.</div>
+          </div>
+
+          <div class="row">
+            <div class="cell"><strong>Lifecycle</strong><p>Status install dan maintenance.</p></div>
+            <div class="cell">state, installedAt, updatedAt, checksum, sizeBytes, healthStatus</div>
+            <div class="cell">Memudahkan resume install, cleanup, dan audit penyimpanan.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="provider">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <div class="kicker">External Provider spec</div>
+            <h2>BYOK tunggal untuk semua model: base URL, key, pool, route, fallback.</h2>
+          </div>
+          <p>
+            Karena kamu minta hanya memakai <strong>Models External Provider spec</strong>, maka semua provider—apapun vendornya—
+            harus dinormalisasi ke satu kontrak yang sama. Dengan begitu app bisa menukar model tanpa mengubah logic sandbox atau agent.
+          </p>
+        </div>
+
+        <div class="codegrid">
+          <div class="codebox reveal">
+            <div class="codehead">
+              <span>provider.spec.json</span>
+              <span>BYOK registry</span>
+            </div>
+<pre>{
+  "providerId": "user-provider-01",
+  "label": "Primary BYOK",
+  "baseUrl": "https://api.example.com/v1",
+  "apiKeyRef": "keystore://provider/user-provider-01",
+  "headers": {
+    "X-App-Client": "agent-builder"
+  },
+  "compatibility": "openai-compatible",
+  "models": [
+    {
+      "id": "model-small-a",
+      "tags": ["small", "fast", "cheap"],
+      "contextWindow": 32000,
+      "supportsTools": true,
+      "supportsVision": false
+    },
+    {
+      "id": "model-frontier-x",
+      "tags": ["frontier", "reasoning"],
+      "contextWindow": 200000,
+      "supportsTools": true,
+      "supportsVision": true
+    }
+  ],
+  "healthcheck": {
+    "path": "/models",
+    "method": "GET"
+  },
+  "enabled": true
+}</pre>
+          </div>
+
+          <div class="codebox reveal">
+            <div class="codehead">
+              <span>router.policy.json</span>
+              <span>auto-route + fallback</span>
+            </div>
+<pre>{
+  "defaultMode": "balance",
+  "autoRoutes": {
+    "free": ["free", "zero-cost"],
+    "small": ["small", "fast"],
+    "balance": ["balanced", "cheap", "reasoning-lite"],
+    "frontier": ["frontier", "reasoning"]
+  },
+  "fallbackChains": {
+    "planner": ["model-frontier-x", "model-balance-m", "model-small-a"],
+    "coder": ["model-balance-m", "model-small-a"],
+    "summarizer": ["model-small-a", "model-free-b"]
+  },
+  "modelPools": {
+    "default": ["model-small-a", "model-balance-m", "model-frontier-x"],
+    "free-pool": ["model-free-b"],
+    "premium-pool": ["model-frontier-x"]
+  },
+  "agentAffinity": {
+    "planner": "frontier",
+    "coder": "balance",
+    "reviewer": "frontier",
+    "runner": "small"
+  }
+}</pre>
+          </div>
+        </div>
+
+        <div class="spec-grid" style="margin-top:1rem;">
+          <section class="section-sheet reveal">
+            <div class="sheet-title">
+              <h3>Field wajib provider</h3>
+              <span>minimum viable external spec</span>
+            </div>
+            <div class="spec-list">
+              <div class="spec-item">
+                <div class="spec-key">baseUrl</div>
+                <div><p>Endpoint utama provider. Wajib editable oleh user untuk skenario proxy, gateway, self-hosted, atau vendor kompatibel.</p></div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-key">apiKeyRef</div>
+                <div><p>Referensi ke Android Keystore / encrypted storage. Hindari menyimpan raw API key di plain JSON.</p></div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-key">compatibility</div>
+                <div><p>Tipe adapter, misalnya openai-compatible atau custom schema, supaya parser request/response bisa dipilih otomatis.</p></div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-key">models[]</div>
+                <div><p>Daftar model dengan tag seperti free, small, balance, frontier, tools, vision, coding, reasoning, long-context.</p></div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-key">healthcheck</div>
+                <div><p>Path untuk validasi koneksi dan deteksi provider down sebelum request produksi dijalankan.</p></div>
+              </div>
+            </div>
+          </section>
+
+          <aside class="section-sheet reveal">
+            <div class="sheet-title">
+              <h3>BYOK UX spec</h3>
+              <span>form yang perlu disediakan</span>
+            </div>
+            <div class="spec-list">
+              <div class="spec-item">
+                <div class="spec-key">Tambah</div>
+                <div><p>Label provider, base URL, API key, custom headers opsional, compatibility type, test connection.</p></div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-key">Pool</div>
+                <div><p>Masukkan model ke free pool, small pool, balanced pool, frontier pool, premium pool, atau pool khusus agent tertentu.</p></div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-key">Fallback</div>
+                <div><p>User bisa menentukan urutan model cadangan per task atau per agent bila model utama timeout, quota habis, atau gagal tool call.</p></div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-key">Priority</div>
+                <div><p>Tambahkan bobot biaya, latensi, dan kualitas agar router tidak cuma berdasarkan nama mode.</p></div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="routing">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <div class="kicker">Routing & swarm</div>
+            <h2>Auto-route, fallback models/agents, model pool, dan agent-swarm.</h2>
+          </div>
+          <p>
+            Supaya app builder kamu terasa matang, routing tidak boleh hardcoded. Ia harus berbasis policy:
+            mode global, role agent, ukuran task, availability provider, biaya, dan tool requirements.
+          </p>
+        </div>
+
+        <div class="big-table reveal">
+          <div class="row head">
+            <div class="cell">Mode / fitur</div>
+            <div class="cell">Aturan pemilihan</div>
+            <div class="cell">Contoh penggunaan</div>
+          </div>
+
+          <div class="row">
+            <div class="cell"><strong>Auto-route / free</strong><p>Prioritaskan nol biaya atau biaya sangat rendah.</p></div>
+            <div class="cell">Filter tags: free, zero-cost, cheap. Tolak model premium kecuali semua gagal.</div>
+            <div class="cell">Draft, title generation, ringan, summarization batch.</div>
+          </div>
+
+          <div class="row">
+            <div class="cell"><strong>Auto-route / small</strong><p>Utamakan latensi rendah dan response cepat.</p></div>
+            <div class="cell">Filter tags: small, fast, low-latency, context secukupnya.</div>
+            <div class="cell">Inline assist, command suggestions, shell hints.</div>
+          </div>
+
+          <div class="row">
+            <div class="cell"><strong>Auto-route / balance</strong><p>Trade-off biaya, kualitas, dan tool support.</p></div>
+            <div class="cell">Skor gabungan: cost score + latency score + capability score.</div>
+            <div class="cell">Coding assist, planning sedang, file operations, patch generation.</div>
+          </div>
+
+          <div class="row">
+            <div class="cell"><strong>Auto-route / frontier</strong><p>Pakai model terbaik yang tersedia.</p></div>
+            <div class="cell">Prioritaskan reasoning/tool-heavy/high-context, fallback ke balance.</div>
+            <div class="cell">Planner utama, reviewer, multi-step repair, evaluasi swarm.</div>
+          </div>
+
+          <div class="row">
+            <div class="cell"><strong>Fallback models/agents</strong><p>Cadangan ketika gagal.</p></div>
+            <div class="cell">Jika timeout atau 429/5xx, pindah ke model berikutnya atau agent eksekutor alternatif.</div>
+            <div class="cell">planner-frontier gagal → planner-balance → planner-small.</div>
+          </div>
+
+          <div class="row">
+            <div class="cell"><strong>Models pool</strong><p>Kumpulan model per tujuan.</p></div>
+            <div class="cell">Group per role, cost tier, vendor, capability.</div>
+            <div class="cell">coding-pool, free-pool, long-context-pool, vision-pool.</div>
+          </div>
+
+          <div class="row">
+            <div class="cell"><strong>Agent swarm</strong><p>Beberapa agent jalan bersama.</p></div>
+            <div class="cell">Role map + queue + shared artifact + router per role.</div>
+            <div class="cell">planner → coder → reviewer → runner → summarizer.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="implementasi">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <div class="kicker">Implementasi praktis</div>
+            <h2>Urutan build yang paling aman untuk Android app kamu.</h2>
+          </div>
+          <p>
+            Berikut baseline implementasi yang konsisten dengan kebutuhanmu: Termux default terminal emulator, sandbox manager,
+            file manager spec, BYOK provider, routing engine, lalu agent swarm orchestration.
+          </p>
+        </div>
+
+        <div class="pipeline">
+          <div class="step reveal">
+            <em>Phase 01</em>
+            <h3>Termux bridge</h3>
+            <p>Buat deteksi instalasi Termux, tombol open terminal, bootstrap command templates, dan mekanisme handoff command ke session.</p>
+          </div>
+          <div class="step reveal">
+            <em>Phase 02</em>
+            <h3>Sandbox registry</h3>
+            <p>Tambah katalog Ubuntu/Debian/Kali, status install, ukuran storage, mount rules, serta flow uninstall yang aman.</p>
+          </div>
+          <div class="step reveal">
+            <em>Phase 03</em>
+            <h3>External provider spec</h3>
+            <p>Implement form BYOK: base URL, API key, adapter type, model discovery, pool assignment, healthcheck.</p>
+          </div>
+          <div class="step reveal">
+            <em>Phase 04</em>
+            <h3>Routing & swarm</h3>
+            <p>Bangun policy engine untuk free/small/balance/frontier, fallback chain, models-pool, dan role-based swarm execution.</p>
+          </div>
+        </div>
+
+        <div class="codegrid">
+          <div class="codebox reveal">
+            <div class="codehead">
+              <span>sandbox.manifest.json</span>
+              <span>contoh spec local runtime</span>
+            </div>
+<pre>{
+  "sandboxId": "debian-main",
+  "label": "Debian Main",
+  "runtimeType": "termux-proot",
+  "installMethod": "proot-distro",
+  "distro": "debian",
+  "version": "stable",
+  "rootfsPath": "/data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/debian",
+  "workPath": "/storage/emulated/0/AgentBuilder/workspaces/debian-main",
+  "cachePath": "/storage/emulated/0/AgentBuilder/cache/debian-main",
+  "exportPath": "/storage/emulated/0/AgentBuilder/exports/debian-main",
+  "mounts": [
+    {"source":"workPath","target":"/workspace","mode":"rw"},
+    {"source":"exportPath","target":"/exports","mode":"rw"}
+  ],
+  "loginCommand": "proot-distro login debian --shared-tmp",
+  "defaultShell": "/bin/bash",
+  "state": "installed"
+}</pre>
+          </div>
+
+          <div class="codebox reveal">
+            <div class="codehead">
+              <span>agent.swarm.json</span>
+              <span>contoh role orchestration</span>
+            </div>
+<pre>{
+  "swarmId": "build-assistant",
+  "sharedContextPolicy": "scoped",
+  "agents": [
+    {
+      "role": "planner",
+      "routeMode": "frontier",
+      "fallback": ["planner-balance"]
+    },
+    {
+      "role": "coder",
+      "routeMode": "balance",
+      "fallback": ["coder-small"]
+    },
+    {
+      "role": "runner",
+      "routeMode": "small",
+      "sandboxAffinity": "debian-main"
+    },
+    {
+      "role": "reviewer",
+      "routeMode": "frontier"
+    }
+  ],
+  "artifacts": {
+    "workspace": "/workspace",
+    "report": "/exports/report.md"
+  }
+}</pre>
+          </div>
+        </div>
+
+        <div class="spec-grid" style="margin-top:1rem;">
+          <section class="section-sheet reveal">
+            <div class="sheet-title">
+              <h3>Checklist fitur app</h3>
+              <span>harus ada di builder</span>
+            </div>
+            <div class="spec-list">
+              <div class="spec-item">
+                <div class="spec-key">Sandbox add/remove</div>
+                <div><p>Tombol install, uninstall, reset cache, open terminal, open workspace, dan export logs.</p></div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-key">File manager spec</div>
+                <div><p>Browser folder sandbox, local storage mount picker, read-only / read-write selector, dan cleanup policy.</p></div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-key">Provider BYOK</div>
+                <div><p>Form tambah provider, test koneksi, sync model list, tandai model capabilities, dan assign ke pools.</p></div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-key">Routing profiles</div>
+                <div><p>free, small, balance, frontier, plus user-defined custom route mode bila diperlukan.</p></div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-key">Agent swarm</div>
+                <div><p>Role editor, fallback role/model, sandbox affinity, tool permission, dan artifact flow antar agent.</p></div>
+              </div>
+            </div>
+          </section>
+
+          <aside class="section-sheet reveal">
+            <div class="sheet-title">
+              <h3>Keputusan desain yang disarankan</h3>
+              <span>supaya stabil di Android</span>
+            </div>
+            <div class="spec-list">
+              <div class="spec-item">
+                <div class="spec-key">1</div>
+                <div><p>Jadikan Termux default terminal runtime, bukan sekadar opsi tambahan.</p></div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-key">2</div>
+                <div><p>Normalisasi semua provider ke External Provider spec tunggal agar router dan swarm tidak vendor-specific.</p></div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-key">3</div>
+                <div><p>Pisahkan filesystem metadata app dari rootfs agar uninstall tidak merusak data user.</p></div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-key">4</div>
+                <div><p>Simpan API key melalui secure storage / keystore reference, bukan plain exportable config.</p></div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-key">5</div>
+                <div><p>Tambahkan healthcheck provider dan dry-run routing sebelum agent swarm dijalankan.</p></div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-box reveal">
+      <p>
+        Ringkasnya: <strong>app = control plane</strong>, <strong>Termux = terminal emulator default</strong>,
+        <strong>sandbox manager = lifecycle Linux</strong>, <strong>External Provider spec = abstraksi model</strong>,
+        dan <strong>routing/swarm = execution intelligence</strong>.
+      </p>
+      <a href="#top" class="cta alt">Kembali ke atas</a>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries)=>{
+      entries.forEach(entry=>{
+        if(entry.isIntersecting){
+          entry.target.classList.add('in');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {threshold: 0.14});
+
+    document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+  </script>
+</body>
+</html>
+ 
