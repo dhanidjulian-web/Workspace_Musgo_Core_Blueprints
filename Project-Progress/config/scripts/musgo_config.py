@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 MusGo-OS 2in1 — Project Progress Configuration Loader & Resolver
-File    : /home/Project-Progress/config/scripts/musgo_config.py
+File    : /root/projects/Project-Progress/config/scripts/musgo_config.py
 Founder : Dhani Yuliawan
 License : © 2026 — Dhani Yuliawan | All Rights Reserved
 

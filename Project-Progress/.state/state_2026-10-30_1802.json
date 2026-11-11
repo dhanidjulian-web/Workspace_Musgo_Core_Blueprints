@@ -1,0 +1,58 @@
+{
+  "timestamp_local": "2026-10-30T18:02:29+07:00",
+  "timestamp_utc": "2026-10-30T11:02:29Z",
+  "mode": "VERIFIED-LIVE",
+  "result": "DETAK_JANTUNG_OK",
+  "workspace": {
+    "path": "/root/projects",
+    "root_entries": 13,
+    "index_md_bytes": 364722,
+    "agent_index_md_bytes": 191684,
+    "index_agents_skills_bytes": 9443,
+    "git_operations": 0
+  },
+  "repo_target": {
+    "path": "/root/Repository MusGo-OS_2in1-main",
+    "remote": "git@github.com:dhanidjulian-web/MusGo-OS_2in1.git",
+    "auth": "ssh-ed25519 (no PAT)",
+    "branch": "main",
+    "head": "6b2af4ee1feea8fc5686e5a9019d60378a652f96",
+    "head_message": "chore(9router): untrack runtime logs + supervisor autostart (proot tanpa systemd)",
+    "fetch_exit": 0,
+    "ahead": 0,
+    "behind": 0,
+    "porcelain_lines": 0,
+    "tracked_files": 1591,
+    "root_dirs": 28,
+    "layer_dirs": 21
+  },
+  "modules": {
+    "mcl_enforcer": {
+      "path": "constitutional_domain/layer_00_governor/mcl_enforcer",
+      "tests": "13/13 PASS",
+      "fails": 0,
+      "rules_hash": "9c926b018e37b38b",
+      "fail_closed": true
+    },
+    "ai_provider_9router": {
+      "path": "cognitive_domain/layer_05_agent_orchestration/ai_provider_9router",
+      "health": {"ok": true},
+      "models": 861,
+      "providers": 86,
+      "allowlist": 69,
+      "budget_daily_usd": 5,
+      "budget_monthly_usd": 100,
+      "on_exceed": "block"
+    }
+  },
+  "runtime_artifacts_tracked": 2,
+  "signals": {"sms": 0, "notifications": 0, "scheduled_tasks": 0},
+  "changes_this_cycle": {"code": 0, "commits": 0, "pushes": 0},
+  "open_items": [
+    "Telegram crano.ai login confirmation (Padang, IPv6 2404:00c0:d002:de13:...) since 2026-10-23 02:37 WIB",
+    "9router MUSGO_9ROUTER_API_KEY + boot autostart (needs VPS S1)",
+    "Audit Fase 3-7 pending"
+  ],
+  "vps_levels": "S0-S16 (17 level)",
+  "tiers": ["FREE","LIGHT","LITE","MEDIUM","CREATOR","PRO","TEAM","ENTERPRISE"]
+}

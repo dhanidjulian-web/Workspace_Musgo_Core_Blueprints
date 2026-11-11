@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-10-30",
+  "commit_pushed": "cc49bfc665c4b1c4ca847386da9bf1fda8f39ba6",
+  "files_pushed": ["README.md", "LICENSE"],
+  "files_local_only": ["LICENSE-COMMERCIAL.md"],
+  "license_commercial": {"bytes": 22055, "lines": 464, "tiers": 8, "vps_levels": 17, "pushed": false},
+  "founder_corrections": ["tier=8 bukan 3", "VPS S0-S16 = 17 level"],
+  "repo": "git@github.com:dhanidjulian-web/MusGo-OS_2in1.git",
+  "clone_path": "/root/Repository MusGo-OS_2in1-main"
+}

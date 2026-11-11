@@ -1,0 +1,58 @@
+{
+  "timestamp": "2026-10-31T02:45:00+07:00",
+  "mode": "VERIFIED-LIVE",
+  "result": "DETAK_JANTUNG_OK",
+  "workspace": {
+    "path": "/root/projects",
+    "read_only": true,
+    "root_entries": 14,
+    "indices": {
+      "INDEX.md": 364722,
+      "AGENT_INDEX.md": 191684,
+      "INDEX_AGENTS_SKILLS.md": 9443
+    },
+    "project_progress_subdirs": [".state", "Knowledge", "Runtime", "config", "memory"]
+  },
+  "repo_target": {
+    "path": "/root/Repository MusGo-OS_2in1-main",
+    "remote": "git@github.com:dhanidjulian-web/MusGo-OS_2in1.git",
+    "auth": "ssh-ed25519 no-PAT",
+    "branch": "main",
+    "head": "6b2af4e",
+    "origin_main": "6b2af4e",
+    "fetch_exit": 0,
+    "ahead_behind": "0/0",
+    "porcelain": 0,
+    "tracked": 1591,
+    "drift": false
+  },
+  "modules": {
+    "mcl_enforcer": {
+      "path": "constitutional_domain/layer_00_governor/mcl_enforcer/",
+      "files": 5,
+      "test": "13/13 PASS | 0 FAIL",
+      "rules_hash": "9c926b018e37b38b",
+      "fail_closed": true
+    },
+    "ai_provider_9router": {
+      "path": "cognitive_domain/layer_05_agent_orchestration/ai_provider_9router/",
+      "files_tracked": 17,
+      "health": "ok",
+      "models": 861,
+      "providers": 86,
+      "allowlist": 69,
+      "cold_start_needed": false
+    }
+  },
+  "runtime_artifacts": {
+    "tracked": 2,
+    "logs_tracked": 0,
+    "status": "CLOSED"
+  },
+  "vps_levels": "S0-S16 (17)",
+  "tier_levels": "8 (FREE,LIGHT,LITE,MEDIUM,CREATOR,PRO,TEAM,ENTERPRISE)",
+  "signals": {"sms": 0, "notifications": 0, "scheduled_tasks": 0},
+  "changes": {"code": 0, "commits": 0, "pushes": 0},
+  "open_items": 3,
+  "artifacts_saved": true
+}

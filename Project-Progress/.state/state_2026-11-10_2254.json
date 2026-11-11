@@ -1,0 +1,19 @@
+{
+  "timestamp_wib": "2026-11-10T22:54:00+07:00",
+  "mode": "VERIFIED-LIVE",
+  "result": "DETAK_JANTUNG_OK",
+  "workspace_valid": true,
+  "repo": {
+    "head": "5b09039",
+    "origin_main": "5b09039",
+    "ahead_behind": "0/0",
+    "porcelain": 0,
+    "tracked": 1651,
+    "remote": "git@github.com:dhanidjulian-web/MusGo-OS_2in1.git"
+  },
+  "mcl_enforcer": { "pass": 13, "fail": 0, "rules_hash": "9c926b018e37b38b" },
+  "ai_provider_9router": { "restored": true, "models": 861, "providers": 86, "allowlist": 69 },
+  "signals": { "sms": 0, "notifications": 0, "scheduled_tasks": 0 },
+  "changes": { "code": 0, "commit": 0, "push": 0, "cold_start": 1 },
+  "open_items": ["9router_autostart_vps_s1", "audit_fase_3_7"]
+}

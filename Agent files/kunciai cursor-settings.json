@@ -1,0 +1,5 @@
+{
+  "openai.baseUrl": "https://kunciai.id/v1",
+  "openai.apiKey": "KUNCIAI_API_KEY_ANDA",
+  "openai.model": "kunciai/deepseek-v4-flash"
+}

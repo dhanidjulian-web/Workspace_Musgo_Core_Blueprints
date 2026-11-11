@@ -1,0 +1,115 @@
+# MusGo-OS 2in1 — Sovereign AI Operating Civilization
+
+![Founder](https://img.shields.io/badge/founder-Dhani_Yuliawan-gold)
+![Python](https://img.shields.io/badge/python-3.11%2B-blue)
+![AI Backend](https://img.shields.io/badge/AI%20backend-Keras%203%20multi--backend-orange)
+![Security](https://img.shields.io/badge/security-zero%20trust-red)
+![Status](https://img.shields.io/badge/status-v9.1%20FINAL-brightgreen)
+
+> **Musyawarah & Gotong-Royong** — Sovereign AI Operating Civilization Infrastructure
+> © 2026 — Dhani Yuliawan | All Rights Reserved
+
+---
+
+## Overview
+
+MusGo-OS 2in1 adalah **Sovereign AI Operating Civilization**: sistem operasi kedaulatan digital yang memadukan **Musyawarah** (deliberation berbasis weighted voting konsensus 75%) dan **Gotong-Royong** (eksekusi kooperatif multi-agent) di atas fondasi **Zero Trust**, constitutional governance, dan Keras 3 multi-backend.
+
+## Core Flow (IP Utama — PROPRIETARY)
+
+```
+Task Request → Musyawarah (weighted voting 75%) → LEGITIMATE
+→ NoBypassGate → GoRo Executor (paralel) → Completion
+```
+
+- **Musyawarah Planner** (Layer 02) + **GoRo Executor** (Layer 03) = Framework Core & IP utama.
+- NoBypassGate: tanpa tanda tangan LEGITIMATE → **deny**; nonce anti-replay window 30 detik; MAC constant-time.
+- Signature Engine: quorum 75%, ledger hash-chain + HMAC.
+- GoRo Executor: TaskGraph dependency resolver + deteksi siklus, worker pool maksimal 8.
+
+## Repository Structure (25 Root Folder — V9.1 FINAL)
+
+| Domain / Folder | Fungsi |
+|---|---|
+| `constitutional_domain/` | Layer 00 Governor, 04 Consensus, 06 Policy Ethics, 15 Adaptive Learning |
+| `cognitive_domain/` | Layer 02 Musyawarah Planner, 03 GoRo Executor, 05 Agent Orchestration |
+| `runtime_domain/` | Layer 01 Kernel, 07 Event Bus, 08 Persistence, 09 API, 10 Contract, 11 Risk, 12 Resource |
+| `security_domain/` | Layer 13 Security & Networking, 14 Observability, 16 Threat Intelligence, Zero Trust, HSM quorum 2/3, Threat DNA, Immutable Architecture |
+| `memory_domain/` | Layer 17 Sovereign Memory, 18 Knowledge Evolution, 19 Blackbox, 20 Constitutional Immune |
+| `simulation_domain/` | Digital Twin & Cyber Range |
+| `recovery_domain/` | Snapshot/constitutional/governor/policy/identity restore, failure modes |
+| `specifications/` | RFC-MCL-001, RFC-MGP-001, RFC-MTDS-001, RFC-MIAS-001, security baseline |
+| `extensions/` | Plugin manifest, marketplace, sandbox |
+| `system/` | Service manager, daemon, watchdog, boot 16-stage fail-closed |
+| `maintenance/` | Autofixer, backup/restore AES-256-GCM, firewall, forensic audit, SSH tunnel 2in1 |
+| `services/` | API key manager, monetization (FREE/PRO/ENTERPRISE), dev dashboard, registry |
+| `Framework/` | IP Core: musyawarah_core, goro_core, no_bypass_gate, signature_engine, keras3/ adapter (backend jax/tensorflow/torch, lock KERAS_BACKEND), 12 primitives infrastruktur |
+| `SDK/` | Python, TypeScript zero-dependency, Plugin SDK |
+| `apps/` | Ecosystem (browser, 16 studio, sovereign drive/browser, marketplace) & internal (persona engine, security command center) |
+| `deployment/` | Airgap, Ansible, blue-green, CI/CD, cyber range, digital twin, DR, Docker, K8s, Terraform, geo-redundant, chaos, sovereign bootstrap |
+| `database/` | Connections (SQLite stdlib + driver-optional fail-closed), migrations ledger, cache, vector, immutable logs, distributed state |
+| `docs/` | Arsitektur, API reference, blueprint, business, compliance, legal, production, release |
+| `tests/` | Unit, integration, load, penetration, runtime, security |
+| `tools/` | AI repo assistant, repo generator, schema validator, structure sync |
+| `hardware/` | HSM integration (PKCS#11-style fail-closed, attestation nonce-monotonic) |
+| `memory/` | Short-term, long-term, episodic, semantic (embedding Keras 3), contextual, collaborative, persona, workflow |
+| `knowledge_graph/` | Entity graph, relationship engine anti-cycle, semantic reasoning, memory linker |
+| `ai_live_guide/` | Voice, avatar, emotion, dialog (PII-redact), screen, gesture, tone |
+| `agent_sandbox/` | Container policy, capability matrix default-deny, dry-run, anomaly interceptor |
+| `resource_governor/` | VRAM allocator (Keras 3), thread pool, heap monitor, LLM quota, task throttler |
+| `persona_communication_policy/` | 6 mode komunikasi dengan kontrak eksplisit |
+| `vault/` | GENESIS_INIT: Master Key Genesis Layer 00 (Ed25519 + Shamir 5-of-3 GF(256), air-gapped only) |
+| `.github/` | CODEOWNERS, PR template, CI/CD, security scan (gitleaks + trivy), deployment gate |
+
+## AI Backend
+
+Backend AI resmi: **Keras 3** multi-backend (jax / tensorflow / torch) — artefak `.keras` v3 backend-agnostic.
+`Framework/keras3/framework_config` mengunci `KERAS_BACKEND` sebelum import keras; model registry hash-chain SHA-256 + HMAC.
+
+## Security Constitution
+
+- Secure-by-default, fail-closed, deny-by-default, least privilege
+- Replay-safe (nonce monoton), hash-chain + HMAC-SHA256, secret vault-only (`MUSGO_VAULT_*`)
+- Zero Trust, mTLS-ready, air-gap ready, quantum-resilient roadmap (CRYSTALS-Dilithium)
+- Root of Trust Layer 00: `vault/hardware_key_manager/GENESIS_INIT/sovereign_init.py` — jalankan HANYA di mesin air-gapped
+
+## CI/CD
+
+| Workflow | Isi |
+|---|---|
+| `MUSGO-OS Quality Gate` | compileall, flake8 gate (E9/F63/F7/F82), pytest (exit-5 tolerant) |
+| `MUSGO-OS Security Scan` | gitleaks secret scan, Trivy HIGH/CRITICAL, compile gate |
+| `MUSGO-OS Deployment Gate` | verifikasi fail-closed (workflow_dispatch staging/production, tag `v*`) |
+
+## Testing
+
+```bash
+python -m pytest tests/unit/ -v
+python -m pytest tests/integration/ -v
+```
+
+`tests/` mencakup unit, integration, load, penetration (red team scenarios), runtime (lifecycle/failover), security (crypto validation, zero-trust audit).
+
+## Documentation
+
+Dokumentasi lengkap: folder `docs/` (architecture, api_reference, blueprint, business, compliance, constitutional, governance, infrastructure, legal, production, release, security, user, workflows).
+
+## License
+
+Proprietary — © 2026 Dhani Yuliawan, All Rights Reserved. Lihat [LICENSE](LICENSE).
+
+---
+
+===========🔐™️®️©️🔐===========
+
+🔹MusGo-OS 2in1🔹Ai-inside-OS🔹
+(2in1 Musyawarah & Gotong-Royong)
+
+🔹Sovereign AI Operating Civilization🔹
+
+🔹© 2026 — Dhani Yuliawan | 
+ All Rights Reserved🔹
+
+===========🔐™️®️©️🔐===========
+
+**FOUNDER SIGN: DHANI YULIAWAN**

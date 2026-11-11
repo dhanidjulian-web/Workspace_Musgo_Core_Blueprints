@@ -1,0 +1,38 @@
+{
+  "timestamp_local": "2026-10-27T00:52:00+07:00",
+  "type": "heartbeat",
+  "workspace": {
+    "path": "/root/projects",
+    "valid": true,
+    "entries": 14,
+    "indexes": {
+      "Blueprints_MusGo-OS_2in1/INDEX.md": "OK (364722 B)",
+      "Blueprints_MusGo-OS_2in1/AGENT_INDEX.md": "OK (191684 B)",
+      "Agents-Skills/INDEX_AGENTS_SKILLS.md": "OK (9443 B)"
+    }
+  },
+  "project_progress": {
+    "dirs": [".state", "Knowledge", "Runtime", "config", "memory"],
+    "heartbeat_log_bytes": 83006
+  },
+  "repo_target": {
+    "path": "/root/Repository MusGo-OS_2in1-main",
+    "remote": "git@github.com:dhanidjulian-web/MusGo-OS_2in1.git",
+    "branch": "main",
+    "head": "2353167",
+    "ahead": 0,
+    "behind": 0,
+    "tree_clean": true,
+    "fetch_exit": 0
+  },
+  "signals": {
+    "sms_new": 0,
+    "notifications_new": 1,
+    "notifications_flagged": [],
+    "scheduled_tasks": 0
+  },
+  "open_reminders": [
+    "Konfirmasi login Telegram 'crano.ai' dari Padang (IPv6 2404:00c0:...) sejak 2026-10-23 02:37 WIB"
+  ],
+  "status": "OK"
+}

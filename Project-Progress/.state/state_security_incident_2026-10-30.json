@@ -1,0 +1,49 @@
+{
+  "state_type": "security_incident",
+  "incident_id": "SEC-2026-10-23-crano-ai",
+  "recorded_at": "2026-10-30T20:10:00+07:00",
+  "status": "CLOSED",
+  "founder_confirmed": true,
+  "founder_confirmed_at": "2026-10-30T20:10:00+07:00",
+  "event": {
+    "type": "unauthorized_telegram_login",
+    "occurred_at": "2026-10-23T02:37:00+07:00",
+    "service": "crano.ai",
+    "mechanism": "telegram_oidc",
+    "bot": "@crano_ai_oidc_bot",
+    "location": "Padang",
+    "ip": "2404:00c0:d002:de13:...",
+    "exposure_days": 7
+  },
+  "corroborating_signals": [
+    {
+      "at": "2026-10-23T16:26:00+07:00",
+      "source": "Google Play services",
+      "text": "New sign-in on Android",
+      "account": "dhanidjulian@gmail.com",
+      "confirmed_by_founder": false
+    }
+  ],
+  "evidence_limitation": "Original notifications no longer retained on device; search_notifications returned 0 for crano/Telegram/login/sign-in. Relies on memory records from 2026-10-23.",
+  "actions_required_by_founder": [
+    "Telegram: Settings > Devices > Terminate All Other Sessions",
+    "Telegram: enable Two-Step Verification",
+    "Telegram: change password",
+    "Telegram: re-check active sessions over following days",
+    "Google: review Your devices, remove unknown",
+    "Google: change password + enable 2FA",
+    "crano.ai: check/delete account using founder email"
+  ],
+  "agent_limitation": "Sandbox cannot terminate Founder's Telegram/Google sessions; actions must be performed on device.",
+  "founder_sig": "DHANI YULIAWAN",
+  "status_reason": "Founder memeriksa langsung crano.ai: login Telegram GAGAL beberapa hari lalu. Tidak ada sesi terbentuk, tidak ada akses tidak sah.",
+  "closed_at": "2026-10-30T20:25:00+07:00",
+  "closed_by": "DHANI YULIAWAN",
+  "residual_actions_required": [],
+  "optional_hygiene": [
+    "Hapus akun crano.ai bila ada",
+    "Sesekali cek Telegram > Devices untuk memastikan tidak ada sesi Padang"
+  ],
+  "scheduled_reminder_cancelled": "f34610dc-970f-4b37-937c-dfd0d56f4732",
+  "evidence_note": "Notifikasi asli sudah terhapus dari sistem; kesimpulan bersandar pada pemeriksaan langsung Founder ke crano.ai."
+}

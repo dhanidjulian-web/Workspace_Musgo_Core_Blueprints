@@ -1,0 +1,52 @@
+{
+  "session": "extract_engine_v5",
+  "date": "2026-10-28",
+  "task": "finish_domain_scoped_matcher",
+  "status": "COMPLETED",
+  "parser": "Knowledge/Extract/scripts/extract_audit.py",
+  "method": "STRICT domain-scoped, basename matching, manual validation",
+  "blueprint_source": "/root/projects/Blueprints_MusGo-OS_2in1/STRUKTUR REPOSITORY FINAL.md",
+  "repo_source": "/root/Repository MusGo-OS_2in1-main",
+  "counts": {
+    "py_expected": 776,
+    "exact": 209,
+    "relocated": 238,
+    "consolidated": 76,
+    "flattened": 53,
+    "same_layer": 12,
+    "same_domain": 2,
+    "ambiguous": 51,
+    "name_duplicate": 38,
+    "missing": 97,
+    "sum_check": 776
+  },
+  "coverage": {
+    "lower_bound_pct": 45.4,
+    "upper_bound_pct": 76.0,
+    "gap_pct": 12.5
+  },
+  "gap_by_domain": {
+    "recovery_domain": 67,
+    "security_domain": 24,
+    "runtime_domain": 6
+  },
+  "retracted_claims": ["375 py expected", "58.7 pct", "87.5 pct", "442 missing"],
+  "structural_findings": {
+    "relocated_modules": 238,
+    "flattened_modules": 53,
+    "consolidated_cases": 76,
+    "needs_founder_decision": true
+  },
+  "validation": {
+    "missing_sample_tested": 15,
+    "missing_sample_correct": 15
+  },
+  "pending": [
+    "konfirmasi relokasi/flattening",
+    "Agents/Skills 4408 file",
+    "Zero-Trust policy",
+    "VPS S0-S16",
+    "8 Tier",
+    "code logic"
+  ]
+}

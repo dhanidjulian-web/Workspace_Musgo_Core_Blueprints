@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "musgo.project_progress.session_state.v1",
   "title": "MusGo-OS 2in1 — Session State",
-  "description": "State sesi aktif pada /home/Project-Progress/.state/current_session.json. Dipakai phase A grounding agar agent berikutnya melanjutkan tanpa ambigu.",
+  "description": "State sesi aktif pada /root/projects/Project-Progress/.state/current_session.json. Dipakai phase A grounding agar agent berikutnya melanjutkan tanpa ambigu.",
   "type": "object",
   "additionalProperties": false,
   "required": ["schema_version", "session", "last_grounding", "resume"],

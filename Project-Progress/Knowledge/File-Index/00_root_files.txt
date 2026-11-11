@@ -1,0 +1,8 @@
+/root/projects/.gitignore	179	2026-10-21
+/root/projects/AGENTS.md	15417	2026-10-10
+/root/projects/Auto-Agent.md	3539	2026-10-22
+/root/projects/MusGo.json	80436	2026-10-10
+/root/projects/Prompt_Instructions_Project_Progress_Workflow.md	19130	2026-10-22
+/root/projects/_gen_index.py	6496	2026-10-22
+/root/projects/blueprint_manifest.json	925105	2026-11-09
+/root/projects/welcome.html	10662	2026-10-20

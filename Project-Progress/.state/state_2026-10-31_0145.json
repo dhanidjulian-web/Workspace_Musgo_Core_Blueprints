@@ -1,0 +1,109 @@
+{
+  "timestamp_local": "2026-10-31T01:45:00+07:00",
+  "mode": "VERIFIED-LIVE",
+  "result": "DETAK_JANTUNG_OK",
+  "workspace": {
+    "path": "/root/projects",
+    "root_entries": 14,
+    "index_md": 364722,
+    "agent_index_md": 191684,
+    "agents_skills_index_md": 9443,
+    "project_progress_subdirs": [
+      ".state",
+      "Knowledge",
+      "Runtime",
+      "config",
+      "memory"
+    ],
+    "git_ops": 0,
+    "read_only": true
+  },
+  "repo": {
+    "path": "/root/Repository MusGo-OS_2in1-main",
+    "remote": "git@github.com:dhanidjulian-web/MusGo-OS_2in1.git",
+    "auth": "ssh-ed25519 musgo-auto-agent (no PAT)",
+    "branch": "main",
+    "head": "6b2af4ee1feea8fc5686e5a9019d60378a652f96",
+    "fetch_exit": 0,
+    "ahead": 0,
+    "behind": 0,
+    "porcelain": 0,
+    "tracked": 1591,
+    "pyc_tracked": 0,
+    "root_dirs": 28,
+    "layer_dirs": 21
+  },
+  "modules": {
+    "mcl_enforcer": {
+      "path": "constitutional_domain/layer_00_governor/mcl_enforcer",
+      "files": 5,
+      "test": "13/13 PASS | 0 FAIL",
+      "rules_hash": "9c926b018e37b38b",
+      "fail_closed": true
+    },
+    "ai_provider_9router": {
+      "path": "cognitive_domain/layer_05_agent_orchestration/ai_provider_9router",
+      "files_tracked": 17,
+      "health": "{\"ok\":true}",
+      "models": 861,
+      "providers": 86,
+      "allowlist": 69,
+      "budget": "daily $5 / monthly $100 -> block"
+    }
+  },
+  "runtime_artifacts": {
+    "tracked": 2,
+    "logs_tracked": 0,
+    "gitignored": true,
+    "files_on_disk_kept": true
+  },
+  "signals": {
+    "sms": 0,
+    "notifications": 0,
+    "scheduled_tasks": 0,
+    "stale_memory": 0,
+    "due_tasks": 0
+  },
+  "actions": {
+    "code_changes": 0,
+    "commits": 0,
+    "pushes": 0,
+    "runtime_restore": [
+      "9router setsid restart"
+    ]
+  },
+  "open_items": [
+    "9router autostart boot permanen butuh VPS S1 (proot tanpa systemd/cron)",
+    "Audit Fase 3-7 belum lanjut (bawah 553/776=71.3% | atas 634/776=81.7% | gap 97/776=12.5% | tinjau 45/776=5.8%)",
+    "crano.ai Telegram login = CLOSED (login gagal di sisi layanan, bukan pelanggaran)"
+  ],
+  "vps_levels": [
+    "S0",
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "S5",
+    "S6",
+    "S7",
+    "S8",
+    "S9",
+    "S10",
+    "S11",
+    "S12",
+    "S13",
+    "S14",
+    "S15",
+    "S16"
+  ],
+  "tiers": [
+    "FREE",
+    "LIGHT",
+    "LITE",
+    "MEDIUM",
+    "CREATOR",
+    "PRO",
+    "TEAM",
+    "ENTERPRISE"
+  ]
+}

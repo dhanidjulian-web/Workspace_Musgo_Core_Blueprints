@@ -1,0 +1,36 @@
+{
+  "snapshot_at": "2026-10-26T22:25:00+07:00",
+  "component": "9router",
+  "state": "RUNNING",
+  "install": {
+    "version": "0.5.111",
+    "path": "/usr/local/lib/node_modules/9router",
+    "size": "77M",
+    "binary": "/usr/local/bin/9router"
+  },
+  "runtime_home": {
+    "path": "/root/.9router",
+    "size": "20M",
+    "contents": ["db/", "jwt-secret", "runtime/"],
+    "sqlite_dep_ready": true
+  },
+  "node": {"version": "18.20.4", "satisfies_requirement": true},
+  "npm": {"version": "9.2.0"},
+  "server": {
+    "host": "127.0.0.1",
+    "port": 20128,
+    "listening": true,
+    "health": {"ok": true},
+    "dashboard_url": "http://127.0.0.1:20128",
+    "login_url": "http://127.0.0.1:20128/login"
+  },
+  "registry": {"models": 861, "providers": 86},
+  "start_command": "node /usr/local/lib/node_modules/9router/cli.js --no-browser --host 127.0.0.1 --port 20128 --skip-update",
+  "persistence": "background job (session bg-1) — TIDAK auto-restart saat reboot",
+  "known_pitfalls": [
+    "npm install -g gagal di proot (rename ENOENT) — pakai npm pack + tar",
+    "wajib --no-browser agar CLI tidak hang",
+    "jangan pakai --help (hang karena update-check)",
+    "wajib background=true agar proses tidak dibunuh"
+  ]
+}

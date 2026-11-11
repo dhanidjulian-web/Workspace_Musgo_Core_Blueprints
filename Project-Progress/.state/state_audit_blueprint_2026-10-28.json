@@ -1,0 +1,72 @@
+{
+  "snapshot": "audit_blueprint_vs_repo",
+  "timestamp_wib": "2026-10-28T23:10:00+07:00",
+  "founder": "Dhani Yuliawan",
+  "status": "PARSIAL_FASE_1_SELESAI",
+  "phase_done": 1,
+  "phase_total": 7,
+  "paths": {
+    "blueprint": "/root/projects",
+    "blueprint_core": "/root/projects/Blueprints_MusGo-OS_2in1",
+    "repo_target": "/root/Repository MusGo-OS_2in1-main",
+    "save_path": "/root/projects/Project-Progress"
+  },
+  "source_of_truth": "Blueprints_MusGo-OS_2in1/STRUKTUR REPOSITORY FINAL.md (V9.1, 2287 baris)",
+  "counts": {
+    "blueprint_files": 5735,
+    "blueprint_md": 4939,
+    "repo_files": 1586,
+    "repo_py": 751,
+    "domain_root_blueprint": 27,
+    "layer_blueprint": 21,
+    "layer_repo": 21,
+    "layer_names_identical": true,
+    "py_expected": 375,
+    "py_match_exact": 220,
+    "py_percent_exact": 58.7,
+    "modules_expected": 206,
+    "modules_present": 147,
+    "modules_percent": 71.4,
+    "yaml_expected": 200,
+    "yaml_present": 83,
+    "yaml_percent": 41.5,
+    "layers_100_percent": 7
+  },
+  "verdict": {
+    "structure": "COCOK_SEMPURNA",
+    "module_content": "SEBAGIAN_58_7_PERSEN_BATAS_BAWAH",
+    "yaml_config": "GAP",
+    "full_integration": "BELUM_TERBUKTI"
+  },
+  "proven_gaps": [
+    {
+      "layer": "runtime_domain/layer_12_resource_engine",
+      "blueprint": ["cpu_governor.py", "thread_pool_manager.py", "cpu_config.yaml"],
+      "repo": ["cpu_budget/cpu_budget.py"],
+      "missing": ["thread_pool_manager.py", "cpu_config.yaml"]
+    }
+  ],
+  "proven_renames": {
+    "cpu_governor.py": "cpu_budget.py",
+    "kyber_engine.py+dilithium_engine.py": "quantum_resistant.py",
+    "tracer.py": "distributed_tracer.py"
+  },
+  "not_audited": [
+    "zero_trust_security_coverage",
+    "agents_skills_prompts_workflows_hooks",
+    "fungsi_specs",
+    "code_logic_completeness",
+    "tasks", "flows",
+    "tier_8_content_match",
+    "vps_S0_S16_in_code"
+  ],
+  "rules_locked": [
+    "notasi VPS wajib S0..S16 (17 level), bukan 0-16 numerik",
+    "tier user = 8",
+    "bandingkan peran bukan jumlah file mentah",
+    "cek varian nama sebelum simpulkan file absen",
+    "jangan klaim terintegrasi penuh tanpa fase 2-7"
+  ],
+  "next": "FASE 2 = ekstraksi verbatim VPS S0-S16 + 8 tier",
+  "if_repo_lost": "clone ulang via SSH: git@github.com:dhanidjulian-web/MusGo-OS_2in1.git ke /root/Repository MusGo-OS_2in1-main"
+}

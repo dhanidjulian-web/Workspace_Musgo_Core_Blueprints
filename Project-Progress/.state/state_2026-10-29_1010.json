@@ -1,0 +1,65 @@
+{
+  "snapshot_id": "state_2026-10-29_1010",
+  "captured_at": "2026-10-29T10:10:00+07:00",
+  "mode": "VERIFIED_LIVE",
+  "workspace": {
+    "path": "/root/projects",
+    "entries": 14,
+    "indices": {
+      "INDEX.md": 364722,
+      "AGENT_INDEX.md": 191684,
+      "INDEX_AGENTS_SKILLS.md": 9443
+    },
+    "project_progress_subdirs": [
+      ".state",
+      "Knowledge",
+      "Runtime",
+      "config",
+      "memory"
+    ],
+    "access": "READ_ONLY_REFERENCE"
+  },
+  "repo_target": {
+    "path": "/root/Repository MusGo-OS_2in1-main",
+    "remote": "git@github.com:dhanidjulian-web/MusGo-OS_2in1.git",
+    "auth": "SSH_ED25519_no_PAT",
+    "branch": "main",
+    "head": "7246b8e13526d5e296dd0f4534a8aae4b434e8ee",
+    "head_date": "2026-10-27T18:31:31+00:00",
+    "fetch_exit": 0,
+    "ahead": 0,
+    "behind": 0,
+    "porcelain_lines": 0,
+    "drift": false
+  },
+  "active_module": {
+    "path": "cognitive_domain/layer_05_agent_orchestration/ai_provider_9router",
+    "files": 13,
+    "models": 861,
+    "providers": 86,
+    "allowlist_passed": 69,
+    "guardrails": {
+      "deny_by_default": true,
+      "fail_closed": true,
+      "audit_all_calls": true
+    },
+    "budget": {
+      "daily_usd": 5,
+      "monthly_usd": 100,
+      "on_exceed": "block"
+    }
+  },
+  "signals": {
+    "sms_new": 0,
+    "notifications_new": 0,
+    "scheduled_tasks": 0,
+    "stale_memory": 0,
+    "due_tasks": 0
+  },
+  "open_items": [
+    "untrack runtime_artifacts/logs/ (6 files tracked, .gitignore gap=0) - awaiting Founder approval",
+    "confirm Telegram login crano.ai from Padang (IPv6 2404:00c0:d002:de13:...) since 2026-10-23 02:37 WIB",
+    "9router pending: MUSGO_9ROUTER_API_KEY, supervisor autostart (proot no systemd), push module to Workspace_Musgo_Core_Blueprints"
+  ],
+  "result": "DETAK_JANTUNG_OK"
+}

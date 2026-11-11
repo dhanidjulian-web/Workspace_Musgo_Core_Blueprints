@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OpenShell — Welcome Canvas</title>
+  <style>
+    :root {
+      --bg: #10050d;
+      --bg-2: #09020a;
+      --accent: #289b58;
+      --accent-2: #387bc9;
+      --text: #f4f8ff;
+      --muted: #acc0df;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        radial-gradient(900px 500px at 20% 20%, rgba(0, 0, 0, 0.2), transparent 60%),
+        radial-gradient(900px 500px at 80% 15%, rgba(131, 131, 131, 0.16), transparent 60%),
+        linear-gradient(180deg, var(--bg), var(--bg-2));
+      overflow: hidden;
+      font-family: "Avenir Next", "Segoe UI", sans-serif;
+    }
+    canvas {
+      width: 100vw;
+      height: 100vh;
+      display: block;
+      touch-action: none;
+      cursor: crosshair;
+      position: fixed;
+      inset: 0;
+      z-index: 1;
+    }
+
+    .overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    .hero {
+      position: absolute;
+      left: 50%;
+      top: 48%;
+      transform: translate(-50%, -50%);
+      width: min(760px, calc(100vw - 40px));
+      text-align: center;
+      padding: 22px 24px;
+      border-radius: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      background: linear-gradient(165deg, rgba(8, 12, 24, 0.58), rgba(14, 24, 44, 0.42));
+      backdrop-filter: blur(2px);
+      box-shadow: 0 14px 36px rgba(0, 0, 0, 0.35);
+    }
+
+    .kicker {
+      margin: 0 0 8px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      font-size: 11px;
+      color: var(--accent-2);
+      font-weight: 700;
+    }
+
+    .shell {
+      color: var(--text);
+    }
+
+    h1 {
+      margin: 0;
+      color: var(--text);
+      font-size: clamp(28px, 4.2vw, 48px);
+      line-height: 1.08;
+      font-weight: 800;
+      text-shadow: 0 4px 24px rgba(124, 139, 255, 0.24);
+    }
+
+    .sub {
+      margin: 12px auto 0;
+      color: var(--muted);
+      font-size: clamp(14px, 2vw, 19px);
+      line-height: 1.42;
+      max-width: 56ch;
+    }
+
+    .hint {
+      position: absolute;
+      right: 18px;
+      top: 14px;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      border: 1px solid rgba(163, 174, 253, 0.55);
+      background: rgba(13, 18, 33, 0.76);
+      color: var(--text);
+      border-radius: 999px;
+      padding: 8px 12px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .hint-arrow {
+      position: absolute;
+      right: 92px;
+      top: 54px;
+      width: clamp(86px, 19vw, 132px);
+      height: clamp(130px, 31vw, 190px);
+      opacity: 0.95;
+    }
+
+    @media (max-width: 700px) {
+      .hero { top: 50%; }
+      .hint { right: 10px; top: 10px; font-size: 11px; padding: 7px 10px; }
+      .hint-arrow { right: 66px; top: 42px; width: 86px; height: 132px; }
+    }
+  </style>
+</head>
+<body>
+  <canvas id="gestureCanvas" aria-label="Canvas Gestures"></canvas>
+  <!-- Check docs: docs/README.md and docs/CUSTOM_TOOLS_GUIDE.md -->
+  <div class="overlay" aria-hidden="true">
+    <svg class="hint-arrow" viewBox="0 0 100 170" fill="none" xmlns="http://www.w3.org/2000/svg" role="presentation" aria-hidden="true">
+      <defs>
+        <linearGradient id="arrowFade" x1="50" y1="164" x2="50" y2="12" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="rgba(244,248,255,0)"/>
+          <stop offset="0.62" stop-color="rgba(244,248,255,0.58)"/>
+          <stop offset="1" stop-color="rgba(244,248,255,0.98)"/>
+        </linearGradient>
+      </defs>
+      <path d="M50 164V24" stroke="url(#arrowFade)" stroke-width="4" stroke-linecap="round"/>
+      <path d="M38 36L50 18L62 36" stroke="rgba(244,248,255,0.98)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <div class="hero">
+      <p class="kicker">Open<span class="shell">Shell</span></p>
+      <h1>Welcome. Your first preview file is ready.</h1>
+      <p class="sub">This page lives in <strong>~/home/welcome.html</strong>. Open it in the editor, change anything, and save to see your own version.</p>
+    </div>
+  </div>
+
+  <script>
+    const canvas = document.getElementById('gestureCanvas');
+    const ctx = canvas.getContext('2d');
+    const DPR = Math.min(window.devicePixelRatio || 1, 2);
+
+    const state = {
+      lastTap: 0,
+      wind: { x: 0, y: 0 },
+      attractors: [],
+      gesture: { startX: 0, startY: 0, startTime: 0, moved: false },
+      pointer: { x: 0, y: 0, active: false }
+    };
+
+    const particles = [];
+    const baseCount = 140;
+
+    function resize() {
+      const { width, height } = canvas.getBoundingClientRect();
+      canvas.width = width * DPR;
+      canvas.height = height * DPR;
+      ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+      if (particles.length === 0) initParticles(width, height);
+    }
+
+    function initParticles(width, height) {
+      particles.length = 0;
+      for (let i = 0; i < baseCount; i++) {
+        particles.push({
+          x: Math.random() * width,
+          y: Math.random() * height,
+          vx: (Math.random() - 0.5) * 0.8,
+          vy: (Math.random() - 0.5) * 0.8,
+          r: 1.2 + Math.random() * 2.4,
+          hue: 220 + Math.random() * 80
+        });
+      }
+    }
+
+    function addAttractor(x, y, strength, life, swirl = 0) {
+      state.attractors.push({ x, y, strength, life, swirl });
+    }
+
+    function applyGestureEffect(type, x, y, dx = 0, dy = 0) {
+      if (type === 'tap') {
+        addAttractor(x, y, -1200, 600);
+      }
+      if (type === 'double') {
+        addAttractor(x, y, 2200, 900, 1.2);
+      }
+      if (type === 'long') {
+        addAttractor(x, y, 3200, 1200, 2.2);
+      }
+      if (type === 'swipe') {
+        state.wind.x = dx * 0.003;
+        state.wind.y = dy * 0.003;
+      }
+    }
+
+    function pointerDown(event) {
+      const rect = canvas.getBoundingClientRect();
+      const x = event.clientX - rect.left;
+      const y = event.clientY - rect.top;
+      state.gesture.startX = x;
+      state.gesture.startY = y;
+      state.gesture.startTime = performance.now();
+      state.gesture.moved = false;
+      state.pointer = { x, y, active: true };
+    }
+
+    function pointerMove(event) {
+      if (!state.pointer.active) return;
+      const rect = canvas.getBoundingClientRect();
+      const x = event.clientX - rect.left;
+      const y = event.clientY - rect.top;
+      state.pointer.x = x;
+      state.pointer.y = y;
+      const dx = x - state.gesture.startX;
+      const dy = y - state.gesture.startY;
+      if (Math.hypot(dx, dy) > 10) state.gesture.moved = true;
+    }
+
+    function pointerUp(event) {
+      const rect = canvas.getBoundingClientRect();
+      const x = event.clientX - rect.left;
+      const y = event.clientY - rect.top;
+      const elapsed = performance.now() - state.gesture.startTime;
+      const dx = x - state.gesture.startX;
+      const dy = y - state.gesture.startY;
+      const distance = Math.hypot(dx, dy);
+
+      if (!state.gesture.moved && elapsed > 500) {
+        applyGestureEffect('long', x, y);
+      } else if (!state.gesture.moved && elapsed < 250) {
+        if (performance.now() - state.lastTap < 300) {
+          applyGestureEffect('double', x, y);
+          state.lastTap = 0;
+        } else {
+          applyGestureEffect('tap', x, y);
+          state.lastTap = performance.now();
+        }
+      } else if (distance > 60 && elapsed < 900) {
+        applyGestureEffect('swipe', x, y, dx, dy);
+      }
+
+      state.pointer.active = false;
+      state.gesture.startTime = 0;
+    }
+
+    canvas.addEventListener('pointerdown', pointerDown);
+    canvas.addEventListener('pointermove', pointerMove);
+    canvas.addEventListener('pointerup', pointerUp);
+    canvas.addEventListener('pointerleave', pointerUp);
+
+    function updateAttractors(dt) {
+      state.attractors = state.attractors.filter((a) => {
+        a.life -= dt;
+        return a.life > 0;
+      });
+    }
+
+    function draw(time) {
+      const { width, height } = canvas.getBoundingClientRect();
+      ctx.clearRect(0, 0, width, height);
+
+      const now = performance.now();
+      const dt = Math.min(now - (state.lastFrame || now), 32);
+      state.lastFrame = now;
+
+      updateAttractors(dt);
+
+      ctx.fillStyle = 'rgba(124, 139, 255, 0.35)';
+      ctx.strokeStyle = 'rgba(124, 139, 255, 0.18)';
+
+      particles.forEach((p) => {
+        let ax = state.wind.x;
+        let ay = state.wind.y;
+
+        if (state.pointer.active) {
+          const dx = state.pointer.x - p.x;
+          const dy = state.pointer.y - p.y;
+          const d = Math.max(80, Math.hypot(dx, dy));
+          const force = 1200 / (d * d);
+          ax += dx * force;
+          ay += dy * force;
+        }
+
+        state.attractors.forEach((a) => {
+          const dx = a.x - p.x;
+          const dy = a.y - p.y;
+          const d = Math.max(40, Math.hypot(dx, dy));
+          const force = a.strength / (d * d);
+          const swirl = a.swirl;
+          ax += dx * force - dy * swirl * force;
+          ay += dy * force + dx * swirl * force;
+        });
+
+        p.vx = (p.vx + ax * 0.016) * 0.985;
+        p.vy = (p.vy + ay * 0.016) * 0.985;
+        p.x += p.vx;
+        p.y += p.vy;
+
+        if (p.x < 0 || p.x > width) p.vx *= -0.9;
+        if (p.y < 0 || p.y > height) p.vy *= -0.9;
+        p.x = (p.x + width) % width;
+        p.y = (p.y + height) % height;
+
+        ctx.beginPath();
+        ctx.fillStyle = `hsla(${p.hue}, 85%, 70%, 0.6)`;
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        ctx.fill();
+      });
+
+      for (let i = 0; i < particles.length; i++) {
+        for (let j = i + 1; j < particles.length; j++) {
+          const a = particles[i];
+          const b = particles[j];
+          const dist = Math.hypot(a.x - b.x, a.y - b.y);
+          if (dist < 120) {
+            ctx.globalAlpha = 1 - dist / 120;
+            ctx.beginPath();
+            ctx.moveTo(a.x, a.y);
+            ctx.lineTo(b.x, b.y);
+            ctx.stroke();
+          }
+        }
+      }
+      ctx.globalAlpha = 1;
+
+      requestAnimationFrame(draw);
+    }
+
+    window.addEventListener('resize', resize);
+    resize();
+    draw();
+  </script>
+</body>
+</html>

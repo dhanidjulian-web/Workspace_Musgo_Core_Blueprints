@@ -1,0 +1,45 @@
+{
+  "timestamp": "2026-10-27T17:30:00+07:00",
+  "founder": "Dhani Yuliawan",
+  "task": "bersihkan/pindahkan artefak 9router dari /root ke clone repo",
+  "repo": {
+    "path": "/root/Repository MusGo-OS_2in1-main",
+    "head_before": "67bc8ed",
+    "head_after": "19c0a8c",
+    "sync": { "ahead": 0, "behind": 0 }
+  },
+  "moved": {
+    "from": ["/root/9router-install/", "/root/9r.log", "/root/9router_run.log"],
+    "to": "cognitive_domain/layer_05_agent_orchestration/ai_provider_9router/runtime_artifacts/",
+    "files": 8,
+    "size": "1.1M",
+    "verified_identical": true,
+    "deleted_source_after_push": true
+  },
+  "kept_in_root": {
+    "path": "/root/.9router",
+    "size": "20M",
+    "reasons": [
+      "masih aktif dipakai server 9router yang berjalan",
+      "berisi secret: jwt-secret, auth/cli-secret",
+      "berisi runtime/node_modules ~19MB (sql.js)"
+    ]
+  },
+  "security_checks": {
+    "secret_scan": "CLEAN - tidak ada jwt-secret/cli-secret/sk-*/ghp_*/api_key",
+    "catalog_structure": "metadata only: v, etag, syncedAt, models, providers",
+    "gitignore_hardened": [".9router/", "**/jwt-secret", "**/cli-secret", "**/auth/cli-secret", "**/runtime/node_modules/"],
+    "check_ignore_test": "PASS"
+  },
+  "verification": {
+    "cmp_8_files": "ALL IDENTICAL",
+    "remote_files_confirmed": 9,
+    "server_after_cleanup": "http=200 {\"ok\":true}"
+  },
+  "root_remaining": ["/root/.9router (20M)"],
+  "pending": [
+    "API key valid untuk chat nyata end-to-end",
+    "supervisor autostart (proot tanpa systemd)",
+    "push ringkasan ke Workspace_Musgo_Core_Blueprints"
+  ]
+}

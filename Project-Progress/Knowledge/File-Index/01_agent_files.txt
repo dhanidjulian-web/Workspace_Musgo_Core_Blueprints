@@ -1,0 +1,7 @@
+/root/projects/Agent files/MindPal Agent - MUSGO-OS 2in1 Core Intelligence Engine.json	2472	2026-10-20
+/root/projects/Agent files/MusGo.json	80436	2026-10-20
+/root/projects/Agent files/kunciai cline_custom_modes.json	170	2026-10-20
+/root/projects/Agent files/kunciai cursor-settings.json	137	2026-10-20
+/root/projects/Agent files/kunciai opencode.json	427	2026-10-20
+/root/projects/Agent files/musgo-os-software-architect.json	64380	2026-10-20
+/root/projects/Agent files/wan2-5-t2v-preview.json	5871	2026-10-20

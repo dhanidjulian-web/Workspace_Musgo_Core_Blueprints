@@ -1,6 +1,6 @@
 # PROJECT PROGRESS — GOVERNANCE & CONFIGURATION GUIDE
 
-**Lokasi:** `/home/Project-Progress/config/README.md`
+**Lokasi:** `/root/projects/Project-Progress/config/README.md`
 **Pemilik:** DHANI YULIAWAN · **Versi Config:** 1.0.0
 
 Dokumen ini adalah peta konfigurasi kanonik untuk workflow `Prompt_Instructions_Project_Progress_Workflow.md`.
@@ -44,7 +44,7 @@ Jika dua konfigurasi bertentangan → **yang nomor lebih kecil menang**, dan kon
 ## 3. Cara Pakai (Founder / Agent)
 
 ```bash
-cd /home/Project-Progress
+cd /root/projects/Project-Progress
 
 # 1) Bootstrap struktur memory, knowledge, runtime, .state
 bash config/scripts/bootstrap.sh
@@ -64,7 +64,7 @@ Contoh di dalam kode Python:
 import sys; sys.path.insert(0, "config/scripts")
 from musgo_config import load_config, resolve
 cfg = load_config()
-print(resolve(cfg, "memory"))            # /data/.../home/Project-Progress/memory
+print(resolve(cfg, "memory"))            # /data/.../root/projects/Project-Progress/memory
 ```
 
 ---
@@ -81,15 +81,15 @@ print(resolve(cfg, "memory"))            # /data/.../home/Project-Progress/memor
 
 ## 5. Catatan Path (Penting)
 
-Prompt menuliskan `# 1. Analisa dir path /home/Project-Progress/`.
-Pada device ini, root writable adalah `/data/user/0/com.openshell/files`,
+Prompt menuliskan `# 1. Analisa dir path /root/projects/Project-Progress/`.
+Pada device ini, root writable adalah ``,
 sehingga path nyata adalah:
 
 ```
-/data/user/0/com.openshell/files/home/Project-Progress/
+/root/projects/Project-Progress/
 ```
 
-Notasi `/home/...` diperlakukan sebagai **path logis** (`root_dirs.prompt_root`).
+Notasi `/root/projects/...` diperlakukan sebagai **path logis** (`root_dirs.prompt_root`).
 Untuk memindahkan environment (mis. ke VPS/Linux biasa), cukup ubah `root_dirs` di `paths.yaml`
 atau set env `MUSGO_HOME` / `MUSGO_WORKSPACE`. Tidak ada file lain yang perlu disentuh.
 

@@ -1,0 +1,45 @@
+{
+  "timestamp": "2026-10-27T00:00:00+07:00",
+  "founder": "Dhani Yuliawan",
+  "task": "config 9router untuk MusGo-OS 2in1",
+  "repo_target": {
+    "path": "/root/Repository MusGo-OS_2in1-main",
+    "remote": "git@github.com:dhanidjulian-web/MusGo-OS_2in1.git",
+    "transport": "ssh",
+    "pat_used": false
+  },
+  "commits": {
+    "f60f297": "feat(layer_05): modul ai_provider_9router (sesi sebelumnya)",
+    "dc451fe": "chore: .gitignore repo",
+    "174b567": "docs(layer_05): README + scripts/9router_ctl.sh (SESI INI, PUSHED)"
+  },
+  "head": "174b567",
+  "sync": { "ahead": 0, "behind": 0 },
+  "module_path": "cognitive_domain/layer_05_agent_orchestration/ai_provider_9router",
+  "files_total": 13,
+  "test": {
+    "offline": "10 PASS / 0 FAIL",
+    "live": "4/4 PASS",
+    "health": "{\"ok\":true}",
+    "models_total": 861,
+    "providers": 86,
+    "allowlist_pass": 69,
+    "routing_resolved": "deepseek/deepseek-chat",
+    "fail_closed": "verified"
+  },
+  "principles": { "deny_by_default": true, "fail_closed": true, "audit_all_calls": true },
+  "pitfalls_proot": [
+    "nohup & dibunuh setelah tool call",
+    "ss/ps tidak andal - gunakan curl /api/health"
+  ],
+  "start_command": "node /usr/local/lib/node_modules/9router/cli.js --no-browser --host 127.0.0.1 --port 20128 --skip-update",
+  "pending": [
+    "API key valid untuk chat nyata end-to-end",
+    "supervisor autostart (proot tanpa systemd)",
+    "push versi modul ke Workspace_Musgo_Core_Blueprints"
+  ],
+  "stray_files_not_deleted": [
+    "Runtime/scripts/musgo_config.py",
+    "config/scripts/musgo_config.py"
+  ]
+}

@@ -2266,10 +2266,61 @@
 · agent_sandbox/
 · resource_governor/
 · persona_communication_policy/
+· agents_skills/  (Domain root: Daftar Agents & Skills — Agent↔Skill Duality)
 · .github/
 · <tambahan folder/file> jika ada  Update 
 
 ```
+
+================================================================================
+## 📁 agents_skills/ — DETAIL STRUKTUR (Update 2026-11-11)
+================================================================================
+
+```
+📁 agents_skills/
+├── 📄 README.md                    (posisi arsitektural + prinsip duality)
+├── 📄 SECURITY.md                  (deny_by_default, fail_closed, audit_all_calls)
+├── 📄 API.md                       (endpoint konseptual resolve_pair/load_agent)
+├── 📄 INDEX_AGENTS_SKILLS.md       (master index: 100 pair Agent<->Skill)
+├── 📁 agents/                      (70 AGENT persona sejati)
+│   ├── 1. CORE GOVERNOR AGENT.md
+│   ├── 24. AI GOVERNOR AGENT.md
+│   ├── 75. ECOSYSTEM EXPANSION AGENT.md
+│   └── Auto-Agent.md               (kelompok 90 — khusus Orchestrator)
+├── 📁 skills/                      (39 SKILL root)
+│   ├── 1. software architecture.md
+│   └── creating-agent-skills.md
+├── 📁 packs/                       (37 skill pack, 4.294 file)
+│   ├── composio-skills/            (833)
+│   ├── Anthropic-Cybersecurity-Skills-main/ (759)
+│   ├── awesome-copilot-main/       (379)
+│   ├── skills-main nVidia/         (321)
+│   ├── Android_skills-main/        (305)
+│   └── <32 pack lain>
+└── 📁 _artifacts/
+    └── RECONCILIATION.json         (manifest rekonsiliasi INDEX vs file)
+```
+
+## PRINSIP FUNDAMENTAL
+Memilih suatu Agent berarti juga memilih konteks Skill yang relevan (kelompok sama).
+Relasi dua arah: Agent<->Skill dalam satu kelompok numerik identik.
+
+## PEMISAHAN DARI PERSONA (mengikat)
+| Kategori | Pemakai | Lokasi |
+|---|---|---|
+| Agents & Skills | Semua Agent MusGo-OS 2in1 | agents_skills/ |
+| 525 Persona | Default Local Model SAJA (AI Live Guide) | ai_live_guide/ + cognitive_domain/persona_registry/ |
+
+Agent TIDAK memakai persona. Persona hanya untuk AI Live Guide berbasis konteks interaksi user.
+
+## STATISTIK
+- Total file: 4.409 (4.408 blueprint + scaffold)
+- AGENT persona: 70 · SKILL: 39 · Pack: 37 direktori (4.294 file)
+- Index: 100 pair · Kelompok numerik: 0-75 + 90 (khusus)
+- Ukuran: 58 MB
+
+================================================================================
+
 ---
 Sign
 

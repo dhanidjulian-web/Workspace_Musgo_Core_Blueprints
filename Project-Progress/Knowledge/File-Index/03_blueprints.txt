@@ -1,0 +1,1230 @@
+/root/projects/Blueprints_MusGo-OS_2in1/.blueprint_index.json	580814	2026-10-20
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/Bahasan Ai live Guide - Ai Auto Suggests.md	33630	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/Bahasan Fitur-fitur Musgo-OS.md	123720	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/Bahasan Menu-Task.md	150562	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/Bahasan Read Only File System.md	179360	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/Bahasan Tier User.md	94689	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/Blueprint Index.md	13108	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/CORE SKILL_UNIFIED_SECURITY_KNOWLEDGE_BASE.md	530000	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/Core 525+ Persona.md	423608	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/Core Arsitektur Sovereign AI MusGo-OS.md	513444	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/Core Blueprint Musgo-OS Bahasa Manusia.md	461955	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/Core DS Blueprint Deskripsi Bahasa Manusia.md	121787	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/Core DS Master Ultimate Menu & Fitur.md	111836	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/Core DS_FullBlueprint.md	320600	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/Core Fitur-fitur MusGo-OS 2in1Blueprint.md	64238	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/Core FullCompletedRepoLinks.md	38527	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/Core HUMAN SUGGEST ENGINE.md	353004	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/Core MUSGO-OS V9.1 — STRUKTUR REPOSITORY FINAL.md	86168	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/Core Master ROM Index V1.0 Musgo-OS 2in1.md	3384893	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/Core MusGo-OS Enterprise Blueprint Framework.md	2119057	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/Core NotebookLM_Instruction_Custom.md	7912	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/Core QW_FullBlueprint.md	166436	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/Core Qwen Daftar Links repo.md	20611	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/Core Security Holes Scan — CYBER SECURITY & NETWORKING SYSTEM PROMPT INSTRUCTION.md	22630	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/Core Security_Holes Prompt Instruction.md	5068	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/Core User Tier - Musgo-OS Monetisasi.md	48351	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/Core V9.1 Update Master Index Repo.md	284566	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/Core VPS Scalable Musgo-OS.md	31057	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/Core_Architecture_Blueprint_Musgo-OS.md	862393	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/Framework platform.md	12356	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/Gems Blueprint MusGo-OS_ AI, Keamanan, Bisnis.md	62173	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/Gems Pembuatan Runtime Controller GoMu-OS.md	43373	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/Gems Riset Pengetahuan Umum Terstruktur Terpisah.md	40398	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/Gems Spesifikasi Arsitektur Read-Only & Overlay Manager (MIAS) MusGo-OS V9.1.md	8340	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/Gems Spesifikasi Protokol Failover Gubernur & Shadow SSH (MGP) MusGo-OS V9.1.md	4916	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/Gems Spesifikasi Teknis Modul Cognitive-to-Kernel Interface (MGCKP) MusGo-OS V9.1.md	6678	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/MUSGO-OS Domain Blueprint.md	136512	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/Report 0-2. Sovereign AI Operating System + Economic System + Civilization Infrastructure.md	67323	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/Report 0.1. Modul Cyber Security Musgo-OS V9.1 Update.md	66959	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/Report 3. MUSGO-OS INFRASTRUCTURE & RUNTIME SYSTEM PART 101–140.md	63180	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/Report 4. MUSGO-OS GOVERNANCE PART 141-180.md	73023	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/Report 5. MUSGO-OS DATA STORAGE & RESILIENCE SYSTEM PART 181–210.md	79432	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/Report Core Database Musgo-OS.md	23206	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/Report MusGo Governor Constitutional Framework.md	87307	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/Report Security Holes 0,1,2 Sovereign AI Operating System + Economic System + Civilization Infrastructure.md	31250	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/Report Security Holes Blueprint Database Update.md	69646	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/Report Security Holes V9.1 Update.md	54287	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/Report VPS SCALABLE.md	64229	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/Report riset mendalam gemini.md	14227	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/SDK List.md	11288	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/SKILL_CYBER SECURITY & NETWORKING KNOWLEDGE BASE_ETHACK.md	15440	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/SKILL_KNOWLEDGE BASE — CYBER SECURITY & NETWORKING_AMELIA.md	9560	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/Semua Catatan 0.1. Modul Cyber Security Musgo-OS V9.1 Update.md	311429	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/Semua Catatan 5. MUSGO-OS DATA STORAGE & RESILIENCE SYSTEM PART 181–210.md	263727	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/Semua Catatan 7-8-2026.md	101042	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/Semua Catatan Core Database Musgo-OS 2in1.md	777550	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/Semua Catatan Database Musgo-OS 2in1 (1).md	357554	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/Semua Catatan Database Musgo-OS 2in1.md	777550	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/Semua Catatan MusGo Governor Constitutional Framework + 525 Persona.md	357249	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/Semua catatan 0,1,2 Sovereign AI Operating System + Economic System + Civilization Infrastructure.md	125601	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/Semua catatan 4. MUSGO-OS SECURITY & IDENTITY GOVERNANCE PART 141-180.md	280818	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/Semua catatan VPS SCALABLE.md	100470	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/System Prompt Instruction Musgo-OS Custom.md	9800	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/TECHNICAL PERSPECTIVE (ARCHITECTURE & SOLUTIONS).md	85732	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/Tambahan Fitur-fitur.md	22489	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/Vibe-Mst COMPREHENSIVE SECURITY AUDIT & HARDENING REPORT.md	46339	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/VibeMst Autonomous Repository Design.md	279725	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/VibeMst Musgo-OS Blueprint Generate.md	138923	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/Whitepaper Teknis Sovereignty as a Service - SIaaS.md	44520	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/content.md	407823	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/doc_qwen & cs.md	565730	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/docs hugging face.md	109003	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/docs_1min_ai.md	347787	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/docs_hermes_agent.md	443643	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/docs_zapier.md	735546	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/0. Core_Blueprints_MUSGO-OS_2in1/semua catatan 3. MUSGO-OS INFRASTRUCTURE & RUNTIME SYSTEM PART 101–140.md	113467	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/AGENT_INDEX.md	191684	2026-10-20
+/root/projects/Blueprints_MusGo-OS_2in1/Ai Library/Awesome Free Models/Awesome Free Models.md	58827	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai Library/Awesome Free Models/awesome-free-models_README.md at main · 12britz_awesome-free-mod.pdf	550574	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai Library/Model Hosting Platforms/Model Hosting Platforms.md	56185	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/Agent files/MindPal Agent - MUSGO-OS 2in1 Core Intelligence Engine.json	2472	2026-10-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/Agent files/MusGo.json	80436	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/Agent files/kunciai cline_custom_modes.json	170	2026-10-20
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/Agent files/kunciai cursor-settings.json	137	2026-10-20
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/Agent files/kunciai opencode.json	427	2026-10-20
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/Agent files/musgo-os-software-architect.json	64380	2026-10-16
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/Agent files/wan2-5-t2v-preview.json	5871	2026-04-27
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/Gpt custom Hugging Face model.md	26367	2026-08-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/Grok_ai-open-source.md	12577	2026-02-15
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/1. CORE GOVERNOR AGENT.md	5327	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/1. software architecture.md	1102	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/10. SECURITY ENGINEER AGENT.md	6343	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/10. distributed systems expert.md	1711	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/11. INFRASTRUCTURE ENGINEER AGENT.md	5617	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/11. Next.js expert.md	1539	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/12. AI & INTELLIGENCE AGENTS.md	8458	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/12. Node.js expert focused on backend patterns.md	1428	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/13. AI ARCHITECT AGENT.md	5356	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/13. performance optimization expert.md	1578	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/14. AGENT ORCHESTRATOR AGENT.md	5737	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/14. Python expert focused.md	1516	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/15. PROMPT ENGINEER AGENT.md	7450	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/15. React expert focused.md	1680	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/16. RAG ENGINEER AGENT.md	6869	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/16. compliance expert.md	1389	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/17. KNOWLEDGE GRAPH ENGINEER.md	5981	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/17. senior security engineer performing.md	914	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/18. MEMORY SYSTEM ENGINEER.md	7699	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/18. Spring Boot expert.md	1742	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/19. AI SECURITY ENGINEER.md	12276	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/19. refactoring specialist.md	1578	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/2. SOFTWARE ARCHITECT AGENT.md	8742	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/2. bug detection specialist.md	1021	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/20. MLOPS ENGINEER AGENT.md	6248	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/20. testing specialist.md	1210	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/21. MODEL RESEARCH AGENT.md	6378	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/21. TypeScript expert.md	1458	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/22. AUTONOMOUS PLANNER AGENT.md	5061	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/22. Vue expert focused.md	1516	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/23. AUTONOMOUS EXECUTOR AGENT.md	6224	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/24. AI GOVERNOR AGENT	5131	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/25. AI SWARM COMMANDER AGENT.md	6790	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/26. PRODUCT MANAGER AGENT.md	6421	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/27. MONETIZATION STRATEGIST AGENT.md	8359	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/28. SAAS ARCHITECT AGENT.md	7687	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/29. MARKET RESEARCH AGENT.md	5338	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/3. BACKEND ENGINEER AGENT.md	6996	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/3. C# expert focused.md	1571	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/30. BUSINESS INTELLIGENCE AGENT.md	4893	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/31. GROWTH HACKER AGENT.md	5368	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/32. ENTERPRISE CONSULTANT AGENT.md	6067	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/33. INVESTOR DECK AGENT.md	6563	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/34. RESEARCH ANALYST AGENT.md	4966	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/35. TECHNICAL WRITER AGENT.md	5620	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/36. DOCUMENTATION GOVERNOR AGENT.md	5525	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/37. RISK ANALYST AGENT.md	6046	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/38. POLICY GOVERNOR AGENT.md	4383	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/39. COMPLIANCE AUDITOR AGENT.md	5504	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/4. FRONTEND ENGINEER AGENT.md	7824	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/4. code consistency expert.md	1193	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/40. STRATEGIC ADVISOR AGENT.md	5374	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/41. SECURITY GOVERNOR AGENT.md	5513	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/42. ZERO TRUST ARCHITECT AGENT.md	6668	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/43. THREAT HUNTER AGENT.md	6864	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/44. CYBER DEFENSE AGENT.md	6118	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/45. NETWORK ARCHITECT AGENT.md	6081	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/46. PROTOCOL ENGINEER AGENT.md	5736	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/47. FEDERATION ARCHITECT AGENT.md	6551	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/48. TRUST ENGINE AGENT.md	7918	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/49. CONSTITUTIONAL AI AGENT.md	6383	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/5. FULLSTACK ENGINEER AGENT.md	5382	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/5. code quality specialist.md	984	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/50. ETHICAL GOVERNOR AGENT.md	6022	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/51. CONSENSUS ARCHITECT AGENT.md	5136	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/52. DIGITAL SOVEREIGNTY AGENT.md	6342	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/53. INFRASTRUCTURE GOVERNOR AGENT.md	4968	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/54. RESILIENCE ENGINEER AGENT.md	5397	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/55. DISASTER RECOVERY AGENT.md	5459	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/56. SELF-HEALING ARCHITECT AGENT.md	6374	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/57. OBSERVABILITY ENGINEER AGENT.md	7860	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/58. RUNTIME SECURITY AGENT.md	5607	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/59. CIVILIZATION CONTINUITY AGENT.md	6401	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/6. DEVOPS ENGINEER AGENT.md	5963	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/6. dependency security expert.md	1358	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/60. QUANTUM SECURITY AGENT.md	8953	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/61. META GOVERNOR AGENT.md	4852	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/62. AGENT FACTORY AGENT.md	5825	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/63. AGENT REGISTRY AGENT.md	4272	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/64. SKILL REGISTRY AGENT.md	5196	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/65. CAPABILITY ROUTER AGENT.md	5644	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/66. KNOWLEDGE FEDERATION AGENT.md	6919	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/67. KNOWLEDGE CURATOR AGENT.md	7076	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/68. WORLD MODEL ENGINE.md	6706	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/69. STRATEGIC SIMULATION AGENT.md	5539	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/7. CI-CD ENGINEER AGENT.md	7951	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/7. documentation quality specialist.md	1191	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/70. SELF-EVOLUTION ENGINE.md	6005	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/71. AUTONOMOUS LEARNING ENGINE.md	6116	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/72. MEMORY FEDERATION AGENT.md	4440	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/73. DECISION ENGINE AGENT.md	5990	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/74. POLICY EVOLUTION AGENT.md	7773	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/75. ECOSYSTEM EXPANSION AGENT.md	6001	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/8. GITHUB MANAGER AGENT.md	6792	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/8. fallback reviewer for issues.md	1480	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/9. GraphQL expert focused.md	1674	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/9. QA ENGINEER AGENT.md	6218	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/Expert AI coding.md	2647	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/General-purpose.md	794	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/creating-agent-skills.md	4022	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/explorer.md	669	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/planner.md	1570	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/scheduler.md	615	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/agents/toolmaker.md	3920	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Daftar platform agent.md	4027	2026-06-04
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/.gitignore	28	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/README.md	2555	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/components.json	461	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/eslint.config.js	616	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/index.html	294	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/info.md	1385	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/package-lock.json	303263	2026-04-18
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/package.json	2568	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/postcss.config.js	80	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/public/wallpaper-default.jpg	56240	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/App.css	606	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/App.tsx	8236	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/apps/ApiTester.tsx	21177	2026-04-18
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/apps/AppRouter.tsx	5371	2026-04-18
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/apps/ArchiveManager.tsx	16257	2026-04-18
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/apps/AsciiArt.tsx	19336	2026-04-18
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/apps/Base64Tool.tsx	16467	2026-04-18
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/apps/Browser.tsx	22291	2026-04-18
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/apps/Calculator.tsx	14705	2026-04-18
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/apps/Calendar.tsx	25878	2026-04-18
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/apps/Chat.tsx	21058	2026-04-18
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/apps/Chess.tsx	22575	2026-04-18
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/apps/Clock.tsx	24691	2026-04-18
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/apps/CodeEditor.tsx	19630	2026-04-18
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/apps/ColorPalette.tsx	17330	2026-04-18
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/apps/ColorPicker.tsx	18264	2026-04-18
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/apps/Contacts.tsx	15392	2026-04-18
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/apps/DocumentViewer.tsx	13406	2026-04-18
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/apps/Drawing.tsx	15955	2026-04-18
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/apps/Email.tsx	24242	2026-04-18
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/apps/FileManager.tsx	16985	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/apps/FlappyBird.tsx	10139	2026-04-18
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/apps/FtpClient.tsx	15225	2026-04-18
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/apps/Game2048.tsx	11875	2026-04-18
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/apps/GitClient.tsx	21208	2026-04-18
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/apps/ImageGallery.tsx	12974	2026-04-18
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/apps/ImageViewer.tsx	12346	2026-04-18
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/apps/JsonFormatter.tsx	16367	2026-04-18
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/apps/MarkdownPreview.tsx	13950	2026-04-18
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/apps/MatrixRain.tsx	9687	2026-04-18
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/apps/MediaConverter.tsx	13987	2026-04-18
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/apps/Memory.tsx	11767	2026-04-18
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/apps/Minesweeper.tsx	13023	2026-04-18
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/apps/MusicPlayer.tsx	11696	2026-04-18
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/apps/NetworkTools.tsx	15096	2026-04-18
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/apps/Notes.tsx	19647	2026-04-18
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/apps/PasswordManager.tsx	13369	2026-04-18
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/apps/PhotoEditor.tsx	15204	2026-04-18
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/apps/Pong.tsx	14876	2026-04-18
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/apps/RegexTester.tsx	18132	2026-04-18
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/apps/Reminders.tsx	11571	2026-04-18
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/apps/RssReader.tsx	22509	2026-04-18
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/apps/ScreenRecorder.tsx	17211	2026-04-18
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/apps/Settings.tsx	22649	2026-04-18
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/apps/Snake.tsx	11330	2026-04-18
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/apps/Solitaire.tsx	17740	2026-04-18
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/apps/Spreadsheet.tsx	17502	2026-04-18
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/apps/Sudoku.tsx	16007	2026-04-18
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/apps/SystemMonitor.tsx	17530	2026-04-18
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/apps/Terminal.tsx	13265	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/apps/Tetris.tsx	16694	2026-04-18
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/apps/TextEditor.tsx	19769	2026-04-18
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/apps/TicTacToe.tsx	10064	2026-04-18
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/apps/Todo.tsx	17771	2026-04-18
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/apps/VideoPlayer.tsx	13599	2026-04-18
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/apps/VoiceRecorder.tsx	14327	2026-04-18
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/apps/Weather.tsx	23746	2026-04-18
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/apps/Whiteboard.tsx	14832	2026-04-18
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/apps/registry.ts	13984	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/AppLauncher.tsx	9158	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/BootSequence.tsx	5152	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/ContextMenu.tsx	4690	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/Desktop.tsx	6673	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/Dock.tsx	6959	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/LoginScreen.tsx	5938	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/NotImplemented.tsx	2082	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/NotificationCenter.tsx	7447	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/NotificationSystem.tsx	4621	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/TopPanel.tsx	7670	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/WindowFrame.tsx	11640	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/WindowManager.tsx	757	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/ui/accordion.tsx	2039	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/ui/alert-dialog.tsx	3850	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/ui/alert.tsx	1614	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/ui/aspect-ratio.tsx	280	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/ui/avatar.tsx	1083	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/ui/badge.tsx	1633	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/ui/breadcrumb.tsx	2357	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/ui/button-group.tsx	2209	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/ui/button.tsx	2218	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/ui/calendar.tsx	7793	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/ui/card.tsx	1987	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/ui/carousel.tsx	5542	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/ui/chart.tsx	10069	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/ui/checkbox.tsx	1219	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/ui/collapsible.tsx	786	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/ui/command.tsx	4804	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/ui/context-menu.tsx	8274	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/ui/dialog.tsx	3981	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/ui/drawer.tsx	4255	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/ui/dropdown-menu.tsx	8410	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/ui/empty.tsx	2396	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/ui/field.tsx	6145	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/ui/form.tsx	3764	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/ui/hover-card.tsx	1532	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/ui/input-group.tsx	5065	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/ui/input-otp.tsx	2240	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/ui/input.tsx	962	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/ui/item.tsx	4494	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/ui/kbd.tsx	862	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/ui/label.tsx	611	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/ui/menubar.tsx	8380	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/ui/navigation-menu.tsx	6664	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/ui/pagination.tsx	2717	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/ui/popover.tsx	1635	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/ui/progress.tsx	726	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/ui/radio-group.tsx	1466	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/ui/resizable.tsx	1980	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/ui/scroll-area.tsx	1645	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/ui/select.tsx	6344	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/ui/separator.tsx	699	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/ui/sheet.tsx	4076	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/ui/sidebar.tsx	21638	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/ui/skeleton.tsx	276	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/ui/slider.tsx	1996	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/ui/sonner.tsx	1020	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/ui/spinner.tsx	331	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/ui/switch.tsx	1177	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/ui/table.tsx	2434	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/ui/tabs.tsx	1969	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/ui/textarea.tsx	759	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/ui/toggle-group.tsx	2300	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/ui/toggle.tsx	1556	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/components/ui/tooltip.tsx	1892	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/hooks/use-mobile.ts	565	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/hooks/useFileSystem.ts	11718	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/hooks/useOSStore.tsx	16338	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/index.css	4495	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/lib/utils.ts	166	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/main.tsx	157	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/pages/Home.tsx	425	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/src/types/index.ts	6499	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/tailwind.config.js	2777	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/tsconfig.app.json	817	2026-04-18
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/tsconfig.json	232	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/tsconfig.node.json	653	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /app/vite.config.ts	387	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/Kimi_Agent_✅Web Linux /plan.md	5035	2026-04-17
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/ai agent/RagMyAi.md	775	2026-05-29
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/avatar/2026_05_27_23_58_07_911_302387.glb	910804	2026-05-28
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/cache/agnesai.index.json	1970	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/cache/agnesai.models.json	329	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/cache/anyapi.index.json	1954	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/cache/anyapi.models.json	465	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/cache/cheaperinference.index.json	13548	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/cache/cheaperinference.models.json	1870	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/cache/freetheai.index.json	2005	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/cache/freetheai.models.json	498	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/cache/kiloai.index.json	59453	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/cache/kiloai.models.json	11877	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/cache/kunciai.index.json	8771	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/cache/kunciai.models.json	1684	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/cache/nvidia.index.json	12035	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/cache/nvidia.models.json	2655	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/models/capability/ap_identity.py	15365	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/models/capability/price-map.txt	2125	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/models/capability/score-map.txt	4999	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/models/capability/score_map.txt	1162	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/models/models.md	6619	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/personas/1. Ai live guide 25 persona/1. Ai live guide 25 persona.md	35492	2026-06-23
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/personas/2. Musyawarah Planner persona/2. Musyawarah Planner 250 persona.md	201943	2026-06-23
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/personas/3. GoRo Executor persona/3. GoRo Executor 250 persona.md	185948	2026-06-23
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/personas/Core 525+ Persona.md	423608	2026-06-30
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/telegram bot commands.md	1076	2026-04-27
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/telegram bot/Aimusgobot.md	1234	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/telegram bot/Bot command.md	1131	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/telegram bot/TPY bot command.md/GPT bot command Template.md	6422	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/telegram bot/TPY bot command.md/GPT bot command.md	8337	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/telegram bot/TPY bot command.md/TPY bot command.md	6230	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/telegram bot/TPY bot command.md/TPY language reference.md	141043	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/telegram bot/TPY bot command.md/advance feature.md	22507	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/telegram bot/TPY bot command.md/bot feature.md	15881	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ai_models-agent-personas_Pool/telegram bot/default command.md	1084	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Arsitektur MusGo-OS_2in1/Core Arsitektur Sovereign AI MusGo-OS.md	513444	2026-06-30
+/root/projects/Blueprints_MusGo-OS_2in1/Arsitektur MusGo-OS_2in1/Core Semua catatan Architecture MusGo.md	105577	2026-06-30
+/root/projects/Blueprints_MusGo-OS_2in1/Arsitektur MusGo-OS_2in1/content.md	407823	2026-07-16
+/root/projects/Blueprints_MusGo-OS_2in1/Arsitektur MusGo-OS_2in1/note/Arsitektur 17-Layer Konstitusional MusGo-OS 2in1.pdf	42452	2026-06-02
+/root/projects/Blueprints_MusGo-OS_2in1/Arsitektur MusGo-OS_2in1/note/Briefing Doc_ Ekosistem Sovereign AI MusGo-OS 2in1.md	6860	2026-06-02
+/root/projects/Blueprints_MusGo-OS_2in1/Arsitektur MusGo-OS_2in1/note/Briefing Doc_ Ekosistem Sovereign AI MusGo-OS 2in1.pdf	115446	2026-06-02
+/root/projects/Blueprints_MusGo-OS_2in1/Arsitektur MusGo-OS_2in1/note/Mengenal MusGo-OS 2in1_ Rahasia di Balik AI yang _Bermusyawarah_ dan _Bergotong Royong_.md	6502	2026-06-02
+/root/projects/Blueprints_MusGo-OS_2in1/Arsitektur MusGo-OS_2in1/note/Mengenal MusGo-OS 2in1_ Rahasia di Balik AI yang _Bermusyawarah_ dan _Bergotong Royong_.pdf	128574	2026-06-02
+/root/projects/Blueprints_MusGo-OS_2in1/Arsitektur MusGo-OS_2in1/note/Menjelajahi Jantung MusGo-OS 2in1_ Glosarium & Panduan Arsitektur untuk Pemula.md	8461	2026-06-02
+/root/projects/Blueprints_MusGo-OS_2in1/Arsitektur MusGo-OS_2in1/note/Menjelajahi Jantung MusGo-OS 2in1_ Glosarium & Panduan Arsitektur untuk Pemula.pdf	121246	2026-06-02
+/root/projects/Blueprints_MusGo-OS_2in1/Arsitektur MusGo-OS_2in1/note/MusGo-OS 2in1_ Mengapa OS AI Berbasis Kearifan Lokal Ini Akan Mengubah Standar Kedaulatan Digital Kita_.md	6285	2026-06-02
+/root/projects/Blueprints_MusGo-OS_2in1/Arsitektur MusGo-OS_2in1/note/MusGo-OS 2in1_ Mengapa OS AI Berbasis Kearifan Lokal Ini Akan Mengubah Standar Kedaulatan Digital Kita_.pdf	118271	2026-06-02
+/root/projects/Blueprints_MusGo-OS_2in1/Arsitektur MusGo-OS_2in1/note/NotebookLM Mind Map.png	158638	2026-06-02
+/root/projects/Blueprints_MusGo-OS_2in1/Arsitektur MusGo-OS_2in1/note/Panduan Belajar_ Ekosistem Sovereign AI MusGo-OS 2in1.md	6552	2026-06-02
+/root/projects/Blueprints_MusGo-OS_2in1/Arsitektur MusGo-OS_2in1/note/Panduan Belajar_ Ekosistem Sovereign AI MusGo-OS 2in1.pdf	106362	2026-06-02
+/root/projects/Blueprints_MusGo-OS_2in1/Arsitektur MusGo-OS_2in1/note/Pedoman Tata Kelola Pengambilan Keputusan Kolektif MusGo-OS 2in1.md	9692	2026-06-02
+/root/projects/Blueprints_MusGo-OS_2in1/Arsitektur MusGo-OS_2in1/note/Pedoman Tata Kelola Pengambilan Keputusan Kolektif MusGo-OS 2in1.pdf	131164	2026-06-02
+/root/projects/Blueprints_MusGo-OS_2in1/Arsitektur MusGo-OS_2in1/note/Semua catatan Architecture MusGo.md	105621	2026-05-25
+/root/projects/Blueprints_MusGo-OS_2in1/Arsitektur MusGo-OS_2in1/note/Strategi Pengerasan Infrastruktur dan Pertahanan Jaringan Zero-Trust MusGo-OS 2in1.md	8090	2026-06-02
+/root/projects/Blueprints_MusGo-OS_2in1/Arsitektur MusGo-OS_2in1/note/Strategi Pengerasan Infrastruktur dan Pertahanan Jaringan Zero-Trust MusGo-OS 2in1.pdf	117576	2026-06-02
+/root/projects/Blueprints_MusGo-OS_2in1/BI & Monetization/Core User Tier - Musgo-OS Monetisasi.md	48351	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/BI & Monetization/FULL DEPLOYMENT REALITY STACK.md	6902	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/BI & Monetization/LEVEL SYSTEM FINAL MUSGO-OS 2IN1.md	5974	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/BI & Monetization/MUSGO-OS 2in1 FULL PRODUCTION BLUEPRINT 1–5.md	7045	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/BI & Monetization/SECURE_EXECUTION_GOVERNOR.md	5344	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/BI & Monetization/billing engine.md	6125	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/BI & Monetization/endgame architecture.md	6415	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/BI & Monetization/production-grade.md	8703	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/BI & Monetization/tier user.md	6691	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/0. V5.4 Blueprint architecture manusia Musgo-OS.md	181291	2026-06-13
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agent/Notebooklm/NBLM BLUEPRINT ARSITEKTUR MUSGO-OS 2in1 V9.1.md	22425	2026-07-05
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agent/Vibe mistral/Autonomous Workflow/Autonomous Repository Design/VibeMst Autonomous Repository Design.md	279725	2026-07-08
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agent/Vibe mistral/Autonomous Workflow/Musgo-OS Blueprint Generate/VibeMst Musgo-OS Blueprint Generate.md	138923	2026-07-07
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agent/Vibe mistral/Autonomous workflow Blueprint.md	10892	2026-07-06
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agent/Vibe mistral/Scheduled Autonomous Repository Builder.md	5928	2026-07-06
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agent/Vibe mistral/TEMPLATE_BLUEPRINT.md	10892	2026-07-06
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agent/Vibe mistral/Vibe Mst Musgo-OS Library Overview.md	39878	2026-07-05
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agent/Vibe mistral/Vibe-Mst COMPREHENSIVE SECURITY AUDIT & HARDENING REPORT.md	46339	2026-07-03
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/0. MusGo-OS 2in1_Generator/0. history/0. MusGo-OS 2in1 Generator Overview.md	168461	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/0. MusGo-OS 2in1_Generator/1. output/Core Blueprint Musgo-OS Bahasa Manusia.md	461955	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/0. MusGo-OS 2in1_Generator/1. output/Core Fitur-fitur MusGo-OS 2in1Blueprint.md	64236	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/0. MusGo-OS 2in1_Generator/1. output/Inti Dasar Hukum Musgo-OS.md	488	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/0. MusGo-OS 2in1_Generator/1. output/MASTER MUSGO-OS 2IN1/0. MASTER_ROM_INDEX_v1.md	7562	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/0. MusGo-OS 2in1_Generator/1. output/MASTER MUSGO-OS 2IN1/0.1 MUSGO-OS CORE_KERNEL_PART_1-43.md	470026	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/0. MusGo-OS 2in1_Generator/1. output/MASTER MUSGO-OS 2IN1/1. MUSGO-OS CORE OS EXPANSION LAYER PART 44-60.md	205569	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/0. MusGo-OS 2in1_Generator/1. output/MASTER MUSGO-OS 2IN1/2. MUSGO-OS AI EXECUTION & INTELLIGENCE LAYER PART 61-100.md	521207	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/0. MusGo-OS 2in1_Generator/1. output/MASTER MUSGO-OS 2IN1/3. MUSGO-OS INFRASTRUCTURE & RUNTIME SYSTEM PART 101–140.md	474114	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/0. MusGo-OS 2in1_Generator/1. output/MASTER MUSGO-OS 2IN1/4. MUSGO-OS SECURITY & IDENTITY GOVERNANCE PART 141-180.md	470655	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/0. MusGo-OS 2in1_Generator/1. output/MASTER MUSGO-OS 2IN1/5. MUSGO-OS DATA STORAGE & RESILIENCE SYSTEM PART 181–210.md	343941	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/0. MusGo-OS 2in1_Generator/1. output/MASTER MUSGO-OS 2IN1/6. MUSGO-OS AI ECONOMY SYSTEM PART 211–250.md	438144	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/0. MusGo-OS 2in1_Generator/1. output/MASTER MUSGO-OS 2IN1/7. MUSGO-OS AI GOVERNANCE & CIVILIZATION LAYER PART 251–280.md	306883	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/0. MusGo-OS 2in1_Generator/1. output/MASTER MUSGO-OS 2IN1/8. MUSGO-OS SOVEREIGN GLOBAL OS FINAL FORM PART 281–300.md	141383	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/0. MusGo-OS 2in1_Generator/1. output/MASTER MUSGO-OS 2IN1/9. MUSGO-OS FUTURE EXPANSION ROADMAP.md	4131	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/0. MusGo-OS 2in1_Generator/1. output/Service account.md	367	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/0. MusGo-OS 2in1_Generator/1. output/Tech Stack_MusGo-OS 2in1.md	5181	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/0. MusGo-OS 2in1_Generator/1. output/repo_generator_MusGo-OS 2in1.md	7898	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/1. mistral vibe/0. history/0. docs Mistral_ Generate Blueprint MusGo-OS 2in1.md/0. Mistral_ Generate Blueprint MusGo-OS 2in1.md	532537	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/1. mistral vibe/0. history/0. docs Mistral_ Generate Blueprint MusGo-OS 2in1.md/1. Mistral_ Generate Blueprint MusGo-OS 2in1.md	132536	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/1. mistral vibe/0. history/1. docs Mistral extraksi link dokumentasi.md/0. mistral ekraksi link dokumentasi huggingface.md	115433	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/1. mistral vibe/0. history/1. docs Mistral extraksi link dokumentasi.md/1. mistral ekstraksi link docs 1min.ai .md	326254	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/1. mistral vibe/0. history/1. docs Mistral extraksi link dokumentasi.md/2. mistral ekstraksi docs zapier links.md	736251	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/1. mistral vibe/0. history/2. blueprint repo enterprise/0.Mst blueprint repo enterprise.md	1520138	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/1. mistral vibe/1. output/Core MusGo-OS Enterprise Blueprint Framework.md	2119057	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/1. mistral vibe/1. output/VibeMst MusGo-OS Enterprise Blueprint Framework.md	2128265	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/1. mistral vibe/1. output/core-musgo-os-2in1-repository-structure-blueprint.pdf	57937	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/1. mistral vibe/1. output/table/table Urutan Pengerjaan Prioritas.csv	868	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/1. mistral vibe/Autonomous workflow/Autonomous Repository Design/VibeMst Autonomous Repository Design.md	279725	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/1. mistral vibe/Autonomous workflow/Autonomous Repository Design/VibeMst Autonomous Repository Design.txt	279725	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/1. mistral vibe/Autonomous workflow/MUSGO-OS Domain Blueprint.md	136512	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/1. mistral vibe/Autonomous workflow/Musgo-OS Blueprint Generate/VibeMst Musgo-OS Blueprint Generate.md	138923	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/1. mistral vibe/Core MusGo-OS Enterprise Blueprint Framework.md	2119057	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/1. mistral vibe/MUSGO-OS Domain Blueprint.md	136512	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/1. mistral vibe/Manual Workflow Instruction/Musgo-OS Domain Blueprint.md	136507	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/1. mistral vibe/Manual Workflow Instruction/MusgoOS Domain Architecture Blueprint.md	37922	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/1. mistral vibe/Manual Workflow Instruction/VibeMst_Manual_Workflow_Instruction.md	283741	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/1. mistral vibe/VibeMst Musgo-OS Blueprint Generate.md	138923	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/2. gemini app/0. history/0. ekstraksi konten 1min.ai bahasa Id.md	27829	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/2. gemini app/0. history/1. extract docs zapier ke indo.md	28182	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/2. gemini app/1. output/Gems Blueprint MusGo-OS_ AI, Keamanan, Bisnis.md	62173	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/2. gemini app/1. output/Gems Pembuatan Runtime Controller GoMu-OS.md	43373	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/2. gemini app/1. output/Gems Riset Pengetahuan Umum Terstruktur Terpisah.md	40398	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/2. gemini app/1. output/Gems Spesifikasi Arsitektur Read-Only & Overlay Manager (MIAS) MusGo-OS V9.1.md	8340	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/2. gemini app/1. output/Gems Spesifikasi Protokol Failover Gubernur & Shadow SSH (MGP) MusGo-OS V9.1.md	4916	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/2. gemini app/1. output/Gems Spesifikasi Teknis Modul Cognitive-to-Kernel Interface (MGCKP) MusGo-OS V9.1.md	6678	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/2. gemini app/1. output/Report riset mendalam gemini.md	14227	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/3. Deepseek/0. history/0. DS docs ekstraksi konten link zapier.md	118148	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/3. Deepseek/0. history/0. DS ekstrak link docs Hermes agent.md	11801	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/3. Deepseek/0. history/0. DS gabungan menu & fitur musgo os.md	240633	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/3. Deepseek/0. history/request dns udp, dot, doh.md	1386	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/3. Deepseek/1. output/Core DS Blueprint Deskripsi Bahasa Manusia.md	121787	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/3. Deepseek/1. output/Core DS Master Ultimate Menu & Fitur.md	111836	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/3. Deepseek/1. output/Core MUSGO-OS V9.1 — STRUKTUR REPOSITORY FINAL.md	86141	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/3. Deepseek/1. output/Core V9.1 Update Master Index Repo.md	284566	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/3. Deepseek/1. output/DS FULL Menu & Fitur MusGo-OS 2in1.md	109087	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/3. Deepseek/1. output/DS_docs zapier.md	117526	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/6. Kai9000/history/Blueprint Core MusGo-OS 2in1 Enterprise Framework.md	4851	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/6. Kai9000/history/History Blueprint Core MusGo-OS 2in1 Enterprise Framework.md	6516	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/GPT Great Islmic Library/0. History Musgo Governor Constitutional Framework.md	4125	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/GPT Great Islmic Library/Core 1-30 Governor Constitutional Framework 1-30.md	195288	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/GPT Great Islmic Library/Core 31-61 Governor Constitutional Framework.md	192759	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/GPT Great Islmic Library/Report MusGo Governor Constitutional Framework.md	87307	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/GPT Great Islmic Library/Semua Catatan MusGo Governor Constitutional Framework + 525 Persona.md	357249	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/Gpt Project MusGo-OS/Bahas Human Suggest Engine.md	364532	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/Gpt Project MusGo-OS/Core HUMAN SUGGEST ENGINE.md	353004	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/Gpt Project MusGo-OS/Core_Architecture_Blueprint_Musgo-OS.md	862393	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/Gpt Project MusGo-OS/Discussed_Architecture_Blueprint_Musgo_Project_Gpt.md	955948	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/Notion/history/0. greeting arab.md	5320	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/Zai GLM/history/AutoClaw.md	81300	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/Zai GLM/output/Long-Term Memory.md	1178	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/Zai GLM/output/memory 1 Juni 2026.md	1912	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/Zai GLM/output/user.md	1109	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/docs Gomu-OS/ENTERPRISE_DEPLOYMENT_ARCHITECTURE_SPEC.md	4920	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/docs Gomu-OS/GOMU-OS 2in1 — SOVEREIGN MASTER CONSTITUTION.md	557	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/docs Gomu-OS/GOMU_OS_SOVEREIGN_ENTERPRISE_CONSTITUTION.md	6504	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/docs Gomu-OS/GOVERNOR_CHARTER.md	2645	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/docs Gomu-OS/GOVERNOR_IP_LEGAL_FRAMEWORK.md	7078	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/docs Gomu-OS/GOVERNOR_IP_LEGAL_FRAMEWORK_PART_III_IP_PROTECTION_ARCHITECTURE.md	5644	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/docs Gomu-OS/GOVERNOR_IP_LEGAL_FRAMEWORK_PART_II_GOVERNANCE_LIABILITY.md	5293	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/docs Gomu-OS/GOVERNOR_IP_LEGAL_FRAMEWORK_PART_I_CONSTITUTIONAL_CORE.md	5534	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/docs Gomu-OS/IP_LEGAL_FRAMEWORK.md	2279	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/docs Gomu-OS/business/ENTERPRISE_SALES_ARCHITECTURE.md	7703	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/docs Gomu-OS/business/PRICING_STRATEGY_MODEL.md	5505	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/docs Gomu-OS/compliance/COMPLIANCE_CERTIFICATION_ROADMAP.md	5427	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/docs Gomu-OS/investor/GOMU_OS_INVESTOR_EXECUTIVE_SUMMARY.md	5734	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/docs Gomu-OS/legal/ARCHITECTURAL_DOCTRINE.md	746	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/docs Gomu-OS/legal/COMMERCIAL_LICENSING_MODEL.md	4213	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/docs Gomu-OS/legal/ENGINEERING_EXECUTION_CONSTITUTION_FINAL.md	6171	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/docs Gomu-OS/legal/GOMU_OS_SOVEREIGN_MASTER_CONSTITUTION.md	5394	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/docs Gomu-OS/legal/IP_DECLARATION.md	693	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/docs Gomu-OS/legal/OFFICIAL_VERSION_FREEZE.md	5054	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/docs Gomu-OS/production/DATABASE_BACKUP_STRATEGY.md	1036	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/docs Gomu-OS/production/DISASTER_RECOVERY_PLAN.md	844	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/docs Gomu-OS/production/SOVEREIGN_CLOUD_ARCHITECTURE_SPEC.md	737	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/docs Gomu-OS/release/ENTERPRISE_RELEASE_NOTES.md	5090	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/docs Gomu-OS/whitepaper/GOMU_OS_SOVEREIGN_TECHNICAL_WHITEPAPER.md	7210	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/online services/docs musgo folder-structure.csv	6605	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/online services/docs musgo folder-structure.xlsx	71011	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/online services/folder-structure musgo.csv	11780	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/online services/folder-structure musgo.xlsx	76186	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Agents/online services/struktur repo generate folder.md	10958	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Core Blueprint Musgo-OS Bahasa Manusia.md	461955	2026-07-13
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Core DS Blueprint Deskripsi Bahasa Manusia.md	121787	2026-06-30
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Core DS_FullBlueprint.md	320600	2026-04-06
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Core MUSGO-OS V9.1 — STRUKTUR REPOSITORY FINAL.md	86141	2026-07-17
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Core QW_FullBlueprint.md	166436	2026-04-06
+/root/projects/Blueprints_MusGo-OS_2in1/Blueprint Strategis/Core V9.1 Update Master Index Repo.md	284566	2026-07-17
+/root/projects/Blueprints_MusGo-OS_2in1/Core Database Musgo-OS 2in1/Agent/Autonomous Repository Design/VibeMst Autonomous Repository Design.md	279725	2026-07-08
+/root/projects/Blueprints_MusGo-OS_2in1/Core Database Musgo-OS 2in1/Agent/Musgo-OS Blueprint Generate/VibeMst Musgo-OS Blueprint Generate.md	138923	2026-07-07
+/root/projects/Blueprints_MusGo-OS_2in1/Core Database Musgo-OS 2in1/Bahasan Fitur-fitur.md	136079	2026-08-18
+/root/projects/Blueprints_MusGo-OS_2in1/Core Database Musgo-OS 2in1/Github/Action/2in1-MusGo-OS/2in1-MusGo-OS.git	53	2026-09-04
+/root/projects/Blueprints_MusGo-OS_2in1/Core Database Musgo-OS 2in1/Github/Action/Ai-Code-Assistant-MusGo-OS/Ai-Code-Assistant-MusGo-OS.git	66	2026-09-04
+/root/projects/Blueprints_MusGo-OS_2in1/Core Database Musgo-OS 2in1/Github/Action/Core_2in1_MusGo-OS/Core_2in1_MusGo-OS.git	58	2026-09-04
+/root/projects/Blueprints_MusGo-OS_2in1/Core Database Musgo-OS 2in1/Github/Action/Human-CLI-MusGo-OS-Workspace/Human-CLI-MusGo-OS-Workspace.git	68	2026-09-04
+/root/projects/Blueprints_MusGo-OS_2in1/Core Database Musgo-OS 2in1/Github/Action/Minang-MusGo-OS/Minang-MusGo-OS.git	55	2026-09-04
+/root/projects/Blueprints_MusGo-OS_2in1/Core Database Musgo-OS 2in1/Github/Action/MusGo-OS-2in1/MusGo-OS-2in1.git	53	2026-09-04
+/root/projects/Blueprints_MusGo-OS_2in1/Core Database Musgo-OS 2in1/Github/Action/Webapp-Human-CLI/Webapp-Human-CLI.git	56	2026-09-04
+/root/projects/Blueprints_MusGo-OS_2in1/Core Database Musgo-OS 2in1/Github/Action/grk4.6_human_cli_musgo/grk4.6_human_cli_musgo.git	62	2026-09-04
+/root/projects/Blueprints_MusGo-OS_2in1/Core Database Musgo-OS 2in1/Github/Docs/0. Semua Catatan Github Repository MusGo-OS 2in1.md	61826	2026-09-27
+/root/projects/Blueprints_MusGo-OS_2in1/Core Database Musgo-OS 2in1/Github/Docs/1. Github Repository.md	20856	2026-09-27
+/root/projects/Blueprints_MusGo-OS_2in1/Core Database Musgo-OS 2in1/Github/Docs/2. github repo.md	13951	2026-09-27
+/root/projects/Blueprints_MusGo-OS_2in1/Core Database Musgo-OS 2in1/Github/Repository/2in1-MusGo-OS/2in1-MusGo-OS.git	116	2026-09-04
+/root/projects/Blueprints_MusGo-OS_2in1/Core Database Musgo-OS 2in1/Github/Repository/2in1-MusGo-OS/LICENSE	1070	2026-08-16
+/root/projects/Blueprints_MusGo-OS_2in1/Core Database Musgo-OS 2in1/Github/Repository/2in1-MusGo-OS/LICENSE-COMMERCIAL.md	5474	2026-08-16
+/root/projects/Blueprints_MusGo-OS_2in1/Core Database Musgo-OS 2in1/Github/Repository/2in1-MusGo-OS/LICENSE-COMMERCIAL.pdf	71861	2026-08-16
+/root/projects/Blueprints_MusGo-OS_2in1/Core Database Musgo-OS 2in1/Github/Repository/2in1-MusGo-OS/README.md	8204	2026-08-16
+/root/projects/Blueprints_MusGo-OS_2in1/Core Database Musgo-OS 2in1/Github/Repository/2in1-MusGo-OS/README.pdf	111415	2026-08-16
+/root/projects/Blueprints_MusGo-OS_2in1/Core Database Musgo-OS 2in1/Github/Repository/Ai-Code-Assistant-MusGo-OS/Ai-Code-Assistant-MusGo-OS.git	66	2026-09-04
+/root/projects/Blueprints_MusGo-OS_2in1/Core Database Musgo-OS 2in1/Github/Repository/Core_2in1_MusGo-OS/Core_2in1_MusGo-OS.git	58	2026-09-04
+/root/projects/Blueprints_MusGo-OS_2in1/Core Database Musgo-OS 2in1/Github/Repository/Core_2in1_MusGo-OS/LICENSE	1070	2026-08-16
+/root/projects/Blueprints_MusGo-OS_2in1/Core Database Musgo-OS 2in1/Github/Repository/Core_2in1_MusGo-OS/LICENSE-COMMERCIAL.md	5474	2026-08-16
+/root/projects/Blueprints_MusGo-OS_2in1/Core Database Musgo-OS 2in1/Github/Repository/Core_2in1_MusGo-OS/LICENSE-COMMERCIAL.pdf	71861	2026-08-16
+/root/projects/Blueprints_MusGo-OS_2in1/Core Database Musgo-OS 2in1/Github/Repository/Core_2in1_MusGo-OS/README.md	8204	2026-08-16
+/root/projects/Blueprints_MusGo-OS_2in1/Core Database Musgo-OS 2in1/Github/Repository/Core_2in1_MusGo-OS/README.pdf	111415	2026-08-16
+/root/projects/Blueprints_MusGo-OS_2in1/Core Database Musgo-OS 2in1/Github/Repository/Human-CLI-MusGo-OS-Workspace/Human-CLI-MusGo-OS-Workspace.git	68	2026-09-04
+/root/projects/Blueprints_MusGo-OS_2in1/Core Database Musgo-OS 2in1/Github/Repository/Minang-MusGo-OS/Minang-MusGo-OS.git	55	2026-09-04
+/root/projects/Blueprints_MusGo-OS_2in1/Core Database Musgo-OS 2in1/Github/Repository/MusGo-CLI/MusGo-CLI.git	49	2026-09-06
+/root/projects/Blueprints_MusGo-OS_2in1/Core Database Musgo-OS 2in1/Github/Repository/MusGo-OS-2in1/LICENSE	1070	2026-08-16
+/root/projects/Blueprints_MusGo-OS_2in1/Core Database Musgo-OS 2in1/Github/Repository/MusGo-OS-2in1/LICENSE-COMMERCIAL.md	5474	2026-08-16
+/root/projects/Blueprints_MusGo-OS_2in1/Core Database Musgo-OS 2in1/Github/Repository/MusGo-OS-2in1/MusGo-OS-2in1.git	53	2026-09-04
+/root/projects/Blueprints_MusGo-OS_2in1/Core Database Musgo-OS 2in1/Github/Repository/MusGo-OS-2in1/README.md	8204	2026-08-16
+/root/projects/Blueprints_MusGo-OS_2in1/Core Database Musgo-OS 2in1/Github/Repository/Webapp-Human-CLI/Webapp-Human-CLI.git	56	2026-09-04
+/root/projects/Blueprints_MusGo-OS_2in1/Core Database Musgo-OS 2in1/Github/Repository/grk4.6_human_cli_musgo/grk4.6_human_cli_musgo.git	62	2026-09-04
+/root/projects/Blueprints_MusGo-OS_2in1/Core Database Musgo-OS 2in1/Semua Catatan Database Musgo-OS 2in1 (1).md	357554	2026-08-23
+/root/projects/Blueprints_MusGo-OS_2in1/Core Database Musgo-OS 2in1/Semua Catatan Database Musgo-OS 2in1.md	777550	2026-07-09
+/root/projects/Blueprints_MusGo-OS_2in1/Core Database Musgo-OS 2in1/TECHNICAL PERSPECTIVE (ARCHITECTURE & SOLUTIONS).md	85732	2026-08-23
+/root/projects/Blueprints_MusGo-OS_2in1/Core Database Musgo-OS 2in1/Whitepaper Teknis Sovereignty as a Service - SIaaS.md	44520	2026-07-18
+/root/projects/Blueprints_MusGo-OS_2in1/Core Database Musgo-OS 2in1/content.md	407823	2026-07-16
+/root/projects/Blueprints_MusGo-OS_2in1/Core Database Musgo-OS 2in1/notes/Bahasan Ai live Guide - Ai Auto Suggests.md	33630	2026-07-07
+/root/projects/Blueprints_MusGo-OS_2in1/Core Database Musgo-OS 2in1/notes/Bahasan Fitur-fitur Musgo-OS.md	123720	2026-07-07
+/root/projects/Blueprints_MusGo-OS_2in1/Core Database Musgo-OS 2in1/notes/Bahasan Menu-Task.md	150562	2026-07-07
+/root/projects/Blueprints_MusGo-OS_2in1/Core Database Musgo-OS 2in1/notes/Bahasan Read Only File System.md	179360	2026-07-06
+/root/projects/Blueprints_MusGo-OS_2in1/Core Database Musgo-OS 2in1/notes/Bahasan Tier User.md	107481	2026-07-09
+/root/projects/Blueprints_MusGo-OS_2in1/Core Database Musgo-OS 2in1/notes/Report Core Database Musgo-OS.md	23206	2026-07-07
+/root/projects/Blueprints_MusGo-OS_2in1/Core Database Musgo-OS 2in1/notes/Report Security Holes Blueprint Database Update.md	69646	2026-07-02
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Amelia Cyber Security/0. MASTER IMPLEMENTATION ROADMAP.md	20834	2026-06-13
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Amelia Cyber Security/1. MusGo-OS 2in1_MASTER SECURITY CONSTITUTION.md	185751	2026-05-15
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Amelia Cyber Security/1.0 SKILL_CYBER SECURITY & NETWORKING KNOWLEDGE BASE_ETHACK.md	15440	2026-05-08
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Amelia Cyber Security/1.1 SKILL_KNOWLEDGE BASE — CYBER SECURITY & NETWORKING_AMELIA.md	9560	2026-05-08
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Amelia Cyber Security/CORE SKILL_UNIFIED_SECURITY_KNOWLEDGE_BASE.md	484141	2026-06-13
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Ethical Hacker/0. Modul Cyber Security Musgo-OS V8.0.md	56584	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Ethical Hacker/0.1.  Modul Cyber Security Musgo-OS V9.1.md	53398	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Ethical Hacker/1. Upgrade layer 13.md	854	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Ethical Hacker/2. Upgrade layer 16 threat intelligence.md	634	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Ethical Hacker/3. Upgrade 17 Layers to 19 Layer Musgo-OS.md	1551	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Ethical Hacker/4. Final Architecture Musgo-OS.md	958	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Ethical Hacker/Core MUSGO-OS V9.1 — STRUKTUR REPOSITORY FINAL.md	86141	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Ethical Hacker/Core V9.1 Update Master Index Repo.md	284566	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Ethical Hacker/V8.0/0. Modul Cyber Security Musgo-OS.md	56584	2026-06-24
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Ethical Hacker/V8.0/V8.0. DS — MASTER INDEX REPOSITORY MUSGO-OS 2IN1.md	104306	2026-06-24
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Ethical Hacker/V8.0/notes/Arsitektur Kedaulatan Digital Panduan Memahami 21 Layer MusGo-OS.md	8213	2026-06-25
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Ethical Hacker/V8.0/notes/Doktrin Pertahanan Siber Berdaulat Manifesto Infrastruktur Digital MusGo-OS V8.0.md	12642	2026-06-25
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Ethical Hacker/V8.0/notes/Dokumen Briefing Arsitektur Keamanan Siber Berdaulat MusGo-OS V8.0.md	8014	2026-06-25
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Ethical Hacker/V8.0/notes/Laporan Strategis Kedaulatan Digital Ekosistem MusGo-OS V8.0 Edisi Founder & Investor.md	10595	2026-06-25
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Ethical Hacker/V8.0/notes/Masa Depan Kedaulatan Digital 7 Terobosan Radikal MusGo-OS V8.0 yang Mengubah Aturan Main Keamanan Siber.md	7968	2026-06-25
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Ethical Hacker/V8.0/notes/Narasi Logika Pertahanan MusGo-OS V8.0 Memahami Sistem Imun Digital yang Berdaulat.md	8063	2026-06-25
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Ethical Hacker/V8.0/notes/Panduan Standar Implementasi MusGo-OS V8.0 Arsitektur Kedaulatan Digital dan Pertahanan Aktif.md	9947	2026-06-25
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Ethical Hacker/V8.0/notes/Panduan Studi Keamanan Siber MusGo-OS V8.0.md	7785	2026-06-25
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Ethical Hacker/V8.0/semua catatan Cyber Security Musgo-OS.md	278326	2026-06-25
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Ethical Hacker/V8.0/studio/Arsitektur_Keamanan_Siber_MusGo-OS_V8.0.png	4789037	2026-06-25
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Ethical Hacker/V8.0/studio/NotebookLM Mind Map.png	2930987	2026-06-25
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Ethical Hacker/V8.0/update kritik/Menyempurnakan_Cetak_Biru_MusGo-OS_V8.md	9396	2026-06-25
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Ethical Hacker/V9.1/0.1.  Modul Cyber Security Musgo-OS V9.1.md	29582	2026-06-25
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Ethical Hacker/V9.1/Semua catatan V9.1 Module Cyber Security Musgo-OS.md	195077	2026-06-26
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Ethical Hacker/V9.1/V9.1 Master Index Repository Musgo-OS.md	92233	2026-06-25
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Ethical Hacker/V9.1/studio/Keamanan_Militer_Arsitektur_MusGo-OS_9.m4a	3527321	2026-06-26
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Ethical Hacker/V9.1/update kritik/Menutup_Celah_Silikon_dan_Zero-Day_MusGo-OS.m4a.md	4583	2026-06-26
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Ethical Hacker/v9.1 update/0.1. Modul Cyber Security Musgo-OS V9.1 Update.md	53398	2026-06-26
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Ethical Hacker/v9.1 update/Core MUSGO-OS V9.1 — STRUKTUR REPOSITORY FINAL.md	86141	2026-07-17
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Ethical Hacker/v9.1 update/Core V9.1 Update Master Index Repo.md	284566	2026-07-17
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Ethical Hacker/v9.1 update/Report 0.1. Modul Cyber Security Musgo-OS V9.1 Update.md	66959	2026-06-28
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Ethical Hacker/v9.1 update/Report Security Holes V9.1 Update.md	54287	2026-06-30
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Ethical Hacker/v9.1 update/Semua Catatan 0.1. Modul Cyber Security Musgo-OS V9.1 Update.md	311429	2026-06-30
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Ethical Hacker/v9.1 update/kritik/Menutup_Celah_Keamanan_Kernel_MusGo-OS v9.1 update.md	4545	2026-06-27
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Ethical Hacker/v9.1 update/kritik/Penguatan_Arsitektur_Keamanan_MusGo-OS_9.md	4555	2026-06-26
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Ethical Hacker/v9.1 update/kritik/saran perbaikan/Saran Perbaikn 0.1. Modul Cyber Security Musgo-OS V9.1 Update.md	99091	2026-06-28
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Ethical Hacker/v9.1 update/notes/Daftar Patch Keamanan dan Pembaruan Arsitektur MusGo-OS V9.1.pdf	40780	2026-06-28
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Ethical Hacker/v9.1 update/studio/Arsitektur_Kedaulatan_Digital_Musgo-OS.png	5849045	2026-06-28
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Ethical Hacker/v9.1 update/studio/NotebookLM Mind Map.png	2254936	2026-06-28
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/MusGo-OS 2in1_MASTER SECURITY CONSTITUTION.md	185734	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/1. MASTER SECURITY CONSTITUTION/federation/federation_consensus.md	53703	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/1. MASTER SECURITY CONSTITUTION/federation/federation_identity.md	27169	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/1. MASTER SECURITY CONSTITUTION/federation/federation_recovery.md	28464	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/1. MASTER SECURITY CONSTITUTION/federation/federation_security.md	64083	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/1. MASTER SECURITY CONSTITUTION/federation/federation_sync.md	53703	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/1. MASTER SECURITY CONSTITUTION/orchestration/orchestration_consensus.md	50555	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/1. MASTER SECURITY CONSTITUTION/orchestration/orchestration_continuity.md	78598	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/1. MASTER SECURITY CONSTITUTION/orchestration/orchestration_isolation.md	27169	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/1. MASTER SECURITY CONSTITUTION/orchestration/orchestration_recovery.md	27032	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/1. MASTER SECURITY CONSTITUTION/orchestration/orchestration_security.md	49361	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/1. MASTER SECURITY CONSTITUTION/resilience/autonomous_recovery.md	15485	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/1. MASTER SECURITY CONSTITUTION/resilience/continuity_rules.md	41199	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/1. MASTER SECURITY CONSTITUTION/resilience/existential_security.md	15549	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/1. MASTER SECURITY CONSTITUTION/resilience/fail_safe_rules.md	41133	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/1. MASTER SECURITY CONSTITUTION/resilience/resilience_doctrine.md	53313	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/1. MASTER SECURITY CONSTITUTION/security_constitution/civilization_principles.md	105656	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/1. MASTER SECURITY CONSTITUTION/security_constitution/constitutional_principles.md	40658	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/1. MASTER SECURITY CONSTITUTION/security_constitution/forbidden_patterns.md	49653	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/1. MASTER SECURITY CONSTITUTION/security_constitution/immutable_laws.md	26025	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/1. MASTER SECURITY CONSTITUTION/security_constitution/sovereignty_principles.md	53313	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/1. MASTER SECURITY CONSTITUTION/zero_trust/federation_validation.md	52454	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/1. MASTER SECURITY CONSTITUTION/zero_trust/replay_protection.md	64083	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/1. MASTER SECURITY CONSTITUTION/zero_trust/runtime_identity.md	26090	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/1. MASTER SECURITY CONSTITUTION/zero_trust/trust_validation.md	38346	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/1. MASTER SECURITY CONSTITUTION/zero_trust/zero_trust_foundation.md	47153	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/2. AI GOVERNANCE BIBLE/ai_governance_bible/audit/orchestration_audit.md	41133	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/2. AI GOVERNANCE BIBLE/ai_governance_bible/audit/peer_review.md	15485	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/2. AI GOVERNANCE BIBLE/ai_governance_bible/audit/runtime_validation.md	41199	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/2. AI GOVERNANCE BIBLE/ai_governance_bible/audit/security_audit.md	15549	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/2. AI GOVERNANCE BIBLE/ai_governance_bible/audit/self_audit.md	15459	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/2. AI GOVERNANCE BIBLE/ai_governance_bible/behavioral_rules/ai_accountability.md	26771	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/2. AI GOVERNANCE BIBLE/ai_governance_bible/behavioral_rules/ai_behavior.md	26090	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/2. AI GOVERNANCE BIBLE/ai_governance_bible/behavioral_rules/ai_integrity.md	26775	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/2. AI GOVERNANCE BIBLE/ai_governance_bible/behavioral_rules/ai_observability.md	27078	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/2. AI GOVERNANCE BIBLE/ai_governance_bible/behavioral_rules/ai_safety.md	26705	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/2. AI GOVERNANCE BIBLE/ai_governance_bible/collaboration/consensus_rules.md	15132	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/2. AI GOVERNANCE BIBLE/ai_governance_bible/collaboration/deadlock_resolution.md	15156	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/2. AI GOVERNANCE BIBLE/ai_governance_bible/collaboration/escalation_protocol.md	14847	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/2. AI GOVERNANCE BIBLE/ai_governance_bible/collaboration/gotong_royong_protocol.md	14892	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/2. AI GOVERNANCE BIBLE/ai_governance_bible/collaboration/musyawarah_protocol.md	14796	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/2. AI GOVERNANCE BIBLE/ai_governance_bible/reasoning/constitutional_reasoning.md	15315	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/2. AI GOVERNANCE BIBLE/ai_governance_bible/reasoning/runtime_reasoning.md	15249	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/2. AI GOVERNANCE BIBLE/ai_governance_bible/reasoning/security_reasoning.md	15515	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/2. AI GOVERNANCE BIBLE/ai_governance_bible/reasoning/structured_reasoning.md	15269	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/2. AI GOVERNANCE BIBLE/ai_governance_bible/reasoning/verification_reasoning.md	14944	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/2. AI GOVERNANCE BIBLE/ai_governance_bible/security/anti_insecure_pattern.md	15429	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/2. AI GOVERNANCE BIBLE/ai_governance_bible/security/anti_lazy_generation.md	15424	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/2. AI GOVERNANCE BIBLE/ai_governance_bible/security/anti_placeholder_policy.md	15475	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/2. AI GOVERNANCE BIBLE/ai_governance_bible/security/runtime_security_rules.md	15451	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/2. AI GOVERNANCE BIBLE/ai_governance_bible/security/secure_generation.md	15374	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/3. SOVEREIGN RUNTIME DOCTRINE/runtime_doctrine/memory/memory_encryption.md	14847	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/3. SOVEREIGN RUNTIME DOCTRINE/runtime_doctrine/memory/memory_lineage.md	15269	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/3. SOVEREIGN RUNTIME DOCTRINE/runtime_doctrine/memory/memory_recovery.md	15249	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/3. SOVEREIGN RUNTIME DOCTRINE/runtime_doctrine/memory/memory_security.md	14892	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/3. SOVEREIGN RUNTIME DOCTRINE/runtime_doctrine/memory/memory_validation.md	15156	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/3. SOVEREIGN RUNTIME DOCTRINE/runtime_doctrine/orchestration/orchestration_consensus.md	14920	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/3. SOVEREIGN RUNTIME DOCTRINE/runtime_doctrine/orchestration/orchestration_failover.md	15132	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/3. SOVEREIGN RUNTIME DOCTRINE/runtime_doctrine/orchestration/orchestration_runtime.md	14787	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/3. SOVEREIGN RUNTIME DOCTRINE/runtime_doctrine/orchestration/orchestration_security.md	14728	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/3. SOVEREIGN RUNTIME DOCTRINE/runtime_doctrine/orchestration/orchestration_validation.md	14796	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/3. SOVEREIGN RUNTIME DOCTRINE/runtime_doctrine/resilience/continuity.md	15429	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/3. SOVEREIGN RUNTIME DOCTRINE/runtime_doctrine/resilience/fail_safe.md	15424	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/3. SOVEREIGN RUNTIME DOCTRINE/runtime_doctrine/resilience/replay_protection.md	15475	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/3. SOVEREIGN RUNTIME DOCTRINE/runtime_doctrine/resilience/runtime_resilience.md	15374	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/3. SOVEREIGN RUNTIME DOCTRINE/runtime_doctrine/resilience/self_healing.md	15315	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/3. SOVEREIGN RUNTIME DOCTRINE/runtime_doctrine/runtime_core/runtime_identity.md	14498	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/3. SOVEREIGN RUNTIME DOCTRINE/runtime_doctrine/runtime_core/runtime_lifecycle.md	14409	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/3. SOVEREIGN RUNTIME DOCTRINE/runtime_doctrine/runtime_core/runtime_recovery.md	14480	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/3. SOVEREIGN RUNTIME DOCTRINE/runtime_doctrine/runtime_core/runtime_security.md	26025	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/3. SOVEREIGN RUNTIME DOCTRINE/runtime_doctrine/runtime_core/runtime_validation.md	14180	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/3. SOVEREIGN RUNTIME DOCTRINE/runtime_doctrine/sandbox/sandbox_isolation.md	14802	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/3. SOVEREIGN RUNTIME DOCTRINE/runtime_doctrine/sandbox/sandbox_limits.md	14442	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/3. SOVEREIGN RUNTIME DOCTRINE/runtime_doctrine/sandbox/sandbox_networking.md	14903	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/3. SOVEREIGN RUNTIME DOCTRINE/runtime_doctrine/sandbox/sandbox_permissions.md	14474	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/3. SOVEREIGN RUNTIME DOCTRINE/runtime_doctrine/sandbox/sandbox_storage.md	14308	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/4. ENTERPRISE SECURITY VALIDATOR/security_validator/policies/constitutional_policy.md	14847	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/4. ENTERPRISE SECURITY VALIDATOR/security_validator/policies/enterprise_security_policy.md	14892	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/4. ENTERPRISE SECURITY VALIDATOR/security_validator/policies/federation_policy.md	15156	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/4. ENTERPRISE SECURITY VALIDATOR/security_validator/policies/runtime_policy.md	15269	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/4. ENTERPRISE SECURITY VALIDATOR/security_validator/reports/constitutional_report.md	15315	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/4. ENTERPRISE SECURITY VALIDATOR/security_validator/reports/orchestration_report.md	15249	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/4. ENTERPRISE SECURITY VALIDATOR/security_validator/reports/risk_report.md	15515	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/4. ENTERPRISE SECURITY VALIDATOR/security_validator/reports/validation_report.md	14944	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/4. ENTERPRISE SECURITY VALIDATOR/security_validator/scanners/hardcoded_secret_scanner.md	14728	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/4. ENTERPRISE SECURITY VALIDATOR/security_validator/scanners/insecure_pattern_scanner.md	14787	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/4. ENTERPRISE SECURITY VALIDATOR/security_validator/scanners/orchestration_risk_scanner.md	14796	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/4. ENTERPRISE SECURITY VALIDATOR/security_validator/scanners/privilege_scanner.md	14920	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/4. ENTERPRISE SECURITY VALIDATOR/security_validator/scanners/sandbox_violation_scanner.md	15132	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/4. ENTERPRISE SECURITY VALIDATOR/security_validator/validators/authentication_validator.md	11377	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/4. ENTERPRISE SECURITY VALIDATOR/security_validator/validators/authorization_validator.md	14390	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/4. ENTERPRISE SECURITY VALIDATOR/security_validator/validators/federation_validator.md	14308	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/4. ENTERPRISE SECURITY VALIDATOR/security_validator/validators/observability_validator.md	14311	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/4. ENTERPRISE SECURITY VALIDATOR/security_validator/validators/orchestration_validator.md	14023	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/4. ENTERPRISE SECURITY VALIDATOR/security_validator/validators/replay_validator.md	15080	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/4. ENTERPRISE SECURITY VALIDATOR/security_validator/validators/runtime_validator.md	14721	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/4. ENTERPRISE SECURITY VALIDATOR/security_validator/validators/zero_trust_validator.md	14554	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/5. BLUEPRINT VALIDATION LAYER/blueprint_validation/approval_pipeline.md	14442	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/5. BLUEPRINT VALIDATION LAYER/blueprint_validation/constitutional_validation.md	15080	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/5. BLUEPRINT VALIDATION LAYER/blueprint_validation/federation_validation.md	14579	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/5. BLUEPRINT VALIDATION LAYER/blueprint_validation/orchestration_validation.md	14409	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/5. BLUEPRINT VALIDATION LAYER/blueprint_validation/runtime_validation.md	14016	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/5. BLUEPRINT VALIDATION LAYER/blueprint_validation/schema_validation.md	14390	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/5. BLUEPRINT VALIDATION LAYER/blueprint_validation/secure_blueprint_rules.md	14903	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/5. BLUEPRINT VALIDATION LAYER/federation_validation/federation_integrity.md	14847	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/5. BLUEPRINT VALIDATION LAYER/federation_validation/federation_resilience.md	15269	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/5. BLUEPRINT VALIDATION LAYER/federation_validation/federation_sync.md	14892	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/5. BLUEPRINT VALIDATION LAYER/federation_validation/federation_trust.md	15156	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/5. BLUEPRINT VALIDATION LAYER/runtime_validation/runtime_identity.md	14920	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/5. BLUEPRINT VALIDATION LAYER/runtime_validation/runtime_integrity.md	14728	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/5. BLUEPRINT VALIDATION LAYER/runtime_validation/runtime_recovery.md	14796	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/5. BLUEPRINT VALIDATION LAYER/runtime_validation/runtime_sandbox.md	15132	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/5. BLUEPRINT VALIDATION LAYER/security_validation/immutable_blueprint.md	14721	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/5. BLUEPRINT VALIDATION LAYER/security_validation/observability_blueprint.md	14311	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/5. BLUEPRINT VALIDATION LAYER/security_validation/replay_safe_blueprint.md	14023	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/5. BLUEPRINT VALIDATION LAYER/security_validation/zero_trust_blueprint.md	14308	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/6. AGENT CONSTITUTIONAL PROMPT/agent_constitutional_prompt/consensus_agent_prompt.md	14903	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/6. AGENT CONSTITUTIONAL PROMPT/agent_constitutional_prompt/federation_agent_prompt.md	14442	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/6. AGENT CONSTITUTIONAL PROMPT/agent_constitutional_prompt/governance_agent_prompt.md	14802	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/6. AGENT CONSTITUTIONAL PROMPT/agent_constitutional_prompt/master_agent_prompt.md	14498	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/6. AGENT CONSTITUTIONAL PROMPT/agent_constitutional_prompt/planner_agent_prompt.md	14479	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/6. AGENT CONSTITUTIONAL PROMPT/agent_constitutional_prompt/runtime_agent_prompt.md	14474	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/6. AGENT CONSTITUTIONAL PROMPT/agent_constitutional_prompt/security_agent_prompt.md	14180	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/6. AGENT CONSTITUTIONAL PROMPT/governance/constitutional_alignment.md	15423	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/6. AGENT CONSTITUTIONAL PROMPT/governance/eternal_alignment.md	28464	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/6. AGENT CONSTITUTIONAL PROMPT/governance/existential_alignment.md	15459	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/6. AGENT CONSTITUTIONAL PROMPT/governance/federation_alignment.md	15429	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/6. AGENT CONSTITUTIONAL PROMPT/governance/runtime_alignment.md	15451	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/6. AGENT CONSTITUTIONAL PROMPT/reasoning/orchestration_reasoning_prompt.md	15374	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/6. AGENT CONSTITUTIONAL PROMPT/reasoning/resilience_reasoning_prompt.md	15475	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/6. AGENT CONSTITUTIONAL PROMPT/reasoning/structured_reasoning_prompt.md	15132	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/6. AGENT CONSTITUTIONAL PROMPT/reasoning/validation_reasoning_prompt.md	14796	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/6. AGENT CONSTITUTIONAL PROMPT/security_behavior/anti_placeholder_behavior.md	14554	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/6. AGENT CONSTITUTIONAL PROMPT/security_behavior/constitutional_behavior.md	14920	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/6. AGENT CONSTITUTIONAL PROMPT/security_behavior/replay_safe_behavior.md	14728	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/6. AGENT CONSTITUTIONAL PROMPT/security_behavior/secure_generation_behavior.md	14787	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/7. RUNTIME SECURITY GOVERNOR/governance/constitutional_lockdown.md	15374	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/7. RUNTIME SECURITY GOVERNOR/governance/existential_governance.md	15429	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/7. RUNTIME SECURITY GOVERNOR/governance/federation_restriction.md	15475	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/7. RUNTIME SECURITY GOVERNOR/governance/orchestration_restriction.md	15424	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/7. RUNTIME SECURITY GOVERNOR/resilience_control/civilization_survivability.md	15515	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/7. RUNTIME SECURITY GOVERNOR/resilience_control/continuity_preservation.md	15249	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/7. RUNTIME SECURITY GOVERNOR/resilience_control/immortal_resilience.md	15315	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/7. RUNTIME SECURITY GOVERNOR/resilience_control/infinite_resilience.md	14944	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/7. RUNTIME SECURITY GOVERNOR/runtime_security_governor/anomaly_detection.md	14480	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/7. RUNTIME SECURITY GOVERNOR/runtime_security_governor/emergency_lockdown.md	14903	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/7. RUNTIME SECURITY GOVERNOR/runtime_security_governor/orchestration_control.md	14442	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/7. RUNTIME SECURITY GOVERNOR/runtime_security_governor/runtime_isolation.md	14802	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/7. RUNTIME SECURITY GOVERNOR/runtime_security_governor/trust_engine.md	14473	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/7. RUNTIME SECURITY GOVERNOR/self_healing/autonomous_recovery.md	14892	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/7. RUNTIME SECURITY GOVERNOR/self_healing/orchestration_reconciliation.md	15226	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/7. RUNTIME SECURITY GOVERNOR/self_healing/runtime_stabilization.md	14847	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/7. RUNTIME SECURITY GOVERNOR/self_healing/trust_recalibration.md	15156	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/7. RUNTIME SECURITY GOVERNOR/threat_detection/existential_threats.md	14311	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/7. RUNTIME SECURITY GOVERNOR/threat_detection/federation_threats.md	14023	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/7. RUNTIME SECURITY GOVERNOR/threat_detection/orchestration_threats.md	14308	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/7. RUNTIME SECURITY GOVERNOR/threat_detection/runtime_threats.md	14721	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/8. AI CONSENSUS RULEBOOK/consensus_rulebook/consensus_rules.md	14802	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/8. AI CONSENSUS RULEBOOK/consensus_rulebook/deadlock_resolution.md	14554	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/8. AI CONSENSUS RULEBOOK/consensus_rulebook/escalation_rules.md	14903	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/8. AI CONSENSUS RULEBOOK/consensus_rulebook/quorum_rules.md	14473	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/8. AI CONSENSUS RULEBOOK/consensus_rulebook/voting_rules.md	14442	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/8. AI CONSENSUS RULEBOOK/emergency_consensus/emergency_protocol.md	15475	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/8. AI CONSENSUS RULEBOOK/emergency_consensus/eternal_consensus.md	41353	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/8. AI CONSENSUS RULEBOOK/emergency_consensus/existential_consensus.md	15429	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/8. AI CONSENSUS RULEBOOK/emergency_consensus/immortal_consensus.md	15451	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/8. AI CONSENSUS RULEBOOK/emergency_consensus/lockdown_consensus.md	15424	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/8. AI CONSENSUS RULEBOOK/federation_consensus/constitutional_consensus.md	15132	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/8. AI CONSENSUS RULEBOOK/federation_consensus/federation_consensus.md	14787	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/8. AI CONSENSUS RULEBOOK/federation_consensus/orchestration_consensus.md	14728	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/8. AI CONSENSUS RULEBOOK/federation_consensus/runtime_consensus.md	14920	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/8. AI CONSENSUS RULEBOOK/governance/constitutional_alignment.md	15249	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/8. AI CONSENSUS RULEBOOK/governance/explainability_rules.md	14796	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/8. AI CONSENSUS RULEBOOK/governance/federation_alignment.md	15315	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Cyber Security Defence & Networking/Security Knowledge Base/8. AI CONSENSUS RULEBOOK/governance/orchestration_alignment.md	15374	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Development MusGo-OS 2in1 Prompt.md	31849	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Documentary/1min_Ai.md	18570	2026-05-16
+/root/projects/Blueprints_MusGo-OS_2in1/Documentary/Agent skill qwen.md	549	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Documentary/Docs_lists.md	3765	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Documentary/ENTERPRISE_DEPLOYMENT_ARCHITECTURE_SPEC.md	4920	2026-04-06
+/root/projects/Blueprints_MusGo-OS_2in1/Documentary/GOMU-OS 2in1 — SOVEREIGN MASTER CONSTITUTION.md	557	2026-04-06
+/root/projects/Blueprints_MusGo-OS_2in1/Documentary/GOMU_OS_SOVEREIGN_ENTERPRISE_CONSTITUTION.md	6504	2026-04-06
+/root/projects/Blueprints_MusGo-OS_2in1/Documentary/GOVERNOR_CHARTER.md	2645	2026-04-06
+/root/projects/Blueprints_MusGo-OS_2in1/Documentary/GOVERNOR_IP_LEGAL_FRAMEWORK.md	7078	2026-04-06
+/root/projects/Blueprints_MusGo-OS_2in1/Documentary/GOVERNOR_IP_LEGAL_FRAMEWORK_PART_III_IP_PROTECTION_ARCHITECTURE.md	5644	2026-04-06
+/root/projects/Blueprints_MusGo-OS_2in1/Documentary/GOVERNOR_IP_LEGAL_FRAMEWORK_PART_II_GOVERNANCE_LIABILITY.md	5293	2026-04-06
+/root/projects/Blueprints_MusGo-OS_2in1/Documentary/GOVERNOR_IP_LEGAL_FRAMEWORK_PART_I_CONSTITUTIONAL_CORE.md	5534	2026-04-06
+/root/projects/Blueprints_MusGo-OS_2in1/Documentary/IP_LEGAL_FRAMEWORK.md	2279	2026-04-06
+/root/projects/Blueprints_MusGo-OS_2in1/Documentary/Keras%20documentation%3A%20Getting%20started%20with%20Keras.md	6509	2026-10-11
+/root/projects/Blueprints_MusGo-OS_2in1/Documentary/business/ENTERPRISE_SALES_ARCHITECTURE.md	7703	2026-04-06
+/root/projects/Blueprints_MusGo-OS_2in1/Documentary/business/PRICING_STRATEGY_MODEL.md	5505	2026-04-06
+/root/projects/Blueprints_MusGo-OS_2in1/Documentary/compliance/COMPLIANCE_CERTIFICATION_ROADMAP.md	5427	2026-04-06
+/root/projects/Blueprints_MusGo-OS_2in1/Documentary/doc_qwen & cs.md	565730	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Documentary/docs MCP.md	75	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Documentary/docs Mistral.md	24	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Documentary/docs agent skill.md	48	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Documentary/docs hugging face.md	109003	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Documentary/docs n8n.md	12501	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Documentary/docs telebot creator.md	282203	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Documentary/docs_1min_ai.md	347787	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Documentary/docs_LLM.md	36	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Documentary/docs_hermes_agent.md	443643	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Documentary/docs_zapier.md	735546	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Documentary/gpt audit 1min.ai .md	8288	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Documentary/investor/GOMU_OS_INVESTOR_EXECUTIVE_SUMMARY.md	5734	2026-04-06
+/root/projects/Blueprints_MusGo-OS_2in1/Documentary/legal/ARCHITECTURAL_DOCTRINE.md	746	2026-04-06
+/root/projects/Blueprints_MusGo-OS_2in1/Documentary/legal/COMMERCIAL_LICENSING_MODEL.md	4213	2026-04-06
+/root/projects/Blueprints_MusGo-OS_2in1/Documentary/legal/ENGINEERING_EXECUTION_CONSTITUTION_FINAL.md	6171	2026-04-06
+/root/projects/Blueprints_MusGo-OS_2in1/Documentary/legal/GOMU_OS_SOVEREIGN_MASTER_CONSTITUTION.md	5394	2026-04-06
+/root/projects/Blueprints_MusGo-OS_2in1/Documentary/legal/IP_DECLARATION.md	693	2026-04-06
+/root/projects/Blueprints_MusGo-OS_2in1/Documentary/legal/OFFICIAL_VERSION_FREEZE.md	5054	2026-04-06
+/root/projects/Blueprints_MusGo-OS_2in1/Documentary/production/DATABASE_BACKUP_STRATEGY.md	1036	2026-04-06
+/root/projects/Blueprints_MusGo-OS_2in1/Documentary/production/DISASTER_RECOVERY_PLAN.md	844	2026-04-06
+/root/projects/Blueprints_MusGo-OS_2in1/Documentary/production/SOVEREIGN_CLOUD_ARCHITECTURE_SPEC.md	737	2026-04-06
+/root/projects/Blueprints_MusGo-OS_2in1/Documentary/release/ENTERPRISE_RELEASE_NOTES.md	5090	2026-04-06
+/root/projects/Blueprints_MusGo-OS_2in1/Documentary/whitepaper/GOMU_OS_SOVEREIGN_TECHNICAL_WHITEPAPER.md	7210	2026-05-02
+/root/projects/Blueprints_MusGo-OS_2in1/Framework/Framework platform.md	12356	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Github/Agent/Open Code/Config.md	24429	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Github/Agent/Open Code/Overview Open Code.md	10007	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Github/Agent/VibeMst/VibeMst Github Action Enterprise Blueprint.md	190822	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Github/Agent/gpt/histgpt proyek Musgo-OS 2in1.md	3371	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Github/Agent/kilo.ai/MUSGO-OS 2in1 Repository Github.md	147542	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Github/Agent/tue_jul_14_2026_musgo_os_master_prompt_overview.md	56628	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Github/Musgo Repository Builder Engine/GitExpert Instruksi autonomous workflow.md	97085	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Github/Musgo Repository Builder Engine/filesystem.py	6039	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Human Suggest Engine/Core HUMAN SUGGEST ENGINE.md	353004	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/INDEX.md	364722	2026-10-20
+/root/projects/Blueprints_MusGo-OS_2in1/Ide, Saran dan Masukan/Aeon SKILL.md	76922	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ide, Saran dan Masukan/Bahasan fitur-fitur.md	10359	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ide, Saran dan Masukan/End Point.md	6111	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ide, Saran dan Masukan/End Point_eng.md	5893	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ide, Saran dan Masukan/Modul_Tambahan.md	1194	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ide, Saran dan Masukan/Opera.ai.html	55393	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ide, Saran dan Masukan/Opera.ai.md	55393	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ide, Saran dan Masukan/Tambahan Fitur-fitur.md	22489	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ide, Saran dan Masukan/expo.md	581	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ide, Saran dan Masukan/notebookLM/Protokol Manajemen Krisis dan Operasional Sovereign MUSGO-OS.md	3586	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ide, Saran dan Masukan/notebookLM/technical-documentation-creator.md	4958	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ide, Saran dan Masukan/operaqi-cli.md	14543	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ide, Saran dan Masukan/temporary 1.md	3404	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ide, Saran dan Masukan/temporary 2.md	3278	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ide, Saran dan Masukan/temporary.md	6694	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ide, Saran dan Masukan/tree draft.md	38143	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Ide, Saran dan Masukan/wellcome.html	10319	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/LICENSE	1070	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/LICENSE-COMMERCIAL.md	5474	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/MCP/MCP server list.md	1650	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Memory/Memory from Gpt.md	15002	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Menu dan Fitur/Core Blueprint Penjelasan ManusiawiMusGo-OS 2in1.md	462614	2026-05-19
+/root/projects/Blueprints_MusGo-OS_2in1/Menu dan Fitur/Core DS Blueprint Deskripsi Bahasa Manusia.md	121787	2026-06-30
+/root/projects/Blueprints_MusGo-OS_2in1/Menu dan Fitur/Core DS Master Ultimate Menu & Fitur.md	111836	2026-06-13
+/root/projects/Blueprints_MusGo-OS_2in1/Menu dan Fitur/Core Fitur-fitur MusGo-OS 2in1Blueprint.md	64238	2026-05-25
+/root/projects/Blueprints_MusGo-OS_2in1/Miscellaneous/4-Part_Agent Builder OS.md	7740	2026-09-30
+/root/projects/Blueprints_MusGo-OS_2in1/Miscellaneous/Aeon SKILL.md	76922	2026-09-22
+/root/projects/Blueprints_MusGo-OS_2in1/Miscellaneous/Agent Builder OS.md	4798	2026-09-30
+/root/projects/Blueprints_MusGo-OS_2in1/Miscellaneous/Agent app builder.html	44115	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Miscellaneous/AzureOpenAI.md	447	2026-09-29
+/root/projects/Blueprints_MusGo-OS_2in1/Miscellaneous/CORE LOGIC SECURITY Musgo-OS_2in1.md	14129	2026-10-26
+/root/projects/Blueprints_MusGo-OS_2in1/Miscellaneous/Core 1-30 Governor Constitutional Framework 1-30.md	195288	2026-06-29
+/root/projects/Blueprints_MusGo-OS_2in1/Miscellaneous/Core 31-61 Governor Constitutional Framework.md	192759	2026-07-01
+/root/projects/Blueprints_MusGo-OS_2in1/Miscellaneous/End Point.md	6111	2026-09-22
+/root/projects/Blueprints_MusGo-OS_2in1/Miscellaneous/End Point_eng.md	5893	2026-09-22
+/root/projects/Blueprints_MusGo-OS_2in1/Miscellaneous/Human CLI.html	55393	2026-09-22
+/root/projects/Blueprints_MusGo-OS_2in1/Miscellaneous/Index Agent Builder OS.html	59566	2026-09-30
+/root/projects/Blueprints_MusGo-OS_2in1/Miscellaneous/Index Agent Builder Spec.html	49312	2026-09-30
+/root/projects/Blueprints_MusGo-OS_2in1/Miscellaneous/Inti Dasar Hukum Musgo-OS.md	9146	2026-06-29
+/root/projects/Blueprints_MusGo-OS_2in1/Miscellaneous/Langchain.md	488	2026-09-29
+/root/projects/Blueprints_MusGo-OS_2in1/Miscellaneous/Llama index.md	499	2026-09-29
+/root/projects/Blueprints_MusGo-OS_2in1/Miscellaneous/MUSGO-OS_2IN1_API - ROUTER.md	3616	2026-10-03
+/root/projects/Blueprints_MusGo-OS_2in1/Miscellaneous/Merged Multiple_Source.md	4875212	2026-01-30
+/root/projects/Blueprints_MusGo-OS_2in1/Miscellaneous/Modul_Tambahan.md	1194	2026-09-02
+/root/projects/Blueprints_MusGo-OS_2in1/Miscellaneous/MusGo.json	80436	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Miscellaneous/Musgo_Command.md	16935	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Miscellaneous/Open Ai SDK.md	371	2026-09-29
+/root/projects/Blueprints_MusGo-OS_2in1/Miscellaneous/Openshell_wellcome.html	10319	2026-09-21
+/root/projects/Blueprints_MusGo-OS_2in1/Miscellaneous/Opera.ai.md	55393	2026-09-22
+/root/projects/Blueprints_MusGo-OS_2in1/Miscellaneous/README_Awesome Free Models.md	67227	2026-09-29
+/root/projects/Blueprints_MusGo-OS_2in1/Miscellaneous/Repo folder generate 1.md	91907	2026-10-13
+/root/projects/Blueprints_MusGo-OS_2in1/Miscellaneous/Repo folder generate.md	75718	2026-10-13
+/root/projects/Blueprints_MusGo-OS_2in1/Miscellaneous/Repo folder generate.txt	59793	2026-10-12
+/root/projects/Blueprints_MusGo-OS_2in1/Miscellaneous/Repo+folder+generate.csv	36912	2026-10-12
+/root/projects/Blueprints_MusGo-OS_2in1/Miscellaneous/Writing MUSGO-OS-GLOBAL-SYSTEM-PROMPT-v2.md	9023	2026-10-17
+/root/projects/Blueprints_MusGo-OS_2in1/Miscellaneous/bahasan 9router + skillthis.md	23196	2026-10-26
+/root/projects/Blueprints_MusGo-OS_2in1/Miscellaneous/bahasan 9router.md	26907	2026-10-26
+/root/projects/Blueprints_MusGo-OS_2in1/Miscellaneous/bahasan extraksi modul 1.md	271983	2026-10-30
+/root/projects/Blueprints_MusGo-OS_2in1/Miscellaneous/bahasan extraksi modul.md	461496	2026-10-26
+/root/projects/Blueprints_MusGo-OS_2in1/Miscellaneous/cara aman pakai hermes agent + 9router.md	90013	2026-10-26
+/root/projects/Blueprints_MusGo-OS_2in1/Miscellaneous/expo.md	581	2026-09-22
+/root/projects/Blueprints_MusGo-OS_2in1/Miscellaneous/hardened linux.md	257437	2026-10-19
+/root/projects/Blueprints_MusGo-OS_2in1/Miscellaneous/kilo docs.md	100061	2026-10-19
+/root/projects/Blueprints_MusGo-OS_2in1/Miscellaneous/models.md	6618	2026-10-09
+/root/projects/Blueprints_MusGo-OS_2in1/Miscellaneous/operaAi-cli.md	14543	2026-09-19
+/root/projects/Blueprints_MusGo-OS_2in1/Miscellaneous/semua Catatan 6. MUSGO-OS AI ECONOMY SYSTEM PART 211–250.md	49960	2026-10-26
+/root/projects/Blueprints_MusGo-OS_2in1/Miscellaneous/semua Catatan 7. MUSGO-OS AI GOVERNANCE & CIVILIZATION LAYER PART 251–280.md	63488	2026-10-26
+/root/projects/Blueprints_MusGo-OS_2in1/Miscellaneous/semua Catatan 9. MUSGO-OS FUTURE EXPANSION ROADMAP.md	18523	2026-10-26
+/root/projects/Blueprints_MusGo-OS_2in1/Miscellaneous/semua catatan 8. MUSGO-OS SOVEREIGN GLOBAL OS FINAL FORM PART 281–300.md	22788	2026-10-26
+/root/projects/Blueprints_MusGo-OS_2in1/Miscellaneous/semua catatan logika musgo.md	17507	2026-10-26
+/root/projects/Blueprints_MusGo-OS_2in1/Miscellaneous/skill this docs.md	3210	2026-10-19
+/root/projects/Blueprints_MusGo-OS_2in1/Miscellaneous/temporary 1.md	3404	2026-09-02
+/root/projects/Blueprints_MusGo-OS_2in1/Miscellaneous/temporary 2.md	3278	2026-09-06
+/root/projects/Blueprints_MusGo-OS_2in1/Miscellaneous/temporary 5.md	4246	2026-10-12
+/root/projects/Blueprints_MusGo-OS_2in1/Miscellaneous/temporary.md	10954	2026-09-28
+/root/projects/Blueprints_MusGo-OS_2in1/Miscellaneous/temporary3.md	9186	2026-10-17
+/root/projects/Blueprints_MusGo-OS_2in1/Miscellaneous/temporary4.md	6011	2026-10-17
+/root/projects/Blueprints_MusGo-OS_2in1/Miscellaneous/temporary6.md	6166	2026-10-12
+/root/projects/Blueprints_MusGo-OS_2in1/Miscellaneous/temporary7.md	5061	2026-10-13
+/root/projects/Blueprints_MusGo-OS_2in1/Miscellaneous/web term command.md	6206	2026-10-11
+/root/projects/Blueprints_MusGo-OS_2in1/Miscellaneous/webclaw-crawl-code-claude-com-docs-id-sandboxing-2026-10-18.md	4956144	2026-10-19
+/root/projects/Blueprints_MusGo-OS_2in1/Miscellaneous/webclaw-crawl-docs-docker-com-ai-sandboxes--2026-10-18.md	948642	2026-10-19
+/root/projects/Blueprints_MusGo-OS_2in1/Miscellaneous/webclaw-crawl-docs-langchain-com-langsmith--2026-10-18.md	588521	2026-10-19
+/root/projects/Blueprints_MusGo-OS_2in1/Miscellaneous/webclaw-crawl-docs-langflow-org--2026-10-18.md	860795	2026-10-19
+/root/projects/Blueprints_MusGo-OS_2in1/Miscellaneous/webclaw-crawl-docs-microsandbox-dev-getting-started-quickstart-2026-10-18.md	883290	2026-10-19
+/root/projects/Blueprints_MusGo-OS_2in1/Miscellaneous/webclaw-crawl-docs-ollama-com--2026-10-18.md	158489	2026-10-19
+/root/projects/Blueprints_MusGo-OS_2in1/Miscellaneous/webclaw-crawl-open-sandbox-ai-cli--2026-10-18.md	933085	2026-10-19
+/root/projects/Blueprints_MusGo-OS_2in1/Miscellaneous/webclaw-crawl-pinggy-io-docs--2026-10-18.md	209957	2026-10-19
+/root/projects/Blueprints_MusGo-OS_2in1/Mobile Apps/Semua_Catatan_Human_CLI.md	231879	2026-09-13
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Arsitektur 17-Layer Konstitusional MUSGO-OS 2in1.md	5705	2026-06-21
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Arsitektur AI Berdaulat MUSGO-OS 2in1: Fondasi Peradaban Digital Terpusat.md	5865	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Arsitektur Ekonomi AI Otomatis Ekosistem MUSGO-OS 2in1.md	5054	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Arsitektur Ekonomi AI Otomatis MusGo-OS 2in1.md	5642	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Arsitektur Federasi Sumber Daya Peradaban MUSGO-OS.md	4530	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Arsitektur GAON: Jaringan Operasi Otonom Peradaban MUSGO-OS.md	4419	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Arsitektur Infrastruktur Kognitif Global MUSGO-OS 2in1.md	3867	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Arsitektur Infrastruktur Peradaban Digital MusGo-OS.md	5531	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Arsitektur Infrastruktur Peradaban Sovereign MUSGO-OS 2in1.md	5473	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Arsitektur Jantung Operasional MUSGO-OS 2in1.md	4808	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Arsitektur Jaringan Komunikasi Universal MUSGO-OS 2in1.md	4713	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Arsitektur Jaringan Operasi Otonom Global MUSGO-OS.md	4419	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Arsitektur Keamanan Konstitusional Ekosistem MUSGO-OS 2in1.md	5663	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Arsitektur Keamanan Zero-Trust MUSGO-OS: Benteng AI Berdaulat.md	5926	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Arsitektur Kedaulatan Digital Panduan Memahami 21 Layer MusGo-OS.md	8213	2026-06-25
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Arsitektur Klaster SSH Tunnel 2in1 MUSGO-OS 2in1.md	3355	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Arsitektur Kolektif Musyawarah dan Gotong Royong MUSGO-OS.md	4157	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Arsitektur Memori Kolektif Peradaban Digital MUSGO-OS.md	4264	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Arsitektur MusGo-OS 2in1: Fondasi Peradaban AI Berdaulat.md	5463	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Arsitektur Musyawarah dan Gotong Royong dalam MUSGO-OS 2in1.md	4243	2026-06-21
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Arsitektur Operasional dan Tata Kelola Peradaban MusGo-OS 2in1.md	8076	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Arsitektur Orkestrasi Multi-Agen MUSGO-OS 2in1.md	4980	2026-06-21
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Arsitektur Otak Keputusan Rekursif MUSGO-OS.md	4252	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Arsitektur Peradaban Digital MUSGO-OS 2in1 Berbasis Musyawarah Gotong Royong.md	6798	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Arsitektur Pertahanan Aktif Sovereign Firewall Engine MUSGO-OS.md	3969	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Arsitektur Pertumbuhan Peradaban Otomatis MUSGO-OS.md	4383	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Arsitektur Saraf Kognitif Terpadu MUSGO-OS 2in1.md	4329	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Arsitektur Sistem Internal dan Pertahanan Berdaulat MUSGO-OS 2in1.md	4695	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Arsitektur Sovereign AI: Fondasi Peradaban Digital MUSGO-OS.md	5306	2026-06-21
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Arsitektur Strategis Kecerdasan Buatan Berdaulat MUSGO-OS 2in1.md	5643	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Arsitektur Strategis dan Kedaulatan Sistem MusGo-OS 2in1.md	7678	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Arsitektur Tata Kelola Keamanan Konstitusional MUSGO-OS 2in1.md	5663	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Arsitektur Tata Kelola Kebijaksanaan Peradaban MUSGO-OS 2in1.md	4490	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Arsitektur dan FAQ Strategis MUSGO-OS 2in1: Kedaulatan AI Berbasis Musyawarah.md	7802	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Arsitektur dan Tata Kelola Sovereign MUSGO-OS 2in1.md	8169	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Bahasan Tier User.md	107481	2026-07-09
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Blueprint Peradaban Abadi 5 Lompatan Radikal di Dalam MUSGO-OS.md	8127	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Blueprint Strategis Musgo-OS 2in1 Arsitektur Peradaban AI Berdaulat Founder's Edition.md	10486	2026-06-23
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Blueprint Strategis Transformasi Menuju Ekonomi Kelimpahan Sistemik Civilization PSCE-IRF Framework.md	13587	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Blueprint Strategis dan Arsitektur MusGo-OS 2in1.md	8889	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Briefing Doc Arsitektur Strategis dan Infrastruktur Musgo-OS 2in1.md	6801	2026-06-23
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Briefing Doc_ Ekosistem Sovereign AI MusGo-OS 2in1.md	6860	2026-06-02
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Briefing Dokumen Infrastruktur dan Sistem Runtime MUSGO-OS Bagian 101–123.md	7416	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/CORE LOGIC SECURITY Musgo-OS_2in1.md	14129	2026-10-28
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Cetak Biru Arsitektur Musgo-OS 2in1 Strategi Infrastruktur Peradaban AI Berdaulat.md	9049	2026-06-23
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Core VPS Scalable Musgo-OS.md	31057	2026-06-30
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Daftar Patch Keamanan dan Pembaruan Arsitektur MusGo-OS V9.1.pdf	40780	2026-06-28
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Dari Individu ke Kosmos Narasi Evolusi Kesadaran Kolektif Peradaban.md	8361	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Doktrin Pertahanan Siber Berdaulat Manifesto Infrastruktur Digital MusGo-OS V8.0.md	12642	2026-06-25
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Dokumen Briefing Arsitektur Keamanan Siber Berdaulat MusGo-OS V8.0.md	8014	2026-06-25
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Integrasi Strategis AI Auto-Suggest pada Arsitektur MusGo-OS 2in1.md	4216	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Keamanan Strategis dan Kedaulatan Infrastruktur Peradaban Digital MUSGO-OS.md	4913	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Kedaulatan MusGo-OS: Fondasi Konstitusi dan Otonomi Sistem AI 2in1.md	4436	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Konstitusi Digital dan Tata Kelola Otonom MUSGO-OS 2in1.md	4520	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Laporan Strategis Kedaulatan Digital Ekosistem MusGo-OS V8.0 Edisi Founder & Investor.md	10595	2026-06-25
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Manifesto Arsitektur Master MusGo-OS 2in1 Berdaulat.md	7356	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Manifesto Kedaulatan Data dan Benteng Digital MUSGO-OS 2in1.md	4972	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Masa Depan Kedaulatan Digital 7 Terobosan Radikal MusGo-OS V8.0 yang Mengubah Aturan Main Keamanan Siber.md	7968	2026-06-25
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Matriks Operasi Meta-Intelijen Peradaban MUSGO-OS.md	4413	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Mekanisme MutationObserver dalam Injeksi Dinamis AI MusGo-OS.md	3604	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Membangun Peradaban AI di Atas Server Pas-pasan 5 Rahasia di Balik Musgo-OS 2in1.md	6630	2026-06-23
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Mengenal MusGo-OS 2in1_ Rahasia di Balik AI yang _Bermusyawarah_ dan _Bergotong Royong_.md	6502	2026-06-02
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Menjelajahi Jantung MusGo-OS 2in1_ Glosarium & Panduan Arsitektur untuk Pemula.md	8461	2026-06-02
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Menutup_Celah_Keamanan_Kernel_MusGo-OS v9.1 update.md	4545	2026-06-27
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/MusGo-OS 2in1_ Mengapa OS AI Berbasis Kearifan Lokal Ini Akan Mengubah Standar Kedaulatan Digital Kita_.md	6285	2026-06-02
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Narasi Logika Pertahanan MusGo-OS V8.0 Memahami Sistem Imun Digital yang Berdaulat.md	8063	2026-06-25
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Optimasi Ambang Batas Scaling Infrastruktur MUSGO-OS 2in1.md	4335	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Optimasi Jaringan Super-Baseline dan Redundansi MUSGO-OS 2in1.md	4661	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Orkestrasi Multi-Agen MUSGO-OS: Arsitektur Peradaban Digital Berdaulat.md	4725	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/PROTOKOL KEAMANAN MITIGASI ANCAMAN KEDAULATAN KOGNITIF DAN INTEGRITAS SISTEMIK PERADABAN KOSMIK.md	9144	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Panduan Belajar_ Ekosistem Sovereign AI MusGo-OS 2in1.md	6552	2026-06-02
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Panduan Dasar Sistem Koordinasi Universal dan Rekayasa Realitas.md	8944	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Panduan Dasar Skalabilitas Musgo-OS Dari Komputer Kecil Menuju Peradaban Global.md	7584	2026-06-23
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Panduan Standar Implementasi MusGo-OS V8.0 Arsitektur Kedaulatan Digital dan Pertahanan Aktif.md	9947	2026-06-25
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Panduan Studi Arsitektur Strategis Musgo-OS 2in1.md	7811	2026-06-23
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Panduan Studi Keamanan Siber MusGo-OS V8.0.md	7785	2026-06-25
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Panduan Studi MUSGO-OS 2IN1 Cluster A Infrastruktur & Sistem Runtime Peradaban.md	8861	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Pedoman Tata Kelola Pengambilan Keputusan Kolektif MusGo-OS 2in1.md	9692	2026-06-02
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Penguatan_Arsitektur_Keamanan_MusGo-OS_9.md	4555	2026-06-26
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Perisai Digital Memahami Firecracker MicroVM vs. gVisor dalam Isolasi Agen AI.md	7143	2026-06-23
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Protokol Inisialisasi 3 SSH Tunnel Boot-Time MUSGO-OS 2in1.md	4021	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Report Core Database Musgo-OS.md	23206	2026-07-07
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Report Security Holes Blueprint Database Update.md	69646	2026-07-02
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Report VPS SCALABLE.md	64229	2026-06-28
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Saran Perbaikn 0.1. Modul Cyber Security Musgo-OS V9.1 Update.md	99091	2026-06-28
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Semua catatan Architecture MusGo.md	105621	2026-05-25
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Semua catatan VPS SCALABLE.md	100470	2026-06-23
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Sistem Self-Healing Watchdog: Saraf Otonom Infrastruktur Peradaban Digital.md	3967	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Spesifikasi Sub-sistem Arsitektur Lapisan Eksekusi dan Tata Kelola MusGo-OS.pdf	65798	2026-06-28
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Spesifikasi Subsistem Tata Kelola Keamanan dan Peradaban MusGo-OS.pdf	71071	2026-06-28
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Strategi Pengerasan Infrastruktur dan Pertahanan Jaringan Zero-Trust MusGo-OS 2in1.md	8090	2026-06-02
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Strategi Pertahanan Keamanan Musgo-OS Arsitektur Nirkelala dan Kedaulatan AI Berdaulat.md	9355	2026-06-23
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/Tata Kelola Keamanan MusGo-OS 2in1: Benteng AI Berdaulat.md	6538	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/VPS Scale by Ds.md	14521	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/VPS Scale by Gem.md	10644	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/VPS scalable Musgo-OS.md	31057	2026-06-30
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/bahasan 9router + skillthis.md	23196	2026-10-28
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/bahasan 9router.md	26907	2026-10-28
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/bahasan extraksi modul 1.md	241522	2026-10-28
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/bahasan extraksi modul.md	461496	2026-10-28
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/content.md	407823	2026-07-16
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/en_Litle Book About OS Development.md	146729	2026-10-28
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/semua Catatan 6. MUSGO-OS AI ECONOMY SYSTEM PART 211–250.md	49960	2026-10-28
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/semua Catatan 7. MUSGO-OS AI GOVERNANCE & CIVILIZATION LAYER PART 251–280.md	63488	2026-10-28
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/semua Catatan 9. MUSGO-OS FUTURE EXPANSION ROADMAP.md	18523	2026-10-28
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/semua catatan 8. MUSGO-OS SOVEREIGN GLOBAL OS FINAL FORM PART 281–300.md	22788	2026-10-28
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/note/semua catatan logika musgo.md	17507	2026-10-28
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/studio/Arsitek___Sang_Oracle.mp4.txt	4854	2026-10-18
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/studio/Konstitusi_AI_pada_Kernel_MusGo-OS_v9.m4a.txt	3829	2026-10-18
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/studio/MUSGO-OS_2in1-1.mp4.txt	5205	2026-10-18
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/studio/MUSGO_OS_Peradaban_AI_Berdaulat.m4a.txt	4576	2026-10-18
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/studio/MusGo-OS_2in1.mp4.txt	4542	2026-10-18
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/studio/MusGo-OS_Kembalikan_Kedaulatan_Manusia_atas_AI.m4a.txt	4823	2026-10-18
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/studio/MusGo-OS_Lawan_Eksploitasi_Data_dengan_Amanah.m4a.txt	4564	2026-10-18
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/studio/MusGo-OS_V9-1.mp4.txt	5388	2026-10-18
+/root/projects/Blueprints_MusGo-OS_2in1/Notebooklm/studio/MusGo-OS_V9.mp4.txt	5413	2026-10-18
+/root/projects/Blueprints_MusGo-OS_2in1/Prompts/Amelia — CYBER SECURITY & NETWORKING SYSTEM PROMPT.md	8477	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Prompts/Core NotebookLM_Instruction_Custom.md	7912	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Prompts/Core Notebooklm Instruction.md	2776	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Prompts/Core Security Holes Scan — CYBER SECURITY & NETWORKING SYSTEM PROMPT INSTRUCTION.md	22630	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Prompts/Core Security_Holes Prompt Instruction.md	5068	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Prompts/Core_Knowledge_Rules.md	4893	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Prompts/EthHack_CYBER SECURITY & NETWORKING MASTER PROMPT.md	9222	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Prompts/GLOBAL SYSTEM PROMPT v2 Musgo-OS 2in1.md	4601	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Prompts/Heart beat Prompt.md	5263	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Prompts/INTEGRITAS ANTI-PENIPUAN.md	4008	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Prompts/MASTER PROMPT INSTRUCTION.md	15304	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Prompts/Master Blueprint Musgo-OS 2in1 Generator.md	7547	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Prompts/Memory import Prompt.md	32707	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Prompts/MusGo 2in1 Custom_Ai_Model_Conversation.md	904	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Prompts/MusGo 2in1 Generator Description.md	2854	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Prompts/MusGo 2in1 Generator Prompt Ai Model Custom DEEP THINKING.md	6718	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Prompts/Personal Prompt Instruction Strategic.md	5404	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Prompts/Private Prompt_HYBRID EXECUTIVE ASSISTANT.md	1961	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Prompts/Prompt Gpt Default.md	1491	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Prompts/Prompt Pencari Ide.md	2796	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Prompts/Prompt editor tulisan.md	2858	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Prompts/Prompt konsultan.md	4600	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Prompts/Prompt partner coding.md	1972	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Prompts/Prompt pembimbing belajar.md	7916	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Prompts/Short prompt custom+personal+Compact.md	6333	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Prompts/Soul Prompt Kai9000.md	965	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Prompts/Spesifik Prompt/Development MusGo-OS 2in1/Development MusGo-OS 2in1 Prompt.md	31849	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Prompts/System Prompt Instruction Musgo-OS Custom.md	9800	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Prompts/merged Prompt Gemini Custom.md	20147	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Prompts/xai instructions.md	35121	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/README.md	8204	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Repository Musgo-OS 2in1/0. V5.4 Blueprint architecture manusia Musgo-OS.md	181291	2026-06-13
+/root/projects/Blueprints_MusGo-OS_2in1/Repository Musgo-OS 2in1/AUTONOMOUS GITHUB REPOSITORY ARCHITECT AGENT.md	5432	2026-07-03
+/root/projects/Blueprints_MusGo-OS_2in1/Repository Musgo-OS 2in1/Core FullCompletedRepoLinks.md	38527	2026-01-12
+/root/projects/Blueprints_MusGo-OS_2in1/Repository Musgo-OS 2in1/Core MUSGO-OS V9.1 — STRUKTUR REPOSITORY FINAL.md	86141	2026-07-17
+/root/projects/Blueprints_MusGo-OS_2in1/Repository Musgo-OS 2in1/Core Qwen Daftar Links repo.md	20611	2026-02-05
+/root/projects/Blueprints_MusGo-OS_2in1/Repository Musgo-OS 2in1/Core V9.1 Update Master Index Repo.md	284566	2026-07-17
+/root/projects/Blueprints_MusGo-OS_2in1/Repository Musgo-OS 2in1/DS Blueprint Deskripsi Setiap Folder dan Subfolder dalam Bahasa Manusia.md	26340	2026-05-22
+/root/projects/Blueprints_MusGo-OS_2in1/Repository Musgo-OS 2in1/FullCompletedRepoLinks.md	38527	2026-01-12
+/root/projects/Blueprints_MusGo-OS_2in1/Repository Musgo-OS 2in1/Gem_struktur tree repo MusGo-OS 2in1.md	4335	2026-05-24
+/root/projects/Blueprints_MusGo-OS_2in1/Repository Musgo-OS 2in1/STRUKTUR REPOSITORY MUSGO-OS.md	86147	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Repository Musgo-OS 2in1/deepseek/0. DS Musgo-OS V6.0 Master Repo.md	968471	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Repository Musgo-OS 2in1/deepseek/Core MUSGO-OS V9.1 — STRUKTUR REPOSITORY FINAL.md	86141	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Repository Musgo-OS 2in1/deepseek/Core V9.1 Update Master Index Repo.md	284566	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Repository Musgo-OS 2in1/deepseek/table/table_20260624.csv	2165	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Repository Musgo-OS 2in1/fullRepoLinks.md	16714	2026-01-26
+/root/projects/Blueprints_MusGo-OS_2in1/Repository Musgo-OS 2in1/mistral vibe/0. V6.0 Struktur Repo Musgo-OS 2in1.md	321728	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Repository Musgo-OS 2in1/mistral vibe/Autonomous Workflow/Autonomous Repository Design/VibeMst Autonomous Repository Design.md	119925	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Repository Musgo-OS 2in1/mistral vibe/Autonomous Workflow/Musgo-OS Blueprint Generate/VibeMst Musgo-OS Blueprint Generate.md	138923	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Repository Musgo-OS 2in1/mistral vibe/STRUKTUR V6.0.md	46792	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Repository Musgo-OS 2in1/mistral vibe/V6.0. Vibe - MASTER INDEX STRUKTUR.md	67631	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Repository Musgo-OS 2in1/mistral vibe/V6.0. Vibe - Struktur Repo Musgo-OS 2in1.md	54158	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/SDK/SDK List.md	11288	2026-06-30
+/root/projects/Blueprints_MusGo-OS_2in1/SDK/daftar_sdk.md	10729	2026-02-23
+/root/projects/Blueprints_MusGo-OS_2in1/SEARCH_INDEX.csv	222393	2026-10-20
+/root/projects/Blueprints_MusGo-OS_2in1/STRUKTUR REPOSITORY FINAL.md	86173	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/STRUKTUR REPOSITORY UPDATE.md	5226	2026-10-28
+/root/projects/Blueprints_MusGo-OS_2in1/Sanboxing/Mini root filesystem/Alpine/alpine-minirootfs-3.24.1-aarch64.tar.gz.asc	833	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Sanboxing/Mini root filesystem/Alpine/alpine-minirootfs-3.24.1-aarch64.tar.gz.sha256	106	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Sanboxing/Mini root filesystem/Microbox/README.md.md	12534	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Sanboxing/Mini root filesystem/Ubuntu 24.04/ubuntu-base-24.04.3-base-arm64.tar.gz.gz	102326	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Sanboxing/Proot/Debian/proot_5.4.0-3_arm64.deb	81852	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Sanboxing/Proot/Ubuntu/SHA 256 Checkaum.md	306	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Sanboxing/Proot/Ubuntu/proot_5.4.0-3.debian.tar.xz	5152	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Sanboxing/Proot/Ubuntu/proot_5.4.0-3.dsc	2168	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Sanboxing/Proot/Ubuntu/proot_5.4.0.orig.tar.gz	225529	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Sanboxing/Standard/alpine-standard-3.24.1-aarch64.iso.asc	833	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Sanboxing/Standard/alpine-standard-3.24.1-aarch64.iso.sha256	101	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Secret/.env	53	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Secret/Protokol Inisialisasi Kunci Master Sovereign MUSGO-OS.md	5579	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Secret/ezfolders-template.csv	211	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Secret/ollama-local-ai-settings.json	30172	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/0. CORE_KERNEL_PART_1-43/0. MUSGO-OS CORE_KERNEL_PART_1-43.md	470547	2026-06-21
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/00, 0, 1, 2. notes/Arsitektur 17-Layer Konstitusional MUSGO-OS 2in1.md	5705	2026-06-21
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/00, 0, 1, 2. notes/Arsitektur AI Berdaulat MUSGO-OS 2in1: Fondasi Peradaban Digital Terpusat.md	5865	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/00, 0, 1, 2. notes/Arsitektur Ekonomi AI Otomatis Ekosistem MUSGO-OS 2in1.md	5054	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/00, 0, 1, 2. notes/Arsitektur Ekonomi AI Otomatis MusGo-OS 2in1.md	5642	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/00, 0, 1, 2. notes/Arsitektur Federasi Sumber Daya Peradaban MUSGO-OS.md	4530	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/00, 0, 1, 2. notes/Arsitektur GAON: Jaringan Operasi Otonom Peradaban MUSGO-OS.md	4419	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/00, 0, 1, 2. notes/Arsitektur Infrastruktur Kognitif Global MUSGO-OS 2in1.md	3867	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/00, 0, 1, 2. notes/Arsitektur Infrastruktur Peradaban Digital MusGo-OS.md	5531	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/00, 0, 1, 2. notes/Arsitektur Infrastruktur Peradaban Sovereign MUSGO-OS 2in1.md	5473	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/00, 0, 1, 2. notes/Arsitektur Jantung Operasional MUSGO-OS 2in1.md	4808	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/00, 0, 1, 2. notes/Arsitektur Jaringan Komunikasi Universal MUSGO-OS 2in1.md	4713	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/00, 0, 1, 2. notes/Arsitektur Jaringan Operasi Otonom Global MUSGO-OS.md	4419	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/00, 0, 1, 2. notes/Arsitektur Keamanan Konstitusional Ekosistem MUSGO-OS 2in1.md	5663	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/00, 0, 1, 2. notes/Arsitektur Keamanan Zero-Trust MUSGO-OS: Benteng AI Berdaulat.md	5926	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/00, 0, 1, 2. notes/Arsitektur Klaster SSH Tunnel 2in1 MUSGO-OS 2in1.md	3355	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/00, 0, 1, 2. notes/Arsitektur Kolektif Musyawarah dan Gotong Royong MUSGO-OS.md	4157	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/00, 0, 1, 2. notes/Arsitektur Memori Kolektif Peradaban Digital MUSGO-OS.md	4264	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/00, 0, 1, 2. notes/Arsitektur MusGo-OS 2in1: Fondasi Peradaban AI Berdaulat.md	5463	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/00, 0, 1, 2. notes/Arsitektur Musyawarah dan Gotong Royong dalam MUSGO-OS 2in1.md	4243	2026-06-21
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/00, 0, 1, 2. notes/Arsitektur Operasional dan Tata Kelola Peradaban MusGo-OS 2in1.md	8076	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/00, 0, 1, 2. notes/Arsitektur Orkestrasi Multi-Agen MUSGO-OS 2in1.md	4980	2026-06-21
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/00, 0, 1, 2. notes/Arsitektur Otak Keputusan Rekursif MUSGO-OS.md	4252	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/00, 0, 1, 2. notes/Arsitektur Peradaban Digital MUSGO-OS 2in1 Berbasis Musyawarah Gotong Royong.md	6798	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/00, 0, 1, 2. notes/Arsitektur Pertahanan Aktif Sovereign Firewall Engine MUSGO-OS.md	3969	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/00, 0, 1, 2. notes/Arsitektur Pertumbuhan Peradaban Otomatis MUSGO-OS.md	4383	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/00, 0, 1, 2. notes/Arsitektur Saraf Kognitif Terpadu MUSGO-OS 2in1.md	4329	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/00, 0, 1, 2. notes/Arsitektur Sistem Internal dan Pertahanan Berdaulat MUSGO-OS 2in1.md	4695	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/00, 0, 1, 2. notes/Arsitektur Sovereign AI: Fondasi Peradaban Digital MUSGO-OS.md	5306	2026-06-21
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/00, 0, 1, 2. notes/Arsitektur Strategis Kecerdasan Buatan Berdaulat MUSGO-OS 2in1.md	5643	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/00, 0, 1, 2. notes/Arsitektur Strategis dan Kedaulatan Sistem MusGo-OS 2in1.md	7678	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/00, 0, 1, 2. notes/Arsitektur Tata Kelola Keamanan Konstitusional MUSGO-OS 2in1.md	5663	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/00, 0, 1, 2. notes/Arsitektur Tata Kelola Kebijaksanaan Peradaban MUSGO-OS 2in1.md	4490	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/00, 0, 1, 2. notes/Arsitektur dan FAQ Strategis MUSGO-OS 2in1: Kedaulatan AI Berbasis Musyawarah.md	7802	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/00, 0, 1, 2. notes/Arsitektur dan Tata Kelola Sovereign MUSGO-OS 2in1.md	8169	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/00, 0, 1, 2. notes/Blueprint Strategis dan Arsitektur MusGo-OS 2in1.md	8889	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/00, 0, 1, 2. notes/Integrasi Strategis AI Auto-Suggest pada Arsitektur MusGo-OS 2in1.md	4216	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/00, 0, 1, 2. notes/Keamanan Strategis dan Kedaulatan Infrastruktur Peradaban Digital MUSGO-OS.md	4913	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/00, 0, 1, 2. notes/Kedaulatan MusGo-OS: Fondasi Konstitusi dan Otonomi Sistem AI 2in1.md	4436	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/00, 0, 1, 2. notes/Konstitusi Digital dan Tata Kelola Otonom MUSGO-OS 2in1.md	4520	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/00, 0, 1, 2. notes/Manifesto Arsitektur Master MusGo-OS 2in1 Berdaulat.md	7356	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/00, 0, 1, 2. notes/Manifesto Kedaulatan Data dan Benteng Digital MUSGO-OS 2in1.md	4972	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/00, 0, 1, 2. notes/Mekanisme MutationObserver dalam Injeksi Dinamis AI MusGo-OS.md	3604	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/00, 0, 1, 2. notes/Optimasi Ambang Batas Scaling Infrastruktur MUSGO-OS 2in1.md	4335	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/00, 0, 1, 2. notes/Optimasi Jaringan Super-Baseline dan Redundansi MUSGO-OS 2in1.md	4661	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/00, 0, 1, 2. notes/Orkestrasi Multi-Agen MUSGO-OS: Arsitektur Peradaban Digital Berdaulat.md	4725	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/00, 0, 1, 2. notes/Protokol Inisialisasi 3 SSH Tunnel Boot-Time MUSGO-OS 2in1.md	4021	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/00, 0, 1, 2. notes/Report 0-2. Sovereign AI Operating System + Economic System + Civilization Infrastructure.md	67323	2026-06-28
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/00, 0, 1, 2. notes/Report Security Holes 0,1,2 Sovereign AI Operating System + Economic System + Civilization Infrastructure.md	31250	2026-06-30
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/00, 0, 1, 2. notes/Semua catatan 0,1,2 Sovereign AI Operating System + Economic System + Civilization Infrastructure.md	125601	2026-06-30
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/00, 0, 1, 2. notes/Sistem Self-Healing Watchdog: Saraf Otonom Infrastruktur Peradaban Digital.md	3967	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/00, 0, 1, 2. notes/Spesifikasi Sub-sistem Arsitektur Lapisan Eksekusi dan Tata Kelola MusGo-OS.pdf	65798	2026-06-28
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/00, 0, 1, 2. notes/Tata Kelola Keamanan MusGo-OS 2in1: Benteng AI Berdaulat.md	6538	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/00. MASTER_ROM_INDEX_v1/00. MASTER_ROM_INDEX_v1.md	8083	2026-06-21
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/1. MUSGO-OS CORE OS EXPANSION LAYER PART 44-60/1. MUSGO-OS CORE OS EXPANSION LAYER PART 44-60.md	205569	2026-06-13
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/2. MUSGO-OS AI EXECUTION & INTELLIGENCE LAYER PART 61-100/2. MUSGO-OS AI EXECUTION & INTELLIGENCE LAYER PART 61-100.md	521207	2026-06-13
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/3. MUSGO-OS INFRASTRUCTURE & RUNTIME SYSTEM PART 101–140/3. MUSGO-OS INFRASTRUCTURE & RUNTIME SYSTEM PART 101–140.md	474114	2026-06-13
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/3. MUSGO-OS INFRASTRUCTURE & RUNTIME SYSTEM PART 101–140/Report 3. MUSGO-OS INFRASTRUCTURE & RUNTIME SYSTEM PART 101–140.md	63180	2026-06-28
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/3. MUSGO-OS INFRASTRUCTURE & RUNTIME SYSTEM PART 101–140/notes/Blueprint Peradaban Abadi 5 Lompatan Radikal di Dalam MUSGO-OS.md	8127	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/3. MUSGO-OS INFRASTRUCTURE & RUNTIME SYSTEM PART 101–140/notes/Blueprint Strategis Transformasi Menuju Ekonomi Kelimpahan Sistemik Civilization PSCE-IRF Framework.md	13587	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/3. MUSGO-OS INFRASTRUCTURE & RUNTIME SYSTEM PART 101–140/notes/Briefing Dokumen Infrastruktur dan Sistem Runtime MUSGO-OS Bagian 101–123.md	7416	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/3. MUSGO-OS INFRASTRUCTURE & RUNTIME SYSTEM PART 101–140/notes/Dari Individu ke Kosmos Narasi Evolusi Kesadaran Kolektif Peradaban.md	8361	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/3. MUSGO-OS INFRASTRUCTURE & RUNTIME SYSTEM PART 101–140/notes/Matriks Operasi Meta-Intelijen Peradaban MUSGO-OS.md	4413	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/3. MUSGO-OS INFRASTRUCTURE & RUNTIME SYSTEM PART 101–140/notes/PROTOKOL KEAMANAN MITIGASI ANCAMAN KEDAULATAN KOGNITIF DAN INTEGRITAS SISTEMIK PERADABAN KOSMIK.md	9144	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/3. MUSGO-OS INFRASTRUCTURE & RUNTIME SYSTEM PART 101–140/notes/Panduan Dasar Sistem Koordinasi Universal dan Rekayasa Realitas.md	8944	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/3. MUSGO-OS INFRASTRUCTURE & RUNTIME SYSTEM PART 101–140/notes/Panduan Studi MUSGO-OS 2IN1 Cluster A Infrastruktur & Sistem Runtime Peradaban.md	8861	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/3. MUSGO-OS INFRASTRUCTURE & RUNTIME SYSTEM PART 101–140/semua catatan 3. MUSGO-OS INFRASTRUCTURE & RUNTIME SYSTEM PART 101–140.md	113467	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/4. MUSGO-OS SECURITY & IDENTITY GOVERNANCE PART 141-180/4. MUSGO-OS SECURITY & IDENTITY GOVERNANCE PART 141-180.md	470655	2026-06-14
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/4. MUSGO-OS SECURITY & IDENTITY GOVERNANCE PART 141-180/Report 4. MUSGO-OS GOVERNANCE PART 141-180.md	73023	2026-06-27
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/4. MUSGO-OS SECURITY & IDENTITY GOVERNANCE PART 141-180/Semua catatan 4. MUSGO-OS SECURITY & IDENTITY GOVERNANCE PART 141-180.md	280818	2026-06-27
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/4. MUSGO-OS SECURITY & IDENTITY GOVERNANCE PART 141-180/notes/Spesifikasi Subsistem Tata Kelola Keamanan dan Peradaban MusGo-OS.pdf	71071	2026-06-28
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/5. MUSGO-OS DATA STORAGE & RESILIENCE SYSTEM PART 181–210/5. MUSGO-OS DATA STORAGE & RESILIENCE SYSTEM PART 181–210.md	343941	2026-06-14
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/5. MUSGO-OS DATA STORAGE & RESILIENCE SYSTEM PART 181–210/Report 5. MUSGO-OS DATA STORAGE & RESILIENCE SYSTEM PART 181–210.md	79432	2026-06-29
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/5. MUSGO-OS DATA STORAGE & RESILIENCE SYSTEM PART 181–210/Semua Catatan 5. MUSGO-OS DATA STORAGE & RESILIENCE SYSTEM PART 181–210.md	263727	2026-06-29
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/5. MUSGO-OS DATA STORAGE & RESILIENCE SYSTEM PART 181–210/notes/Spesifikasi Tabel Arsitektur Peradaban MusGo-OS (Bagian 181–210).pdf	59624	2026-06-29
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/6. MUSGO-OS AI ECONOMY SYSTEM PART 211–250/6. MUSGO-OS AI ECONOMY SYSTEM PART 211–250.md	438144	2026-06-18
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/7. MUSGO-OS AI GOVERNANCE & CIVILIZATION LAYER PART 251–280/7. MUSGO-OS AI GOVERNANCE & CIVILIZATION LAYER PART 251–280.md	306883	2026-06-18
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/8. MUSGO-OS SOVEREIGN GLOBAL OS FINAL FORM PART 281–300/8. MUSGO-OS SOVEREIGN GLOBAL OS FINAL FORM PART 281–300.md	141383	2026-06-19
+/root/projects/Blueprints_MusGo-OS_2in1/Sovereign AI Operating System + Economic System + Civilization Infrastructure/9. MUSGO-OS FUTURE EXPANSION ROADMAP/9. MUSGO-OS FUTURE EXPANSION ROADMAP.md	4131	2026-06-19
+/root/projects/Blueprints_MusGo-OS_2in1/System Prompt Instruction Musgo-OS Custom.md	9800	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/VPS SCALABLE/Agent/Deepseek/VPS Scale by Ds.md	14521	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/VPS SCALABLE/Agent/Gemini/VPS Scale by Gem.md	10864	2026-10-10
+/root/projects/Blueprints_MusGo-OS_2in1/VPS SCALABLE/Core VPS Scalable Musgo-OS.md	31057	2026-06-30
+/root/projects/Blueprints_MusGo-OS_2in1/VPS SCALABLE/Report VPS SCALABLE.md	64229	2026-06-28
+/root/projects/Blueprints_MusGo-OS_2in1/VPS SCALABLE/Semua catatan VPS SCALABLE.md	100470	2026-06-23
+/root/projects/Blueprints_MusGo-OS_2in1/VPS SCALABLE/VPS Scale by Ds.md	14521	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/VPS SCALABLE/VPS Scale by Gem.md	10644	2026-06-22
+/root/projects/Blueprints_MusGo-OS_2in1/VPS SCALABLE/VPS scalable Musgo-OS.md	31057	2026-06-30
+/root/projects/Blueprints_MusGo-OS_2in1/VPS SCALABLE/notes/Blueprint Strategis Musgo-OS 2in1 Arsitektur Peradaban AI Berdaulat Founder's Edition.md	10486	2026-06-23
+/root/projects/Blueprints_MusGo-OS_2in1/VPS SCALABLE/notes/Briefing Doc Arsitektur Strategis dan Infrastruktur Musgo-OS 2in1.md	6801	2026-06-23
+/root/projects/Blueprints_MusGo-OS_2in1/VPS SCALABLE/notes/Cetak Biru Arsitektur Musgo-OS 2in1 Strategi Infrastruktur Peradaban AI Berdaulat.md	9049	2026-06-23
+/root/projects/Blueprints_MusGo-OS_2in1/VPS SCALABLE/notes/Matriks Skalabilitas Infrastruktur VPS Musgo-OS 2in1.pdf	40641	2026-06-23
+/root/projects/Blueprints_MusGo-OS_2in1/VPS SCALABLE/notes/Membangun Peradaban AI di Atas Server Pas-pasan 5 Rahasia di Balik Musgo-OS 2in1.md	6630	2026-06-23
+/root/projects/Blueprints_MusGo-OS_2in1/VPS SCALABLE/notes/Panduan Dasar Skalabilitas Musgo-OS Dari Komputer Kecil Menuju Peradaban Global.md	7584	2026-06-23
+/root/projects/Blueprints_MusGo-OS_2in1/VPS SCALABLE/notes/Panduan Studi Arsitektur Strategis Musgo-OS 2in1.md	7811	2026-06-23
+/root/projects/Blueprints_MusGo-OS_2in1/VPS SCALABLE/notes/Perisai Digital Memahami Firecracker MicroVM vs. gVisor dalam Isolasi Agen AI.md	7143	2026-06-23
+/root/projects/Blueprints_MusGo-OS_2in1/VPS SCALABLE/notes/Strategi Pertahanan Keamanan Musgo-OS Arsitektur Nirkelala dan Kedaulatan AI Berdaulat.md	9355	2026-06-23
+/root/projects/Blueprints_MusGo-OS_2in1/configuration/ezfolders-template.csv	211	2026-05-16
+/root/projects/Blueprints_MusGo-OS_2in1/configuration/markdown_editor.md	726	2026-05-16
+/root/projects/Blueprints_MusGo-OS_2in1/tools/blueprint_manifest.json	925105	2026-10-20
+/root/projects/Blueprints_MusGo-OS_2in1/tools/build_index.py	15627	2026-10-20
+/root/projects/Blueprints_MusGo-OS_2in1/tools/build_report.txt	725	2026-10-20
+/root/projects/Blueprints_MusGo-OS_2in1/tools/build_stdout.txt	119	2026-10-20
+/root/projects/Blueprints_MusGo-OS_2in1/tools/csv_head.txt	305	2026-10-20
+/root/projects/Blueprints_MusGo-OS_2in1/tools/csv_paths.txt	67894	2026-10-20
+/root/projects/Blueprints_MusGo-OS_2in1/tools/fs_paths.txt	107041	2026-10-20
+/root/projects/Blueprints_MusGo-OS_2in1/tools/pyv.txt	0	2026-10-20
+/root/projects/Blueprints_MusGo-OS_2in1/tools/scan_blueprints.py	2440	2026-10-20
+/root/projects/Blueprints_MusGo-OS_2in1/tools/stats.log	0	2026-10-20
+/root/projects/Blueprints_MusGo-OS_2in1/tools/stats.out	9	2026-10-20
+/root/projects/Blueprints_MusGo-OS_2in1/tools/stats.py	701	2026-10-20

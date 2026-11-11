@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-10-22T14:xx WIB",
+  "state": "active",
+  "repo_target": {
+    "local_path": "/root/Repository MusGo-OS_2in1-main",
+    "remote": "git@github.com:dhanidjulian-web/MusGo-OS_2in1.git",
+    "branch": "main",
+    "head": "2353167",
+    "status": "clean"
+  },
+  "workspace": {
+    "local_path": "/root/projects",
+    "remote": "git@github.com:dhanidjulian-web/Workspace_Musgo_Core_Blueprints.git",
+    "branch": "main"
+  },
+  "artifacts": {
+    "memory": "memory/",
+    "knowledge": "Knowledge/",
+    "runtime": "Runtime/",
+    "state": ".state/"
+  }
+}

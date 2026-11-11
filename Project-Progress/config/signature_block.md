@@ -1,6 +1,6 @@
 # ============================================================
 # MusGo-OS 2in1 — SIGNATURE & OUTPUT CONTRACT
-# File : /home/Project-Progress/config/signature_block.md
+# File : /root/projects/Project-Progress/config/signature_block.md
 # Aturan: SETIAP output / exit text WAJIB diakhiri blok ini (PROMPT Aturan #4)
 # ============================================================
 

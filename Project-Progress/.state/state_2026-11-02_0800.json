@@ -1,0 +1,16 @@
+{
+  "timestamp_wib": "2026-11-02T08:00:00+07:00",
+  "mode": "VERIFIED-LIVE",
+  "workspace": {"path": "/root/projects", "valid": true, "read_only": true, "index_md": 364722, "agent_index_md": 191684, "index_agents_skills_md": 9443},
+  "repo_target": {"path": "/root/Repository MusGo-OS_2in1-main", "remote": "git@github.com:dhanidjulian-web/MusGo-OS_2in1.git", "auth": "ssh_ed25519_no_pat", "branch": "main", "head": "6b2af4e", "origin_main": "6b2af4e", "ahead": 0, "behind": 0, "porcelain": 0, "tracked": 1591, "fetch_exit_probe": 128, "fetch_note": "SSH administratively prohibited in probe session; HEAD==origin_main cached, tree clean, no local drift"},
+  "modules": {
+    "mcl_enforcer": {"path": "constitutional_domain/layer_00_governor/mcl_enforcer/", "layer": "layer_00_governor", "vps_min": "S0", "tiers": "FREE-ENTERPRISE", "tests_pass": 13, "tests_fail": 0, "rules_hash": "9c926b018e37b38b", "fail_closed": true},
+    "ai_provider_9router": {"path": "cognitive_domain/layer_05_agent_orchestration/ai_provider_9router/", "layer": "layer_05_agent_orchestration", "vps_min": "S0", "tiers": "FREE-ENTERPRISE", "health": "ok", "models": 861, "providers": 86, "allowlist_models": 69, "budget_daily_usd": 5.0, "budget_monthly_usd": 100.0, "cold_start_performed": true}
+  },
+  "runtime_artifacts": {"tracked": 2, "logs_tracked": 0},
+  "signals": {"sms_new": 2, "sms_spam": 1, "sms_phishing": 1, "notifications_new": 0, "scheduled_tasks": 0},
+  "vps": "S0-S16 (17 levels)", "tiers": ["FREE","LIGHT","LITE","MEDIUM","CREATOR","PRO","TEAM","ENTERPRISE"],
+  "open_items": ["9router autostart + MUSGO_9ROUTER_API_KEY needs VPS S1", "Audit Fase 3-7 pending", "crano.ai CLOSED"],
+  "changes": {"code": 0, "commit": 0, "push": 0, "cold_start": 1},
+  "result": "DETAK_JANTUNG_OK_WITH_SECURITY_ALERT"
+}

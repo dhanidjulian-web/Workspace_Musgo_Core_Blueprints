@@ -1,0 +1,69 @@
+{
+  "timestamp_local": "2026-10-30T21:00:00+07:00",
+  "mode": "VERIFIED-LIVE",
+  "result": "DETAK_JANTUNG_OK",
+  "workspace": {
+    "path": "/root/projects",
+    "root_entries_visible": 10,
+    "indexes": {
+      "Blueprints_MusGo-OS_2in1/INDEX.md": 364722,
+      "Blueprints_MusGo-OS_2in1/AGENT_INDEX.md": 191684,
+      "Agents-Skills/INDEX_AGENTS_SKILLS.md": 9443
+    },
+    "git_operations": "none (read-only rule)"
+  },
+  "repo_target": {
+    "path": "/root/Repository MusGo-OS_2in1-main",
+    "remote": "git@github.com:dhanidjulian-web/MusGo-OS_2in1.git",
+    "auth": "ssh-ed25519-no-pat",
+    "branch": "main",
+    "head": "6b2af4ee1feea8fc5686e5a9019d60378a652f96",
+    "fetch_exit": 0,
+    "ahead": 0,
+    "behind": 0,
+    "porcelain_lines": 0,
+    "tracked_files": 1591,
+    "root_dirs": 28,
+    "layer_dirs": 21,
+    "pyc_tracked": 0,
+    "drift": false
+  },
+  "modules": {
+    "mcl_enforcer": {
+      "path": "constitutional_domain/layer_00_governor/mcl_enforcer/",
+      "files": 5,
+      "tests": "13/13 PASS | 0 FAIL",
+      "rules_hash": "9c926b018e37b38b",
+      "fail_closed": true
+    },
+    "ai_provider_9router": {
+      "path": "cognitive_domain/layer_05_agent_orchestration/ai_provider_9router/",
+      "tracked_files": 17,
+      "health": {"ok": true},
+      "models": 861,
+      "providers": 86,
+      "allowlist": 69,
+      "guard": {"deny_by_default": true, "fail_closed": true, "audit_all_calls": true},
+      "budget": {"daily_usd": 5, "monthly_usd": 100, "on_exceed": "block"}
+    }
+  },
+  "vps_levels": {"total": 17, "notation": "S0..S16", "active": ["S0"], "pending": "S1-S16"},
+  "tiers": ["FREE","LIGHT","LITE","MEDIUM","CREATOR","PRO","TEAM","ENTERPRISE"],
+  "audit_extract_engine_v6": {
+    "lower_bound": "553/776 = 71.3%",
+    "upper_bound": "634/776 = 81.7%",
+    "gap": "97/776 = 12.5%",
+    "review": "45/776 = 5.8%",
+    "phase1": "SELESAI",
+    "phase2": "SELESAI",
+    "phase3_7": "BELUM"
+  },
+  "signals": {"sms_new": 0, "notifications_new": 0, "scheduled_tasks": 0, "stale_memory": 0, "overdue_tasks": 0},
+  "changes": {"code": 0, "commits": 0, "pushes": 0},
+  "technical_note": "persistent shell git probe timed out twice; workaround = fresh=true + internal timeout + minimal output",
+  "open_items": [
+    "9router API key MUSGO_9ROUTER_API_KEY + boot autostart (needs VPS S1)",
+    "Audit Fase 3-7 not started",
+    "crano.ai incident CLOSED (login failed at service side)"
+  ]
+}

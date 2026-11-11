@@ -1,0 +1,115 @@
+{
+  "snapshot": "2026-10-29",
+  "engine_version": "v6-rootlevel-icon-fix",
+  "status": "VERIFIED_CONSISTENT",
+  "authoritative_source": "Knowledge/Extract/03_module_mapping.csv",
+  "founder_decision": {
+    "relocation": "VALID",
+    "effect": "81 relocated counted as integrated"
+  },
+  "bug_fixed": {
+    "name": "last-domain-wins",
+    "symptom": "recovery_domain 836 entries vs actual ~15",
+    "fix": "root-level detection by icon-at-column-0",
+    "result": "836 -> 23 VERIFIED"
+  },
+  "anomaly_not_bug": {
+    "file": "red_team_ai.py",
+    "lines": [
+      959,
+      1810
+    ],
+    "domains": [
+      "simulation_domain",
+      "deployment"
+    ],
+    "note": "genuine duplicate in blueprint source"
+  },
+  "self_corrections": [
+    "58.7% retracted - wrong basis 375",
+    "87.5% retracted - inflated cross-domain",
+    "claim CSV invalid was ITSELF wrong - CSV already correct",
+    "THIS SESSION: chat table & memory carried stale v5 numbers"
+  ],
+  "stale_numbers_fixed": {
+    "relocated": "238 -> 81",
+    "consolidated": "76 -> 81",
+    "name_duplicate": "38 -> 30",
+    "ambiguous": "51 -> 15",
+    "same_domain": "2 -> 3"
+  },
+  "official_numbers": {
+    "lower_bound_pct": 71.3,
+    "lower_bound_count": 553,
+    "upper_bound_pct": 81.7,
+    "upper_bound_count": 634,
+    "gap_pct": 12.5,
+    "gap_count": 97,
+    "review_pct": 5.8,
+    "review_count": 45,
+    "gap_riil_excl_placeholder": 92
+  },
+  "verdicts": {
+    "exact": 209,
+    "same_layer": 12,
+    "flattened": 248,
+    "consolidated": 81,
+    "name_duplicate": 30,
+    "missing": 97,
+    "ambiguous": 15,
+    "same_domain": 3,
+    "relocated": 81
+  },
+  "verdict_sum_check": 776,
+  "integrated": {
+    "yes": 553,
+    "no": 142,
+    "likely": 81
+  },
+  "gap_by_domain": {
+    "runtime_domain": 6,
+    "security_domain": 24,
+    "system": 1,
+    "maintenance": 10,
+    "services": 13,
+    "apps/ecosystem": 43
+  },
+  "placeholder_gaps": [
+    "Reserve-01.py",
+    "Reserve-02.py",
+    "Reserve-03.py",
+    "Reserve-04.py",
+    "Reserve-05.py"
+  ],
+  "consistency_audit": {
+    "verdict_to_integrated_map": {
+      "exact": "yes",
+      "same_layer": "yes",
+      "flattened": "yes",
+      "consolidated": "yes",
+      "same_domain": "yes",
+      "relocated": "likely",
+      "name_duplicate": "no",
+      "ambiguous": "no",
+      "missing": "no"
+    },
+    "verdict_sum": 776,
+    "integration_sum": 776,
+    "result": "PASS"
+  },
+  "validation": "15/15 missing samples confirmed absent via find -iname",
+  "files": {
+    "knowledge_extract": "Knowledge/Extract/ (8 files, CSV authoritative)",
+    "knowledge": "Knowledge/AUDIT_FINAL_2026-10-29.md",
+    "memory": "memory/extract_engine_domain_fix_2026-10-29.md",
+    "state": "this file"
+  },
+  "next_steps": [
+    "review 45 files (30 name_duplicate + 15 ambiguous)",
+    "Phase 4: Agents/Skills 4408 files",
+    "Phase 5: Zero-Trust policies",
+    "Phase 6: VPS S0-S16 + 8 Tiers",
+    "Phase 7: FINAL GAP REPORT"
+  ],
+  "founder_sig": "DHANI YULIAWAN"
+}

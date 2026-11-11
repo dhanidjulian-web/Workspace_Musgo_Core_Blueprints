@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "musgo.project_progress.memory_entry.v1",
   "title": "MusGo-OS 2in1 — Endpoint Memori & Progress (Canonical Format)",
-  "description": "Kontrak baku untuk setiap entri memory/knowledge agar agent berikutnya faham tanpa ambigu & halusinasi. Disimpan di /home/Project-Progress/{memory,knowledge}.",
+  "description": "Kontrak baku untuk setiap entri memory/knowledge agar agent berikutnya faham tanpa ambigu & halusinasi. Disimpan di /root/projects/Project-Progress/{memory,knowledge}.",
   "type": "object",
   "additionalProperties": false,
   "required": [

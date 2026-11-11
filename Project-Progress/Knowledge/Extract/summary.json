@@ -1,0 +1,81 @@
+{
+  "generated": "2026-10-29",
+  "engine_version": "v6-rootlevel-icon-fix",
+  "status": "VERIFIED_CONSISTENT",
+  "blueprint_entries": 1556,
+  "blueprint_py_marker": 799,
+  "py_expected": 776,
+  "repo_files": 1586,
+  "verdicts": {
+    "exact": 209,
+    "same_layer": 12,
+    "flattened": 248,
+    "consolidated": 81,
+    "name_duplicate": 30,
+    "missing": 97,
+    "ambiguous": 15,
+    "same_domain": 3,
+    "relocated": 81
+  },
+  "verdict_sum_check": 776,
+  "integrated": {
+    "yes": 553,
+    "no": 142,
+    "likely": 81
+  },
+  "official_numbers": {
+    "lower_bound_pct": 71.3,
+    "lower_bound_count": 553,
+    "upper_bound_pct": 81.7,
+    "upper_bound_count": 634,
+    "gap_pct": 12.5,
+    "gap_count": 97,
+    "review_pct": 5.8,
+    "review_count": 45,
+    "gap_riil_excl_placeholder": 92
+  },
+  "gap_by_domain": {
+    "runtime_domain": 6,
+    "security_domain": 24,
+    "system": 1,
+    "maintenance": 10,
+    "services": 13,
+    "apps/ecosystem": 43
+  },
+  "placeholder_gaps": [
+    "Reserve-01.py",
+    "Reserve-02.py",
+    "Reserve-03.py",
+    "Reserve-04.py",
+    "Reserve-05.py"
+  ],
+  "founder_decision": "relocation = VALID design -> 81 relocated counted as integrated",
+  "validation": "15/15 missing samples confirmed absent via find -iname",
+  "consistency_audit": {
+    "verdict_to_integrated_map": {
+      "exact": "yes",
+      "same_layer": "yes",
+      "flattened": "yes",
+      "consolidated": "yes",
+      "same_domain": "yes",
+      "relocated": "likely",
+      "name_duplicate": "no",
+      "ambiguous": "no",
+      "missing": "no"
+    },
+    "verdict_sum": 776,
+    "integration_sum": 776,
+    "result": "PASS"
+  },
+  "corrected": {
+    "note": "Chat table & memory file previously carried stale v5 numbers (relocated 238, consolidated 76, name_dup 38, ambiguous 51). Authoritative values now taken directly from 03_module_mapping.csv.",
+    "authoritative_source": "Knowledge/Extract/03_module_mapping.csv"
+  },
+  "retracted_numbers": [
+    "58.7% (wrong basis 375)",
+    "87.5% (inflated cross-domain)",
+    "442 missing (false negative)",
+    "45.4%/76.0% (stale v5)"
+  ],
+  "methodology": "STRICT domain-scoped. Root-level dir detection by icon-at-column-0."
+}

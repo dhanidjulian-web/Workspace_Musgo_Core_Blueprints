@@ -1,0 +1,65 @@
+{
+  "detak_jantung": "DETAK_JANTUNG_OK",
+  "timestamp_wib": "2026-11-09 17:40 WIB",
+  "timestamp_utc": "2026-11-09T10:40:00Z",
+  "mode": "VERIFIED-LIVE",
+  "workspace": {
+    "path": "/root/projects",
+    "valid": true,
+    "root_entries": 14,
+    "readonly_git_ops": true,
+    "indices": {
+      "INDEX.md": 364722,
+      "AGENT_INDEX.md": 191684,
+      "INDEX_AGENTS_SKILLS.md": 9443
+    }
+  },
+  "repo_target": {
+    "path": "/root/Repository MusGo-OS_2in1-main",
+    "remote": "git@github.com:dhanidjulian-web/MusGo-OS_2in1.git",
+    "auth": "SSH ed25519 musgo-auto-agent (no PAT)",
+    "branch": "main",
+    "head": "6b2af4e",
+    "origin_main": "6b2af4e",
+    "fetch_exit": 0,
+    "ahead": 0,
+    "behind": 0,
+    "porcelain": 0,
+    "tracked": 1591,
+    "drift": false
+  },
+  "modules": {
+    "mcl_enforcer": {
+      "path": "constitutional_domain/layer_00_governor/mcl_enforcer/",
+      "layer": "L00 Governor",
+      "test_total": 13,
+      "test_pass": 13,
+      "test_fail": 0,
+      "rules_hash": "9c926b018e37b38b",
+      "fail_closed": true
+    },
+    "ai_provider_9router": {
+      "path": "cognitive_domain/layer_05_agent_orchestration/ai_provider_9router/",
+      "layer": "L05 Agent Orchestration",
+      "state_before": "DEAD",
+      "action": "cold_start_setsid",
+      "warmup_seconds": 52,
+      "health": {"ok": true},
+      "models": 861,
+      "providers": 86,
+      "allowlist_models": 69,
+      "budget": {"daily_usd": 5.0, "monthly_usd": 100.0, "on_exceed": "block"},
+      "guard": {"deny_by_default": true, "fail_closed": true, "audit_all_calls": true}
+    }
+  },
+  "runtime_artifacts": {"tracked": 2, "logs_tracked": 0, "status": "CLOSED"},
+  "signals": {"sms_new": 0, "notifications_new": 0, "scheduled_tasks": 0, "stale_memory": 0, "due_tasks": 0},
+  "changes": {"code": 0, "commits": 0, "pushes": 0, "cold_starts": 1},
+  "open_items": [
+    {"id": 1, "item": "9router autostart permanen + MUSGO_9ROUTER_API_KEY", "status": "OPEN", "requires": "VPS S1"},
+    {"id": 2, "item": "Audit Fase 3-7 (Extract Engine v6: bawah 553/776=71.3%, atas 634/776=81.7%, gap 97/776=12.5%, tinjau 45/776=5.8%)", "status": "OPEN"},
+    {"id": 3, "item": "Telegram crano.ai login Padang", "status": "CLOSED"}
+  ],
+  "vps": {"active": "S0", "total_levels": 17, "notation": "S0-S16"},
+  "tiers": {"count": 8, "order": ["FREE","LIGHT","LITE","MEDIUM","CREATOR","PRO","TEAM","ENTERPRISE"]}
+}

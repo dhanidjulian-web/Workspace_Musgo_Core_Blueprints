@@ -1,0 +1,58 @@
+{
+  "timestamp_local": "2026-11-01T23:56:00+07:00",
+  "mode": "VERIFIED_LIVE",
+  "result": "DETAK_JANTUNG_OK",
+  "workspace": {
+    "path": "/root/projects",
+    "root_entries": 14,
+    "read_only": true,
+    "indices": {
+      "INDEX.md": 364722,
+      "AGENT_INDEX.md": 191684,
+      "INDEX_AGENTS_SKILLS.md": 9443
+    },
+    "project_progress_subdirs": [".state", "Knowledge", "Runtime", "config", "memory"]
+  },
+  "repo_target": {
+    "path": "/root/Repository MusGo-OS_2in1-main",
+    "remote": "git@github.com:dhanidjulian-web/MusGo-OS_2in1.git",
+    "auth": "ssh_ed25519_no_pat",
+    "head": "6b2af4e",
+    "origin_main": "6b2af4e",
+    "fetch_exit": 0,
+    "porcelain_lines": 0,
+    "tracked_files": 1591,
+    "ahead_behind": "0/0",
+    "drift": false
+  },
+  "modules": {
+    "mcl_enforcer": {
+      "path": "constitutional_domain/layer_00_governor/mcl_enforcer/",
+      "test": "13/13 PASS",
+      "fail": 0,
+      "rules_hash": "9c926b018e37b38b",
+      "changed": false
+    },
+    "ai_provider_9router": {
+      "path": "cognitive_domain/layer_05_agent_orchestration/ai_provider_9router/",
+      "state_at_probe": "DOWN",
+      "action": "cold_start_setsid",
+      "health": {"ok": true},
+      "models_bytes": 331463,
+      "models": 861,
+      "providers": 86,
+      "allowlist_models": 69,
+      "budget": {"daily_usd": 5.0, "monthly_usd": 100.0, "on_exceed": "block"}
+    }
+  },
+  "runtime_artifacts": {"tracked": 2, "logs_tracked": 0, "gitignore_ok": true},
+  "signals": {"sms_new": 2, "sms_spam": 2, "notifications_new": 0, "scheduled_tasks": 0},
+  "changes": {"code": 0, "commit": 0, "push": 0, "cold_start": 1},
+  "open_items": [
+    "9router autostart permanen + MUSGO_9ROUTER_API_KEY (butuh VPS S1)",
+    "Audit Fase 3-7 (bawah 71.3% / atas 81.7% / gap 12.5% / tinjau 5.8%)",
+    "crano.ai login CLOSED"
+  ],
+  "vps_active_level": "S0",
+  "tiers_total": 8
+}

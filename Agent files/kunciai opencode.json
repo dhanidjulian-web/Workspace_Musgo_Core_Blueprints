@@ -1,0 +1,19 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "provider": {
+    "kunciai": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "KunciAI",
+      "options": {
+        "baseURL": "https://kunciai.id/v1",
+        "apiKey": "KUNCIAI_API_KEY_ANDA"
+      },
+      "models": {
+        "kunciai/deepseek-v4-flash": {
+          "name": "DeepSeek V4 Flash"
+        }
+      }
+    }
+  },
+  "model": "kunciai/deepseek-v4-flash"
+}

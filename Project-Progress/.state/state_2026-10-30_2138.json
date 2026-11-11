@@ -1,0 +1,63 @@
+{
+  "timestamp_local": "2026-10-30T21:38:00+07:00",
+  "mode": "VERIFIED-LIVE",
+  "result": "DETAK_JANTUNG_OK",
+  "workspace": {
+    "path": "/root/projects",
+    "root_entries": 13,
+    "read_only": true,
+    "git_ops": 0,
+    "index_md_bytes": 364722,
+    "agent_index_md_bytes": 191684,
+    "index_agents_skills_md_bytes": 9443,
+    "project_progress_subdirs": [".state", "Knowledge", "Runtime", "config", "memory"]
+  },
+  "repo": {
+    "path": "/root/Repository MusGo-OS_2in1-main",
+    "remote": "git@github.com:dhanidjulian-web/MusGo-OS_2in1.git",
+    "auth": "ssh-ed25519-musgo-auto-agent",
+    "pat": false,
+    "branch": "main",
+    "head": "6b2af4ee1feea8fc5686e5a9019d60378a652f96",
+    "origin_main": "6b2af4e",
+    "fetch_exit": 0,
+    "ahead": 0,
+    "behind": 0,
+    "porcelain_lines": 0,
+    "tracked_files": 1591,
+    "pyc_tracked": 0,
+    "root_dirs": 28,
+    "layer_dirs": 21,
+    "runtime_artifacts_tracked": 2,
+    "runtime_logs_tracked": 0
+  },
+  "modules": {
+    "mcl_enforcer": {
+      "path": "constitutional_domain/layer_00_governor/mcl_enforcer/",
+      "files": 5,
+      "tests": "13/13 PASS",
+      "failures": 0,
+      "rules_hash": "9c926b018e37b38b",
+      "fail_closed": true
+    },
+    "ai_provider_9router": {
+      "path": "cognitive_domain/layer_05_agent_orchestration/ai_provider_9router/",
+      "files_tracked": 17,
+      "health": {"ok": true},
+      "models": 861,
+      "allowlist": 69,
+      "guard": {"deny_by_default": true, "fail_closed": true, "audit_all_calls": true},
+      "budget": {"daily_usd": 5, "monthly_usd": 100, "on_exceed": "block"}
+    }
+  },
+  "signals": {"sms_new": 0, "notifications_new": 0, "scheduled_tasks": 0, "stale_memory": 0, "due_tasks": 0},
+  "changes": {"code": 0, "commits": 0, "pushes": 0, "artifacts_written": 3},
+  "open_items": [
+    "9router API key MUSGO_9ROUTER_API_KEY + autostart boot permanen (butuh VPS S1, proot tanpa systemd/cron)",
+    "Audit Fase 3-7 belum lanjut (Extract Engine v6: 71,3% bawah / 81,7% atas / gap 97 = 12,5% / tinjau 45 = 5,8%)",
+    "crano.ai Telegram login CLOSED (login gagal di sisi layanan)"
+  ],
+  "tier_count": 8,
+  "vps_levels": "S0-S16 (17 level)",
+  "founder_sig": "DHANI YULIAWAN"
+}

@@ -1,0 +1,53 @@
+{
+  "timestamp": "2026-10-27T17:15:00+07:00",
+  "founder": "Dhani Yuliawan",
+  "task": "fix runtime harness 9router",
+  "repo": {
+    "path": "/root/Repository MusGo-OS_2in1-main",
+    "remote": "git@github.com:dhanidjulian-web/MusGo-OS_2in1.git",
+    "head_before": "174b567",
+    "head_after": "67bc8ed",
+    "sync": { "ahead": 0, "behind": 0 }
+  },
+  "anomaly_previous_session": {
+    "claim": "Runtime script not found by ls",
+    "verdict": "FALSE_ALARM - file existed, md5 matched; artifact of parallel tool calls"
+  },
+  "bugs_found": [
+    {
+      "id": "BUG1_PATH",
+      "severity": "fatal",
+      "symptom": "can't open .../Project-Progress/tests/test_9router_offline.py",
+      "cause": "used HERE instead of MODULE_DIR",
+      "fix": "MODULE_DIR absolut + cd \"$MODULE_DIR\"",
+      "status": "FIXED"
+    },
+    {
+      "id": "BUG2_EXECBIT",
+      "severity": "low",
+      "symptom": "script not executable",
+      "cause": "Android/proot filesystem does not persist exec bit (chmod rc=0 but mode stays 660)",
+      "fix": "invoke via bash <script>",
+      "status": "DOCUMENTED_NOT_FIXABLE"
+    }
+  ],
+  "test_after_fix": {
+    "preflight": "PASS",
+    "health": "{\"ok\":true}",
+    "status": "PASS 861 models",
+    "models": "861 model / 86 provider",
+    "offline_suite": "10 PASS / 0 FAIL",
+    "md5_sync": "81f4bdcd60ea6a5f40f3fc7be4ddb05a"
+  },
+  "subcommands": ["start","stop","restart","status","models","test","health","info","preflight"],
+  "files_saved": [
+    "Knowledge/musgo_9router_runtime_fix_2026-10-27.md",
+    "Runtime/musgo_9router_test.sh (v2)",
+    "Runtime/archive/musgo_9router_test_v1_2026-10-27.sh (backup v1)"
+  ],
+  "pending": [
+    "API key valid untuk chat nyata end-to-end",
+    "supervisor autostart (proot tanpa systemd)",
+    "push ringkasan ke Workspace_Musgo_Core_Blueprints"
+  ]
+}

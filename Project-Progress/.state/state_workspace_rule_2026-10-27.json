@@ -1,0 +1,32 @@
+{
+  "timestamp": "2026-10-27T18:00:00+07:00",
+  "founder": "Dhani Yuliawan",
+  "event": "koreksi aturan workspace",
+  "paths": {
+    "/root/projects": {
+      "role": "reference_only_readonly",
+      "has_git_commits": false,
+      "commits_absence_is_normal": true,
+      "forbidden": ["git fetch", "git clone", "git push", "git commit"],
+      "write_exception": "Project-Progress (memory, Knowledge, .state, Runtime)"
+    },
+    "/root/Repository MusGo-OS_2in1-main": {
+      "role": "working_target",
+      "head": "19c0a8c",
+      "remote": "git@github.com:dhanidjulian-web/MusGo-OS_2in1.git",
+      "dirty": 0
+    },
+    "Workspace_Musgo_Core_Blueprints": {
+      "role": "external_agent_consumption",
+      "size_mb": 96,
+      "push_without_order": false
+    }
+  },
+  "cleanup": ["/tmp/bp_sync 261MB", "/root/sync_blueprint.sh", "/root/sync_blueprint.log"],
+  "verification": {
+    "root_projects_untouched": "11 untracked, 0 commit",
+    "repo_target_clean": true,
+    "server_9router": "http=200 ok",
+    "background_processes": 0
+  }
+}

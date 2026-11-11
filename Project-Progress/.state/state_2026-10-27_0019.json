@@ -1,0 +1,49 @@
+{
+  "snapshot_id": "state_2026-10-27_0019",
+  "captured_at_wib": "2026-10-27T00:19:00+07:00",
+  "captured_at_utc": "2026-10-26T17:19:00Z",
+  "trigger": "heartbeat_self_check",
+  "result": "DETAK_JANTUNG_OK",
+  "workspace": {
+    "root": "/root/projects",
+    "valid": true,
+    "indexes": {
+      "blueprints_index": "/root/projects/Blueprints_MusGo-OS_2in1/INDEX.md",
+      "blueprints_agent_index": "/root/projects/Blueprints_MusGo-OS_2in1/AGENT_INDEX.md",
+      "agents_skills_index": "/root/projects/Agents-Skills/INDEX_AGENTS_SKILLS.md",
+      "all_present": true
+    },
+    "project_progress": {
+      "path": "/root/projects/Project-Progress",
+      "subdirs": [".state", "Knowledge", "Runtime", "config", "memory"],
+      "complete": true
+    }
+  },
+  "target_repo": {
+    "path": "/root/Repository MusGo-OS_2in1-main",
+    "remote": "git@github.com:dhanidjulian-web/MusGo-OS_2in1.git",
+    "auth": "ssh_ed25519_no_pat",
+    "branch": "main",
+    "head": "2353167",
+    "fetch_exit": 0,
+    "ahead": 0,
+    "behind": 0,
+    "worktree_clean": true,
+    "untracked": 0
+  },
+  "device": {
+    "sms_new": 0,
+    "notifications_new": 0,
+    "scheduled_tasks": 0
+  },
+  "issues": [],
+  "open_reminders": [
+    {
+      "id": "telegram_crano_ai_login_padang",
+      "since": "2026-10-23T02:37:00+07:00",
+      "status": "menunggu_konfirmasi_founder",
+      "action_if_not_founder": "logout sesi asing via Telegram -> Pengaturan -> Perangkat"
+    }
+  ],
+  "founder_sig": "DHANI YULIAWAN"
+}
